@@ -11,10 +11,6 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { registerLocaleData } from '@angular/common';
-import { environment } from '../environments/environment';
-
-registerLocaleData({}, environment.appI18nLocaleDummy, {});
 
 @NgModule({
   declarations: [

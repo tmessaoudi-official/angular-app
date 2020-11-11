@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "load-env": "APP_ENV_RUN_BUILD=true node ./webpack/dotenv/Loader.js",
+    "load-env": "node ./webpack/dotenv/Loader.js",
     "serve": "ng serve ${APP_CONFIGURATION}",
     "build": "ng build ${APP_CONFIGURATION}",
     "xi18n": "ng xi18n ${APP_CONFIGURATION}",

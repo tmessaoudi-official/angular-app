@@ -325,6 +325,9 @@
           "configurations": {
             "selenium": {
             },
+            "dev": {
+              "devServerTarget": "localization:serve:dev"
+            },
             "home": {
               "devServerTarget": "localization:serve:home"
             },

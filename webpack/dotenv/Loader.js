@@ -248,7 +248,11 @@ if (typeof process.env.APP_ENV_RUN_BUILD == 'string' && process.env.APP_ENV_RUN_
     fs.unlinkSync('./.env.local.build');
   } catch(err) {
   }
-  Loader.run(typeof process.env.NODE_ENV !== 'undefined' ? process.env.NODE_ENV : '', true);
+  if (typeof process.env.NODE_ENV_FORCE === 'string' && process.env.NODE_ENV_FORCE !== '') {
+    process.env.NODE_ENV = process.env.NODE_ENV_FORCE;
+  }
+  // eslint-disable-next-line max-len
+  Loader.run(typeof process.env.NODE_ENV_FORCE === 'string' && process.env.NODE_ENV_FORCE !== '' ? process.env.NODE_ENV_FORCE : (typeof process.env.NODE_ENV === 'string' && process.env.NODE_ENV !== '' ? process.env.NODE_ENV : ''), (typeof process.env.APP_ENV_FORCE_REBUILD === 'undefined' || (typeof process.env.APP_ENV_FORCE_REBUILD === 'string' && (process.env.APP_ENV_FORCE_REBUILD === '' || process.env.APP_ENV_FORCE_REBUILD === 'true'))));
   let data = '';
   Loader.data.APP_ENV_KEYS.forEach(function (item, index, arr) {
     if (item !== 'env_includes' && item !== 'process_env_includes') {

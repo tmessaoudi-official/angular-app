@@ -187,6 +187,9 @@ let Loader = {
     if (typeof force !== 'boolean') {
       force = false;
     }
+    if (typeof process.env.APP_ENV_FORCE_REBUILD == 'string' && process.env.APP_ENV_FORCE_REBUILD === 'true') {
+      force = true;
+    }
     if (!force) {
       try {
         if (fs.existsSync('./.env.local.build')) {
@@ -233,8 +236,8 @@ let Loader = {
   }
 }
 
-if (typeof process.env.RUN_LOAD_ENV == 'string' && process.env.RUN_LOAD_ENV === 'true') {
-  Loader.run('', true);
+if (typeof process.env.APP_ENV_RUN_BUILD == 'string' && process.env.APP_ENV_RUN_BUILD === 'true') {
+  Loader.run(typeof process.env.NODE_ENV !== 'undefined' ? process.env.NODE_ENV : '', true);
   try {
     fs.unlinkSync('./.env.local.build');
   } catch(err) {

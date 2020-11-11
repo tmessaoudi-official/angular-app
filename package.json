@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "load-env": "RUN_LOAD_ENV=true node ./webpack/dotenv/Loader.js",
+    "load-env": "APP_ENV_RUN_BUILD=true node ./webpack/dotenv/Loader.js",
     "serve": "ng serve ${APP_CONFIGURATION}",
     "build": "ng build ${APP_LOCALIZE} ${APP_WATCH} ${APP_CONFIGURATION}",
     "xi18n": "ng xi18n ${APP_CONFIGURATION}",
@@ -11,8 +11,8 @@
     "lint": "pnpm run tslint && pnpm run eslint",
     "eslint": "ng run localization:eslint${APP_CONFIGURATION}",
     "tslint": "ng run localization:tslint${APP_CONFIGURATION}",
-    "test": "NODE_ENV=test ng test",
-    "e2e": "NODE_ENV=test ng e2e ${APP_CONFIGURATION}"
+    "test": "APP_ENV_RUN_BUILD=true APP_ENV_FORCE_REBUILD=true NODE_ENV=test ng test",
+    "e2e": "APP_ENV_RUN_BUILD=true APP_ENV_FORCE_REBUILD=true NODE_ENV=test ng e2e ${APP_CONFIGURATION}"
   },
   "private": true,
   "dependencies": {

@@ -7,6 +7,7 @@
       </notes>
       <segment>
         <source>app.dummy.title</source>
+        <target>app.dummy.title</target>
       </segment>
     </unit>
     <unit id="303063580277194129">
@@ -15,6 +16,7 @@
       </notes>
       <segment>
         <source>app.dumb.title</source>
+        <target>app.dumb.title</target>
       </segment>
     </unit>
     <unit id="7249072834034853576">
@@ -23,6 +25,7 @@
       </notes>
       <segment>
         <source>app.dumber.title</source>
+        <target>app.dumber.title</target>
       </segment>
     </unit>
     <unit id="3141899919268928026">
@@ -31,6 +34,7 @@
       </notes>
       <segment>
         <source>app.home.title</source>
+        <target>app.home.title</target>
       </segment>
     </unit>
     <unit id="636666793223463925">
@@ -39,6 +43,7 @@
       </notes>
       <segment>
         <source>app.welcome</source>
+        <target>app.welcome</target>
       </segment>
     </unit>
     <unit id="app_welcome">
@@ -49,6 +54,7 @@
       </notes>
       <segment>
         <source>app.welcome_with_meaning_and_description_and_id</source>
+        <target>app.welcome_with_meaning_and_description_and_id</target>
       </segment>
     </unit>
     <unit id="app_welcome_second">
@@ -59,6 +65,7 @@
       </notes>
       <segment>
         <source>app.welcome_with_meaning_and_description_and_id</source>
+        <target>app.welcome_with_meaning_and_description_and_id</target>
       </segment>
     </unit>
     <unit id="1803531417720015616">
@@ -67,6 +74,7 @@
       </notes>
       <segment>
         <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</source>
+        <target>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</target>
       </segment>
     </unit>
     <unit id="7282916492820826755">
@@ -75,6 +83,7 @@
       </notes>
       <segment>
         <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></source>
+        <target>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></target>
       </segment>
     </unit>
     <unit id="7842238767399919809">
@@ -83,6 +92,7 @@
       </notes>
       <segment>
         <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
+        <target>{VAR_SELECT, select, male {male} female {female} other {other}}</target>
       </segment>
     </unit>
     <unit id="8719020961091149048">
@@ -91,6 +101,7 @@
       </notes>
       <segment>
         <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></source>
+        <target>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></target>
       </segment>
     </unit>
     <unit id="4654714685343745812">
@@ -99,6 +110,7 @@
       </notes>
       <segment>
         <source>app.not_found</source>
+        <target>app.not_found</target>
       </segment>
     </unit>
     <unit id="5335356958891281272">
@@ -107,6 +119,7 @@
       </notes>
       <segment>
         <source>app.nav.home</source>
+        <target>app.nav.home</target>
       </segment>
     </unit>
     <unit id="8215035420062173710">
@@ -115,6 +128,7 @@
       </notes>
       <segment>
         <source>app.nav.dummy</source>
+        <target>app.nav.dummy</target>
       </segment>
     </unit>
     <unit id="8856170510253505863">
@@ -123,6 +137,7 @@
       </notes>
       <segment>
         <source>app.nav.dumb</source>
+        <target>app.nav.dumb</target>
       </segment>
     </unit>
     <unit id="7563047614717127693">
@@ -132,6 +147,7 @@
       </notes>
       <segment>
         <source>app.nav.dumber</source>
+        <target>app.nav.dumber</target>
       </segment>
     </unit>
     <unit id="6010898872571258196">
@@ -140,6 +156,7 @@
       </notes>
       <segment>
         <source>app.nav.dumber_with_id</source>
+        <target>app.nav.dumber_with_id</target>
       </segment>
     </unit>
     <unit id="6435547741974795170">
@@ -148,6 +165,7 @@
       </notes>
       <segment>
         <source>app.footer.text</source>
+        <target>app.footer.text</target>
       </segment>
     </unit>
   </file>

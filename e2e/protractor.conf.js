@@ -5,7 +5,7 @@
 const { SpecReporter, StacktraceOption } = require('jasmine-spec-reporter');
 let Loader = require('../webpack/dotenv/Loader.js');
 
-Loader.run('test');
+Loader.run('test', true);
 
 let protractorConfig = {
   allScriptsTimeout: 11000,

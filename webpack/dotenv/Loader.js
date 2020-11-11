@@ -12,23 +12,29 @@ let Loader = {
         return;
       }
       // eslint-disable-next-line max-len
-      const includes = Loader.populate(dotenv.parse(fs.readFileSync(fileName), {debug: Loader.handlers.processors.boolean.isTrue(process.env.NODE_DEBUG)}), fileName);
+      const envIncludes = Loader.populate(dotenv.parse(fs.readFileSync(fileName), {debug: Loader.handlers.processors.boolean.isTrue(process.env.NODE_DEBUG)}), fileName);
       Loader.log('Loaded ' + fileName + ' vars successfully !!');
-      if (includes.length > 0) {
-        includes.forEach(function (item, index) {
-          if (item === fileName) {
-            console.error('Circular reference detected, file \'' + item + '\' trying to include itself !!');
-            process.exit(1);
-          }
-          Loader.load(item);
-          if (!Loader.data.APP_ENV_LOADED_FILES.includes(item)) {
-            Loader.data.APP_ENV_LOADED_FILES.push(item);
-          }
-        });
-      }
+      Loader.include(envIncludes, fileName);
     } catch (exception) {
       Loader.log('there was an exception loading ' + fileName + ' vars !!');
       //Loader.log(exception);
+    }
+  },
+  include: function (includes, fileName) {
+    if (typeof fileName !== 'string' || fileName === '') {
+      fileName = '';
+    }
+    if (typeof includes === 'string' && includes !== '') {
+      includes.split(',').forEach(function (item, index) {
+        if (item === fileName) {
+          console.error('Circular reference detected, file \'' + item + '\' trying to include itself !!');
+          process.exit(1);
+        }
+        Loader.load(item);
+        if (!Loader.data.APP_ENV_LOADED_FILES.includes(item)) {
+          Loader.data.APP_ENV_LOADED_FILES.push(item);
+        }
+      });
     }
   },
   populate: function (data, fileName = '') {
@@ -36,15 +42,13 @@ let Loader = {
       fileName = '';
     }
     let keys = Object.keys(data);
-    let includes = [];
+    let envIncludes = '';
     Object.values(data).forEach(function (item, index) {
       if (!Loader.data.APP_ENV_KEYS.includes(keys[index])) {
         Loader.data.APP_ENV_KEYS.push(keys[index]);
       }
-      if (keys[index] === 'includes') {
-        if (item !== '') {
-          includes = item.split(',');
-        }
+      if (keys[index] === 'env_includes') {
+        envIncludes = item;
       } else {
         let handlers = Loader.handlers.getHandlers(item);
         if (typeof handlers.handlers !== 'undefined' && handlers.handlers.indexOf('process.env.get') !== -1) {
@@ -53,8 +57,13 @@ let Loader = {
           if (newHandlers !== '') {
             newHandlers += ':';
           }
-          // eslint-disable-next-line max-len
-          item = newHandlers + (typeof process.env[handlers.unHandledValue] !== 'undefined' && process.env[handlers.unHandledValue] !== null ? process.env[handlers.unHandledValue] : 'environment.processors.empty:' + process.env[handlers.unHandledValue]);
+          if (handlers.unHandledValue === '~APP_ENV_INCLUDES') {
+            // eslint-disable-next-line max-len
+            item = typeof process.env[handlers.unHandledValue.replace('~', '')] === 'string' ? process.env[handlers.unHandledValue.replace('~', '')] : '';
+          } else {
+            // eslint-disable-next-line max-len
+            item = newHandlers + (typeof process.env[handlers.unHandledValue] !== 'undefined' && process.env[handlers.unHandledValue] !== null ? process.env[handlers.unHandledValue] : 'environment.processors.empty:' + process.env[handlers.unHandledValue]);
+          }
         }
         if (typeof item === 'undefined' || item === null) {
           process.env[keys[index]] = item;
@@ -66,7 +75,7 @@ let Loader = {
       }
     });
 
-    return includes;
+    return envIncludes;
   },
   quote: {
     all: function () {
@@ -160,6 +169,10 @@ let Loader = {
     }
     if (Loader.handlers.processors.boolean.isTrue(process.env.NODE_DEBUG)) {
       switch (format) {
+        case 'warn': {
+          console.warn(message);
+          break;
+        }
         case 'log':
         default: {
           console.log(message);
@@ -167,9 +180,23 @@ let Loader = {
       }
     }
   },
-  run: function (nodeEnv = '') {
+  run: function (nodeEnv = '', force = false) {
     if (typeof nodeEnv !== 'string' || nodeEnv === '') {
       nodeEnv = '';
+    }
+    if (typeof force !== 'boolean') {
+      force = false;
+    }
+    if (!force) {
+      try {
+        if (fs.existsSync('./.env.local.build')) {
+          Loader.load('./.env.local.build');
+          Loader.log('using generated file ./.env.local.build', 'warn');
+          return;
+        }
+      } catch(err) {
+        console.error(err)
+      }
     }
     Loader.load();
     Loader.load('./.env.local');
@@ -193,6 +220,7 @@ let Loader = {
         }
       });
     }
+    Loader.include(Loader.unquote.value(process.env['process_env_includes']));
     Loader.log(' ***** Environment : ');
     Loader.data.APP_ENV_KEYS.forEach(function (item, index, arr) {
       Loader.log('    - ' + item);
@@ -203,5 +231,25 @@ let Loader = {
       Loader.log('            -- ' + item);
     });
   }
+}
+
+if (typeof process.env.RUN_LOAD_ENV == 'string' && process.env.RUN_LOAD_ENV === 'true') {
+  Loader.run('', true);
+  try {
+    fs.unlinkSync('./.env.local.build');
+  } catch(err) {
+  }
+  let data = '';
+  Loader.data.APP_ENV_KEYS.forEach(function (item, index, arr) {
+    if (item !== 'env_includes' && item !== 'process_env_includes') {
+      data += item + '=' + process.env[item] + '\n';
+    } else {
+      data += item + '=\n';
+    }
+  });
+  fs.writeFile('./.env.local.build', data, function (err) {
+    if (err) return console.log(err);
+    console.log('Generated env created succussfully ./.env.local.build');
+  });
 }
 module.exports = Loader;

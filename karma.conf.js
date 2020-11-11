@@ -2,7 +2,7 @@
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 let Loader = require('./webpack/dotenv/Loader.js');
 
-Loader.run('test');
+Loader.run('test', true);
 
 module.exports = function (config) {
   config.set({

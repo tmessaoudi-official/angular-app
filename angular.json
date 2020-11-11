@@ -195,8 +195,8 @@
             "open": {
               "open": true
             },
-            "ignore-i18n": {
-              "open": true
+            "dev": {
+              "browserTarget": "localization:build:dev"
             },
             "home": {
               "browserTarget": "localization:build:dev,home"

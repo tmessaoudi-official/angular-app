@@ -5,14 +5,14 @@
     "ng": "ng",
     "load-env": "APP_ENV_RUN_BUILD=true node ./webpack/dotenv/Loader.js",
     "serve": "ng serve ${APP_CONFIGURATION}",
-    "build": "ng build ${APP_LOCALIZE} ${APP_WATCH} ${APP_CONFIGURATION}",
+    "build": "ng build ${APP_CONFIGURATION}",
     "xi18n": "ng xi18n ${APP_CONFIGURATION}",
     "xi18n-all": "APP_CONFIGURATION='--configuration=home' pnpm run xi18n | APP_CONFIGURATION='--configuration=en' pnpm run xi18n | APP_CONFIGURATION='--configuration=fr' pnpm run xi18n | APP_CONFIGURATION='--configuration=ar' pnpm run xi18n | APP_CONFIGURATION='--configuration=es' pnpm run xi18n | APP_CONFIGURATION='--configuration=de' pnpm run xi18n | APP_CONFIGURATION='--configuration=pt' pnpm run xi18n | APP_CONFIGURATION='--configuration=it' pnpm run xi18n",
     "lint": "pnpm run tslint && pnpm run eslint",
     "eslint": "ng run localization:eslint${APP_CONFIGURATION}",
     "tslint": "ng run localization:tslint${APP_CONFIGURATION}",
-    "test": "APP_ENV_RUN_BUILD=true APP_ENV_FORCE_REBUILD=true NODE_ENV=test ng test",
-    "e2e": "APP_ENV_RUN_BUILD=true APP_ENV_FORCE_REBUILD=true NODE_ENV=test ng e2e ${APP_CONFIGURATION}"
+    "test": "ng test",
+    "e2e": "ng e2e ${APP_CONFIGURATION}"
   },
   "private": true,
   "dependencies": {

@@ -66,7 +66,7 @@ let Loader = {
           }
         }
         if (typeof item === 'undefined' || item === null) {
-          process.env[keys[index]] = item;
+          process.env[keys[index]] = 'environment.processors.empty:' + item;
         } else if (Loader.handlers.processors.boolean.isBoolean(item)) {
           process.env[keys[index]] = Loader.handlers.processors.boolean.getValue(item);
         } else {
@@ -85,10 +85,17 @@ let Loader = {
     },
     value: function (value) {
       if (typeof value === 'string') {
-        if (value.indexOf('"') !== -1) {
-          value = '\'' + value + '\'';
-        } else {
-          value = '"' + value + '"';
+        const regex = new RegExp(
+          // eslint-disable-next-line max-len
+          '^([\'\"])(.*)([\'\"])$',
+          'ig');
+        const matches = regex.exec(value);
+        if (matches === null) {
+          if (value.indexOf('"') !== -1) {
+            value = '\'' + value + '\'';
+          } else {
+            value = '"' + value + '"';
+          }
         }
       }
       return value;
@@ -148,7 +155,6 @@ let Loader = {
             value === 'true' ||
             value === '"true"' ||
             value === '\'true\'';
-
         },
         isFalse: function (value) {
           return value === false ||
@@ -205,8 +211,8 @@ let Loader = {
     Loader.load('./.env.local');
 
     if (nodeEnv !== '') {
-      Loader.load('./.env.' + nodeEnv );
-      Loader.load('./.env.' + nodeEnv  + '.local');
+      Loader.load('./.env.' + Loader.unquote.value(nodeEnv) );
+      Loader.load('./.env.' + Loader.unquote.value(nodeEnv)  + '.local');
       process.env.NODE_ENV = Loader.quote.value(nodeEnv);
     } else {
       Loader.load('./.env.' + Loader.unquote.value(process.env.NODE_ENV));
@@ -218,8 +224,8 @@ let Loader = {
         if (!Loader.data.APP_ENV_KEYS.includes(item)) {
           Loader.data.APP_ENV_KEYS.push(item);
         }
-        if (typeof process.env[item] === 'undefined') {
-          process.env[item] = undefined;
+        if (typeof process.env[item] === 'undefined' || process.env[item] === 'undefined' || process.env[item] === null) {
+          process.env[item] = 'environment.processors.empty:' + process.env[item];
         }
       });
     }
@@ -227,7 +233,8 @@ let Loader = {
     Loader.log(' ***** Environment : ');
     Loader.data.APP_ENV_KEYS.forEach(function (item, index, arr) {
       Loader.log('    - ' + item);
-      Loader.log('        ** : ' + process.env[item]);
+      Loader.log('        ** : \'' + process.env[item] + '\'');
+      Loader.log('        ** type : ' + typeof process.env[item]);
     });
     Loader.log('     ----- Includes : ');
     Loader.data.APP_ENV_LOADED_FILES.forEach(function (item, index, arr) {
@@ -237,11 +244,11 @@ let Loader = {
 }
 
 if (typeof process.env.APP_ENV_RUN_BUILD == 'string' && process.env.APP_ENV_RUN_BUILD === 'true') {
-  Loader.run(typeof process.env.NODE_ENV !== 'undefined' ? process.env.NODE_ENV : '', true);
   try {
     fs.unlinkSync('./.env.local.build');
   } catch(err) {
   }
+  Loader.run(typeof process.env.NODE_ENV !== 'undefined' ? process.env.NODE_ENV : '', true);
   let data = '';
   Loader.data.APP_ENV_KEYS.forEach(function (item, index, arr) {
     if (item !== 'env_includes' && item !== 'process_env_includes') {

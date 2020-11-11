@@ -1,0 +1,358 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "localization": {
+      "i18n": {
+        "sourceLocale": "home",
+        "locales": {
+          "en": "translations/messages.en.xlf2",
+          "fr": "translations/messages.fr.xlf2",
+          "de": "translations/messages.de.xlf2",
+          "es": "translations/messages.es.xlf2",
+          "ar": "translations/messages.ar.xlf2",
+          "pt": "translations/messages.pt.xlf2",
+          "it": "translations/messages.it.xlf2"
+        }
+      },
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "customWebpackConfig": {
+              "path": "webpack.config.js"
+            },
+            "allowedCommonJsDependencies": [
+              "rxjs-compat",
+              "rxjs"
+            ],
+            "i18nMissingTranslation": "error",
+            "aot": true,
+            "deleteOutputPath": false,
+            "extractCss": true,
+            "extractLicenses": true,
+            "sourceMap": false,
+            "vendorChunk": false,
+            "commonChunk": false,
+            "namedChunks": false,
+            "buildOptimizer": false,
+            "optimization": false,
+            "outputHashing": "none",
+            "outputPath": "dist/",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "budgets": [
+              {
+                "type": "initial",
+                "maximumWarning": "2mb",
+                "maximumError": "5mb"
+              },
+              {
+                "type": "anyComponentStyle",
+                "maximumWarning": "6kb",
+                "maximumError": "10kb"
+              }
+            ],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "buildOptimizer": true,
+              "optimization": true,
+              "outputHashing": "all",
+              "namedChunks": false,
+              "vendorChunk": false,
+              "commonChunk": false,
+              "sourceMap": false
+            },
+            "dev": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "outputHashing": "none",
+              "namedChunks": true,
+              "vendorChunk": true,
+              "commonChunk": true,
+              "sourceMap": true
+            },
+            "delete-output-path": {
+              "deleteOutputPath": true
+            },
+            "localize": {
+              "localize": true
+            },
+            "watch": {
+              "watch": true
+            },
+            "no-base-href": {
+              "baseHref": "/",
+              "outputPath": "dist"
+            },
+            "ignore-i18n": {
+              "i18nMissingTranslation": "warning"
+            },
+            "experimental-rollup-pass": {
+              "experimentalRollupPass": true
+            },
+            "home": {
+              "outputPath": "dist/home",
+              "baseHref": "/home/"
+            },
+            "home-no-base-href": {
+              "i18nFile": "translations/messages.xlf2",
+              "i18nLocale": "home"
+            },
+            "en": {
+              "localize": [
+                "en"
+              ]
+            },
+            "en-no-base-href": {
+              "i18nLocale": "en"
+            },
+            "fr": {
+              "localize": [
+                "fr"
+              ]
+            },
+            "fr-no-base-href": {
+              "i18nLocale": "fr"
+            },
+            "de": {
+              "localize": [
+                "de"
+              ]
+            },
+            "de-no-base-href": {
+              "i18nLocale": "de"
+            },
+            "es": {
+              "localize": [
+                "es"
+              ]
+            },
+            "es-no-base-href": {
+              "i18nLocale": "es"
+            },
+            "ar": {
+              "localize": [
+                "ar"
+              ]
+            },
+            "ar-no-base-href": {
+              "i18nLocale": "ar"
+            },
+            "pt": {
+              "localize": [
+                "pt"
+              ]
+            },
+            "pt-no-base-href": {
+              "i18nLocale": "pt"
+            },
+            "it": {
+              "localize": [
+                "it"
+              ]
+            },
+            "it-no-base-href": {
+              "i18nLocale": "it"
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-builders/custom-webpack:dev-server",
+          "options": {
+            "customWebpackConfig": {
+              "path": "webpack.config.js"
+            },
+            "liveReload": true,
+            "browserTarget": "localization:build:dev,home"
+          },
+          "configurations": {
+            "open": {
+              "open": true
+            },
+            "ignore-i18n": {
+              "open": true
+            },
+            "home": {
+              "browserTarget": "localization:build:dev,home"
+            },
+            "en": {
+              "browserTarget": "localization:build:dev,en"
+            },
+            "fr": {
+              "browserTarget": "localization:build:dev,fr"
+            },
+            "de": {
+              "browserTarget": "localization:build:dev,de"
+            },
+            "es": {
+              "browserTarget": "localization:build:dev,es"
+            },
+            "ar": {
+              "browserTarget": "localization:build:dev,ar"
+            },
+            "pt": {
+              "browserTarget": "localization:build:dev,pt"
+            },
+            "it": {
+              "browserTarget": "localization:build:dev,it"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "localization:build:home",
+            "outputPath": "translations",
+            "outFile": "messages.xlf2",
+            "format": "xlf2",
+            "ivy": true
+          },
+          "configurations": {
+            "home": {
+              "browserTarget": "localization:build:home",
+              "outFile": "messages.xlf2"
+            },
+            "en": {
+              "browserTarget": "localization:build:en",
+              "outFile": "messages.en.xlf2"
+            },
+            "fr": {
+              "browserTarget": "localization:build:fr",
+              "outFile": "messages.fr.xlf2"
+            },
+            "de": {
+              "browserTarget": "localization:build:de",
+              "outFile": "messages.de.xlf2"
+            },
+            "es": {
+              "browserTarget": "localization:build:es",
+              "outFile": "messages.es.xlf2"
+            },
+            "ar": {
+              "browserTarget": "localization:build:ar",
+              "outFile": "messages.ar.xlf2"
+            },
+            "pt": {
+              "browserTarget": "localization:build:pt",
+              "outFile": "messages.pt.xlf2"
+            },
+            "it": {
+              "browserTarget": "localization:build:it",
+              "outFile": "messages.it.xlf2"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-builders/custom-webpack:karma",
+          "options": {
+            "customWebpackConfig": {
+              "path": "./webpack.config.js"
+            },
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "codeCoverage": true,
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+          }
+        },
+        "tslint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "eslint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.js",
+              "src/**/*.component.html",
+              "src/**/*.component.scss"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js"
+          },
+          "configurations": {
+            "selenium": {
+            },
+            "home": {
+              "devServerTarget": "localization:serve:home"
+            },
+            "en": {
+              "devServerTarget": "localization:serve:en"
+            },
+            "fr": {
+              "devServerTarget": "localization:serve:fr"
+            },
+            "de": {
+              "devServerTarget": "localization:serve:de"
+            },
+            "es": {
+              "devServerTarget": "localization:serve:es"
+            },
+            "ar": {
+              "devServerTarget": "localization:serve:ar"
+            },
+            "pt": {
+              "devServerTarget": "localization:serve:pt"
+            },
+            "it": {
+              "devServerTarget": "localization:serve:it"
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "localization"
+}

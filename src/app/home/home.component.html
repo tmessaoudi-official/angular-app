@@ -1,0 +1,14 @@
+<p i18n>app.home.title</p>
+
+<h1>app.welcome</h1>
+<h1 i18n>app.welcome</h1>
+<h5 i18n="Meaning test|Description test@@app_welcome">app.welcome_with_meaning_and_description_and_id</h5>
+<h5 i18n="Meaning test welcome second|Description test second@@app_welcome_second">app.welcome_with_meaning_and_description_and_id</h5>
+<h5 i18n>app.minutes.{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}</h5>
+{{ minutes }}
+<button class="btn btn-dark" (click)="setMinutes('-')">-</button>
+<button class="btn btn-light" (click)="setMinutes('+')">+</button>
+<br />
+
+<h5 i18n>app.gender.{gender, select, male {male} female {female} other {other}}</h5>
+{{ gender }} <button class="btn-info" (click)="setGender()">switch</button>

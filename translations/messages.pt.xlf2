@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="home">
+  <file id="ngi18n" original="ng.template">
+    <unit id="4162997551392921684">
+      <notes>
+        <note category="location">src/app/dummy/dummy.component.html:1</note>
+      </notes>
+      <segment>
+        <source>app.dummy.title</source>
+        <target>app.dummy.title.pt</target>
+      </segment>
+    </unit>
+    <unit id="303063580277194129">
+      <notes>
+        <note category="location">src/app/dumb/dumb.component.html:1</note>
+      </notes>
+      <segment>
+        <source>app.dumb.title</source>
+        <target>app.dumb.title.pt</target>
+      </segment>
+    </unit>
+    <unit id="7249072834034853576">
+      <notes>
+        <note category="location">src/app/dumber/dumber.component.html:1</note>
+      </notes>
+      <segment>
+        <source>app.dumber.title</source>
+        <target>app.dumber.title.pt</target>
+      </segment>
+    </unit>
+    <unit id="3141899919268928026">
+      <notes>
+        <note category="location">src/app/home/home.component.html:1</note>
+      </notes>
+      <segment>
+        <source>app.home.title</source>
+        <target>app.home.title.pt</target>
+      </segment>
+    </unit>
+    <unit id="636666793223463925">
+      <notes>
+        <note category="location">src/app/home/home.component.html:4</note>
+      </notes>
+      <segment>
+        <source>app.welcome</source>
+        <target>app.welcome.pt</target>
+      </segment>
+    </unit>
+    <unit id="app_welcome">
+      <notes>
+        <note category="location">src/app/home/home.component.html:5</note>
+        <note category="description">Description test</note>
+        <note category="meaning">Meaning test</note>
+      </notes>
+      <segment>
+        <source>app.welcome_with_meaning_and_description_and_id</source>
+        <target>app.welcome_with_meaning_and_description_and_id.pt</target>
+      </segment>
+    </unit>
+    <unit id="app_welcome_second">
+      <notes>
+        <note category="location">src/app/home/home.component.html:6</note>
+        <note category="description">Description test second</note>
+        <note category="meaning">Meaning test welcome second</note>
+      </notes>
+      <segment>
+        <source>app.welcome_with_meaning_and_description_and_id</source>
+        <target>app.welcome_with_meaning_and_description_and_id.pt</target>
+      </segment>
+    </unit>
+    <unit id="1803531417720015616">
+      <notes>
+        <note category="location">src/app/home/home.component.html:7</note>
+      </notes>
+      <segment>
+        <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</source>
+        <target>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}.pt</target>
+      </segment>
+    </unit>
+    <unit id="7282916492820826755">
+      <notes>
+        <note category="location">src/app/home/home.component.html:7</note>
+      </notes>
+      <segment>
+        <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></source>
+        <target>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>.pt</target>
+      </segment>
+    </unit>
+    <unit id="7842238767399919809">
+      <notes>
+        <note category="location">src/app/home/home.component.html:13</note>
+      </notes>
+      <segment>
+        <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
+        <target>{VAR_SELECT, select, male {male} female {female} other {other}}.pt</target>
+      </segment>
+    </unit>
+    <unit id="8719020961091149048">
+      <notes>
+        <note category="location">src/app/home/home.component.html:13</note>
+      </notes>
+      <segment>
+        <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></source>
+        <target>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/>.pt</target>
+      </segment>
+    </unit>
+    <unit id="4654714685343745812">
+      <notes>
+        <note category="location">src/app/not-found/not-found.component.html:1</note>
+      </notes>
+      <segment>
+        <source>app.not_found</source>
+        <target>app.not_found.pt</target>
+      </segment>
+    </unit>
+    <unit id="5335356958891281272">
+      <notes>
+        <note category="location">src/app/header/header.component.html:3</note>
+      </notes>
+      <segment>
+        <source>app.nav.home</source>
+        <target>app.nav.home.pt</target>
+      </segment>
+    </unit>
+    <unit id="8215035420062173710">
+      <notes>
+        <note category="location">src/app/header/header.component.html:10</note>
+      </notes>
+      <segment>
+        <source>app.nav.dummy</source>
+        <target>app.nav.dummy.pt</target>
+      </segment>
+    </unit>
+    <unit id="8856170510253505863">
+      <notes>
+        <note category="location">src/app/header/header.component.html:13</note>
+      </notes>
+      <segment>
+        <source>app.nav.dumb</source>
+        <target>app.nav.dumb.pt</target>
+      </segment>
+    </unit>
+    <unit id="7563047614717127693">
+      <notes>
+        <note category="location">src/app/header/header.component.html:16</note>
+        <note category="location">src/app/header/header.component.html:18</note>
+      </notes>
+      <segment>
+        <source>app.nav.dumber</source>
+        <target>app.nav.dumber.pt</target>
+      </segment>
+    </unit>
+    <unit id="6010898872571258196">
+      <notes>
+        <note category="location">src/app/header/header.component.html:19</note>
+      </notes>
+      <segment>
+        <source>app.nav.dumber_with_id</source>
+        <target>app.nav.dumber_with_id.pt</target>
+      </segment>
+    </unit>
+    <unit id="6435547741974795170">
+      <notes>
+        <note category="location">src/app/footer/footer.component.ts:10</note>
+      </notes>
+      <segment>
+        <source>app.footer.text</source>
+        <target>app.footer.text.pt</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

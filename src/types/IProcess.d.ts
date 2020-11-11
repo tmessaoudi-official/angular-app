@@ -1,0 +1,3 @@
+interface IProcess {
+  env: IProcessEnv;
+}

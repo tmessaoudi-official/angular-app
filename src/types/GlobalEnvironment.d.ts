@@ -1,0 +1,3 @@
+interface GlobalEnvironment {
+  process: IProcess;
+}

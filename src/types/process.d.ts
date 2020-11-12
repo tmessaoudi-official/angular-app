@@ -1,1 +1,1 @@
-declare var process: IProcess;
+declare var process: NodeJS.Process;

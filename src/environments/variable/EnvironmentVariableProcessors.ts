@@ -30,7 +30,7 @@ export class EnvironmentVariableProcessors {
     try {
       json = JSON.parse(value);
     } catch (exception) {
-      if (processEnv.APP_DEBUG === true) {
+      if (processEnv.APP_DEBUG === 'true') {
         console.warn(' ** Environment variable \'' + name + '\' contains invalid json');
         console.warn(exception);
         console.warn(fail);

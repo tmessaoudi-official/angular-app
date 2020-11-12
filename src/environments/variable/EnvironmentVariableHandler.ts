@@ -104,7 +104,7 @@ export class EnvironmentVariableHandler {
       }
 
       if (varValue === this.getUnprocessedValue(matches.groups.varName) && this.getDefaultValue(matches.groups.varName) === undefined) {
-        if (processEnv.APP_DEBUG === true) {
+        if (processEnv.APP_DEBUG === 'true') {
           console.warn(' ** Environment variable \'' + varValue + '\' is undefined, going to use an empty string instead !!');
         }
         varValue = '';

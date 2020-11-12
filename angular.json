@@ -54,6 +54,7 @@
             "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "i18nFormat": "xlf2",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig/tsconfig.app.json",
             "budgets": [
@@ -106,11 +107,20 @@
             "localize": {
               "localize": true
             },
+            "format": {
+              "format": "xlf2"
+            },
+            "aot": {
+              "aot": true
+            },
+            "no-aot": {
+              "aot": false
+            },
             "watch": {
               "watch": true
             },
             "no-base-href": {
-              "baseHref": "/",
+              "baseHref": "",
               "outputPath": "dist"
             },
             "ignore-i18n": {
@@ -292,38 +302,38 @@
               "path": "webpack.config.js"
             },
             "liveReload": true,
-            "browserTarget": "localization:build:dev,ignore-i18n,home-locale,home,no-base-href,home-config"
+            "browserTarget": "localization:build:dev,ignore-i18n,home-locale,home,no-base-href,home-config,aot"
           },
           "configurations": {
             "open": {
               "open": true
             },
             "dev": {
-              "browserTarget": "localization:build:dev,ignore-i18n,home-locale,home,no-base-href,home-config"
+              "browserTarget": "localization:build:dev,ignore-i18n,home-locale,home,no-base-href,aot"
             },
             "home": {
-              "browserTarget": "localization:build:dev,ignore-i18n,home-locale,home,no-base-href,home-config"
+              "browserTarget": "localization:build:dev,ignore-i18n,home-locale,home,no-base-href,home-config,aot"
             },
             "en": {
-              "browserTarget": "localization:build:dev,ignore-i18n,en-locale,en,no-base-href,en-config"
+              "browserTarget": "localization:build:dev,ignore-i18n,en-locale,en,no-base-href,aot"
             },
             "fr": {
-              "browserTarget": "localization:build:dev,ignore-i18n,fr-locale,fr,no-base-href,fr-config"
+              "browserTarget": "localization:build:dev,ignore-i18n,fr-locale,fr,no-base-href,aot"
             },
             "de": {
-              "browserTarget": "localization:build:dev,ignore-i18n,fr-locale,fr,no-base-href,fr-config"
+              "browserTarget": "localization:build::dev,ignore-i18n,fr-locale,fr,no-base-href,aot"
             },
             "es": {
-              "browserTarget": "localization:build:dev,ignore-i18n,es-locale,es,no-base-href,es-config"
+              "browserTarget": "localization:build:dev,ignore-i18n,es-locale,es,no-base-href,aot"
             },
             "ar": {
-              "browserTarget": "localization:build:dev,ignore-i18n,ar-locale,ar,no-base-href,ar-config"
+              "browserTarget": "localization:build:dev,ignore-i18n,ar-locale,ar,no-base-href,aot"
             },
             "pt": {
-              "browserTarget": "localization:build:dev,ignore-i18n,pt-locale,pt,no-base-href,pt-config"
+              "browserTarget": "localization:build:dev,ignore-i18n,pt-locale,pt,no-base-href,aot"
             },
             "it": {
-              "browserTarget": "localization:build:dev,ignore-i18n,it-locale,it,no-base-href,it-config"
+              "browserTarget": "localization:build:dev,ignore-i18n,it-locale,it,no-base-href,aot"
             }
           }
         },
@@ -478,6 +488,30 @@
             },
             "it": {
               "devServerTarget": "localization:serve:it"
+            }
+          }
+        },
+        "xliffmerge": {
+          "builder": "@ngx-i18nsupport/tooling:xliffmerge",
+          "options": {
+            "format": "xlf2",
+            "i18nFormat": "xlf2",
+            "xliffmergeOptions": {
+              "i18nFormat": "xlf2",
+              "format": "xlf2",
+              "srcDir": "translations",
+              "genDir": "translations",
+              "defaultLanguage": "home",
+              "languages": [
+                "home",
+                "en",
+                "fr",
+                "ar",
+                "de",
+                "es",
+                "pt",
+                "it"
+              ]
             }
           }
         }

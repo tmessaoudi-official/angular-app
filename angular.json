@@ -119,6 +119,14 @@
             "experimental-rollup-pass": {
               "experimentalRollupPass": true
             },
+            "dummy-env": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dummy.ts"
+                }
+              ]
+            },
             "home": {
               "outputPath": "dist",
               "baseHref": ""
@@ -133,13 +141,7 @@
             },
             "home-config": {
               "tsConfig": "tsconfig/tsconfig.home.json",
-              "main": "src/i18n/main/main.home.ts",
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.dummy.ts"
-                }
-              ]
+              "main": "src/i18n/main/main.home.ts"
             },
             "en": {
               "outputPath": "dist",
@@ -234,38 +236,38 @@
               "path": "webpack.config.js"
             },
             "liveReload": true,
-            "browserTarget": "localization:build:dev,home"
+            "browserTarget": "localization:build:dev,ignore-i18n,home-locale,home,no-base-href,home-config"
           },
           "configurations": {
             "open": {
               "open": true
             },
             "dev": {
-              "browserTarget": "localization:build:dev"
+              "browserTarget": "localization:build:dev,ignore-i18n,home-locale,home,no-base-href,home-config"
             },
             "home": {
-              "browserTarget": "localization:build:dev,home"
+              "browserTarget": "localization:build:dev,ignore-i18n,home-locale,home,no-base-href,home-config"
             },
             "en": {
-              "browserTarget": "localization:build:dev,en"
+              "browserTarget": "localization:build:dev,ignore-i18n,en-locale,en,no-base-href,en-config"
             },
             "fr": {
-              "browserTarget": "localization:build:dev,fr"
+              "browserTarget": "localization:build:dev,ignore-i18n,fr-locale,fr,no-base-href,fr-config"
             },
             "de": {
-              "browserTarget": "localization:build:dev,de"
+              "browserTarget": "localization:build:dev,ignore-i18n,fr-locale,fr,no-base-href,fr-config"
             },
             "es": {
-              "browserTarget": "localization:build:dev,es"
+              "browserTarget": "localization:build:dev,ignore-i18n,es-locale,es,no-base-href,es-config"
             },
             "ar": {
-              "browserTarget": "localization:build:dev,ar"
+              "browserTarget": "localization:build:dev,ignore-i18n,ar-locale,ar,no-base-href,ar-config"
             },
             "pt": {
-              "browserTarget": "localization:build:dev,pt"
+              "browserTarget": "localization:build:dev,ignore-i18n,pt-locale,pt,no-base-href,pt-config"
             },
             "it": {
-              "browserTarget": "localization:build:dev,it"
+              "browserTarget": "localization:build:dev,ignore-i18n,it-locale,it,no-base-href,it-config"
             }
           }
         },
@@ -284,7 +286,7 @@
               "outFile": "messages.xlf2"
             },
             "home": {
-              "browserTarget": "localization:build:home",
+              "browserTarget": "localization:build:home,home-config,dummy-env",
               "outFile": "messages.home.xlf2"
             },
             "en": {

@@ -9,7 +9,6 @@ const environmentNaming = new EnvironmentNaming();
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-// tslint:disable-next-line:prefer-const
 let environment: IEnvironment = {};
 Object.keys(processEnv).forEach((item, index, arr) =>
 {

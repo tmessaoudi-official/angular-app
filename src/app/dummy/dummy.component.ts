@@ -1,6 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-// tslint:disable-next-line:no-import-side-effect
 import 'rxjs/add/operator/filter';
 
 @Component({

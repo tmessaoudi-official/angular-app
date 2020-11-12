@@ -25,12 +25,20 @@
       "parserOptions": {
         "project": [
           "tsconfig.*?.json",
-          "e2e/tsconfig.json"
+          "tsconfig/tsconfig.*?.json",
+          "e2e/tsconfig.json",
+          "e2e/tsconfig.*?.json",
+          "e2e/tsconfig/tsconfig.*?.json"
         ],
         "createDefaultProgram": true
       },
       "extends": ["plugin:@angular-eslint/recommended"],
       "rules": {
+        "max-len": ["error", { "code": 140 }],
+        "prefer-const": "warn",
+        "no-unused-expressions": "warn",
+        "no-unused-labels": "warn",
+        "no-unused-vars": "warn",
         /**
          * Any TypeScript related rules you wish to use/reconfigure over and above the
          * recommended set provided by the @angular-eslint project would go here.
@@ -69,7 +77,7 @@
          * There is an example below from ESLint core (note, this specific example is not
          * necessarily recommended for all projects):
          */
-        "max-len": ["error", { "code": 200 }]
+        "max-len": ["error", { "code": 300 }]
       }
     },
 
@@ -99,7 +107,14 @@
      */
     {
       "files": ["*.component.ts"],
-      "extends": ["plugin:@angular-eslint/template/process-inline-templates"]
+      "extends": ["plugin:@angular-eslint/template/process-inline-templates"],
+      "rules": {
+        "max-len": ["error", { "code": 140 }],
+        "prefer-const": "warn",
+        "no-unused-expressions": "warn",
+        "no-unused-labels": "warn",
+        "no-unused-vars": "warn"
+      }
     }
   ]
 }

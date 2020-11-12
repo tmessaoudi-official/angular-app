@@ -436,27 +436,12 @@
             ]
           }
         },
-        "tslint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig/tsconfig.app.json",
-              "tsconfig/tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
-        "eslint": {
+        "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
               "src/**/*.ts",
-              "src/**/*.js",
-              "src/**/*.component.html",
-              "src/**/*.component.scss"
+              "src/**/*.component.html"
             ]
           }
         },
@@ -466,8 +451,7 @@
             "protractorConfig": "e2e/protractor.conf.js"
           },
           "configurations": {
-            "selenium": {
-            },
+            "selenium": {},
             "dev": {
               "devServerTarget": "localization:serve:dev"
             },

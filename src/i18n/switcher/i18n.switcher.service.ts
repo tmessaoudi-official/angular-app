@@ -20,6 +20,36 @@ export class I18nSwitcherService {
       window.location.href = `/${locale}/${window.location.hash}`;
     }
   }
+  isLocaleDummy(): boolean {
+    let pathLocale = '';
+    if (environment.appI18nSwitcherCheckPathLocale === true) {
+      const splittedPathname = window.location.pathname.split('/');
+      if (splittedPathname[splittedPathname.length - 1] !== '') {
+        pathLocale = splittedPathname[splittedPathname.length - 1];
+      } else if (splittedPathname[splittedPathname.length - 2] !== '') {
+        pathLocale = splittedPathname[splittedPathname.length - 2];
+      }
+    }
+    if (environment.appDebug === true) {
+      console.log('pathLocale === environment.appI18nLocaleDummy');
+      console.log(pathLocale);
+      console.log(environment.appI18nLocaleDummy);
+      console.log(pathLocale === environment.appI18nLocaleDummy);
+      console.log('this.locale === environment.appI18nLocaleDummy');
+      console.log(this.locale === environment.appI18nLocaleDummy);
+      console.log(this.locale);
+      console.log(environment.appI18nLocaleDummy);
+      console.log('environment.appI18nIsLocaleDummy');
+      console.log(environment.appI18nIsLocaleDummy);
+      console.log('!this.locales.find(locale => locale.id === this.locale)');
+      console.log(!this.locales.find(locale => locale.id === this.locale));
+    }
+    return (
+      pathLocale === environment.appI18nLocaleDummy ||
+      this.locale === environment.appI18nLocaleDummy ||
+      environment.appI18nIsLocaleDummy ||
+      !this.locales.find(locale => locale.id === this.locale));
+  }
   init(): void {
     if (environment.appDebug === true) {
       console.log('this.locale');
@@ -34,19 +64,11 @@ export class I18nSwitcherService {
         this.switch();
       }
     } else if (environment.appI18nSwitcherBehaviour === 'default') {
-      let pathLocale = '';
-      if (environment.appI18nSwitcherCheckPathLocale === true) {
-        const splittedPathname = window.location.pathname.split('/');
-        if (splittedPathname[splittedPathname.length - 1] !== '') {
-          pathLocale = splittedPathname[splittedPathname.length - 1];
-        } else if (splittedPathname[splittedPathname.length - 2] !== '') {
-          pathLocale = splittedPathname[splittedPathname.length - 2];
-        }
+      if (environment.appDebug === true) {
+        console.log('this.isLocaleDummy()');
+        console.log(this.isLocaleDummy());
       }
-      if (
-        this.locale === environment.appI18nLocaleDummy ||
-        // eslint-disable-next-line max-len
-        (environment.appI18nSwitcherCheckPathLocale === true && pathLocale === environment.appI18nLocaleDummy) || !this.locales.find(locale => locale.id === this.locale)) {
+      if (this.isLocaleDummy()) {
         let targetLocale = '';
         if (!localStorage.getItem('locale')) {
           localStorage.setItem('locale', environment.appI18nLocaleDefault);

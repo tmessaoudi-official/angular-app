@@ -19,7 +19,7 @@ export class I18nLocaleService {
       id: this.locale,
       label: 'Dummy',
     };
-    if (this.locale === environment.appI18nLocaleDummy) {
+    if (this.locale === environment.appI18nLocaleDummy || environment.appI18nIsLocaleDummy) {
       return dummyLocale;
     }
     const foundLocale = this.locales.find(locale => locale.id === this.locale);
@@ -32,5 +32,9 @@ export class I18nLocaleService {
 
   getSupportedLocales(): Array<I18nLocale> {
     return this.locales.filter(locale => locale.id !== this.locale);
+  }
+
+  isLocaleDummy(): boolean {
+    return this.i18nSwitcherService.isLocaleDummy();
   }
 }

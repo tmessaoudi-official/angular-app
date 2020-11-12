@@ -55,7 +55,7 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "tsconfig/tsconfig.app.json",
             "budgets": [
               {
                 "type": "initial",
@@ -130,6 +130,16 @@
             "home-locale": {
               "i18nFile": "translations/messages.home.xlf2",
               "i18nLocale": "en"
+            },
+            "home-config": {
+              "tsConfig": "tsconfig/tsconfig.home.json",
+              "main": "src/i18n/main/main.home.ts",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dummy.ts"
+                }
+              ]
             },
             "en": {
               "outputPath": "dist",
@@ -315,7 +325,7 @@
             },
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
+            "tsConfig": "tsconfig/tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "codeCoverage": true,
             "assets": [
@@ -336,8 +346,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
+              "tsconfig/tsconfig.app.json",
+              "tsconfig/tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
             "exclude": [

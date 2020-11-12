@@ -17,7 +17,7 @@ Object.keys(processEnv).forEach((item, index, arr) =>
 });
 
 environment.production = environment.nodeEnv === 'production';
-environment.appI18nIsLocaleDummy = false;
+environment.appI18nIsLocaleDummy = true;
 
 if (environment.appDebug === true) {
   console.log('***** Environment : ');

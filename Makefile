@@ -17,7 +17,7 @@ build-dev:
 	APP_CONFIGURATION="--configuration=dev,delete-output-path,ignore-i18n,no-base-href,${APP_I18N_LOCALE_DEFAULT}-locale,${APP_I18N_LOCALE_DEFAULT}" EXEC_TARGET="build" make pnpm-run && APP_CONFIGURATION="--configuration=dev,ignore-i18n,localize" EXEC_TARGET="build" make pnpm-run
 build-production:
 	NODE_ENV_FORCE=production APP_ENV_RUN_BUILD=true APP_ENV_FORCE_REBUILD=true  make load-env --ignore-errors --keep-going --warn-undefined-variables
-	APP_CONFIGURATION="--configuration=production,delete-output-path,ignore-i18n,no-base-href,en-no-base-href" pnpm run build && APP_CONFIGURATION="--configuration=production,localize" EXEC_TARGET="build" make pnpm-run
+	APP_CONFIGURATION="--configuration=production,delete-output-path,no-base-href,${APP_I18N_LOCALE_DEFAULT}-locale,${APP_I18N_LOCALE_DEFAULT}" pnpm run build && APP_CONFIGURATION="--configuration=production,localize" EXEC_TARGET="build" make pnpm-run
 test-e2e:
 	NODE_ENV_FORCE=test APP_ENV_RUN_BUILD=true APP_ENV_FORCE_REBUILD=true make load-env --ignore-errors --keep-going --warn-undefined-variables
 	EXEC_TARGET="e2e" make pnpm-run

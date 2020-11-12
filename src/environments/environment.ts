@@ -21,6 +21,7 @@ environment.production = environment.nodeEnv === 'production';
 if (environment.appDebug === true) {
   console.log('***** Environment : ');
   console.log(environment);
+  console.log(processEnv);
 }
 
 export { environment };

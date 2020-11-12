@@ -8,6 +8,7 @@ import { I18nSwitcherService } from '../../../i18n/switcher/i18n.switcher.servic
 })
 export class AppHomeComponent implements OnInit{
 
+  // eslint-disable-next-line no-unused-vars
   constructor(public i18nSwitcherService: I18nSwitcherService) {
   }
 

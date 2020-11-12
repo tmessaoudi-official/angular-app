@@ -128,12 +128,11 @@
           <context context-type="sourcefile">src/app/header/header.component.html</context>
           <context context-type="linenumber">19</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="6435547741974795170" datatype="html">
-        <source>app.footer.text</source><target state="translated">app.footer.text_de</target>
+      </trans-unit><trans-unit id="3104991395163537922" datatype="html">
+        <source>app.footer.text <x id="PH" equiv-text="this.name"/></source><target state="translated">app.footer.text_de <x id="PH" equiv-text="this.name"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.ts</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.alert.close" datatype="html">

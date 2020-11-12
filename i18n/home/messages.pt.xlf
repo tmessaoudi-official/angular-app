@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="dummy" datatype="plaintext" original="ng2.template" target-language="pt">
+    <body>
+      <trans-unit id="9aa1b4905567705d277ba194d306a018cca74eb0" datatype="html">
+        <source>app.i18n.home.title</source><target state="new">app.i18n.home.title_home_pt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/i18n/home/app.home.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

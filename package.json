@@ -6,7 +6,7 @@
     "load-env": "ts-node ./webpack/dotenv/Loader.js",
     "serve": "ng serve ${APP_CONFIGURATION}",
     "build": "ng build ${APP_CONFIGURATION}",
-    "extract-i18n": "ng extract-i18n --i18n-format xlf2 --output-path i18n --i18n-locale home && ng run localization:xliffmerge",
+    "extract-i18n": "ng extract-i18n --i18n-format xlf --output-path i18n --i18n-locale home && ng run localization:xliffmerge && ng extract-i18n --configuration=home-source --i18n-format xlf --output-path i18n/home && ng run localization:xliffmerge-home",
     "extract-i18n-all": "APP_CONFIGURATION='--configuration=source' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-en' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-fr' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-ar' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-de' pnpm run extract-i18n &&APP_CONFIGURATION='--configuration=home-es' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-pt' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-it' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=en' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=fr' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=ar' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=es' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=de' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=pt' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=it' pnpm run extract-i18n",
     "lint": "ng lint",
     "test": "ng test",
@@ -18,7 +18,15 @@
     "start-de": "ng serve --configuration=de",
     "start-es": "ng serve --configuration=es",
     "start-pt": "ng serve --configuration=pt",
-    "start-it": "ng serve --configuration=it"
+    "start-it": "ng serve --configuration=it",
+    "start-dummy": "ng serve --configuration=dummy",
+    "start-home-en": "ng serve --configuration=home-en",
+    "start-home-fr": "ng serve --configuration=home-fr",
+    "start-home-ar": "ng serve --configuration=home-ar",
+    "start-home-de": "ng serve --configuration=home-de",
+    "start-home-es": "ng serve --configuration=home-es",
+    "start-home-pt": "ng serve --configuration=home-pt",
+    "start-home-it": "ng serve --configuration=home-it"
   },
   "private": true,
   "dependencies": {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { I18nSwitcherService } from '../../../i18n/switcher/i18n.switcher.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,12 @@ import { I18nSwitcherService } from '../../../i18n/switcher/i18n.switcher.servic
 export class AppHomeComponent implements OnInit{
 
   // eslint-disable-next-line no-unused-vars
-  constructor(public i18nSwitcherService: I18nSwitcherService) {
+  constructor(public i18nSwitcherService: I18nSwitcherService, private titleService: Title) {
+    this.setTitle();
+  }
+
+  public setTitle() {
+    this.titleService.setTitle($localize`app.index.title`);
   }
 
   ngOnInit(): void {

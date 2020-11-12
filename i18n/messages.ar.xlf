@@ -2,7 +2,13 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="home" datatype="plaintext" original="ng2.template" target-language="ar">
     <body>
-      <trans-unit id="ebbdff10cab1f9ccd7398277db35ad911cb0c69c" datatype="html">
+      <trans-unit id="8202903159216468577" datatype="html">
+        <source>app.index.title</source><target state="translated">app.index.title_ar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit><trans-unit id="ebbdff10cab1f9ccd7398277db35ad911cb0c69c" datatype="html">
         <source>app.dummy.title</source><target state="translated">app.dummy.title_ar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dummy/dummy.component.html</context>
@@ -14,6 +20,12 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dumb/dumb.component.html</context>
           <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit><trans-unit id="c56bb4585c947d4b8052308465684c7606fc39c0" datatype="html">
+        <source>app.dumb.title2</source><target state="translated">app.dumb.title2_ar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dumb/dumb.component.html</context>
+          <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
       <trans-unit id="da0f0d5b4a40c270dc7bd229f134d2457470106c" datatype="html">

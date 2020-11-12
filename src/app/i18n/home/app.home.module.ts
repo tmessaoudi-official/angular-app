@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, Title} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppHomeComponent } from './app.home.component';
@@ -10,7 +10,9 @@ import { AppHomeComponent } from './app.home.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    Title
+  ],
   bootstrap: [AppHomeComponent]
 })
 export class AppHomeModule { }

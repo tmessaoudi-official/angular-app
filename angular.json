@@ -524,38 +524,39 @@
         "xliffmerge": {
           "builder": "@ngx-i18nsupport/tooling:xliffmerge",
           "options": {
-            "xliffmergeOptions": {
-              "srcDir": "i18n",
-              "genDir": "i18n",
-              "defaultLanguage": "home",
-              "languages": [
-                "en",
-                "fr",
-                "ar",
-                "de",
-                "es",
-                "pt",
-                "it"
-              ]
-            }
-          }
-        },
-        "xliffmerge-home": {
-          "builder": "@ngx-i18nsupport/tooling:xliffmerge",
-          "options": {
-            "xliffmergeOptions": {
-              "srcDir": "i18n/home",
-              "genDir": "i18n/home",
-              "defaultLanguage": "home",
-              "languages": [
-                "en",
-                "fr",
-                "ar",
-                "de",
-                "es",
-                "pt",
-                "it"
-              ]
+          },
+          "configurations": {
+            "app": {
+              "xliffmergeOptions": {
+                "srcDir": "i18n",
+                "genDir": "i18n",
+                "defaultLanguage": "home",
+                "languages": [
+                  "en",
+                  "fr",
+                  "ar",
+                  "de",
+                  "es",
+                  "pt",
+                  "it"
+                ]
+              }
+            },
+            "home": {
+              "xliffmergeOptions": {
+                "srcDir": "i18n/home",
+                "genDir": "i18n/home",
+                "defaultLanguage": "home",
+                "languages": [
+                  "en",
+                  "fr",
+                  "ar",
+                  "de",
+                  "es",
+                  "pt",
+                  "it"
+                ]
+              }
             }
           }
         }

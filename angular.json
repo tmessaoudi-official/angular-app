@@ -546,7 +546,7 @@
             "xliffmergeOptions": {
               "srcDir": "i18n/home",
               "genDir": "i18n/home",
-              "defaultLanguage": "dummy",
+              "defaultLanguage": "home",
               "languages": [
                 "en",
                 "fr",

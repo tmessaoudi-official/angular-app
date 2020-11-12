@@ -13,10 +13,10 @@ let Loader = {
       }
       // eslint-disable-next-line max-len
       const envIncludes = Loader.populate(dotenv.parse(fs.readFileSync(fileName), {debug: Loader.handlers.processors.boolean.isTrue(process.env.NODE_DEBUG)}), fileName);
-      Loader.log('Loaded ' + fileName + ' vars successfully !!');
+      Loader.log('Loaded ' + fileName + ' vars successfully !!', 'info');
       Loader.include(envIncludes, fileName);
     } catch (exception) {
-      Loader.log('there was an exception loading ' + fileName + ' vars !!');
+      Loader.log('there was an exception loading ' + fileName + ' vars !!', 'error');
       //Loader.log(exception);
     }
   },
@@ -26,6 +26,7 @@ let Loader = {
     }
     if (typeof includes === 'string' && includes !== '') {
       includes.split(',').forEach(function (item, index) {
+        item = item.replace('${NODE_ENV}', Loader.unquote.value(process.env.NODE_ENV));
         if (item === fileName) {
           console.error('Circular reference detected, file \'' + item + '\' trying to include itself !!');
           process.exit(1);
@@ -177,6 +178,14 @@ let Loader = {
       switch (format) {
         case 'warn': {
           console.warn(message);
+          break;
+        }
+        case 'info': {
+          console.warn(message);
+          break;
+        }
+        case 'error': {
+          console.error(message);
           break;
         }
         case 'log':

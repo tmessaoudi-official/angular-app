@@ -10,13 +10,13 @@
       "i18n": {
         "sourceLocale": "home",
         "locales": {
-          "en": "translations/messages.en.xlf2",
-          "fr": "translations/messages.fr.xlf2",
-          "de": "translations/messages.de.xlf2",
-          "es": "translations/messages.es.xlf2",
-          "ar": "translations/messages.ar.xlf2",
-          "pt": "translations/messages.pt.xlf2",
-          "it": "translations/messages.it.xlf2"
+          "en": "i18n/messages.en.xlf2",
+          "fr": "i18n/messages.fr.xlf2",
+          "de": "i18n/messages.de.xlf2",
+          "es": "i18n/messages.es.xlf2",
+          "ar": "i18n/messages.ar.xlf2",
+          "pt": "i18n/messages.pt.xlf2",
+          "it": "i18n/messages.it.xlf2"
         }
       },
       "projectType": "application",
@@ -146,63 +146,63 @@
               "baseHref": "/home/"
             },
             "home-locale": {
-              "i18nFile": "translations/messages.home.xlf2",
+              "i18nFile": "i18n/messages.home.xlf2",
               "i18nLocale": "en"
             },
             "home-locale-en": {
-              "i18nFile": "translations/home/messages.en.xlf2",
+              "i18nFile": "i18n/home/messages.en.xlf2",
               "i18nLocale": "en"
             },
             "home-en": {
-              "i18nFile": "translations/messages.en.xlf2",
+              "i18nFile": "i18n/messages.en.xlf2",
               "i18nLocale": "en"
             },
             "home-locale-fr": {
-              "i18nFile": "translations/home/messages.fr.xlf2",
+              "i18nFile": "i18n/home/messages.fr.xlf2",
               "i18nLocale": "fr"
             },
             "home-fr": {
-              "i18nFile": "translations/messages.fr.xlf2",
+              "i18nFile": "i18n/messages.fr.xlf2",
               "i18nLocale": "fr"
             },
             "home-locale-ar": {
-              "i18nFile": "translations/home/messages.ar.xlf2",
+              "i18nFile": "i18n/home/messages.ar.xlf2",
               "i18nLocale": "ar"
             },
             "home-ar": {
-              "i18nFile": "translations/messages.ar.xlf2",
+              "i18nFile": "i18n/messages.ar.xlf2",
               "i18nLocale": "ar"
             },
             "home-locale-de": {
-              "i18nFile": "translations/home/messages.de.xlf2",
+              "i18nFile": "i18n/home/messages.de.xlf2",
               "i18nLocale": "de"
             },
             "home-de": {
-              "i18nFile": "translations/messages.de.xlf2",
+              "i18nFile": "i18n/messages.de.xlf2",
               "i18nLocale": "de"
             },
             "home-locale-es": {
-              "i18nFile": "translations/home/messages.es.xlf2",
+              "i18nFile": "i18n/home/messages.es.xlf2",
               "i18nLocale": "es"
             },
             "home-es": {
-              "i18nFile": "translations/messages.es.xlf2",
+              "i18nFile": "i18n/messages.es.xlf2",
               "i18nLocale": "es"
             },
             "home-locale-pt": {
-              "i18nFile": "translations/home/messages.pt.xlf2",
+              "i18nFile": "i18n/home/messages.pt.xlf2",
               "i18nLocale": "pt"
             },
             "home-pt": {
-              "i18nFile": "translations/messages.pt.xlf2",
+              "i18nFile": "i18n/messages.pt.xlf2",
               "i18nLocale": "pt"
             },
             "home-locale-it": {
-              "i18nFile": "translations/home/messages.it.xlf2",
+              "i18nFile": "i18n/home/messages.it.xlf2",
               "i18nLocale": "it"
             },
             "home-it": {
-              "i18nFile": "translations/messages.it.xlf2",
+              "i18nFile": "i18n/messages.it.xlf2",
               "i18nLocale": "it"
             },
             "home-config": {
@@ -218,7 +218,7 @@
               "baseHref": "/en/"
             },
             "en-locale": {
-              "i18nFile": "translations/messages.en.xlf2",
+              "i18nFile": "i18n/messages.en.xlf2",
               "i18nLocale": "en"
             },
             "fr": {
@@ -230,7 +230,7 @@
               "baseHref": "/fr/"
             },
             "fr-locale": {
-              "i18nFile": "translations/messages.fr.xlf2",
+              "i18nFile": "i18n/messages.fr.xlf2",
               "i18nLocale": "fr"
             },
             "de": {
@@ -242,7 +242,7 @@
               "baseHref": "/de/"
             },
             "de-locale": {
-              "i18nFile": "translations/messages.de.xlf2",
+              "i18nFile": "i18n/messages.de.xlf2",
               "i18nLocale": "de"
             },
             "es": {
@@ -254,7 +254,7 @@
               "baseHref": "/es/"
             },
             "es-locale": {
-              "i18nFile": "translations/messages.es.xlf2",
+              "i18nFile": "i18n/messages.es.xlf2",
               "i18nLocale": "es"
             },
             "ar": {
@@ -266,7 +266,7 @@
               "baseHref": "/ar/"
             },
             "ar-locale": {
-              "i18nFile": "translations/messages.ar.xlf2",
+              "i18nFile": "i18n/messages.ar.xlf2",
               "i18nLocale": "ar"
             },
             "pt": {
@@ -278,7 +278,7 @@
               "baseHref": "/pt/"
             },
             "pt-locale": {
-              "i18nFile": "translations/messages.pt.xlf2",
+              "i18nFile": "i18n/messages.pt.xlf2",
               "i18nLocale": "pt"
             },
             "it": {
@@ -290,7 +290,7 @@
               "baseHref": "/it/"
             },
             "it-locale": {
-              "i18nFile": "translations/messages.it.xlf2",
+              "i18nFile": "i18n/messages.it.xlf2",
               "i18nLocale": "it"
             }
           }
@@ -341,7 +341,7 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "localization:build:home",
-            "outputPath": "translations",
+            "outputPath": "i18n",
             "outFile": "messages.xlf2",
             "format": "xlf2",
             "ivy": true
@@ -353,42 +353,42 @@
             },
             "home": {
               "browserTarget": "localization:build:home,home-config,dummy-env",
-              "outputPath": "translations/home",
+              "outputPath": "i18n/home",
               "outFile": "messages.xlf2"
             },
             "home-en": {
               "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-en",
-              "outputPath": "translations/home",
+              "outputPath": "i18n/home",
               "outFile": "messages.en.xlf2"
             },
             "home-fr": {
               "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-fr",
-              "outputPath": "translations/home",
+              "outputPath": "i18n/home",
               "outFile": "messages.fr.xlf2"
             },
             "home-ar": {
               "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-ar",
-              "outputPath": "translations/home",
+              "outputPath": "i18n/home",
               "outFile": "messages.ar.xlf2"
             },
             "home-de": {
               "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-de",
-              "outputPath": "translations/home",
+              "outputPath": "i18n/home",
               "outFile": "messages.de.xlf2"
             },
             "home-es": {
               "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-es",
-              "outputPath": "translations/home",
+              "outputPath": "i18n/home",
               "outFile": "messages.es.xlf2"
             },
             "home-pt": {
               "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-pt",
-              "outputPath": "translations/home",
+              "outputPath": "i18n/home",
               "outFile": "messages.pt.xlf2"
             },
             "home-it": {
               "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-it",
-              "outputPath": "translations/home",
+              "outputPath": "i18n/home",
               "outFile": "messages.it.xlf2"
             },
             "en": {
@@ -499,8 +499,8 @@
             "xliffmergeOptions": {
               "i18nFormat": "xlf2",
               "format": "xlf2",
-              "srcDir": "translations",
-              "genDir": "translations",
+              "srcDir": "i18n",
+              "genDir": "i18n",
               "defaultLanguage": "home",
               "languages": [
                 "home",

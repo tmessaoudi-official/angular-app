@@ -6,7 +6,7 @@
     "load-env": "ts-node ./webpack/dotenv/Loader.js",
     "serve": "ng serve ${APP_CONFIGURATION}",
     "build": "ng build ${APP_CONFIGURATION}",
-    "extract-i18n": "ng extract-i18n --i18n-format xlf2 --output-path translations --i18n-locale home && ng run localization:xliffmerge",
+    "extract-i18n": "ng extract-i18n --i18n-format xlf2 --output-path i18n --i18n-locale home && ng run localization:xliffmerge",
     "extract-i18n-all": "APP_CONFIGURATION='--configuration=source' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-en' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-fr' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-ar' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-de' pnpm run extract-i18n &&APP_CONFIGURATION='--configuration=home-es' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-pt' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=home-it' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=en' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=fr' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=ar' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=es' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=de' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=pt' pnpm run extract-i18n && APP_CONFIGURATION='--configuration=it' pnpm run extract-i18n",
     "lint": "ng lint",
     "test": "ng test",

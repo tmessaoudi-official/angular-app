@@ -2,7 +2,7 @@ dependencies:
   '@angular/animations': 11.0.0_@angular+core@11.0.0
   '@angular/common': 11.0.0_@angular+core@11.0.0+rxjs@6.6.3
   '@angular/compiler': 11.0.0
-  '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.10.3
+  '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.11.3
   '@angular/forms': 11.0.0_3d057ad4c131b6740cb10a342c39f451
   '@angular/localize': 11.0.0_5daa22b914d5daf7a4e26fc0a4b4e2dc
   '@angular/platform-browser': 11.0.0_a78744c44c11e63c040b2a4f3719025e
@@ -20,7 +20,7 @@ dependencies:
   rxjs-compat: 6.6.3
   systemjs: 6.7.1
   tslib: 2.0.3
-  zone.js: 0.10.3
+  zone.js: 0.11.3
 devDependencies:
   '@angular-builders/custom-webpack': 10.0.1_3851d01195378e14f5566e995a68fadc
   '@angular-builders/dev-server': 7.3.1_f1ac832c9183b9e219a5390d54932585
@@ -459,7 +459,7 @@ packages:
       integrity: sha512-1bszhoe2QEUK6R1PmuLgu1xHivmDNHZVvQDlXN2HIfE74xGLsMnEKvVmUIX2MFCJKJTRyhvxinLN+F86lRcofg==
   /@angular/animations/11.0.0_@angular+core@11.0.0:
     dependencies:
-      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.10.3
+      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.11.3
       tslib: 2.0.3
     dev: false
     peerDependencies:
@@ -499,7 +499,7 @@ packages:
       integrity: sha512-U9sh9r1CSqS78QjuosM3JDXUUTf8eVP1+kSchWEsxjJ0kfdvj7PvtKD1kmRH7HA5lD2q7QfGEvfHpfxMVzKxRg==
   /@angular/common/11.0.0_@angular+core@11.0.0+rxjs@6.6.3:
     dependencies:
-      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.10.3
+      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.11.3
       rxjs: 6.6.3
       tslib: 2.0.3
     dev: false
@@ -550,11 +550,11 @@ packages:
       tslib: ^1.10.0
     resolution:
       integrity: sha512-ctjwuntPfZZT2mNj2NDIVu51t9cvbhl/16epc5xEwyzyDt76pX9UgwvY+MbXrf/C/FWwdtmNtfP698BKI+9leQ==
-  /@angular/core/11.0.0_rxjs@6.6.3+zone.js@0.10.3:
+  /@angular/core/11.0.0_rxjs@6.6.3+zone.js@0.11.3:
     dependencies:
       rxjs: 6.6.3
       tslib: 2.0.3
-      zone.js: 0.10.3
+      zone.js: 0.11.3
     dev: false
     peerDependencies:
       rxjs: ^6.5.3
@@ -576,7 +576,7 @@ packages:
   /@angular/forms/11.0.0_3d057ad4c131b6740cb10a342c39f451:
     dependencies:
       '@angular/common': 11.0.0_@angular+core@11.0.0+rxjs@6.6.3
-      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.10.3
+      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.11.3
       '@angular/platform-browser': 11.0.0_a78744c44c11e63c040b2a4f3719025e
       rxjs: 6.6.3
       tslib: 2.0.3
@@ -608,7 +608,7 @@ packages:
     dependencies:
       '@angular/common': 11.0.0_@angular+core@11.0.0+rxjs@6.6.3
       '@angular/compiler': 11.0.0
-      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.10.3
+      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.11.3
       '@angular/platform-browser': 11.0.0_a78744c44c11e63c040b2a4f3719025e
       tslib: 2.0.3
     dev: false
@@ -623,7 +623,7 @@ packages:
     dependencies:
       '@angular/animations': 11.0.0_@angular+core@11.0.0
       '@angular/common': 11.0.0_@angular+core@11.0.0+rxjs@6.6.3
-      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.10.3
+      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.11.3
       tslib: 2.0.3
     dev: false
     peerDependencies:
@@ -638,7 +638,7 @@ packages:
   /@angular/router/11.0.0_3d057ad4c131b6740cb10a342c39f451:
     dependencies:
       '@angular/common': 11.0.0_@angular+core@11.0.0+rxjs@6.6.3
-      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.10.3
+      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.11.3
       '@angular/platform-browser': 11.0.0_a78744c44c11e63c040b2a4f3719025e
       rxjs: 6.6.3
       tslib: 2.0.3
@@ -2375,7 +2375,7 @@ packages:
   /@ng-bootstrap/ng-bootstrap/8.0.0_5b232ccb1759f19d597f6aa0fa7df453:
     dependencies:
       '@angular/common': 11.0.0_@angular+core@11.0.0+rxjs@6.6.3
-      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.10.3
+      '@angular/core': 11.0.0_rxjs@6.6.3+zone.js@0.11.3
       '@angular/forms': 11.0.0_3d057ad4c131b6740cb10a342c39f451
       '@angular/localize': 11.0.0_5daa22b914d5daf7a4e26fc0a4b4e2dc
       rxjs: 6.6.3
@@ -7922,7 +7922,7 @@ packages:
   /normalize-package-data/2.5.0:
     dependencies:
       hosted-git-info: 2.8.8
-      resolve: 1.19.0
+      resolve: 1.18.1
       semver: 5.7.1
       validate-npm-package-license: 3.0.4
     dev: true
@@ -11999,8 +11999,15 @@ packages:
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
   /zone.js/0.10.3:
+    dev: true
     resolution:
       integrity: sha512-LXVLVEq0NNOqK/fLJo3d0kfzd4sxwn2/h67/02pjCjfKDxgx1i9QqpvtHD8CrBnSSwMw5+dy11O7FRX5mkO7Cg==
+  /zone.js/0.11.3:
+    dependencies:
+      tslib: 2.0.3
+    dev: false
+    resolution:
+      integrity: sha512-Y4hTHoh4VcxU5BDGAqEoOnOiyT254w6CiHtpQxAJUSMZPyVgdbKf+5R7Mwz6xsPhMIeBXk5rTopRZDpjssTCUg==
 specifiers:
   '@angular-builders/custom-webpack': ^10.0.1
   '@angular-builders/dev-server': ^7.3.1
@@ -12057,4 +12064,4 @@ specifiers:
   tslib: ^2.0.0
   tslint: ~6.1
   typescript: ~4.0.2
-  zone.js: ~0.10.2
+  zone.js: ~0.11.3

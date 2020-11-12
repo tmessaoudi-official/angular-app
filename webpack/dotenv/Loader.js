@@ -15,8 +15,10 @@ let Loader = {
       const envIncludes = Loader.populate(dotenv.parse(fs.readFileSync(fileName), {debug: Loader.handlers.processors.boolean.isTrue(process.env.NODE_DEBUG)}), fileName);
       Loader.log('Loaded ' + fileName + ' vars successfully !!', 'info');
       Loader.include(envIncludes, fileName);
+      return 'success';
     } catch (exception) {
       Loader.log('there was an exception loading ' + fileName + ' vars !!', 'error');
+      return 'failed';
       //Loader.log(exception);
     }
   },
@@ -31,9 +33,11 @@ let Loader = {
           console.error('Circular reference detected, file \'' + item + '\' trying to include itself !!');
           process.exit(1);
         }
-        Loader.load(item);
+        let fileStatus = '';
+        fileStatus = Loader.load(item);
         if (!Loader.data.APP_ENV_LOADED_FILES.includes(item)) {
           Loader.data.APP_ENV_LOADED_FILES.push(item);
+          Loader.data.APP_ENV_LOADED_FILES_STATUS.push(fileStatus);
         }
       });
     }
@@ -168,7 +172,8 @@ let Loader = {
   },
   data: {
     APP_ENV_KEYS: [],
-    APP_ENV_LOADED_FILES: []
+    APP_ENV_LOADED_FILES: [],
+    APP_ENV_LOADED_FILES_STATUS: []
   },
   log: function (message, format = 'log') {
     if (typeof format !== 'string' || format === '') {
@@ -247,7 +252,7 @@ let Loader = {
     });
     Loader.log('     ----- Includes : ');
     Loader.data.APP_ENV_LOADED_FILES.forEach(function (item, index, arr) {
-      Loader.log('            -- ' + item);
+      Loader.log('            -- ' + item + ' : ' + Loader.data.APP_ENV_LOADED_FILES_STATUS[index]);
     });
   }
 }

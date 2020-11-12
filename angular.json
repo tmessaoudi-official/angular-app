@@ -117,67 +117,99 @@
               "experimentalRollupPass": true
             },
             "home": {
+              "outputPath": "dist",
+              "baseHref": ""
+            },
+            "home-base-href": {
               "outputPath": "dist/home",
               "baseHref": "/home/"
             },
-            "home-no-base-href": {
-              "i18nFile": "translations/messages.xlf2",
-              "i18nLocale": "home"
+            "home-locale": {
+              "i18nFile": "translations/messages.home.xlf2",
+              "i18nLocale": "en"
             },
             "en": {
-              "localize": [
-                "en"
-              ]
+              "outputPath": "dist",
+              "baseHref": ""
             },
-            "en-no-base-href": {
+            "en-base-href": {
+              "outputPath": "dist/en",
+              "baseHref": "/en/"
+            },
+            "en-locale": {
+              "i18nFile": "translations/messages.en.xlf2",
               "i18nLocale": "en"
             },
             "fr": {
-              "localize": [
-                "fr"
-              ]
+              "outputPath": "dist",
+              "baseHref": ""
             },
-            "fr-no-base-href": {
+            "fr-base-href": {
+              "outputPath": "dist/fr",
+              "baseHref": "/fr/"
+            },
+            "fr-locale": {
+              "i18nFile": "translations/messages.fr.xlf2",
               "i18nLocale": "fr"
             },
             "de": {
-              "localize": [
-                "de"
-              ]
+              "outputPath": "dist",
+              "baseHref": ""
             },
-            "de-no-base-href": {
+            "de-base-href": {
+              "outputPath": "dist/de",
+              "baseHref": "/de/"
+            },
+            "de-locale": {
+              "i18nFile": "translations/messages.de.xlf2",
               "i18nLocale": "de"
             },
             "es": {
-              "localize": [
-                "es"
-              ]
+              "outputPath": "dist",
+              "baseHref": ""
             },
-            "es-no-base-href": {
+            "es-base-href": {
+              "outputPath": "dist/es",
+              "baseHref": "/es/"
+            },
+            "es-locale": {
+              "i18nFile": "translations/messages.es.xlf2",
               "i18nLocale": "es"
             },
             "ar": {
-              "localize": [
-                "ar"
-              ]
+              "outputPath": "dist",
+              "baseHref": ""
             },
-            "ar-no-base-href": {
+            "ar-base-href": {
+              "outputPath": "dist/ar",
+              "baseHref": "/ar/"
+            },
+            "ar-locale": {
+              "i18nFile": "translations/messages.ar.xlf2",
               "i18nLocale": "ar"
             },
             "pt": {
-              "localize": [
-                "pt"
-              ]
+              "outputPath": "dist",
+              "baseHref": ""
             },
-            "pt-no-base-href": {
+            "pt-base-href": {
+              "outputPath": "dist/pt",
+              "baseHref": "/pt/"
+            },
+            "pt-locale": {
+              "i18nFile": "translations/messages.pt.xlf2",
               "i18nLocale": "pt"
             },
             "it": {
-              "localize": [
-                "it"
-              ]
+              "outputPath": "dist",
+              "baseHref": ""
             },
-            "it-no-base-href": {
+            "it-base-href": {
+              "outputPath": "dist/it",
+              "baseHref": "/it/"
+            },
+            "it-locale": {
+              "i18nFile": "translations/messages.it.xlf2",
               "i18nLocale": "it"
             }
           }
@@ -234,9 +266,13 @@
             "ivy": true
           },
           "configurations": {
-            "home": {
+            "source": {
               "browserTarget": "localization:build:home",
               "outFile": "messages.xlf2"
+            },
+            "home": {
+              "browserTarget": "localization:build:home",
+              "outFile": "messages.home.xlf2"
             },
             "en": {
               "browserTarget": "localization:build:en",

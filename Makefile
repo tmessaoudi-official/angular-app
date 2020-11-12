@@ -1,6 +1,6 @@
 #!make
 
-export $(shell touch .env.local.build)
+export $(shell pnpm pnpm run load-env )
 include .env.local.build
 export $(shell sed 's/=.*//' .env.local.build)
 

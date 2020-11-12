@@ -2,43 +2,62 @@ const fs = require('fs');
 let dotenv = require('dotenv');
 
 let Loader = {
-  load: function (fileName = './.env') {
+  load: function (fileName = './.env', included = '') {
     if (typeof fileName !== 'string' || fileName === '') {
       fileName = './.env';
     }
+    if (typeof included !== 'string' || included === '') {
+      included = false;
+    }
     try {
-      if (Loader.data.APP_ENV_LOADED_FILES.includes(fileName)) {
+      if (Object.keys(Loader.data.APP_ENV_FILES_ALL_LOADED.included).includes(fileName)) {
         console.warn('File \'' + fileName + '\' already loaded !!');
         return;
       }
       // eslint-disable-next-line max-len
       const envIncludes = Loader.populate(dotenv.parse(fs.readFileSync(fileName), {debug: Loader.handlers.processors.boolean.isTrue(process.env.NODE_DEBUG)}), fileName);
-      Loader.log('Loaded ' + fileName + ' vars successfully !!', 'info');
+      Loader.debug.status.debugFileLoad(fileName, 'success', included);
+      //Loader.log('Loaded ' + fileName + ' vars successfully !!', 'info');
       Loader.include(envIncludes, fileName);
-      return 'success';
     } catch (exception) {
-      Loader.log('there was an exception loading ' + fileName + ' vars !!', 'error');
-      return 'failed';
+      //Loader.log('there was an exception loading ' + fileName + ' vars !!', 'error');
+      Loader.debug.status.debugFileLoad(fileName, 'failure', included, exception);
       //Loader.log(exception);
     }
   },
-  include: function (includes, fileName) {
-    if (typeof fileName !== 'string' || fileName === '') {
-      fileName = '';
+  debug: {
+    status: {
+      debugFileLoad: function (fileName, status, parent, exception = false) {
+        if (typeof exception === 'undefined' || exception === null) {
+          exception = false;
+        }
+        if (!Object.keys(Loader.data.APP_ENV_FILES_ALL_LOADED.used).includes(fileName)) {
+          Loader.data.APP_ENV_FILES_ALL_LOADED.used[fileName] = {status: status, from: parent, error: exception};
+        }
+        if (parent !== '' && parent !== false) {
+          if (!Loader.data.APP_ENV_FILES_ALL_LOADED.used.includes(fileName)) {
+            Loader.data.APP_ENV_FILES_ALL_LOADED.included[fileName] = Loader.data.APP_ENV_FILES_ALL_LOADED.used[fileName];
+          }
+        }
+      }
+    },
+    canDebug: function () {
+      // eslint-disable-next-line max-len
+      return Loader.handlers.processors.boolean.isTrue(process.env.NODE_DEBUG) && (!Loader.handlers.processors.boolean.isFalse(process.env.NODE_DEBUG_FORCE) || typeof process.env.NODE_DEBUG_FORCE !== 'string')
+    }
+  },
+  include: function (includes, parentFile) {
+    if (typeof parentFile !== 'string' || parentFile === '') {
+      parentFile = '';
     }
     if (typeof includes === 'string' && includes !== '') {
       includes.split(',').forEach(function (item, index) {
         item = item.replace('${NODE_ENV}', Loader.unquote.value(process.env.NODE_ENV));
-        if (item === fileName) {
+        if (item === parentFile) {
           console.error('Circular reference detected, file \'' + item + '\' trying to include itself !!');
           process.exit(1);
         }
-        let fileStatus = '';
-        fileStatus = Loader.load(item);
-        if (!Loader.data.APP_ENV_LOADED_FILES.includes(item)) {
-          Loader.data.APP_ENV_LOADED_FILES.push(item);
-          Loader.data.APP_ENV_LOADED_FILES_STATUS.push(fileStatus);
-        }
+        Loader.load(item, parentFile);
       });
     }
   },
@@ -172,14 +191,17 @@ let Loader = {
   },
   data: {
     APP_ENV_KEYS: [],
-    APP_ENV_LOADED_FILES: [],
-    APP_ENV_LOADED_FILES_STATUS: []
+    APP_ENV_FILES_ALL_LOADED: {
+      included: [],
+      used: []
+    },
   },
   log: function (message, format = 'log') {
     if (typeof format !== 'string' || format === '') {
       format = 'log';
     }
-    if (Loader.handlers.processors.boolean.isTrue(process.env.NODE_DEBUG)) {
+    // eslint-disable-next-line max-len
+    if (Loader.debug.canDebug()) {
       switch (format) {
         case 'warn': {
           console.warn(message);
@@ -250,9 +272,15 @@ let Loader = {
       Loader.log('        ** : \'' + process.env[item] + '\'');
       Loader.log('        ** type : ' + typeof process.env[item]);
     });
+    Loader.log('     ----- All Used Files : ');
+    Object.keys(Loader.data.APP_ENV_FILES_ALL_LOADED.used).forEach(function (item, index, arr) {
+      // eslint-disable-next-line max-len
+      Loader.log('            -- ' + item + ' : ' + Loader.data.APP_ENV_FILES_ALL_LOADED.used[item].status + (Loader.data.APP_ENV_FILES_ALL_LOADED.used[item].from !== false ? (' , included by : ' + Loader.data.APP_ENV_FILES_ALL_LOADED.used[item].from) : ''), 'warn');
+    });
     Loader.log('     ----- Includes : ');
-    Loader.data.APP_ENV_LOADED_FILES.forEach(function (item, index, arr) {
-      Loader.log('            -- ' + item + ' : ' + Loader.data.APP_ENV_LOADED_FILES_STATUS[index]);
+    Object.keys(Loader.data.APP_ENV_FILES_ALL_LOADED.included).forEach(function (item, index, arr) {
+      // eslint-disable-next-line max-len
+      Loader.log('            -- ' + item + ' : ' + Loader.data.APP_ENV_FILES_ALL_LOADED.included[item].status + ' , included by : ' + Loader.data.APP_ENV_FILES_ALL_LOADED.included[item].from, 'warn');
     });
   }
 }

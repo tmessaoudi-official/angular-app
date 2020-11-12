@@ -81,7 +81,7 @@ let Loader = {
           if (newHandlers !== '') {
             newHandlers += ':';
           }
-          if (handlers.unHandledValue === '~APP_ENV_INCLUDES') {
+          if (handlers.unHandledValue === '~APP_PROCESS_ENV_INCLUDES') {
             // eslint-disable-next-line max-len
             item = typeof process.env[handlers.unHandledValue.replace('~', '')] === 'string' ? process.env[handlers.unHandledValue.replace('~', '')] : '';
           } else {

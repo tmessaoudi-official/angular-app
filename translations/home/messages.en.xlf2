@@ -7,7 +7,7 @@
       </notes>
       <segment>
         <source>app.i18n.home.title</source>
-        <target>app.i18n.home.title.home</target>
+        <target>app.i18n.home.title_home_en</target>
       </segment>
     </unit>
   </file>

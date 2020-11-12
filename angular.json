@@ -139,6 +139,62 @@
               "i18nFile": "translations/messages.home.xlf2",
               "i18nLocale": "en"
             },
+            "home-locale-en": {
+              "i18nFile": "translations/home/messages.en.xlf2",
+              "i18nLocale": "en"
+            },
+            "home-en": {
+              "i18nFile": "translations/messages.en.xlf2",
+              "i18nLocale": "en"
+            },
+            "home-locale-fr": {
+              "i18nFile": "translations/home/messages.fr.xlf2",
+              "i18nLocale": "fr"
+            },
+            "home-fr": {
+              "i18nFile": "translations/messages.fr.xlf2",
+              "i18nLocale": "fr"
+            },
+            "home-locale-ar": {
+              "i18nFile": "translations/home/messages.ar.xlf2",
+              "i18nLocale": "ar"
+            },
+            "home-ar": {
+              "i18nFile": "translations/messages.ar.xlf2",
+              "i18nLocale": "ar"
+            },
+            "home-locale-de": {
+              "i18nFile": "translations/home/messages.de.xlf2",
+              "i18nLocale": "de"
+            },
+            "home-de": {
+              "i18nFile": "translations/messages.de.xlf2",
+              "i18nLocale": "de"
+            },
+            "home-locale-es": {
+              "i18nFile": "translations/home/messages.es.xlf2",
+              "i18nLocale": "es"
+            },
+            "home-es": {
+              "i18nFile": "translations/messages.es.xlf2",
+              "i18nLocale": "es"
+            },
+            "home-locale-pt": {
+              "i18nFile": "translations/home/messages.pt.xlf2",
+              "i18nLocale": "pt"
+            },
+            "home-pt": {
+              "i18nFile": "translations/messages.pt.xlf2",
+              "i18nLocale": "pt"
+            },
+            "home-locale-it": {
+              "i18nFile": "translations/home/messages.it.xlf2",
+              "i18nLocale": "it"
+            },
+            "home-it": {
+              "i18nFile": "translations/messages.it.xlf2",
+              "i18nLocale": "it"
+            },
             "home-config": {
               "tsConfig": "tsconfig/tsconfig.home.json",
               "main": "src/i18n/main/main.home.ts"
@@ -287,7 +343,43 @@
             },
             "home": {
               "browserTarget": "localization:build:home,home-config,dummy-env",
-              "outFile": "messages.home.xlf2"
+              "outputPath": "translations/home",
+              "outFile": "messages.xlf2"
+            },
+            "home-en": {
+              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-en",
+              "outputPath": "translations/home",
+              "outFile": "messages.en.xlf2"
+            },
+            "home-fr": {
+              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-fr",
+              "outputPath": "translations/home",
+              "outFile": "messages.fr.xlf2"
+            },
+            "home-ar": {
+              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-ar",
+              "outputPath": "translations/home",
+              "outFile": "messages.ar.xlf2"
+            },
+            "home-de": {
+              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-de",
+              "outputPath": "translations/home",
+              "outFile": "messages.de.xlf2"
+            },
+            "home-es": {
+              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-es",
+              "outputPath": "translations/home",
+              "outFile": "messages.es.xlf2"
+            },
+            "home-pt": {
+              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-pt",
+              "outputPath": "translations/home",
+              "outFile": "messages.pt.xlf2"
+            },
+            "home-it": {
+              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-it",
+              "outputPath": "translations/home",
+              "outFile": "messages.it.xlf2"
             },
             "en": {
               "browserTarget": "localization:build:en",

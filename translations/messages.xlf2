@@ -93,14 +93,6 @@
         <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></source>
       </segment>
     </unit>
-    <unit id="4654714685343745812">
-      <notes>
-        <note category="location">src/app/not-found/not-found.component.html:1</note>
-      </notes>
-      <segment>
-        <source>app.not_found</source>
-      </segment>
-    </unit>
     <unit id="5335356958891281272">
       <notes>
         <note category="location">src/app/header/header.component.html:3</note>
@@ -140,6 +132,14 @@
       </notes>
       <segment>
         <source>app.nav.dumber_with_id</source>
+      </segment>
+    </unit>
+    <unit id="4654714685343745812">
+      <notes>
+        <note category="location">src/app/not-found/not-found.component.html:1</note>
+      </notes>
+      <segment>
+        <source>app.not_found</source>
       </segment>
     </unit>
     <unit id="6435547741974795170">

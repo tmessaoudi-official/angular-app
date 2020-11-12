@@ -3,42 +3,42 @@
   <file source-language="home" datatype="plaintext" original="ng2.template" target-language="fr">
     <body>
       <trans-unit id="ebbdff10cab1f9ccd7398277db35ad911cb0c69c" datatype="html">
-        <source>app.dummy.title</source><target state="new">app.dummy.title_fr</target>
+        <source>app.dummy.title</source><target state="translated">app.dummy.title_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dummy/dummy.component.html</context>
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
       <trans-unit id="16faf855550ee45d0d6d7c7bbefd42a5cb7f996b" datatype="html">
-        <source>app.dumb.title</source><target state="new">app.dumb.title_fr</target>
+        <source>app.dumb.title</source><target state="translated">app.dumb.title_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dumb/dumb.component.html</context>
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
       <trans-unit id="da0f0d5b4a40c270dc7bd229f134d2457470106c" datatype="html">
-        <source>app.dumber.title</source><target state="new">app.dumber.title_fr</target>
+        <source>app.dumber.title</source><target state="translated">app.dumber.title_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dumber/dumber.component.html</context>
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d502f2b5b42107ece931a79a4379a947b423902e" datatype="html">
-        <source>app.home.title</source><target state="new">app.home.title_fr</target>
+        <source>app.home.title</source><target state="translated">app.home.title_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
       <trans-unit id="43f57f21002823c49a8d616196d1d1b740688bcb" datatype="html">
-        <source>app.welcome</source><target state="new">app.welcome_fr</target>
+        <source>app.welcome</source><target state="translated">app.welcome_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="app_welcome" datatype="html">
-        <source>app.welcome_with_meaning_and_description_and_id</source><target state="new">app.welcome_with_meaning_and_description_and_id_fr</target>
+        <source>app.welcome_with_meaning_and_description_and_id</source><target state="translated">app.welcome_with_meaning_and_description_and_id_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">5</context>
@@ -47,7 +47,7 @@
         <note priority="1" from="meaning">Meaning test</note>
       </trans-unit>
       <trans-unit id="app_welcome_second" datatype="html">
-        <source>app.welcome_with_meaning_and_description_and_id</source><target state="new">app.welcome_with_meaning_and_description_and_id_fr</target>
+        <source>app.welcome_with_meaning_and_description_and_id</source><target state="translated">app.welcome_with_meaning_and_description_and_id_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">6</context>
@@ -56,63 +56,63 @@
         <note priority="1" from="meaning">Meaning test welcome second</note>
       </trans-unit>
       <trans-unit id="e67309b8168b25feab8908890f7a5e43156a1f47" datatype="html">
-        <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<x id="INTERPOLATION"/>many}}</source><target state="new">{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<x id="INTERPOLATION"/>many}}_fr</target>
+        <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<x id="INTERPOLATION"/>many}}</source><target state="translated">{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<x id="INTERPOLATION"/>many}}_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="0f1d6c329cbced1f4702d7e40b0333c7c727cb76" datatype="html">
-        <source>app.minutes.<x id="ICU" equiv-text="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></source><target state="new">app.minutes.<x id="ICU" equiv-text="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>_fr</target>
+        <source>app.minutes.<x id="ICU" equiv-text="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></source><target state="translated">app.minutes.<x id="ICU" equiv-text="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="eff74b75ab7364b6fa888f1cbfae901aaaf02295" datatype="html">
-        <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source><target state="new">{VAR_SELECT, select, male {male} female {female} other {other}}_fr</target>
+        <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source><target state="translated">{VAR_SELECT, select, male {male} female {female} other {other}}_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="95e37e3fe6015f895503c28ce35a80de8a53eedf" datatype="html">
-        <source>app.gender.<x id="ICU" equiv-text="{gender, select, male {male} female {female} other {other}}"/></source><target state="new">app.gender.<x id="ICU" equiv-text="{gender, select, male {male} female {female} other {other}}"/>_fr</target>
+        <source>app.gender.<x id="ICU" equiv-text="{gender, select, male {male} female {female} other {other}}"/></source><target state="translated">app.gender.<x id="ICU" equiv-text="{gender, select, male {male} female {female} other {other}}"/>_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="e11f5c237f309fbf42a5a99a0104d7cbb0cd1a06" datatype="html">
-        <source>app.not_found</source><target state="new">app.not_found_fr</target>
+        <source>app.not_found</source><target state="translated">app.not_found_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.html</context>
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
       <trans-unit id="30d077144a23ecfb684d129ca7a837f9b90212b3" datatype="html">
-        <source>app.nav.home</source><target state="new">app.nav.home_fr</target>
+        <source>app.nav.home</source><target state="translated">app.nav.home_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/header/header.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ba1e0b2cd9afdfddb5996f2d82b62e361aae1f25" datatype="html">
-        <source>app.nav.dummy</source><target state="new">app.nav.dummy_fr</target>
+        <source>app.nav.dummy</source><target state="translated">app.nav.dummy_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/header/header.component.html</context>
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="89a97b37de8ec3c559711820e85b740eea1f0bf2" datatype="html">
-        <source>app.nav.dumb</source><target state="new">app.nav.dumb_fr</target>
+        <source>app.nav.dumb</source><target state="translated">app.nav.dumb_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/header/header.component.html</context>
           <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7204c5f6f7a592f247428812c4b72995a4c65cbb" datatype="html">
-        <source>app.nav.dumber</source><target state="new">app.nav.dumber_fr</target>
+        <source>app.nav.dumber</source><target state="translated">app.nav.dumber_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/header/header.component.html</context>
           <context context-type="linenumber">16</context>
@@ -123,21 +123,21 @@
         </context-group>
       </trans-unit>
       <trans-unit id="627ace853d5144f424ed07e1f61e8e8952288806" datatype="html">
-        <source>app.nav.dumber_with_id</source><target state="new">app.nav.dumber_with_id_fr</target>
+        <source>app.nav.dumber_with_id</source><target state="translated">app.nav.dumber_with_id_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/header/header.component.html</context>
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6435547741974795170" datatype="html">
-        <source>app.footer.text</source><target state="new">app.footer.text_fr</target>
+        <source>app.footer.text</source><target state="translated">app.footer.text_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.ts</context>
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.alert.close" datatype="html">
-        <source>Close</source><target state="new">Close_fr</target>
+        <source>Close</source><target state="translated">Close_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/alert/alert.ts</context>
           <context context-type="linenumber">55,58</context>
@@ -149,7 +149,7 @@
       </trans-unit>
       <trans-unit id="ngb.carousel.slide-number" datatype="html">
         <source> Slide <x id="INTERPOLATION" equiv-text="ate _pauseOnHov"/> of <x id="INTERPOLATION_1" equiv-text="ect(false);
-  p"/> </source><target state="new"> Slide <x id="INTERPOLATION" equiv-text="ate _pauseOnHov"/> of <x id="INTERPOLATION_1" equiv-text="ect(false);
+  p"/> </source><target state="translated"> Slide <x id="INTERPOLATION" equiv-text="ate _pauseOnHov"/> of <x id="INTERPOLATION_1" equiv-text="ect(false);
   p"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts</context>
@@ -158,21 +158,21 @@
         <note priority="1" from="description">Currently selected slide number read by screen reader</note>
       </trans-unit>
       <trans-unit id="ngb.carousel.previous" datatype="html">
-        <source>Previous</source><target state="new">Previous_fr</target>
+        <source>Previous</source><target state="translated">Previous_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts</context>
           <context context-type="linenumber">132,134</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.carousel.next" datatype="html">
-        <source>Next</source><target state="new">Next_fr</target>
+        <source>Next</source><target state="translated">Next_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts</context>
           <context context-type="linenumber">147,151</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.datepicker.previous-month" datatype="html">
-        <source>Previous month</source><target state="new">Previous month_fr</target>
+        <source>Previous month</source><target state="translated">Previous month_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
           <context context-type="linenumber">24,27</context>
@@ -183,7 +183,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.datepicker.next-month" datatype="html">
-        <source>Next month</source><target state="new">Next month_fr</target>
+        <source>Next month</source><target state="translated">Next month_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
           <context context-type="linenumber">44,48</context>
@@ -194,7 +194,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.datepicker.select-month" datatype="html">
-        <source>Select month</source><target state="new">Select month_fr</target>
+        <source>Select month</source><target state="translated">Select month_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
           <context context-type="linenumber">44,49</context>
@@ -205,7 +205,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.datepicker.select-year" datatype="html">
-        <source>Select year</source><target state="new">Select year_fr</target>
+        <source>Select year</source><target state="translated">Select year_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
           <context context-type="linenumber">59,63</context>
@@ -216,147 +216,147 @@
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.pagination.first" datatype="html">
-        <source>««</source><target state="new">««_fr</target>
+        <source>««</source><target state="translated">««_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
           <context context-type="linenumber">147,148</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.pagination.previous" datatype="html">
-        <source>«</source><target state="new">«_fr</target>
+        <source>«</source><target state="translated">«_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
           <context context-type="linenumber">153,154</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.pagination.next" datatype="html">
-        <source>»</source><target state="new">»_fr</target>
+        <source>»</source><target state="translated">»_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
           <context context-type="linenumber">158,159</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.pagination.last" datatype="html">
-        <source>»»</source><target state="new">»»_fr</target>
+        <source>»»</source><target state="translated">»»_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
           <context context-type="linenumber">164,165</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.pagination.first-aria" datatype="html">
-        <source>First</source><target state="new">First_fr</target>
+        <source>First</source><target state="translated">First_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
           <context context-type="linenumber">168,172</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.pagination.previous-aria" datatype="html">
-        <source>Previous</source><target state="new">Previous_fr</target>
+        <source>Previous</source><target state="translated">Previous_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
           <context context-type="linenumber">176,177</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.pagination.next-aria" datatype="html">
-        <source>Next</source><target state="new">Next_fr</target>
+        <source>Next</source><target state="translated">Next_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
           <context context-type="linenumber">188,189</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.pagination.last-aria" datatype="html">
-        <source>Last</source><target state="new">Last_fr</target>
+        <source>Last</source><target state="translated">Last_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
           <context context-type="linenumber">195,200</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.progressbar.value" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="turn this._max;"/></source><target state="new"><x id="INTERPOLATION" equiv-text="turn this._max;"/>_fr</target>
+        <source><x id="INTERPOLATION" equiv-text="turn this._max;"/></source><target state="translated"><x id="INTERPOLATION" equiv-text="turn this._max;"/>_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/progressbar/progressbar.ts</context>
           <context context-type="linenumber">31,38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.HH" datatype="html">
-        <source>HH</source><target state="new">HH_fr</target>
+        <source>HH</source><target state="translated">HH_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">46,47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.hours" datatype="html">
-        <source>Hours</source><target state="new">Hours_fr</target>
+        <source>Hours</source><target state="translated">Hours_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">50,51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.MM" datatype="html">
-        <source>MM</source><target state="new">MM_fr</target>
+        <source>MM</source><target state="translated">MM_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">55,58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.minutes" datatype="html">
-        <source>Minutes</source><target state="new">Minutes_fr</target>
+        <source>Minutes</source><target state="translated">Minutes_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">62,64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
-        <source>Increment hours</source><target state="new">Increment hours_fr</target>
+        <source>Increment hours</source><target state="translated">Increment hours_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">68,69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
-        <source>Decrement hours</source><target state="new">Decrement hours_fr</target>
+        <source>Decrement hours</source><target state="translated">Decrement hours_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">73,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
-        <source>Increment minutes</source><target state="new">Increment minutes_fr</target>
+        <source>Increment minutes</source><target state="translated">Increment minutes_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">80,82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
-        <source>Decrement minutes</source><target state="new">Decrement minutes_fr</target>
+        <source>Decrement minutes</source><target state="translated">Decrement minutes_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">86,88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.SS" datatype="html">
-        <source>SS</source><target state="new">SS_fr</target>
+        <source>SS</source><target state="translated">SS_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">91,92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.seconds" datatype="html">
-        <source>Seconds</source><target state="new">Seconds_fr</target>
+        <source>Seconds</source><target state="translated">Seconds_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
-        <source>Increment seconds</source><target state="new">Increment seconds_fr</target>
+        <source>Increment seconds</source><target state="translated">Increment seconds_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">103,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
-        <source>Decrement seconds</source><target state="new">Decrement seconds_fr</target>
+        <source>Decrement seconds</source><target state="translated">Decrement seconds_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">109,115</context>
@@ -365,7 +365,7 @@
       <trans-unit id="ngb.timepicker.PM" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="sible.
    */
-  "/></source><target state="new"><x id="INTERPOLATION" equiv-text="sible.
+  "/></source><target state="translated"><x id="INTERPOLATION" equiv-text="sible.
    */
   "/></target>
         <context-group purpose="location">
@@ -374,14 +374,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.AM" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="nts ControlValu"/></source><target state="new"><x id="INTERPOLATION" equiv-text="nts ControlValu"/>_fr</target>
+        <source><x id="INTERPOLATION" equiv-text="nts ControlValu"/></source><target state="translated"><x id="INTERPOLATION" equiv-text="nts ControlValu"/>_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
           <context context-type="linenumber">154,118</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.toast.close-aria" datatype="html">
-        <source>Close</source><target state="new">Close_fr</target>
+        <source>Close</source><target state="translated">Close_fr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/toast/toast.ts</context>
           <context context-type="linenumber">78,85</context>

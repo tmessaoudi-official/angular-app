@@ -3,7 +3,7 @@
   <file source-language="dummy" datatype="plaintext" original="ng2.template" target-language="pt">
     <body>
       <trans-unit id="9aa1b4905567705d277ba194d306a018cca74eb0" datatype="html">
-        <source>app.i18n.home.title</source><target state="new">app.i18n.home.title_home_pt</target>
+        <source>app.i18n.home.title</source><target state="translated">app.i18n.home.title_home_pt</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/i18n/home/app.home.component.html</context>
           <context context-type="linenumber">1</context>

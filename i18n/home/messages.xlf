@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="home" datatype="plaintext" original="ng2.template">
-    <body>
-      <trans-unit id="8202903159216468577" datatype="html">
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="home">
+  <file id="ngi18n" original="ng.template">
+    <unit id="8202903159216468577">
+      <notes>
+        <note category="location">src/app/i18n/home/app.home.component.ts:18</note>
+      </notes>
+      <segment>
         <source>app.index.title</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/i18n/home/app.home.component.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="9aa1b4905567705d277ba194d306a018cca74eb0" datatype="html">
+      </segment>
+    </unit>
+    <unit id="5714296720616960090">
+      <notes>
+        <note category="location">src/app/i18n/home/app.home.component.html:1</note>
+      </notes>
+      <segment>
         <source>app.i18n.home.title</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/i18n/home/app.home.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="d99583420dc1df2637a997920395a4262615f661" datatype="html">
+      </segment>
+    </unit>
+    <unit id="1531659539130803897">
+      <notes>
+        <note category="location">src/app/i18n/home/app.home.component.html:2</note>
+      </notes>
+      <segment>
         <source>app.i18n.home.title.xliffmerge</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/i18n/home/app.home.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="335b1fc048bcf63f6ad50fd3ee3cb775df93c8c8" datatype="html">
+      </segment>
+    </unit>
+    <unit id="7332266769578037876">
+      <notes>
+        <note category="location">src/app/i18n/home/app.home.component.html:3</note>
+      </notes>
+      <segment>
         <source>app.i18n.home.title.xliffmerge2</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/i18n/home/app.home.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
-    </body>
+      </segment>
+    </unit>
   </file>
 </xliff>

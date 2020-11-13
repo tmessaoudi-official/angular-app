@@ -106,9 +106,6 @@
             "localize": {
               "localize": true
             },
-            "format": {
-              "format": "xlf"
-            },
             "aot": {
               "aot": true
             },
@@ -358,7 +355,7 @@
             "browserTarget": "localization:build:home",
             "outputPath": "i18n",
             "outFile": "messages.xlf",
-            "format": "xlf",
+            "format": "xlf2",
             "ivy": true
           },
           "configurations": {
@@ -530,6 +527,8 @@
               "xliffmergeOptions": {
                 "srcDir": "i18n",
                 "genDir": "i18n",
+                "format": "xlf2",
+                "i18nFormat": "xlf2",
                 "defaultLanguage": "home",
                 "languages": [
                   "en",
@@ -546,6 +545,8 @@
               "xliffmergeOptions": {
                 "srcDir": "i18n/home",
                 "genDir": "i18n/home",
+                "format": "xlf2",
+                "i18nFormat": "xlf2",
                 "defaultLanguage": "home",
                 "languages": [
                   "en",

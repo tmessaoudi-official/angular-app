@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="dummy" datatype="plaintext" original="ng2.template" target-language="ar">
-    <body>
-      <trans-unit id="8202903159216468577" datatype="html">
-        <source>app.index.title</source><target state="translated">app.index.title_home_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/i18n/home/app.home.component.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-      </trans-unit><trans-unit id="9aa1b4905567705d277ba194d306a018cca74eb0" datatype="html">
-        <source>app.i18n.home.title</source><target state="translated">app.i18n.home.title_home_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/i18n/home/app.home.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit><trans-unit id="d99583420dc1df2637a997920395a4262615f661" datatype="html">
-        <source>app.i18n.home.title.xliffmerge</source><target state="translated">app.i18n.home.title.xliffmerge_home_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/i18n/home/app.home.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit><trans-unit id="335b1fc048bcf63f6ad50fd3ee3cb775df93c8c8" datatype="html">
-        <source>app.i18n.home.title.xliffmerge2</source><target state="translated">app.i18n.home.title.xliffmerge2_home_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/i18n/home/app.home.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
-    </body>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="home" trgLang="ar">
+  <file id="ngi18n" original="ng.template">
+    <unit id="8202903159216468577">
+      <notes>
+        <note category="location">src/app/i18n/home/app.home.component.ts:18</note>
+      </notes>
+      <segment state="translated">
+        <source>app.index.title</source>
+        <target>app.index.title_home_ar</target>
+      </segment>
+    </unit>
+    <unit id="5714296720616960090">
+      <notes>
+        <note category="location">src/app/i18n/home/app.home.component.html:1</note>
+      </notes>
+      <segment state="translated">
+        <source>app.i18n.home.title</source>
+        <target>app.i18n.home.title_home_ar</target>
+      </segment>
+    </unit>
+    <unit id="1531659539130803897">
+      <notes>
+        <note category="location">src/app/i18n/home/app.home.component.html:2</note>
+      </notes>
+      <segment state="translated">
+        <source>app.i18n.home.title.xliffmerge</source>
+        <target>app.i18n.home.title.xliffmerge_home_ar</target>
+      </segment>
+    </unit>
+    <unit id="7332266769578037876">
+      <notes>
+        <note category="location">src/app/i18n/home/app.home.component.html:3</note>
+      </notes>
+      <segment state="translated">
+        <source>app.i18n.home.title.xliffmerge2</source>
+        <target>app.i18n.home.title.xliffmerge2_home_ar</target>
+      </segment>
+    </unit>
   </file>
 </xliff>

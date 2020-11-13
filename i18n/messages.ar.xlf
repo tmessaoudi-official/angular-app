@@ -1,403 +1,488 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="home" datatype="plaintext" original="ng2.template" target-language="ar">
-    <body>
-      <trans-unit id="8202903159216468577" datatype="html">
-        <source>app.index.title</source><target state="translated">app.index.title_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.ts</context>
-          <context context-type="linenumber">16</context>
-        </context-group>
-      </trans-unit><trans-unit id="ebbdff10cab1f9ccd7398277db35ad911cb0c69c" datatype="html">
-        <source>app.dummy.title</source><target state="translated">app.dummy.title_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dummy/dummy.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="16faf855550ee45d0d6d7c7bbefd42a5cb7f996b" datatype="html">
-        <source>app.dumb.title</source><target state="translated">app.dumb.title_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dumb/dumb.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit><trans-unit id="c56bb4585c947d4b8052308465684c7606fc39c0" datatype="html">
-        <source>app.dumb.title2</source><target state="translated">app.dumb.title2_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dumb/dumb.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="da0f0d5b4a40c270dc7bd229f134d2457470106c" datatype="html">
-        <source>app.dumber.title</source><target state="translated">app.dumber.title_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dumber/dumber.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="d502f2b5b42107ece931a79a4379a947b423902e" datatype="html">
-        <source>app.home.title</source><target state="translated">app.home.title_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="43f57f21002823c49a8d616196d1d1b740688bcb" datatype="html">
-        <source>app.welcome</source><target state="translated">app.welcome_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="app_welcome" datatype="html">
-        <source>app.welcome_with_meaning_and_description_and_id</source><target state="translated">app.welcome_with_meaning_and_description_and_id_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-        <note priority="1" from="description">Description test</note>
-        <note priority="1" from="meaning">Meaning test</note>
-      </trans-unit>
-      <trans-unit id="app_welcome_second" datatype="html">
-        <source>app.welcome_with_meaning_and_description_and_id</source><target state="translated">app.welcome_with_meaning_and_description_and_id_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-        <note priority="1" from="description">Description test second</note>
-        <note priority="1" from="meaning">Meaning test welcome second</note>
-      </trans-unit>
-      <trans-unit id="e67309b8168b25feab8908890f7a5e43156a1f47" datatype="html">
-        <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<x id="INTERPOLATION"/>many}}</source><target state="translated">{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<x id="INTERPOLATION"/>many}}_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="0f1d6c329cbced1f4702d7e40b0333c7c727cb76" datatype="html">
-        <source>app.minutes.<x id="ICU" equiv-text="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></source><target state="translated">app.minutes.<x id="ICU" equiv-text="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="eff74b75ab7364b6fa888f1cbfae901aaaf02295" datatype="html">
-        <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source><target state="translated">{VAR_SELECT, select, male {male} female {female} other {other}}_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="95e37e3fe6015f895503c28ce35a80de8a53eedf" datatype="html">
-        <source>app.gender.<x id="ICU" equiv-text="{gender, select, male {male} female {female} other {other}}"/></source><target state="translated">app.gender.<x id="ICU" equiv-text="{gender, select, male {male} female {female} other {other}}"/>_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="e11f5c237f309fbf42a5a99a0104d7cbb0cd1a06" datatype="html">
-        <source>app.not_found</source><target state="translated">app.not_found_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/not-found/not-found.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="30d077144a23ecfb684d129ca7a837f9b90212b3" datatype="html">
-        <source>app.nav.home</source><target state="translated">app.nav.home_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ba1e0b2cd9afdfddb5996f2d82b62e361aae1f25" datatype="html">
-        <source>app.nav.dummy</source><target state="translated">app.nav.dummy_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">10</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="89a97b37de8ec3c559711820e85b740eea1f0bf2" datatype="html">
-        <source>app.nav.dumb</source><target state="translated">app.nav.dumb_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7204c5f6f7a592f247428812c4b72995a4c65cbb" datatype="html">
-        <source>app.nav.dumber</source><target state="translated">app.nav.dumber_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">16</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="627ace853d5144f424ed07e1f61e8e8952288806" datatype="html">
-        <source>app.nav.dumber_with_id</source><target state="translated">app.nav.dumber_with_id_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-      </trans-unit><trans-unit id="3104991395163537922" datatype="html">
-        <source>app.footer.text <x id="PH" equiv-text="this.name"/></source><target state="translated">app.footer.text_ar <x id="PH" equiv-text="this.name"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/footer/footer.component.ts</context>
-          <context context-type="linenumber">11</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.alert.close" datatype="html">
-        <source>Close</source><target state="translated">Close_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/alert/alert.ts</context>
-          <context context-type="linenumber">55,58</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/alert/alert.ts</context>
-          <context context-type="linenumber">70,71</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.carousel.slide-number" datatype="html">
-        <source> Slide <x id="INTERPOLATION" equiv-text="ate _pauseOnHov"/> of <x id="INTERPOLATION_1" equiv-text="ect(false);
-  p"/> </source><target state="translated"> Slide <x id="INTERPOLATION" equiv-text="ate _pauseOnHov"/> of <x id="INTERPOLATION_1" equiv-text="ect(false);
-  p"/> </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts</context>
-          <context context-type="linenumber">114,118</context>
-        </context-group>
-        <note priority="1" from="description">Currently selected slide number read by screen reader</note>
-      </trans-unit>
-      <trans-unit id="ngb.carousel.previous" datatype="html">
-        <source>Previous</source><target state="translated">Previous_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts</context>
-          <context context-type="linenumber">132,134</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.carousel.next" datatype="html">
-        <source>Next</source><target state="translated">Next_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts</context>
-          <context context-type="linenumber">147,151</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.datepicker.previous-month" datatype="html">
-        <source>Previous month</source><target state="translated">Previous month_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
-          <context context-type="linenumber">24,27</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
-          <context context-type="linenumber">34,35</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.datepicker.next-month" datatype="html">
-        <source>Next month</source><target state="translated">Next month_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
-          <context context-type="linenumber">44,48</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
-          <context context-type="linenumber">57,61</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.datepicker.select-month" datatype="html">
-        <source>Select month</source><target state="translated">Select month_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
-          <context context-type="linenumber">44,49</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
-          <context context-type="linenumber">49,50</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.datepicker.select-year" datatype="html">
-        <source>Select year</source><target state="translated">Select year_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
-          <context context-type="linenumber">59,63</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
-          <context context-type="linenumber">72,74</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.pagination.first" datatype="html">
-        <source>««</source><target state="translated">««_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
-          <context context-type="linenumber">147,148</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.pagination.previous" datatype="html">
-        <source>«</source><target state="translated">«_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
-          <context context-type="linenumber">153,154</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.pagination.next" datatype="html">
-        <source>»</source><target state="translated">»_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
-          <context context-type="linenumber">158,159</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.pagination.last" datatype="html">
-        <source>»»</source><target state="translated">»»_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
-          <context context-type="linenumber">164,165</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.pagination.first-aria" datatype="html">
-        <source>First</source><target state="translated">First_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
-          <context context-type="linenumber">168,172</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.pagination.previous-aria" datatype="html">
-        <source>Previous</source><target state="translated">Previous_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
-          <context context-type="linenumber">176,177</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.pagination.next-aria" datatype="html">
-        <source>Next</source><target state="translated">Next_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
-          <context context-type="linenumber">188,189</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.pagination.last-aria" datatype="html">
-        <source>Last</source><target state="translated">Last_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts</context>
-          <context context-type="linenumber">195,200</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.progressbar.value" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="turn this._max;"/></source><target state="translated"><x id="INTERPOLATION" equiv-text="turn this._max;"/>_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/progressbar/progressbar.ts</context>
-          <context context-type="linenumber">31,38</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.HH" datatype="html">
-        <source>HH</source><target state="translated">HH_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">46,47</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.hours" datatype="html">
-        <source>Hours</source><target state="translated">Hours_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">50,51</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.MM" datatype="html">
-        <source>MM</source><target state="translated">MM_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">55,58</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.minutes" datatype="html">
-        <source>Minutes</source><target state="translated">Minutes_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">62,64</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
-        <source>Increment hours</source><target state="translated">Increment hours_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">68,69</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
-        <source>Decrement hours</source><target state="translated">Decrement hours_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">73,74</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
-        <source>Increment minutes</source><target state="translated">Increment minutes_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">80,82</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
-        <source>Decrement minutes</source><target state="translated">Decrement minutes_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">86,88</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.SS" datatype="html">
-        <source>SS</source><target state="translated">SS_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">91,92</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.seconds" datatype="html">
-        <source>Seconds</source><target state="translated">Seconds_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">96</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
-        <source>Increment seconds</source><target state="translated">Increment seconds_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">103,104</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
-        <source>Decrement seconds</source><target state="translated">Decrement seconds_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">109,115</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.PM" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="sible.
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="home" trgLang="ar">
+  <file id="ngi18n" original="ng.template">
+    <unit id="8202903159216468577">
+      <notes>
+        <note category="location">src/app/app.component.ts:18</note>
+      </notes>
+      <segment state="translated">
+        <source>app.index.title</source>
+        <target>app.index.title_ar</target>
+      </segment>
+    </unit>
+    <unit id="4162997551392921684">
+      <notes>
+        <note category="location">src/app/dummy/dummy.component.html:1</note>
+      </notes>
+      <segment state="translated">
+        <source>app.dummy.title</source>
+        <target>app.dummy.title_ar</target>
+      </segment>
+    </unit>
+    <unit id="303063580277194129">
+      <notes>
+        <note category="location">src/app/dumb/dumb.component.html:1</note>
+      </notes>
+      <segment state="translated">
+        <source>app.dumb.title</source>
+        <target>app.dumb.title_ar</target>
+      </segment>
+    </unit>
+    <unit id="8280334145137016148">
+      <notes>
+        <note category="location">src/app/dumb/dumb.component.html:2</note>
+      </notes>
+      <segment state="translated">
+        <source>app.dumb.title2</source>
+        <target>app.dumb.title2_ar</target>
+      </segment>
+    </unit>
+    <unit id="7249072834034853576">
+      <notes>
+        <note category="location">src/app/dumber/dumber.component.html:1</note>
+      </notes>
+      <segment state="translated">
+        <source>app.dumber.title</source>
+        <target>app.dumber.title_ar</target>
+      </segment>
+    </unit>
+    <unit id="3141899919268928026">
+      <notes>
+        <note category="location">src/app/home/home.component.html:1</note>
+      </notes>
+      <segment state="translated">
+        <source>app.home.title</source>
+        <target>app.home.title_ar</target>
+      </segment>
+    </unit>
+    <unit id="636666793223463925">
+      <notes>
+        <note category="location">src/app/home/home.component.html:4</note>
+      </notes>
+      <segment state="translated">
+        <source>app.welcome</source>
+        <target>app.welcome_ar</target>
+      </segment>
+    </unit>
+    <unit id="app_welcome">
+      <notes>
+        <note category="location">src/app/home/home.component.html:5</note>
+        <note category="description">Description test</note>
+        <note category="meaning">Meaning test</note>
+      </notes>
+      <segment state="translated">
+        <source>app.welcome_with_meaning_and_description_and_id</source>
+        <target>app.welcome_with_meaning_and_description_and_id_ar</target>
+      </segment>
+    </unit>
+    <unit id="app_welcome_second">
+      <notes>
+        <note category="location">src/app/home/home.component.html:6</note>
+        <note category="description">Description test second</note>
+        <note category="meaning">Meaning test welcome second</note>
+      </notes>
+      <segment state="translated">
+        <source>app.welcome_with_meaning_and_description_and_id</source>
+        <target>app.welcome_with_meaning_and_description_and_id_ar</target>
+      </segment>
+    </unit>
+    <unit id="1803531417720015616">
+      <notes>
+        <note category="location">src/app/home/home.component.html:7</note>
+      </notes>
+      <segment state="translated">
+        <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</source>
+        <target>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}_ar</target>
+      </segment>
+    </unit>
+    <unit id="7282916492820826755">
+      <notes>
+        <note category="location">src/app/home/home.component.html:7</note>
+      </notes>
+      <segment state="translated">
+        <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></source>
+        <target>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>_ar</target>
+      </segment>
+    </unit>
+    <unit id="7842238767399919809">
+      <notes>
+        <note category="location">src/app/home/home.component.html:13</note>
+      </notes>
+      <segment state="translated">
+        <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
+        <target>{VAR_SELECT, select, male {male} female {female} other {other}}_ar</target>
+      </segment>
+    </unit>
+    <unit id="8719020961091149048">
+      <notes>
+        <note category="location">src/app/home/home.component.html:13</note>
+      </notes>
+      <segment state="translated">
+        <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></source>
+        <target>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/>_ar</target>
+      </segment>
+    </unit>
+    <unit id="4654714685343745812">
+      <notes>
+        <note category="location">src/app/not-found/not-found.component.html:1</note>
+      </notes>
+      <segment state="translated">
+        <source>app.not_found</source>
+        <target>app.not_found_ar</target>
+      </segment>
+    </unit>
+    <unit id="5335356958891281272">
+      <notes>
+        <note category="location">src/app/header/header.component.html:3</note>
+      </notes>
+      <segment state="translated">
+        <source>app.nav.home</source>
+        <target>app.nav.home_ar</target>
+      </segment>
+    </unit>
+    <unit id="8215035420062173710">
+      <notes>
+        <note category="location">src/app/header/header.component.html:10</note>
+      </notes>
+      <segment state="translated">
+        <source>app.nav.dummy</source>
+        <target>app.nav.dummy_ar</target>
+      </segment>
+    </unit>
+    <unit id="8856170510253505863">
+      <notes>
+        <note category="location">src/app/header/header.component.html:13</note>
+      </notes>
+      <segment state="translated">
+        <source>app.nav.dumb</source>
+        <target>app.nav.dumb_ar</target>
+      </segment>
+    </unit>
+    <unit id="7563047614717127693">
+      <notes>
+        <note category="location">src/app/header/header.component.html:16</note>
+        <note category="location">src/app/header/header.component.html:18</note>
+      </notes>
+      <segment state="translated">
+        <source>app.nav.dumber</source>
+        <target>app.nav.dumber_ar</target>
+      </segment>
+    </unit>
+    <unit id="6010898872571258196">
+      <notes>
+        <note category="location">src/app/header/header.component.html:19</note>
+      </notes>
+      <segment state="translated">
+        <source>app.nav.dumber_with_id</source>
+        <target>app.nav.dumber_with_id_ar</target>
+      </segment>
+    </unit>
+    <unit id="3104991395163537922">
+      <notes>
+        <note category="location">src/app/footer/footer.component.ts:11</note>
+      </notes>
+      <segment state="translated">
+        <source>app.footer.text <ph id="0" equiv="PH" disp="this.name"/></source>
+        <target>app.footer.text <ph id="0" equiv="PH" disp="this.name"/>_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.alert.close">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/alert/alert.ts:55,58</note>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/alert/alert.ts:70,71</note>
+      </notes>
+      <segment state="translated">
+        <source>Close</source>
+        <target>Close_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.carousel.slide-number">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts:114,118</note>
+        <note category="description">Currently selected slide number read by screen reader</note>
+      </notes>
+      <segment state="translated">
+        <source> Slide <ph id="0" equiv="INTERPOLATION" disp="ate _pauseOnHov"/> of <ph id="1" equiv="INTERPOLATION_1" disp="ect(false);
+  p"/> </source>
+      <target> Slide <ph id="0" equiv="INTERPOLATION" disp="ate _pauseOnHov"/> of <ph id="1" equiv="INTERPOLATION_1" disp="ect(false);
+  p"/> </target></segment>
+    </unit>
+    <unit id="ngb.carousel.previous">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts:132,134</note>
+      </notes>
+      <segment state="translated">
+        <source>Previous</source>
+        <target>Previous_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.carousel.next">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts:147,151</note>
+      </notes>
+      <segment state="translated">
+        <source>Next</source>
+        <target>Next_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.datepicker.previous-month">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:24,27</note>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:34,35</note>
+      </notes>
+      <segment state="translated">
+        <source>Previous month</source>
+        <target>Previous month_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.datepicker.next-month">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:44,48</note>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:57,61</note>
+      </notes>
+      <segment state="translated">
+        <source>Next month</source>
+        <target>Next month_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.datepicker.select-month">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:44,49</note>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:49,50</note>
+      </notes>
+      <segment state="translated">
+        <source>Select month</source>
+        <target>Select month_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.datepicker.select-year">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:59,63</note>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:72,74</note>
+      </notes>
+      <segment state="translated">
+        <source>Select year</source>
+        <target>Select year_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.pagination.first">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:147,148</note>
+      </notes>
+      <segment state="translated">
+        <source>««</source>
+        <target>««_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.pagination.previous">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:153,154</note>
+      </notes>
+      <segment state="translated">
+        <source>«</source>
+        <target>«_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.pagination.next">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:158,159</note>
+      </notes>
+      <segment state="translated">
+        <source>»</source>
+        <target>»_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.pagination.last">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:164,165</note>
+      </notes>
+      <segment state="translated">
+        <source>»»</source>
+        <target>»»_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.pagination.first-aria">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:168,172</note>
+      </notes>
+      <segment state="translated">
+        <source>First</source>
+        <target>First_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.pagination.previous-aria">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:176,177</note>
+      </notes>
+      <segment state="translated">
+        <source>Previous</source>
+        <target>Previous_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.pagination.next-aria">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:188,189</note>
+      </notes>
+      <segment state="translated">
+        <source>Next</source>
+        <target>Next_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.pagination.last-aria">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:195,200</note>
+      </notes>
+      <segment state="translated">
+        <source>Last</source>
+        <target>Last_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.progressbar.value">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/progressbar/progressbar.ts:31,38</note>
+      </notes>
+      <segment state="translated">
+        <source><ph id="0" equiv="INTERPOLATION" disp="turn this._max;"/></source>
+        <target><ph id="0" equiv="INTERPOLATION" disp="turn this._max;"/>_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.HH">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:46,47</note>
+      </notes>
+      <segment state="translated">
+        <source>HH</source>
+        <target>HH_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.hours">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:50,51</note>
+      </notes>
+      <segment state="translated">
+        <source>Hours</source>
+        <target>Hours_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.MM">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:55,58</note>
+      </notes>
+      <segment state="translated">
+        <source>MM</source>
+        <target>MM_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.minutes">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:62,64</note>
+      </notes>
+      <segment state="translated">
+        <source>Minutes</source>
+        <target>Minutes_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.increment-hours">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:68,69</note>
+      </notes>
+      <segment state="translated">
+        <source>Increment hours</source>
+        <target>Increment hours_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.decrement-hours">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:73,74</note>
+      </notes>
+      <segment state="translated">
+        <source>Decrement hours</source>
+        <target>Decrement hours_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.increment-minutes">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:80,82</note>
+      </notes>
+      <segment state="translated">
+        <source>Increment minutes</source>
+        <target>Increment minutes_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.decrement-minutes">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:86,88</note>
+      </notes>
+      <segment state="translated">
+        <source>Decrement minutes</source>
+        <target>Decrement minutes_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.SS">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:91,92</note>
+      </notes>
+      <segment state="translated">
+        <source>SS</source>
+        <target>SS_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.seconds">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:96</note>
+      </notes>
+      <segment state="translated">
+        <source>Seconds</source>
+        <target>Seconds_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.increment-seconds">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:103,104</note>
+      </notes>
+      <segment state="translated">
+        <source>Increment seconds</source>
+        <target>Increment seconds_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.decrement-seconds">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:109,115</note>
+      </notes>
+      <segment state="translated">
+        <source>Decrement seconds</source>
+        <target>Decrement seconds_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.timepicker.PM">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:131,136</note>
+      </notes>
+      <segment state="translated">
+        <source><ph id="0" equiv="INTERPOLATION" disp="sible.
    */
-  "/></source><target state="translated"><x id="INTERPOLATION" equiv-text="sible.
+  "/></source>
+      <target><ph id="0" equiv="INTERPOLATION" disp="sible.
    */
-  "/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">131,136</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.timepicker.AM" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="nts ControlValu"/></source><target state="translated"><x id="INTERPOLATION" equiv-text="nts ControlValu"/>_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts</context>
-          <context context-type="linenumber">154,118</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ngb.toast.close-aria" datatype="html">
-        <source>Close</source><target state="translated">Close_ar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/toast/toast.ts</context>
-          <context context-type="linenumber">78,85</context>
-        </context-group>
-      </trans-unit>
-    </body>
+  "/></target></segment>
+    </unit>
+    <unit id="ngb.timepicker.AM">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:154,118</note>
+      </notes>
+      <segment state="translated">
+        <source><ph id="0" equiv="INTERPOLATION" disp="nts ControlValu"/></source>
+        <target><ph id="0" equiv="INTERPOLATION" disp="nts ControlValu"/>_ar</target>
+      </segment>
+    </unit>
+    <unit id="ngb.toast.close-aria">
+      <notes>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/toast/toast.ts:78,85</note>
+      </notes>
+      <segment state="translated">
+        <source>Close</source>
+        <target>Close_ar</target>
+      </segment>
+    </unit>
   </file>
 </xliff>

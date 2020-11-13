@@ -3,7 +3,8 @@
   "version": "0.0.3",
   "scripts": {
     "ng": "ng",
-    "load-env": "ts-node ./webpack/dotenv/Loader.js",
+    "load-env-js": "ts-node ./webpack/dotenv/Loader.js",
+    "load-env-ts": "ts-node ./src/DotEnv/loader.ts",
     "serve": "ng serve ${APP_CONFIGURATION}",
     "build": "ng build ${APP_CONFIGURATION}",
     "extract-i18n": "ng extract-i18n --configuration=source && ng run localization:xliffmerge:app && ng extract-i18n --configuration=home-source && ng run localization:xliffmerge:home",
@@ -27,6 +28,7 @@
     "start-home-pt": "ng serve --configuration=home-pt",
     "start-home-it": "ng serve --configuration=home-it"
   },
+  "types": "module",
   "private": true,
   "dependencies": {
     "@angular/animations": "~11.0.0",

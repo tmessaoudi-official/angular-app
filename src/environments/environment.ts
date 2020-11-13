@@ -1,9 +1,17 @@
+const DotEnvLoader = require('../DotEnv/DotEnvLoader');
+
+let dotEnvLoader = new DotEnvLoader();
+
+console.log(dotEnvLoader.load('hello world from inside'));
+console.log('hello here from ts env loader from inside ... WIP !');
+
 import { EnvironmentVariableHandler } from './variable/EnvironmentVariableHandler';
 import { processEnv } from './processEnv';
 import { EnvironmentNaming } from './EnvironmentNaming';
 
 const environmentVariableHandler = new EnvironmentVariableHandler();
 const environmentNaming = new EnvironmentNaming();
+
 
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.

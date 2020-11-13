@@ -11,6 +11,7 @@
   },
   "files": [
     "../src/test.ts",
+    "../src/DotEnv/DotEnvLoader.ts",
     "../src/polyfills.ts"
   ],
   "include": [

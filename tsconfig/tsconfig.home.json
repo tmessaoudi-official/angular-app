@@ -9,6 +9,7 @@
   },
   "files": [
     "../src/i18n/main/main.home.ts",
+    "../src/DotEnv/DotEnvLoader.ts",
     "../src/polyfills.ts"
   ],
   "include": [

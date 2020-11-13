@@ -33,5 +33,13 @@
         <source>app.i18n.home.title.xliffmerge2</source>
       </segment>
     </unit>
+    <unit id="970721312369328702">
+      <notes>
+        <note category="location">src/app/i18n/home/app.home.component.html:5</note>
+      </notes>
+      <segment>
+        <source>testing after change to xlf2</source>
+      </segment>
+    </unit>
   </file>
 </xliff>

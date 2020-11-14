@@ -1,6 +1,6 @@
 #!make
 
-export $(shell NODE_DEBUG_FORCE=false APP_ENV_RUN_BUILD=true APP_ENV_FORCE_REBUILD=true pnpm run load-env-js )
+export $(shell NODE_DEBUG_FORCE=false APP_ENV_RUN_BUILD=true APP_ENV_FORCE_REBUILD=true NODE_ENV_FORCE=${NODE_ENV_FORCE=dev} pnpm run load-env-js )
 include .env.local.build
 export $(shell sed 's/=.*//' .env.local.build)
 

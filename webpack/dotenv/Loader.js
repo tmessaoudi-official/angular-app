@@ -52,7 +52,8 @@ let Loader = {
     }
     if (typeof includes === 'string' && includes !== '') {
       includes.split(',').forEach(function (item, index) {
-        item = item.replace('${NODE_ENV}', Loader.unquote.value(process.env.NODE_ENV));
+        // eslint-disable-next-line max-len
+        item = item.replace('${NODE_ENV}', Loader.unquote.value(process.env.NODE_ENV)).replace('${NODE_ENV_FORCE}', Loader.unquote.value(process.env.NODE_ENV_FORCE));
         if (item === parentFile) {
           console.error('Circular reference detected, file \'' + item + '\' trying to include itself !!');
           process.exit(1);

@@ -1,13 +1,12 @@
 // @ts-ignore
 const DotEnvLoader = require('./DotEnvLoader');
 
-module.exports = class DotEnvLoaderRun extends DotEnvLoader{
+module.exports = class DotEnvLoaderRun extends DotEnvLoader implements IDotEnvLoaderRun {
   constructor() {
-    super();
+    super('process');
   }
 
-  // eslint-disable-next-line no-unused-vars
   run(x: string): string {
-    return x + 'running !!!';
+    return x + ' !! source : ' + this.source;
   }
 }

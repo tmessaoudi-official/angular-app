@@ -3,7 +3,6 @@ const DotEnvLoader = require('../DotEnv/DotEnvLoader');
 let dotEnvLoader = new DotEnvLoader();
 
 console.log(dotEnvLoader.load('hello world from inside'));
-console.log('hello here from ts env loader from inside ... WIP !');
 
 import { EnvironmentVariableHandler } from './variable/EnvironmentVariableHandler';
 import { processEnv } from './processEnv';

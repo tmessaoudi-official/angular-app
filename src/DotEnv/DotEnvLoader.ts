@@ -1,9 +1,18 @@
-module.exports = class DotEnvLoader {
-  constructor() {
+module.exports = class DotEnvLoader implements IDotEnvLoader {
+  source: EDotEnvLoaderSource;
+
+  constructor(source?: EDotEnvLoaderSource) {
+    if (typeof source === 'undefined') {
+      // @ts-ignore
+      source = 'app';
+    }
+    this.source = source;
   }
 
-  // eslint-disable-next-line no-unused-vars
   load(x: string): string {
-    return x;
+    return x + ' !! , source : ' + this.source;
+  }
+
+  populate(data: any, fileName: string): any {
   }
 }

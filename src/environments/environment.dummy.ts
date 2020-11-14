@@ -1,8 +1,9 @@
-const DotEnvLoader = require('../DotEnv/DotEnvLoader');
+const DotEnvLoader: IDotEnvLoader = require('../DotEnv/DotEnvLoader.dotenv');
 
+// @ts-ignore
 let dotEnvLoader = new DotEnvLoader();
 
-console.log(dotEnvLoader.load('hello world from inside dummy'));
+console.log(dotEnvLoader.process('hello world from inside'));
 
 import { EnvironmentVariableHandler } from './variable/EnvironmentVariableHandler';
 import { processEnv } from './processEnv';

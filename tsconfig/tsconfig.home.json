@@ -9,16 +9,17 @@
   },
   "files": [
     "../src/i18n/main/main.home.ts",
-    "../src/DotEnv/DotEnvLoader.ts",
     "../src/polyfills.ts"
   ],
   "include": [
     "../src/**/*.d.ts",
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "../src/**/*.dotenv.ts",
+    "src/**/*.dotenv.ts"
   ],
   "exclude": [
-    "../src/DotEnv/DotEnvLoaderRun.ts",
-    "../src/DotEnv/IDotEnvLoaderRun.ts",
+    "../src/**/*.dotenv.run.ts",
+    "src/**/*.dotenv.run.ts",
     "../src/DotEnv/loader.ts"
   ]
 }

@@ -1,4 +1,5 @@
-declare enum EDotEnvLoaderSource {
-  process = 'process',
-  app = 'app',
+declare const enum EDotEnvLoaderSource {
+  Process = 'process',
+  App = 'app'
 }
+

@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
-
+@font-face {
+  font-family: "myfont";
+  src: url("assets/test.woff") format('woff');
+}
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';

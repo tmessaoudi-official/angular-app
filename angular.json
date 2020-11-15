@@ -30,11 +30,8 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "ngx-build-plus:browser",
           "options": {
-            "customWebpackConfig": {
-              "path": "webpack.config.ts"
-            },
             "allowedCommonJsDependencies": [
               "rxjs-compat",
               "rxjs"
@@ -117,7 +114,18 @@
               "deleteOutputPath": true
             },
             "localize": {
-              "localize": ["en", "fr", "ar", "de", "es", "pt", "it"]
+              "localize": [
+                "en",
+                "fr",
+                "ar",
+                "de",
+                "es",
+                "pt",
+                "it"
+              ]
+            },
+            "verbose": {
+              "verbose": true
             },
             "aot": {
               "aot": true
@@ -309,11 +317,8 @@
           }
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
-            "customWebpackConfig": {
-              "path": "webpack.config.ts"
-            },
             "liveReload": true
           },
           "configurations": {
@@ -367,6 +372,88 @@
             },
             "it": {
               "browserTarget": "localization:build:dev,ignore-i18n,it-locale,it,no-base-href,aot"
+            }
+          }
+        },
+        "test": {
+          "builder": "ngx-build-plus:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig/tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "codeCoverage": true,
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.component.html"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js"
+          },
+          "configurations": {
+            "selenium": {},
+            "home-en": {
+              "devServerTarget": "localization:serve:home-en"
+            },
+            "home-fr": {
+              "devServerTarget": "localization:serve:home-fr"
+            },
+            "home-es": {
+              "devServerTarget": "localization:serve:home-es"
+            },
+            "home-de": {
+              "devServerTarget": "localization:serve:home-de"
+            },
+            "home-pt": {
+              "devServerTarget": "localization:serve:home-pt"
+            },
+            "home-it": {
+              "devServerTarget": "localization:serve:home-it"
+            },
+            "home-ar": {
+              "devServerTarget": "localization:serve:home-ar"
+            },
+            "en": {
+              "devServerTarget": "localization:serve:en"
+            },
+            "fr": {
+              "devServerTarget": "localization:serve:fr"
+            },
+            "de": {
+              "devServerTarget": "localization:serve:de"
+            },
+            "es": {
+              "devServerTarget": "localization:serve:es"
+            },
+            "ar": {
+              "devServerTarget": "localization:serve:ar"
+            },
+            "pt": {
+              "devServerTarget": "localization:serve:pt"
+            },
+            "it": {
+              "devServerTarget": "localization:serve:it"
             }
           }
         },
@@ -454,95 +541,9 @@
             }
           }
         },
-        "test": {
-          "builder": "@angular-builders/custom-webpack:karma",
-          "options": {
-            "customWebpackConfig": {
-              "path": "./webpack.config.ts"
-            },
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig/tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "codeCoverage": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
-          }
-        },
-        "lint": {
-          "builder": "@angular-eslint/builder:lint",
-          "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.component.html"
-            ]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js"
-          },
-          "configurations": {
-            "selenium": {},
-            "home-en": {
-              "devServerTarget": "localization:serve:home-en"
-            },
-            "home-fr": {
-              "devServerTarget": "localization:serve:home-fr"
-            },
-            "home-es": {
-              "devServerTarget": "localization:serve:home-es"
-            },
-            "home-de": {
-              "devServerTarget": "localization:serve:home-de"
-            },
-            "home-pt": {
-              "devServerTarget": "localization:serve:home-pt"
-            },
-            "home-it": {
-              "devServerTarget": "localization:serve:home-it"
-            },
-            "home-ar": {
-              "devServerTarget": "localization:serve:home-ar"
-            },
-            "en": {
-              "devServerTarget": "localization:serve:en"
-            },
-            "fr": {
-              "devServerTarget": "localization:serve:fr"
-            },
-            "de": {
-              "devServerTarget": "localization:serve:de"
-            },
-            "es": {
-              "devServerTarget": "localization:serve:es"
-            },
-            "ar": {
-              "devServerTarget": "localization:serve:ar"
-            },
-            "pt": {
-              "devServerTarget": "localization:serve:pt"
-            },
-            "it": {
-              "devServerTarget": "localization:serve:it"
-            }
-          }
-        },
         "xliffmerge": {
           "builder": "@ngx-i18nsupport/tooling:xliffmerge",
-          "options": {
-          },
+          "options": {},
           "configurations": {
             "app": {
               "xliffmergeOptions": {

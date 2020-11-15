@@ -5,11 +5,24 @@ module.exports =
   class DotEnvLoaderRun extends DotEnvLoader implements IDotEnvLoaderRun {
     source: EDotEnvLoaderSource;
 
-    constructor() {
-      super(EDotEnvLoaderSource.Process);
+    constructor()
+
+    constructor(source?: EDotEnvLoaderSource) {
+      if (typeof source === 'undefined' || source === null) {
+        source = EDotEnvLoaderSource.Process;
+      }
+      super(source);
     }
 
     run(x: string): string {
-      return x + ' !! source : ' + this.source;
+      return x + ' !! run DotEnvLoaderRun, source : ' + this.source;
+    }
+
+    load(x: string): string {
+      return '';
+    }
+
+    populate(x: string): string {
+      return '';
     }
   };

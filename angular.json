@@ -33,7 +33,7 @@
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "customWebpackConfig": {
-              "path": "webpack.config.js"
+              "path": "webpack.config.ts"
             },
             "allowedCommonJsDependencies": [
               "rxjs-compat",
@@ -292,7 +292,7 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
             "customWebpackConfig": {
-              "path": "webpack.config.js"
+              "path": "webpack.config.ts"
             },
             "liveReload": true
           },
@@ -438,7 +438,7 @@
           "builder": "@angular-builders/custom-webpack:karma",
           "options": {
             "customWebpackConfig": {
-              "path": "./webpack.config.js"
+              "path": "./webpack.config.ts"
             },
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",

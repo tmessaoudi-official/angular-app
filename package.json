@@ -103,5 +103,6 @@
     "pnpm": ">=5.11",
     "ts-node": ">=9.0",
     "concurrently": ">=5.3"
-  }
+  },
+  "engineStrict": true
 }

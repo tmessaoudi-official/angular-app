@@ -33,4 +33,4 @@ test:
 	pnpm run test
 serve:
 	NODE_ENV_FORCE=dev APP_ENV_RUN_BUILD=true APP_ENV_FORCE_REBUILD=true APP_ENV_RUN_BUILD=true APP_ENV_FORCE_REBUILD=true  make load-env-js --ignore-errors --keep-going --warn-undefined-variables
-	APP_CONFIGURATION="--configuration=home" pnpm run serve
+	pnpm run serve

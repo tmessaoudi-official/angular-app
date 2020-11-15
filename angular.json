@@ -319,7 +319,8 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "liveReload": true
+            "liveReload": true,
+            "browserTarget": "localization:build:dev,ignore-i18n,home,home-en,no-base-href,aot"
           },
           "configurations": {
             "open": {
@@ -409,10 +410,13 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js"
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "localization:serve"
           },
           "configurations": {
-            "selenium": {},
+            "selenium": {
+              "devServerTarget": ""
+            },
             "home-en": {
               "devServerTarget": "localization:serve:home-en"
             },

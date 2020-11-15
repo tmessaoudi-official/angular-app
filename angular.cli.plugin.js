@@ -9,7 +9,9 @@ Loader.run(processNodeEnv, forceEnvRebuild);
 
 exports.default = {
   pre(options) {
-    console.log('pre');
+    console.log('pre build');
+
+    return options;
   },
   config(cfg) {
     cfg.plugins.push(
@@ -21,6 +23,8 @@ exports.default = {
     return cfg;
   },
   post(options) {
-    console.log('post');
+    console.log('post build');
+
+    return options;
   }
 }

@@ -21,7 +21,9 @@
     "target": "es6",
     "module": "es2020",
     "types": [
-      "node"
+      "node",
+      "jasmine",
+      "jasminewd2"
     ],
     "lib": [
       "es2018",

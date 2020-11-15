@@ -50,7 +50,7 @@ devDependencies:
   jasmine-spec-reporter: 6.0.0
   karma: 5.1.1
   karma-chrome-launcher: 3.1.0
-  karma-coverage-istanbul-reporter: 3.0.3
+  karma-coverage: 2.0.3
   karma-jasmine: 4.0.1_karma@5.1.1
   karma-jasmine-html-reporter: 1.5.4_7ef2995f530f2ce08d9dfa64cdaae5ab
   ngx-build-plus: 10.1.1_1762e7e4b5c8104cd4ae5285e612b6fa
@@ -6990,12 +6990,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
-  /istanbul-lib-coverage/2.0.5:
-    dev: true
-    engines:
-      node: '>=6'
-    resolution:
-      integrity: sha512-8aXznuEPCJvGnMSRft4udDRDtb1V3pkQkMMI5LI+6HuQz5oQ4J2UFn1H82raA3qJtyOLkkwVqICBQkjnGtn5mA==
   /istanbul-lib-coverage/3.0.0:
     dev: true
     engines:
@@ -7023,18 +7017,16 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-wcdi+uAKzfiGT2abPpKZ0hSU1rGQjUQnLvtY5MpQ7QCTahD3VODhcu4wcfY1YtkGaDD5yuydOLINXsfbus9ROw==
-  /istanbul-lib-source-maps/3.0.6:
+  /istanbul-lib-source-maps/4.0.0:
     dependencies:
       debug: 4.2.0
-      istanbul-lib-coverage: 2.0.5
-      make-dir: 2.1.0
-      rimraf: 2.7.1
+      istanbul-lib-coverage: 3.0.0
       source-map: 0.6.1
     dev: true
     engines:
-      node: '>=6'
+      node: '>=8'
     resolution:
-      integrity: sha512-R47KzMtDJH6X4/YW9XTx+jrLnZnscW4VpNN+1PViSYTejLVPWv7oov+Duf8YQSPyVRUvueQqz1TcsC6mooZTXw==
+      integrity: sha512-c16LpFRkR8vQXyHZ5nLpY35JZtzj1PQY1iZmesUbf1FZHbIupcWfjgOXBY9YHkLEQ6puz1u4Dgj6qmU/DisrZg==
   /istanbul-reports/3.0.2:
     dependencies:
       html-escaper: 2.0.2
@@ -7215,16 +7207,19 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3dPs/n7vgz1rxxtynpzZTvb9y/GIaW8xjAwcIGttLbycqoFtI7yo1NGnQi6oFTherRE+GIhCAHZC4vEqWGhNvg==
-  /karma-coverage-istanbul-reporter/3.0.3:
+  /karma-coverage/2.0.3:
     dependencies:
       istanbul-lib-coverage: 3.0.0
+      istanbul-lib-instrument: 4.0.3
       istanbul-lib-report: 3.0.0
-      istanbul-lib-source-maps: 3.0.6
+      istanbul-lib-source-maps: 4.0.0
       istanbul-reports: 3.0.2
       minimatch: 3.0.4
     dev: true
+    engines:
+      node: '>=10.0.0'
     resolution:
-      integrity: sha512-wE4VFhG/QZv2Y4CdAYWDbMmcAHeS926ZIji4z+FkB2aF/EposRb6DP6G5ncT/wXhqUfAb/d7kZrNKPonbvsATw==
+      integrity: sha512-atDvLQqvPcLxhED0cmXYdsPMCQuh6Asa9FMZW1bhNqlVEhJoB9qyZ2BY1gu7D/rr5GLGb5QzYO4siQskxaWP/g==
   /karma-jasmine-html-reporter/1.5.4_7ef2995f530f2ce08d9dfa64cdaae5ab:
     dependencies:
       jasmine-core: 3.6.0
@@ -12240,7 +12235,7 @@ specifiers:
   jquery: ^3.5.1
   karma: ~5.1.1
   karma-chrome-launcher: ~3.1.0
-  karma-coverage-istanbul-reporter: ~3.0.3
+  karma-coverage: ^2.0.3
   karma-jasmine: ~4.0.1
   karma-jasmine-html-reporter: ^1.5.4
   ngx-build-plus: ^10.1.1

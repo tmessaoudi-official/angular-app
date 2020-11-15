@@ -36,6 +36,12 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
+            "extraWebpackConfig": "",
+            "singleBundle": false,
+            "keepPolyfills": true,
+            "configHook": "",
+            "plugin": "~angular.cli.plugin.js",
+            "keepStyles": true,
             "allowedCommonJsDependencies": [
               "rxjs-compat",
               "rxjs"
@@ -101,6 +107,8 @@
               "vendorChunk": true,
               "commonChunk": true,
               "sourceMap": true,
+              "hmr": true,
+              "hmrWarning": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -323,7 +331,15 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
+            "extraWebpackConfig": "",
+            "singleBundle": false,
+            "keepPolyfills": true,
+            "configHook": "",
+            "plugin": "~angular.cli.plugin.js",
+            "keepStyles": true,
             "liveReload": true,
+            "hmrWarning": true,
+            "hmr": true,
             "browserTarget": "localization:build:dev,ignore-i18n,home,home-en,no-base-href,aot"
           },
           "configurations": {
@@ -383,6 +399,12 @@
         "test": {
           "builder": "ngx-build-plus:karma",
           "options": {
+            "extraWebpackConfig": "",
+            "singleBundle": false,
+            "keepPolyfills": true,
+            "configHook": "",
+            "plugin": "~angular.cli.plugin.js",
+            "keepStyles": true,
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig/tsconfig.spec.json",

@@ -1,6 +1,6 @@
 import { Inject, Injectable, LOCALE_ID } from '@angular/core';
-import { environment } from '../../environments/environment';
-import { LoggerService } from '../../app/logger.service';
+import { environment } from '../../../environments/environment';
+import { LoggerService } from '../../../app/logger.service';
 
 @Injectable({
   providedIn: 'root'

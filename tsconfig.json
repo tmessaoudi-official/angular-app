@@ -2,7 +2,12 @@
 {
   "compileOnSave": false,
   "ts-node": {
-    "files": true
+    // these options are overrides used only by ts-node
+    // same as our --compilerOptions flag and our TS_NODE_COMPILER_OPTIONS environment variable
+    "files": true,
+    "compilerOptions": {
+      "module": "ESNext"
+    }
   },
   "compilerOptions": {
     "baseUrl": "./",

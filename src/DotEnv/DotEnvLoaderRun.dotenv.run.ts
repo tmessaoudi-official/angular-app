@@ -12,6 +12,7 @@ module.exports =
         source = EDotEnvLoaderSource.Process;
       }
       super(source);
+      this.source = source;
     }
 
     run(x: string): string {

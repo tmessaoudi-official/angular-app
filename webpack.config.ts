@@ -15,6 +15,7 @@ export default (
   options: CustomWebpackBrowserSchema,
   targetOptions: TargetOptions
 ) => {
+  // @ts-ignore
   config.plugins.push(
     new webpack.DefinePlugin({
       'process.env': process.env

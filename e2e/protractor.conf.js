@@ -6,9 +6,15 @@ const { SpecReporter, StacktraceOption } = require('jasmine-spec-reporter');
 let Loader = require('../webpack/dotenv/Loader.js');
 
 // eslint-disable-next-line max-len
-const processNodeEnv = (typeof process.env.NODE_ENV === 'undefined' || (typeof process.env.NODE_ENV === 'string' && (process.env.NODE_ENV !== ''))) ? process.env.NODE_ENV : 'test';
+const processNodeEnv = (typeof process.env.NODE_ENV_FORCE === 'string' && (process.env.NODE_ENV_FORCE !== '')) ? process.env.NODE_ENV_FORCE : ((typeof process.env.NODE_ENV === 'undefined' || (typeof process.env.NODE_ENV === 'string' && (process.env.NODE_ENV !== ''))) ? process.env.NODE_ENV : 'test');
 // eslint-disable-next-line max-len
 const forceEnvRebuild = ((typeof process.env.APP_ENV_RUN_BUILD === 'undefined' || (typeof process.env.APP_ENV_RUN_BUILD === 'string' && (process.env.APP_ENV_RUN_BUILD === '' || process.env.APP_ENV_RUN_BUILD === 'true'))) || (typeof process.env.APP_ENV_FORCE_REBUILD === 'undefined' || (typeof process.env.APP_ENV_FORCE_REBUILD === 'string' && (process.env.APP_ENV_FORCE_REBUILD === '' || process.env.APP_ENV_FORCE_REBUILD === 'true'))));
+console.log(process.env.NODE_ENV_FORCE);
+console.log(process.env.NODE_ENV);
+console.log(process.env.APP_ENV_RUN_BUILD);
+console.log(process.env.APP_ENV_FORCE_REBUILD);
+console.log(processNodeEnv);
+console.log(forceEnvRebuild);
 Loader.run(processNodeEnv, forceEnvRebuild);
 
 let protractorConfig = {

@@ -99,13 +99,25 @@
               "namedChunks": true,
               "vendorChunk": true,
               "commonChunk": true,
-              "sourceMap": true
+              "sourceMap": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "10kb",
+                  "maximumError": "20kb"
+                }
+              ]
             },
             "delete-output-path": {
               "deleteOutputPath": true
             },
             "localize": {
-              "localize": true
+              "localize": ["en", "fr", "ar", "de", "es", "pt", "it"]
             },
             "aot": {
               "aot": true

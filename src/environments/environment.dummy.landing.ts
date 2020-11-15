@@ -4,9 +4,9 @@ let dotEnvLoader = new DotEnvLoader();
 
 console.log(dotEnvLoader.process('hello world from inside', 'testing'));
 
-import { EnvironmentVariableHandler } from './variable/EnvironmentVariableHandler';
-import { processEnv } from './processEnv';
-import { EnvironmentNaming } from './EnvironmentNaming';
+import { EnvironmentVariableHandler } from '../DotEnv/deprecated/variable/EnvironmentVariableHandler';
+import { processEnv } from '../DotEnv/processEnv';
+import { EnvironmentNaming } from '../DotEnv/deprecated/EnvironmentNaming';
 
 const environmentVariableHandler = new EnvironmentVariableHandler();
 const environmentNaming = new EnvironmentNaming();

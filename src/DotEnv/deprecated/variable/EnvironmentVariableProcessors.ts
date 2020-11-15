@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { processEnv } from '../processEnv';
+import { processEnv } from '../../processEnv';
 
 @Injectable({
   providedIn: 'root'

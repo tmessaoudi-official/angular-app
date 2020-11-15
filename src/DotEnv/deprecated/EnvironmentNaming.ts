@@ -1,4 +1,4 @@
-import { processEnv } from './processEnv';
+import { processEnv } from '../processEnv';
 
 export class EnvironmentNaming {
   camelize(str: string): string {

@@ -55,7 +55,7 @@ export class HomeComponent {
         if (this.minutes > 0) {
           this.minutes --;
         } else {
-          alert('can t set minutes less than 0');
+          alert($localize`can t set minutes less than 0`);
         }
         break;
       }

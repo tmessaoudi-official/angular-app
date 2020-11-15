@@ -19,6 +19,9 @@ export class I18nLocaleService {
       id: this.locale,
       label: 'Dummy',
     };
+    if (environment.appI18nIsLocaleLanding) {
+      return this.locales.find(locale => locale.id === this.locale);
+    }
     if (this.locale === environment.appI18nLocaleDummy || environment.appI18nIsLocaleDummy) {
       return dummyLocale;
     }

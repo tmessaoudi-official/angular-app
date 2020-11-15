@@ -8,6 +8,7 @@ interface IEnvironment {
   appI18nLocaleDefault?: string;
   appI18nLocaleDummy?: string;
   appI18nIsLocaleDummy?: boolean;
+  appI18nIsLocaleLanding?: boolean;
   appI18nSupportedLocales?: Array<I18nLocale>;
   appI18nSwitcherBehaviour?: string;
   appI18nSwitcherCheckPathLocale?: boolean;

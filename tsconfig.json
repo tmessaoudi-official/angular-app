@@ -6,7 +6,7 @@
     // same as our --compilerOptions flag and our TS_NODE_COMPILER_OPTIONS environment variable
     "files": true,
     "compilerOptions": {
-      "module": "ESNext"
+      "module": "CommonJS"
     }
   },
   "compilerOptions": {

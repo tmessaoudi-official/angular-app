@@ -1,4 +1,4 @@
-module.exports = class DotEnvLoader implements IDotEnvLoader {
+export default class DotEnvLoader implements IDotEnvLoader {
   source: EDotEnvLoaderSource;
 
   constructor()

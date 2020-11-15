@@ -3,7 +3,7 @@ const fs = require('fs');
 // @ts-ignore
 let dotenv = require('dotenv');
 
-const DotEnvLoaderRun: IDotEnvLoaderRun = require('./DotEnvLoaderRun.dotenv.run');
+import DotEnvLoaderRun from './DotEnvLoaderRun.dotenv.run';
 
 // @ts-ignore
 let dotEnvLoaderRun = new DotEnvLoaderRun(EDotEnvLoaderSource.DummyProcess);

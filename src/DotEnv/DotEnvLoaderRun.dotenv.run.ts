@@ -1,8 +1,6 @@
-const DotEnvLoader: IDotEnvLoader = require('./DotEnvLoader.dotenv');
+import DotEnvLoader from './DotEnvLoader.dotenv';
 
-module.exports =
-  // @ts-ignore
-  class DotEnvLoaderRun extends DotEnvLoader implements IDotEnvLoaderRun {
+export default class DotEnvLoaderRun extends DotEnvLoader implements IDotEnvLoaderRun {
     source: EDotEnvLoaderSource;
 
     constructor()
@@ -11,6 +9,7 @@ module.exports =
       if (typeof source === 'undefined' || source === null) {
         source = EDotEnvLoaderSource.Process;
       }
+      // @ts-ignore
       super(source);
       this.source = source;
     }

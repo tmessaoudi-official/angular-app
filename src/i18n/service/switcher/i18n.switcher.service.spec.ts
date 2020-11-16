@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { I18nSwitcherService } from './i18n.switcher.service';
+import {I18nSwitcherService} from './i18n.switcher.service';
 
 describe('I18nSwitcherService', () => {
   let service: I18nSwitcherService;

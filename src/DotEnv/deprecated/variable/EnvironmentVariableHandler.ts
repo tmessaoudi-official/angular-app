@@ -1,7 +1,7 @@
 import {Inject, Injectable} from '@angular/core';
-import { EnvironmentVariableProcessors } from './EnvironmentVariableProcessors';
-import { EnvironmentVariableValidators } from './EnvironmentVariableValidators';
-import { processEnv } from '../../processEnv';
+import {EnvironmentVariableProcessors} from './EnvironmentVariableProcessors';
+import {EnvironmentVariableValidators} from './EnvironmentVariableValidators';
+import {processEnv} from '../../processEnv';
 
 @Injectable({
   providedIn: 'root'

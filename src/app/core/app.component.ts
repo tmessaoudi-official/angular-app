@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { I18nSwitcherService } from '../i18n/service/switcher/i18n.switcher.service';
-import { Title } from '@angular/platform-browser';
+import {Component, OnInit} from '@angular/core';
+import {I18nSwitcherService} from '../../i18n/service/switcher/i18n.switcher.service';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',

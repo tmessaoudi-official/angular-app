@@ -6,17 +6,13 @@
     </button>
     <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/dummy" [queryParams]="{comp: 'dummy', order: 'asc'}" i18n>app.nav.dummy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/dumb" [queryParams]="{comp: 'dumb', filter: 'true'}" i18n>app.nav.dumb</a>
-        </li>
         <li class="nav-item dropdown" ngbDropdown>
-          <a class="nav-link dropdown-toggle" id="id01" style="cursor: pointer;" ngbDropdownToggle i18n>app.nav.dumber</a>
+          <a class="nav-link dropdown-toggle" id="id01" style="cursor: pointer;" ngbDropdownToggle i18n>app.nav.dummest.module</a>
           <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
-            <a class="dropdown-item" [routerLink]="['/dumber']" [queryParams]="{comp: 'dumber', column: 'id', params: false}" i18n>app.nav.dumber</a>
-            <a class="dropdown-item" [routerLink]="['/dumber', 1]" [queryParams]="{comp: 'dumber', column: 'id', params: true}" i18n>app.nav.dumber_with_id</a>
+            <a class="dropdown-item" routerLink="/dummest/dummy" [queryParams]="{comp: 'dummy', order: 'asc'}" i18n>app.nav.dummy</a>
+            <a class="dropdown-item" routerLink="/dummest/dumb" [queryParams]="{comp: 'dumb', filter: 'true'}" i18n>app.nav.dumb</a>
+            <a class="dropdown-item" [routerLink]="['/dummest/dumber']" [queryParams]="{comp: 'dumber', column: 'id', params: false}" i18n>app.nav.dumber</a>
+            <a class="dropdown-item" [routerLink]="['/dummest/dumber', 1]" [queryParams]="{comp: 'dumber', column: 'id', params: true}" i18n>app.nav.dumber_with_id</a>
           </div>
         </li>
       </ul>

@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { EnvironmentVariableHandler } from './EnvironmentVariableHandler';
+import {EnvironmentVariableHandler} from './EnvironmentVariableHandler';
 
 describe('EnvironmentVariableHandler', () => {
   let service: EnvironmentVariableHandler;

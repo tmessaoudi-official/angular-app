@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { EnvironmentVariableProcessors } from './EnvironmentVariableProcessors';
+import {EnvironmentVariableProcessors} from './EnvironmentVariableProcessors';
 
 describe('EnvironmentVariableProcessors', () => {
   let service: EnvironmentVariableProcessors;

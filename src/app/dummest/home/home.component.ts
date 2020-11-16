@@ -1,5 +1,5 @@
-import { Component, Inject, LOCALE_ID } from '@angular/core';
-import { I18nSwitcherService } from '../../i18n/service/switcher/i18n.switcher.service';
+import {Component, Inject, LOCALE_ID} from '@angular/core';
+import {I18nSwitcherService} from '../../../i18n/service/switcher/i18n.switcher.service';
 
 @Component({
   selector: 'app-home',

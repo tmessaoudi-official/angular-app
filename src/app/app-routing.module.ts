@@ -1,21 +1,26 @@
 import {NgModule} from '@angular/core';
 import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
-import {DumbComponent} from './dumb/dumb.component';
-import {DummyComponent} from './dummy/dummy.component';
-import {DumberComponent} from './dumber/dumber.component';
-import {HomeComponent} from './home/home.component';
-import {NotFoundComponent} from './not-found/not-found.component';
+import {NotFoundComponent} from './core/not-found/not-found.component';
 
 const routes: Routes = [
-  {path: 'dumb', component: DumbComponent},
-  {path: 'dummy', component: DummyComponent},
-  {path: 'dumber/:id', component: DumberComponent},
-  {path: 'dumber', component: DumberComponent},
-  {path: '', component: HomeComponent},
-
-  {path: '404', component: NotFoundComponent},
+  {
+    path: '404',
+    component: NotFoundComponent
+  },
+  {
+    path: 'dummest',
+    loadChildren: () => import('./dummest/dummest.module').then(m => m.DummestModule)
+  },
+  {
+    path: '',
+    redirectTo: 'dummest',
+    pathMatch: 'full'
+  },
   // otherwise redirect to home
-  // { path: '**', redirectTo: '404' }
+  {
+    path: '**',
+    redirectTo: '404'
+  }
 ];
 
 @NgModule({

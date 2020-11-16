@@ -3,15 +3,79 @@
   <file id="ngi18n" original="ng.template">
     <unit id="8202903159216468577">
       <notes>
-        <note category="location">src/app/app.component.ts:18,19</note>
+        <note category="location">src/app/core/app.component.ts:18,19</note>
       </notes>
       <segment>
         <source>app.index.title</source>
       </segment>
     </unit>
+    <unit id="4654714685343745812">
+      <notes>
+        <note category="location">src/app/core/not-found/not-found.component.ts:12</note>
+      </notes>
+      <segment>
+        <source>app.not_found</source>
+      </segment>
+    </unit>
+    <unit id="5335356958891281272">
+      <notes>
+        <note category="location">src/app/core/header/header.component.ts:19</note>
+      </notes>
+      <segment>
+        <source>app.nav.home</source>
+      </segment>
+    </unit>
+    <unit id="3277344663848389123">
+      <notes>
+        <note category="location">src/app/core/header/header.component.ts:19</note>
+      </notes>
+      <segment>
+        <source>app.nav.dummest.module</source>
+      </segment>
+    </unit>
+    <unit id="8215035420062173710">
+      <notes>
+        <note category="location">src/app/core/header/header.component.ts:19</note>
+      </notes>
+      <segment>
+        <source>app.nav.dummy</source>
+      </segment>
+    </unit>
+    <unit id="8856170510253505863">
+      <notes>
+        <note category="location">src/app/core/header/header.component.ts:19</note>
+      </notes>
+      <segment>
+        <source>app.nav.dumb</source>
+      </segment>
+    </unit>
+    <unit id="7563047614717127693">
+      <notes>
+        <note category="location">src/app/core/header/header.component.ts:19</note>
+      </notes>
+      <segment>
+        <source>app.nav.dumber</source>
+      </segment>
+    </unit>
+    <unit id="6010898872571258196">
+      <notes>
+        <note category="location">src/app/core/header/header.component.ts:19</note>
+      </notes>
+      <segment>
+        <source>app.nav.dumber_with_id</source>
+      </segment>
+    </unit>
+    <unit id="3104991395163537922">
+      <notes>
+        <note category="location">src/app/core/footer/footer.component.ts:11</note>
+      </notes>
+      <segment>
+        <source>app.footer.text <ph id="0" equiv="PH" disp="this.name"/></source>
+      </segment>
+    </unit>
     <unit id="4162997551392921684">
       <notes>
-        <note category="location">src/app/dummy/dummy.component.ts:21</note>
+        <note category="location">src/app/dummest/dummy/dummy.component.ts:21</note>
       </notes>
       <segment>
         <source>app.dummy.title</source>
@@ -19,7 +83,7 @@
     </unit>
     <unit id="303063580277194129">
       <notes>
-        <note category="location">src/app/dumb/dumb.component.ts:21</note>
+        <note category="location">src/app/dummest/dumb/dumb.component.ts:21</note>
       </notes>
       <segment>
         <source>app.dumb.title</source>
@@ -27,7 +91,7 @@
     </unit>
     <unit id="8280334145137016148">
       <notes>
-        <note category="location">src/app/dumb/dumb.component.ts:21</note>
+        <note category="location">src/app/dummest/dumb/dumb.component.ts:21</note>
       </notes>
       <segment>
         <source>app.dumb.title2</source>
@@ -35,7 +99,7 @@
     </unit>
     <unit id="7249072834034853576">
       <notes>
-        <note category="location">src/app/dumber/dumber.component.ts:26</note>
+        <note category="location">src/app/dummest/dumber/dumber.component.ts:26</note>
       </notes>
       <segment>
         <source>app.dumber.title</source>
@@ -43,7 +107,7 @@
     </unit>
     <unit id="3777802817951822482">
       <notes>
-        <note category="location">src/app/home/home.component.ts:58,59</note>
+        <note category="location">src/app/dummest/home/home.component.ts:58,59</note>
       </notes>
       <segment>
         <source>can t set minutes less than 0</source>
@@ -51,7 +115,7 @@
     </unit>
     <unit id="3141899919268928026">
       <notes>
-        <note category="location">src/app/home/home.component.ts:28,40</note>
+        <note category="location">src/app/dummest/home/home.component.ts:29,41</note>
       </notes>
       <segment>
         <source>app.home.title</source>
@@ -59,7 +123,7 @@
     </unit>
     <unit id="636666793223463925">
       <notes>
-        <note category="location">src/app/home/home.component.ts:58,70</note>
+        <note category="location">src/app/dummest/home/home.component.ts:58,70</note>
       </notes>
       <segment>
         <source>app.welcome</source>
@@ -67,7 +131,7 @@
     </unit>
     <unit id="app_welcome">
       <notes>
-        <note category="location">src/app/home/home.component.ts:70</note>
+        <note category="location">src/app/dummest/home/home.component.ts:70</note>
         <note category="description">Description test</note>
         <note category="meaning">Meaning test</note>
       </notes>
@@ -77,7 +141,7 @@
     </unit>
     <unit id="app_welcome_second">
       <notes>
-        <note category="location">src/app/home/home.component.ts:70</note>
+        <note category="location">src/app/dummest/home/home.component.ts:70</note>
         <note category="description">Description test second</note>
         <note category="meaning">Meaning test welcome second</note>
       </notes>
@@ -87,7 +151,7 @@
     </unit>
     <unit id="1803531417720015616">
       <notes>
-        <note category="location">src/app/home/home.component.ts:70</note>
+        <note category="location">src/app/dummest/home/home.component.ts:70</note>
       </notes>
       <segment>
         <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</source>
@@ -95,7 +159,7 @@
     </unit>
     <unit id="7282916492820826755">
       <notes>
-        <note category="location">src/app/home/home.component.ts:70</note>
+        <note category="location">src/app/dummest/home/home.component.ts:70</note>
       </notes>
       <segment>
         <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></source>
@@ -103,7 +167,7 @@
     </unit>
     <unit id="7842238767399919809">
       <notes>
-        <note category="location">src/app/home/home.component.html:15</note>
+        <note category="location">src/app/dummest/home/home.component.html:15</note>
       </notes>
       <segment>
         <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
@@ -111,67 +175,10 @@
     </unit>
     <unit id="8719020961091149048">
       <notes>
-        <note category="location">src/app/home/home.component.html:15,13</note>
+        <note category="location">src/app/dummest/home/home.component.html:15,13</note>
       </notes>
       <segment>
         <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></source>
-      </segment>
-    </unit>
-    <unit id="4654714685343745812">
-      <notes>
-        <note category="location">src/app/not-found/not-found.component.ts:12</note>
-      </notes>
-      <segment>
-        <source>app.not_found</source>
-      </segment>
-    </unit>
-    <unit id="5335356958891281272">
-      <notes>
-        <note category="location">src/app/header/header.component.ts:19</note>
-      </notes>
-      <segment>
-        <source>app.nav.home</source>
-      </segment>
-    </unit>
-    <unit id="8215035420062173710">
-      <notes>
-        <note category="location">src/app/header/header.component.ts:19</note>
-      </notes>
-      <segment>
-        <source>app.nav.dummy</source>
-      </segment>
-    </unit>
-    <unit id="8856170510253505863">
-      <notes>
-        <note category="location">src/app/header/header.component.ts:19</note>
-      </notes>
-      <segment>
-        <source>app.nav.dumb</source>
-      </segment>
-    </unit>
-    <unit id="7563047614717127693">
-      <notes>
-        <note category="location">src/app/header/header.component.ts:19</note>
-        <note category="location">src/app/header/header.component.ts:19</note>
-      </notes>
-      <segment>
-        <source>app.nav.dumber</source>
-      </segment>
-    </unit>
-    <unit id="6010898872571258196">
-      <notes>
-        <note category="location">src/app/header/header.component.ts:19</note>
-      </notes>
-      <segment>
-        <source>app.nav.dumber_with_id</source>
-      </segment>
-    </unit>
-    <unit id="3104991395163537922">
-      <notes>
-        <note category="location">src/app/footer/footer.component.ts:11</note>
-      </notes>
-      <segment>
-        <source>app.footer.text <ph id="0" equiv="PH" disp="this.name"/></source>
       </segment>
     </unit>
     <unit id="ngb.alert.close">

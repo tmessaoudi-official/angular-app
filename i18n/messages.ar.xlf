@@ -3,8 +3,8 @@
   <file id="ngi18n" original="ng.template">
     <unit id="8202903159216468577">
       <notes>
-        <note category="location">src/app/app.component.ts:18</note>
-      </notes>
+
+      <note category="location">src/app/core/app.component.ts:18</note></notes>
       <segment state="translated">
         <source>app.index.title</source>
         <target>app.index.title_ar</target>
@@ -13,8 +13,8 @@
     <unit id="4162997551392921684">
       <notes>
 
-        
-      <note category="location">src/app/dummy/dummy.component.ts:21</note></notes>
+
+      <note category="location">src/app/dummest/dummy/dummy.component.ts:21</note></notes>
       <segment state="translated">
         <source>app.dummy.title</source>
         <target>app.dummy.title_ar</target>
@@ -23,8 +23,8 @@
     <unit id="303063580277194129">
       <notes>
 
-        
-      <note category="location">src/app/dumb/dumb.component.ts:21</note></notes>
+
+      <note category="location">src/app/dummest/dumb/dumb.component.ts:21</note></notes>
       <segment state="translated">
         <source>app.dumb.title</source>
         <target>app.dumb.title_ar</target>
@@ -33,8 +33,8 @@
     <unit id="8280334145137016148">
       <notes>
 
-        
-      <note category="location">src/app/dumb/dumb.component.ts:21</note></notes>
+
+      <note category="location">src/app/dummest/dumb/dumb.component.ts:21</note></notes>
       <segment state="translated">
         <source>app.dumb.title2</source>
         <target>app.dumb.title2_ar</target>
@@ -43,8 +43,8 @@
     <unit id="7249072834034853576">
       <notes>
 
-        
-      <note category="location">src/app/dumber/dumber.component.ts:26</note></notes>
+
+      <note category="location">src/app/dummest/dumber/dumber.component.ts:26</note></notes>
       <segment state="translated">
         <source>app.dumber.title</source>
         <target>app.dumber.title_ar</target>
@@ -52,8 +52,8 @@
     </unit>
     <unit id="3777802817951822482">
       <notes>
-        <note category="location">src/app/home/home.component.ts:58</note>
-      </notes>
+
+      <note category="location">src/app/dummest/home/home.component.ts:58</note></notes>
       <segment state="initial">
         <source>can t set minutes less than 0</source>
         <target>can t set minutes less than 0 ar</target>
@@ -62,8 +62,8 @@
     <unit id="3141899919268928026">
       <notes>
 
-        <note category="location">src/app/home/home.component.ts:28</note>
-      </notes>
+
+      <note category="location">src/app/dummest/home/home.component.ts:29</note></notes>
       <segment state="translated">
         <source>app.home.title</source>
         <target>app.home.title_ar</target>
@@ -72,8 +72,8 @@
     <unit id="636666793223463925">
       <notes>
 
-        <note category="location">src/app/home/home.component.ts:58</note>
-      </notes>
+
+      <note category="location">src/app/dummest/home/home.component.ts:58</note></notes>
       <segment state="translated">
         <source>app.welcome</source>
         <target>app.welcome_ar</target>
@@ -84,8 +84,8 @@
 
         <note category="description">Description test</note>
         <note category="meaning">Meaning test</note>
-        <note category="location">src/app/home/home.component.ts:70</note>
-      </notes>
+
+      <note category="location">src/app/dummest/home/home.component.ts:70</note></notes>
       <segment state="translated">
         <source>app.welcome_with_meaning_and_description_and_id</source>
         <target>app.welcome_with_meaning_and_description_and_id_ar</target>
@@ -96,8 +96,8 @@
 
         <note category="description">Description test second</note>
         <note category="meaning">Meaning test welcome second</note>
-        <note category="location">src/app/home/home.component.ts:70</note>
-      </notes>
+
+      <note category="location">src/app/dummest/home/home.component.ts:70</note></notes>
       <segment state="translated">
         <source>app.welcome_with_meaning_and_description_and_id</source>
         <target>app.welcome_with_meaning_and_description_and_id_ar</target>
@@ -106,8 +106,8 @@
     <unit id="1803531417720015616">
       <notes>
 
-        <note category="location">src/app/home/home.component.ts:70</note>
-      </notes>
+
+      <note category="location">src/app/dummest/home/home.component.ts:70</note></notes>
       <segment state="translated">
         <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</source>
         <target>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}_ar</target>
@@ -116,8 +116,8 @@
     <unit id="7282916492820826755">
       <notes>
 
-        <note category="location">src/app/home/home.component.ts:70</note>
-      </notes>
+
+      <note category="location">src/app/dummest/home/home.component.ts:70</note></notes>
       <segment state="translated">
         <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>
         </source>
@@ -127,8 +127,8 @@
     <unit id="7842238767399919809">
       <notes>
 
-        <note category="location">src/app/home/home.component.html:15</note>
-      </notes>
+
+      <note category="location">src/app/dummest/home/home.component.html:15</note></notes>
       <segment state="translated">
         <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
         <target>{VAR_SELECT, select, male {male} female {female} other {other}}_ar</target>
@@ -137,8 +137,8 @@
     <unit id="8719020961091149048">
       <notes>
 
-        <note category="location">src/app/home/home.component.html:15</note>
-      </notes>
+
+      <note category="location">src/app/dummest/home/home.component.html:15</note></notes>
       <segment state="translated">
         <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/>
         </source>
@@ -148,8 +148,8 @@
     <unit id="4654714685343745812">
       <notes>
 
-        
-      <note category="location">src/app/not-found/not-found.component.ts:12</note></notes>
+
+      <note category="location">src/app/core/not-found/not-found.component.ts:12</note></notes>
       <segment state="translated">
         <source>app.not_found</source>
         <target>app.not_found_ar</target>
@@ -158,18 +158,25 @@
     <unit id="5335356958891281272">
       <notes>
 
-        <note category="location">src/app/header/header.component.ts:19</note>
-      </notes>
+
+      <note category="location">src/app/core/header/header.component.ts:19</note></notes>
       <segment state="translated">
         <source>app.nav.home</source>
         <target>app.nav.home_ar</target>
       </segment>
+    </unit><unit id="3277344663848389123">
+      <notes>
+        <note category="location">src/app/core/header/header.component.ts:19</note>
+      </notes>
+      <segment state="initial">
+        <source>app.nav.dummest.module</source>
+      <target>app.nav.dummest.module_ar</target></segment>
     </unit>
     <unit id="8215035420062173710">
       <notes>
 
-        <note category="location">src/app/header/header.component.ts:19</note>
-      </notes>
+
+      <note category="location">src/app/core/header/header.component.ts:19</note></notes>
       <segment state="translated">
         <source>app.nav.dummy</source>
         <target>app.nav.dummy_ar</target>
@@ -178,8 +185,8 @@
     <unit id="8856170510253505863">
       <notes>
 
-        <note category="location">src/app/header/header.component.ts:19</note>
-      </notes>
+
+      <note category="location">src/app/core/header/header.component.ts:19</note></notes>
       <segment state="translated">
         <source>app.nav.dumb</source>
         <target>app.nav.dumb_ar</target>
@@ -189,9 +196,9 @@
       <notes>
 
 
-        <note category="location">src/app/header/header.component.ts:19</note>
-        <note category="location">src/app/header/header.component.ts:19</note>
-      </notes>
+
+
+      <note category="location">src/app/core/header/header.component.ts:19</note></notes>
       <segment state="translated">
         <source>app.nav.dumber</source>
         <target>app.nav.dumber_ar</target>
@@ -200,8 +207,8 @@
     <unit id="6010898872571258196">
       <notes>
 
-        <note category="location">src/app/header/header.component.ts:19</note>
-      </notes>
+
+      <note category="location">src/app/core/header/header.component.ts:19</note></notes>
       <segment state="translated">
         <source>app.nav.dumber_with_id</source>
         <target>app.nav.dumber_with_id_ar</target>
@@ -209,8 +216,8 @@
     </unit>
     <unit id="3104991395163537922">
       <notes>
-        <note category="location">src/app/footer/footer.component.ts:11</note>
-      </notes>
+
+      <note category="location">src/app/core/footer/footer.component.ts:11</note></notes>
       <segment state="translated">
         <source>app.footer.text <ph id="0" equiv="PH" disp="this.name"/>
         </source>
@@ -221,8 +228,8 @@
       <notes>
 
 
-        
-        
+
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:3095</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:3104</note></notes>
       <segment state="translated">
         <source>Close</source>
@@ -233,7 +240,7 @@
       <notes>
 
         <note category="description">Currently selected slide number read by screen reader</note>
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:4493</note></notes>
       <segment state="translated">
         <source> Slide <ph id="0" equiv="INTERPOLATION" disp="ate _pauseOnHov"/> of <ph id="1" equiv="INTERPOLATION_1" disp="ect(false);
@@ -247,7 +254,7 @@
     <unit id="ngb.carousel.previous">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:4502</note></notes>
       <segment state="translated">
         <source>Previous</source>
@@ -257,7 +264,7 @@
     <unit id="ngb.carousel.next">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:4511</note></notes>
       <segment state="translated">
         <source>Next</source>
@@ -268,8 +275,8 @@
       <notes>
 
 
-        
-        
+
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7190</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7199</note></notes>
       <segment state="translated">
         <source>Previous month</source>
@@ -280,8 +287,8 @@
       <notes>
 
 
-        
-        
+
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7208</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7217</note></notes>
       <segment state="translated">
         <source>Next month</source>
@@ -292,8 +299,8 @@
       <notes>
 
 
-        
-        
+
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8874</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8883</note></notes>
       <segment state="translated">
         <source>Select month</source>
@@ -304,8 +311,8 @@
       <notes>
 
 
-        
-        
+
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8892</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8901</note></notes>
       <segment state="translated">
         <source>Select year</source>
@@ -315,7 +322,7 @@
     <unit id="ngb.pagination.first">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14925</note></notes>
       <segment state="translated">
         <source>««</source>
@@ -325,7 +332,7 @@
     <unit id="ngb.pagination.previous">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14934</note></notes>
       <segment state="translated">
         <source>«</source>
@@ -335,7 +342,7 @@
     <unit id="ngb.pagination.next">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14943</note></notes>
       <segment state="translated">
         <source>»</source>
@@ -345,7 +352,7 @@
     <unit id="ngb.pagination.last">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14952</note></notes>
       <segment state="translated">
         <source>»»</source>
@@ -355,7 +362,7 @@
     <unit id="ngb.pagination.first-aria">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14961</note></notes>
       <segment state="translated">
         <source>First</source>
@@ -365,7 +372,7 @@
     <unit id="ngb.pagination.previous-aria">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14970</note></notes>
       <segment state="translated">
         <source>Previous</source>
@@ -375,7 +382,7 @@
     <unit id="ngb.pagination.next-aria">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14979</note></notes>
       <segment state="translated">
         <source>Next</source>
@@ -385,7 +392,7 @@
     <unit id="ngb.pagination.last-aria">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14988</note></notes>
       <segment state="translated">
         <source>Last</source>
@@ -395,7 +402,7 @@
     <unit id="ngb.progressbar.value">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:16103</note></notes>
       <segment state="translated">
         <source>
@@ -408,7 +415,7 @@
     <unit id="ngb.timepicker.HH">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17264</note></notes>
       <segment state="translated">
         <source>HH</source>
@@ -418,7 +425,7 @@
     <unit id="ngb.timepicker.hours">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17273</note></notes>
       <segment state="translated">
         <source>Hours</source>
@@ -428,7 +435,7 @@
     <unit id="ngb.timepicker.MM">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17282</note></notes>
       <segment state="translated">
         <source>MM</source>
@@ -438,7 +445,7 @@
     <unit id="ngb.timepicker.minutes">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17291</note></notes>
       <segment state="translated">
         <source>Minutes</source>
@@ -448,7 +455,7 @@
     <unit id="ngb.timepicker.increment-hours">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17300</note></notes>
       <segment state="translated">
         <source>Increment hours</source>
@@ -458,7 +465,7 @@
     <unit id="ngb.timepicker.decrement-hours">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17309</note></notes>
       <segment state="translated">
         <source>Decrement hours</source>
@@ -468,7 +475,7 @@
     <unit id="ngb.timepicker.increment-minutes">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17318</note></notes>
       <segment state="translated">
         <source>Increment minutes</source>
@@ -478,7 +485,7 @@
     <unit id="ngb.timepicker.decrement-minutes">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17327</note></notes>
       <segment state="translated">
         <source>Decrement minutes</source>
@@ -488,7 +495,7 @@
     <unit id="ngb.timepicker.SS">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17336</note></notes>
       <segment state="translated">
         <source>SS</source>
@@ -498,7 +505,7 @@
     <unit id="ngb.timepicker.seconds">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17345</note></notes>
       <segment state="translated">
         <source>Seconds</source>
@@ -508,7 +515,7 @@
     <unit id="ngb.timepicker.increment-seconds">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17354</note></notes>
       <segment state="translated">
         <source>Increment seconds</source>
@@ -518,7 +525,7 @@
     <unit id="ngb.timepicker.decrement-seconds">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17363</note></notes>
       <segment state="translated">
         <source>Decrement seconds</source>
@@ -528,7 +535,7 @@
     <unit id="ngb.timepicker.PM">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17374</note></notes>
       <segment state="translated">
         <source>
@@ -546,7 +553,7 @@
     <unit id="ngb.timepicker.AM">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17385</note></notes>
       <segment state="translated">
         <source>
@@ -559,7 +566,7 @@
     <unit id="ngb.toast.close-aria">
       <notes>
 
-        
+
       <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17893</note></notes>
       <segment state="translated">
         <source>Close</source>

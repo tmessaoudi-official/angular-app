@@ -1,12 +1,12 @@
 import DotEnvLoader from '../DotEnv/DotEnvLoader.dotenv';
 
-let dotEnvLoader = new DotEnvLoader();
+const dotEnvLoader = new DotEnvLoader();
 
 console.log(dotEnvLoader.process('hello world from inside', 'testing'));
 
-import { EnvironmentVariableHandler } from '../DotEnv/deprecated/variable/EnvironmentVariableHandler';
-import { processEnv } from '../DotEnv/processEnv';
-import { EnvironmentNaming } from '../DotEnv/deprecated/EnvironmentNaming';
+import {EnvironmentVariableHandler} from '../DotEnv/deprecated/variable/EnvironmentVariableHandler';
+import {processEnv} from '../DotEnv/processEnv';
+import {EnvironmentNaming} from '../DotEnv/deprecated/EnvironmentNaming';
 
 const environmentVariableHandler = new EnvironmentVariableHandler();
 const environmentNaming = new EnvironmentNaming();
@@ -15,7 +15,7 @@ const environmentNaming = new EnvironmentNaming();
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-let environment: IEnvironment = {};
+const environment: IEnvironment = {};
 Object.keys(processEnv).forEach((item, index, arr) =>
 {
   environment[environmentNaming.camelize(item)] = environmentVariableHandler.process(processEnv[item], item);
@@ -31,7 +31,7 @@ if (environment.appDebug === true) {
   console.log(processEnv);
 }
 
-export { environment };
+export {environment};
 
 /*
  * For easier debugging in development mode, you can import the following file

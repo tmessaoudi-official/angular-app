@@ -26,7 +26,7 @@ const processEnv: IProcessEnv = {
   APP_E2E_PROTRACTOR_SELENIUM_ADDRESS: process.env.APP_E2E_PROTRACTOR_SELENIUM_ADDRESS
 };
 
-export { processEnv };
+export {processEnv};
 
 /*
  * For easier debugging in development mode, you can import the following file

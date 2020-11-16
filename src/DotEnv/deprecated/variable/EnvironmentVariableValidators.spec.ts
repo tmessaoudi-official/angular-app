@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { EnvironmentVariableValidators } from './EnvironmentVariableValidators';
+import {EnvironmentVariableValidators} from './EnvironmentVariableValidators';
 
 describe('EnvironmentVariableValidators', () => {
   let service: EnvironmentVariableValidators;

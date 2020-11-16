@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { LocaleInitializerService } from './locale-initializer.service';
+import {LocaleInitializerService} from './locale-initializer.service';
 
 describe('LocaleInitializerService', () => {
   let service: LocaleInitializerService;

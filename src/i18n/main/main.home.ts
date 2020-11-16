@@ -1,10 +1,10 @@
 import {enableProdMode, LOCALE_ID} from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
-import { AppHomeModule } from '../../app/i18n/home/app.home.module';
-import { environment } from '../../environments/environment';
+import {AppHomeModule} from '../../app/i18n/home/app.home.module';
+import {environment} from '../../environments/environment';
 
-import { LocaleInitializerService} from '../service/locale-initializer.service';
+import {LocaleInitializerService} from '../service/locale-initializer.service';
 
 LocaleInitializerService.do(process.env.APP_I18N_LOCALE_DEFAULT, process.env.APP_I18N_LOCALE_DUMMY);
 
@@ -18,7 +18,7 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppHomeModule, {
   providers: [
-    { provide: LOCALE_ID, useValue: `${process.env.APP_I18N_LOCALE_DUMMY}` }
+    {provide: LOCALE_ID, useValue: `${process.env.APP_I18N_LOCALE_DUMMY}`}
   ],
 })
   .catch(err => console.error(err));

@@ -1,23 +1,23 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { DummyComponent } from './dummy.component';
+import {DumberComponent} from './dumber.component';
 import {RouterTestingModule} from '@angular/router/testing';
 import {HttpClientTestingModule} from '@angular/common/http/testing';
 
-describe('DummyComponent', () => {
-  let component: DummyComponent;
-  let fixture: ComponentFixture<DummyComponent>;
+describe('DumberComponent', () => {
+  let component: DumberComponent;
+  let fixture: ComponentFixture<DumberComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DummyComponent ],
+      declarations: [ DumberComponent ],
       imports: [RouterTestingModule, HttpClientTestingModule],
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DummyComponent);
+    fixture = TestBed.createComponent(DumberComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

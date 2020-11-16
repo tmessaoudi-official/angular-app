@@ -20,6 +20,8 @@
     "importHelpers": true,
     "target": "es5",
     "module": "ESNext",
+    "removeComments": true,
+    "diagnostics": true,
     "types": [
       "node",
       "jasmine",

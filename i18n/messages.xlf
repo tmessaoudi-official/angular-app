@@ -11,7 +11,7 @@
     </unit>
     <unit id="4162997551392921684">
       <notes>
-        <note category="location">src/app/dummy/dummy.component.ts:22</note>
+        <note category="location">src/app/dummy/dummy.component.ts:21</note>
       </notes>
       <segment>
         <source>app.dummy.title</source>
@@ -19,7 +19,7 @@
     </unit>
     <unit id="303063580277194129">
       <notes>
-        <note category="location">src/app/dumb/dumb.component.ts:22</note>
+        <note category="location">src/app/dumb/dumb.component.ts:21</note>
       </notes>
       <segment>
         <source>app.dumb.title</source>
@@ -27,7 +27,7 @@
     </unit>
     <unit id="8280334145137016148">
       <notes>
-        <note category="location">src/app/dumb/dumb.component.ts:22</note>
+        <note category="location">src/app/dumb/dumb.component.ts:21</note>
       </notes>
       <segment>
         <source>app.dumb.title2</source>
@@ -35,7 +35,7 @@
     </unit>
     <unit id="7249072834034853576">
       <notes>
-        <note category="location">src/app/dumber/dumber.component.ts:27</note>
+        <note category="location">src/app/dumber/dumber.component.ts:26</note>
       </notes>
       <segment>
         <source>app.dumber.title</source>

@@ -3,7 +3,7 @@ const { resolutions } = JSON.parse(
 );
 
 if (resolutions) {
-  console.log('resolutions !!');
+  // console.log('resolutions !!');
   module.exports = {};
   /*module.exports = {
     hooks: {
@@ -25,7 +25,7 @@ if (resolutions) {
 
     return pkg;
   }*/
-  /*  "resolutions": {
+  /*"resolutions": {
     "webpack": "^5.0.0"
   },
   "pnpm": {
@@ -34,6 +34,6 @@ if (resolutions) {
     }
   },*/
 } else {
-  console.log('no resolutions !!');
+  // console.log('no resolutions !!');
   module.exports = {};
 }

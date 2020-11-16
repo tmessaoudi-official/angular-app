@@ -1,6 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import 'rxjs/add/operator/filter';
 
 @Component({
   selector: 'app-dumb',

@@ -9,7 +9,7 @@ Loader.run(processNodeEnv, forceEnvRebuild);
 
 exports.default = {
   pre(options) {
-    console.log('pre build');
+    // console.log('pre build');
 
     return options;
   },
@@ -23,7 +23,7 @@ exports.default = {
     return cfg;
   },
   post(options) {
-    console.log('post build');
+    // console.log('post build');
 
     return options;
   }

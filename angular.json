@@ -92,15 +92,6 @@
             ]
           },
           "configurations": {
-            "production": {
-              "buildOptimizer": true,
-              "optimization": true,
-              "outputHashing": "all",
-              "namedChunks": false,
-              "vendorChunk": false,
-              "commonChunk": false,
-              "sourceMap": false
-            },
             "dev": {
               "buildOptimizer": false,
               "optimization": false,
@@ -109,8 +100,6 @@
               "vendorChunk": true,
               "commonChunk": true,
               "sourceMap": true,
-              "hmr": true,
-              "hmrWarning": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -123,6 +112,15 @@
                   "maximumError": "20kb"
                 }
               ]
+            },
+            "production": {
+              "buildOptimizer": true,
+              "optimization": true,
+              "outputHashing": "all",
+              "namedChunks": false,
+              "vendorChunk": false,
+              "commonChunk": false,
+              "sourceMap": false
             },
             "force": {
               "force": true
@@ -347,7 +345,6 @@
             "hmrWarning": true,
             "host": "0.0.0.0",
             "disableHostCheck": true,
-            "hmr": true,
             "browserTarget": "localization:build:dev,ignore-i18n,home,home-en,no-base-href,aot"
           },
           "configurations": {

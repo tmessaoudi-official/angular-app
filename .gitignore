@@ -8,11 +8,10 @@
 /bazel-out
 
 /*.local
-/*.local.build
-/.env.local
-/.env.*.local
-/.app.env/.env.local
-/.app.env/.env.*.local
+/.app.env/*.local
+*.local.build
+.env.local
+.env.*.local
 
 # dependencies
 /node_modules

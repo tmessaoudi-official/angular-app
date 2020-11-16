@@ -235,9 +235,9 @@ let Loader = {
     }
     if (!force) {
       try {
-        if (fs.existsSync('./.env.local.build')) {
-          Loader.load('./.env.local.build');
-          Loader.log('using generated file ./.env.local.build', 'warn');
+        if (fs.existsSync('./.app.env/.env.local.build')) {
+          Loader.load('./.app.env/.env.local.build');
+          Loader.log('using generated file ./.app.env/.env.local.build', 'warn');
           return;
         }
       } catch(err) {
@@ -288,7 +288,7 @@ let Loader = {
 
 if (typeof process.env.APP_ENV_RUN_BUILD == 'string' && process.env.APP_ENV_RUN_BUILD === 'true') {
   try {
-    fs.unlinkSync('./.env.local.build');
+    fs.unlinkSync('./.app.env/.env.local.build');
   } catch(err) {
   }
   if (typeof process.env.NODE_ENV_FORCE === 'string' && process.env.NODE_ENV_FORCE !== '') {
@@ -304,9 +304,9 @@ if (typeof process.env.APP_ENV_RUN_BUILD == 'string' && process.env.APP_ENV_RUN_
       data += item + '=\n';
     }
   });
-  fs.writeFile('./.env.local.build', data, function (err) {
+  fs.writeFile('./.app.env/.env.local.build', data, function (err) {
     if (err) return console.log(err);
-    console.log('Generated env created succussfully ./.env.local.build');
+    console.log('Generated env created succussfully ./.app.env/.env.local.build');
   });
 }
 module.exports = Loader;

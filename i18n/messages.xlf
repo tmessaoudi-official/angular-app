@@ -98,8 +98,7 @@
         <note category="location">src/app/home/home.component.ts:70</note>
       </notes>
       <segment>
-        <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>
-        </source>
+        <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></source>
       </segment>
     </unit>
     <unit id="7842238767399919809">
@@ -115,8 +114,7 @@
         <note category="location">src/app/home/home.component.html:15,13</note>
       </notes>
       <segment>
-        <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/>
-        </source>
+        <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></source>
       </segment>
     </unit>
     <unit id="4654714685343745812">
@@ -173,8 +171,7 @@
         <note category="location">src/app/footer/footer.component.ts:11</note>
       </notes>
       <segment>
-        <source>app.footer.text <ph id="0" equiv="PH" disp="this.name"/>
-        </source>
+        <source>app.footer.text <ph id="0" equiv="PH" disp="this.name"/></source>
       </segment>
     </unit>
     <unit id="ngb.alert.close">
@@ -192,8 +189,7 @@
         <note category="description">Currently selected slide number read by screen reader</note>
       </notes>
       <segment>
-        <source> Slide <ph id="0" equiv="INTERPOLATION" disp="&quot;\uFFFD0\uFFFD&quot;"/> of <ph id="1" equiv="INTERPOLATION_1" disp="&quot;\uFFFD1\uFFFD&quot;"/>
-        </source>
+        <source> Slide <ph id="0" equiv="INTERPOLATION" disp="&quot;\uFFFD0\uFFFD&quot;"/> of <ph id="1" equiv="INTERPOLATION_1" disp="&quot;\uFFFD1\uFFFD&quot;"/> </source>
       </segment>
     </unit>
     <unit id="ngb.carousel.previous">
@@ -317,9 +313,7 @@
         <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:16103</note>
       </notes>
       <segment>
-        <source>
-<ph id="0" equiv="INTERPOLATION" disp="&quot;\uFFFD0\uFFFD&quot;"/>
-        </source>
+        <source><ph id="0" equiv="INTERPOLATION" disp="&quot;\uFFFD0\uFFFD&quot;"/></source>
       </segment>
     </unit>
     <unit id="ngb.timepicker.HH">
@@ -423,9 +417,7 @@
         <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17374</note>
       </notes>
       <segment>
-        <source>
-<ph id="0" equiv="INTERPOLATION" disp="&quot;\uFFFD0\uFFFD&quot;"/>
-        </source>
+        <source><ph id="0" equiv="INTERPOLATION" disp="&quot;\uFFFD0\uFFFD&quot;"/></source>
       </segment>
     </unit>
     <unit id="ngb.timepicker.AM">
@@ -433,9 +425,7 @@
         <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17385</note>
       </notes>
       <segment>
-        <source>
-<ph id="0" equiv="INTERPOLATION" disp="&quot;\uFFFD0\uFFFD&quot;"/>
-        </source>
+        <source><ph id="0" equiv="INTERPOLATION" disp="&quot;\uFFFD0\uFFFD&quot;"/></source>
       </segment>
     </unit>
     <unit id="ngb.toast.close-aria">

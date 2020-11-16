@@ -37,11 +37,13 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "extraWebpackConfig": "",
+            "configHook": "",
             "singleBundle": false,
             "keepPolyfills": true,
-            "configHook": "",
-            "plugin": "~angular.cli.plugin.js",
             "keepStyles": true,
+            "progress": true,
+            "profile": true,
+            "plugin": "~angular.cli.plugin.js",
             "allowedCommonJsDependencies": [
               "rxjs-compat",
               "rxjs"
@@ -121,6 +123,9 @@
                   "maximumError": "20kb"
                 }
               ]
+            },
+            "force": {
+              "force": true
             },
             "delete-output-path": {
               "deleteOutputPath": true
@@ -332,13 +337,16 @@
           "builder": "ngx-build-plus:dev-server",
           "options": {
             "extraWebpackConfig": "",
-            "singleBundle": false,
-            "keepPolyfills": true,
             "configHook": "",
             "plugin": "~angular.cli.plugin.js",
+            "singleBundle": false,
+            "keepPolyfills": true,
             "keepStyles": true,
+            "progress": true,
             "liveReload": true,
             "hmrWarning": true,
+            "host": "0.0.0.0",
+            "disableHostCheck": true,
             "hmr": true,
             "browserTarget": "localization:build:dev,ignore-i18n,home,home-en,no-base-href,aot"
           },
@@ -400,11 +408,9 @@
           "builder": "ngx-build-plus:karma",
           "options": {
             "extraWebpackConfig": "",
-            "singleBundle": false,
-            "keepPolyfills": true,
             "configHook": "",
             "plugin": "~angular.cli.plugin.js",
-            "keepStyles": true,
+            "progress": true,
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig/tsconfig.spec.json",
@@ -490,7 +496,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "localization:build:home",
+            "browserTarget": "localization:build:dev,home,force",
             "outputPath": "i18n",
             "outFile": "messages.xlf",
             "format": "xlf2",
@@ -498,11 +504,11 @@
           },
           "configurations": {
             "source": {
-              "browserTarget": "localization:build:home",
+              "browserTarget": "localization:build:dev,home,force",
               "outFile": "messages.xlf"
             },
             "home-source": {
-              "browserTarget": "localization:build:home,home-config,dummy-env",
+              "browserTarget": "localization:build:dev,home,home,home-config,dummy-env",
               "outputPath": "i18n/home",
               "outFile": "messages.xlf"
             },

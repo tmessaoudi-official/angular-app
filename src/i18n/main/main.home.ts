@@ -4,11 +4,13 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppHomeModule } from '../../app/i18n/home/app.home.module';
 import { environment } from '../../environments/environment';
 
-import { registerLocaleData } from '@angular/common';
-const localeDummy = require(`@angular/common/locales/${process.env.APP_I18N_LOCALE_DEFAULT}`).default;
-const localeDummyExtra = require(`@angular/common/locales/extra/${process.env.APP_I18N_LOCALE_DEFAULT}`).default;
+import { LocaleInitializerService} from '../service/locale-initializer.service';
 
-registerLocaleData(localeDummy, `${process.env.APP_I18N_LOCALE_DUMMY}`, localeDummyExtra);
+LocaleInitializerService.do(process.env.APP_I18N_LOCALE_DEFAULT, process.env.APP_I18N_LOCALE_DUMMY);
+
+environment.appI18nSupportedLocales.forEach(((value: I18nLocale, index: number, array: I18nLocale[]) => {
+  LocaleInitializerService.do(value.id);
+}));
 
 if (environment.production) {
   enableProdMode();

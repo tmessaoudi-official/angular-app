@@ -19,7 +19,7 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es5",
-    "module": "es2020",
+    "module": "ESNext",
     "types": [
       "node",
       "jasmine",

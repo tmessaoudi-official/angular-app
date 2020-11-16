@@ -119,7 +119,7 @@
     </unit>
     <unit id="4654714685343745812">
       <notes>
-        <note category="location">src/app/not-found/not-found.component.ts:16</note>
+        <note category="location">src/app/not-found/not-found.component.ts:12</note>
       </notes>
       <segment>
         <source>app.not_found</source>

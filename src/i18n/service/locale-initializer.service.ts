@@ -22,7 +22,7 @@ export class LocaleInitializerService {
 				/* webpackInclude: /(en|fr|de|ar|es|pt|it)\.js$/ */
 				/* webpackMode: "lazy" */
 				/* webpackPrefetch: true */
-        /* webpackPreload: true */
+				/* webpackPreload: true */
 				`@angular/common/locales/extra/${localeId}.js`
 			).then((moduleExtra) => {
 				registerLocaleData(

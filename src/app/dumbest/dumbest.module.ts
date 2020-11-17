@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { DummestRoutingModule } from './dummest-routing.module';
-import { DummestComponent } from './dummest.component';
+import { DumbestRoutingModule } from './dumbest-routing.module';
+import { DumbestComponent } from './dumbest.component';
 
 import { DummyComponent } from './dummy/dummy.component';
 import { DumbComponent } from './dumb/dumb.component';
@@ -11,12 +11,12 @@ import { HomeComponent } from './home/home.component';
 
 @NgModule({
 	declarations: [
-		DummestComponent,
+		DumbestComponent,
 		DummyComponent,
 		DumbComponent,
 		DumberComponent,
 		HomeComponent
 	],
-	imports: [CommonModule, DummestRoutingModule]
+	imports: [CommonModule, DumbestRoutingModule]
 })
-export class DummestModule {}
+export class DumbestModule {}

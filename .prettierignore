@@ -4,3 +4,4 @@ dist
 node_modules
 .pnpm-store
 out-tsc
+coverage

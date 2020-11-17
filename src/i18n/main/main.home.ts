@@ -24,10 +24,7 @@ if (environment.production) {
 platformBrowserDynamic()
 	.bootstrapModule(AppHomeModule, {
 		providers: [
-			{
-				provide: LOCALE_ID,
-				useValue: processEnv.APP_I18N_LOCALE_DUMMY
-			}
+			{ provide: LOCALE_ID, useValue: processEnv.APP_I18N_LOCALE_DUMMY }
 		]
 	})
 	.catch((err) => console.error(err));

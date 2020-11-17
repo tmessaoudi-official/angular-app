@@ -8,13 +8,13 @@ const routes: Routes = [
 		component: NotFoundComponent
 	},
 	{
-		path: `dummest`,
+		path: `dumbest`,
 		loadChildren: () =>
-			import(`./dummest/dummest.module`).then((m) => m.DummestModule)
+			import(`./dumbest/dumbest.module`).then((m) => m.DumbestModule)
 	},
 	{
 		path: ``,
-		redirectTo: `dummest`,
+		redirectTo: `dumbest`,
 		pathMatch: `full`
 	},
 	// otherwise redirect to home

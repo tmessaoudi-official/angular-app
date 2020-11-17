@@ -10,6 +10,8 @@ help:
 	@echo "Usage: make <target>"
 load-env-js:
 	pnpm run load-env-js
+load-env-ts:
+	pnpm run load-env-ts
 build-dev:
 	NODE_ENV_FORCE=dev APP_ENV_RUN_BUILD=true APP_ENV_FORCE_REBUILD=true make load-env-js --ignore-errors --keep-going --warn-undefined-variables
 	APP_CONFIGURATION="--configuration=dev,delete-output-path,ignore-i18n,no-base-href,${APP_I18N_LOCALE_DEFAULT}-locale,${APP_I18N_LOCALE_DEFAULT}${APP_CONFIGURATIOH_HOME_SUFFIX}" pnpm run build && APP_CONFIGURATION="--configuration=dev,ignore-i18n,localize" pnpm run build && APP_CONFIGURATION="--configuration=dev,ignore-i18n,home-locale-${APP_I18N_LOCALE_DEFAULT},home,home-base-href,home-config,dummy-env" pnpm run build

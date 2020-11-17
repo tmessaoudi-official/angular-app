@@ -14,7 +14,7 @@
       <notes>
 
 
-      <note category="location">src/app/dummest/dummy/dummy.component.html:1</note></notes>
+      <note category="location">src/app/dumbest/dummy/dummy.component.html:1</note></notes>
       <segment state="translated">
         <source>app.dummy.title</source>
         <target>app.dummy.title_pt</target>
@@ -24,7 +24,7 @@
       <notes>
 
 
-      <note category="location">src/app/dummest/dumb/dumb.component.html:1</note></notes>
+      <note category="location">src/app/dumbest/dumb/dumb.component.html:1</note></notes>
       <segment state="translated">
         <source>app.dumb.title</source>
         <target>app.dumb.title_pt</target>
@@ -34,7 +34,7 @@
       <notes>
 
 
-      <note category="location">src/app/dummest/dumb/dumb.component.html:2</note></notes>
+      <note category="location">src/app/dumbest/dumb/dumb.component.html:2</note></notes>
       <segment state="translated">
         <source>app.dumb.title2</source>
         <target>app.dumb.title2_pt</target>
@@ -44,7 +44,7 @@
       <notes>
 
 
-      <note category="location">src/app/dummest/dumber/dumber.component.html:1</note></notes>
+      <note category="location">src/app/dumbest/dumber/dumber.component.html:1</note></notes>
       <segment state="translated">
         <source>app.dumber.title</source>
         <target>app.dumber.title_pt</target>
@@ -53,7 +53,7 @@
     <unit id="3777802817951822482">
       <notes>
 
-      <note category="location">src/app/dummest/home/home.component.ts:59</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.ts:59</note></notes>
       <segment state="initial">
         <source>can t set minutes less than 0</source>
         <target>can t set minutes less than 0 pt</target>
@@ -63,7 +63,7 @@
       <notes>
 
 
-      <note category="location">src/app/dummest/home/home.component.html:1</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:1</note></notes>
       <segment state="translated">
         <source>app.home.title</source>
         <target>app.home.title_pt</target>
@@ -73,7 +73,7 @@
       <notes>
 
 
-      <note category="location">src/app/dummest/home/home.component.html:4</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:4</note></notes>
       <segment state="translated">
         <source>app.welcome</source>
         <target>app.welcome_pt</target>
@@ -85,7 +85,7 @@
         <note category="description">Description test</note>
         <note category="meaning">Meaning test</note>
 
-      <note category="location">src/app/dummest/home/home.component.html:5</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:5</note></notes>
       <segment state="translated">
         <source>app.welcome_with_meaning_and_description_and_id</source>
         <target>app.welcome_with_meaning_and_description_and_id_pt</target>
@@ -97,7 +97,7 @@
         <note category="description">Description test second</note>
         <note category="meaning">Meaning test welcome second</note>
 
-      <note category="location">src/app/dummest/home/home.component.html:6</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:6</note></notes>
       <segment state="translated">
         <source>app.welcome_with_meaning_and_description_and_id</source>
         <target>app.welcome_with_meaning_and_description_and_id_pt</target>
@@ -107,7 +107,7 @@
       <notes>
 
 
-      <note category="location">src/app/dummest/home/home.component.html:7</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:7</note></notes>
       <segment state="translated">
         <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</source>
         <target>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}_pt</target>
@@ -117,7 +117,7 @@
       <notes>
 
 
-      <note category="location">src/app/dummest/home/home.component.html:7</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:7</note></notes>
       <segment state="translated">
         <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>
         </source>
@@ -128,7 +128,7 @@
       <notes>
 
 
-      <note category="location">src/app/dummest/home/home.component.html:13</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:13</note></notes>
       <segment state="translated">
         <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
         <target>{VAR_SELECT, select, male {male} female {female} other {other}}_pt</target>
@@ -138,7 +138,7 @@
       <notes>
 
 
-      <note category="location">src/app/dummest/home/home.component.html:13</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:13</note></notes>
       <segment state="translated">
         <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/>
         </source>
@@ -166,11 +166,11 @@
       </segment>
     </unit><unit id="3277344663848389123">
       <notes>
-        
+
       <note category="location">src/app/core/header/header.component.html:10</note></notes>
       <segment state="initial">
-        <source>app.nav.dummest.module</source>
-      <target>app.nav.dummest.module_pt</target></segment>
+        <source>app.nav.dumbest.module</source>
+      <target>app.nav.dumbest.module_pt</target></segment>
     </unit>
     <unit id="8215035420062173710">
       <notes>

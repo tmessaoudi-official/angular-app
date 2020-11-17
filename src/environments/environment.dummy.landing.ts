@@ -1,12 +1,12 @@
-import DotEnvLoader from '../DotEnv/DotEnvLoader.dotenv';
+import DotEnvLoader from '../dot-env/dot-env-loader.dotenv';
 
 const dotEnvLoader = new DotEnvLoader();
 
-console.log(dotEnvLoader.process('hello world from inside', 'testing'));
+console.log(dotEnvLoader.process(`hello world from inside`, `testing`));
 
-import {EnvironmentVariableHandler} from '../DotEnv/deprecated/variable/EnvironmentVariableHandler';
-import {processEnv} from '../DotEnv/processEnv';
-import {EnvironmentNaming} from '../DotEnv/deprecated/EnvironmentNaming';
+import { EnvironmentVariableHandler } from '../dot-env/deprecated/variable/environment-variable-handler';
+import { processEnv } from '../dot-env/process-env';
+import { EnvironmentNaming } from '../dot-env/deprecated/environment-naming';
 
 const environmentVariableHandler = new EnvironmentVariableHandler();
 const environmentNaming = new EnvironmentNaming();
@@ -16,22 +16,26 @@ const environmentNaming = new EnvironmentNaming();
 // The list of file replacements can be found in `angular.json`.
 
 const environment: IEnvironment = {};
-Object.keys(processEnv).forEach((item, index, arr) =>
-{
-  environment[environmentNaming.camelize(item)] = environmentVariableHandler.process(processEnv[item], item);
+Object.keys(processEnv).forEach((item) => {
+	environment[
+		environmentNaming.camelize(item) as keyof IEnvironment
+	] = environmentVariableHandler.process(
+		processEnv[item as keyof IProcessEnv],
+		item
+	);
 });
 
-environment.production = environment.nodeEnv === 'production';
+environment.production = environment.nodeEnv === `production`;
 environment.appI18nIsLocaleDummy = true;
 environment.appI18nIsLocaleLanding = true;
 
 if (environment.appDebug === true) {
-  console.log('***** Environment : ');
-  console.log(environment);
-  console.log(processEnv);
+	console.log(`***** Environment : `);
+	console.log(environment);
+	console.log(processEnv);
 }
 
-export {environment};
+export { environment };
 
 /*
  * For easier debugging in development mode, you can import the following file

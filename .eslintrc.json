@@ -32,16 +32,23 @@
         ],
         "createDefaultProgram": true
       },
-      "extends": ["plugin:@angular-eslint/recommended"],
+      "extends": ["plugin:@angular-eslint/recommended", "eslint-config-prettier", "prettier", "plugin:prettier/recommended"],
+      "plugins": [
+        "filenames"
+      ],
+      "ecmaFeatures": {
+        "impliedStrict": true
+      },
       "rules": {
+        "prettier/prettier": "error",
+        "strict": "error",
         "max-len": ["error", { "code": 140 }],
         "prefer-const": "warn",
         "no-unused-expressions": "warn",
         "no-unused-labels": "warn",
         "no-unused-vars": "warn",
-        "object-curly-spacing": "warn",
         "@typescript-eslint/typedef": "warn",
-        "no-irregular-whitespace": "warn",
+        "no-irregular-whitespace": "error",
         /**
          * Any TypeScript related rules you wish to use/reconfigure over and above the
          * recommended set provided by the @angular-eslint project would go here.
@@ -56,7 +63,8 @@
           "error",
           { "type": "element", "prefix": "app", "style": "kebab-case" }
         ],
-        "quotes": ["error", "single", { "allowTemplateLiterals": true }]
+        "quotes": ["error", "backtick", { "allowTemplateLiterals": true, "avoidEscape": true }],
+        "filenames/match-regex": [2, "^([a-z][a-z0-9]*(\\-?))+(\\.?)(.*)$", true]
       }
     },
 

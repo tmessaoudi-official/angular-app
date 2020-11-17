@@ -20,6 +20,6 @@
   "exclude": [
     "../src/**/*.dotenv.run.ts",
     "src/**/*.dotenv.run.ts",
-    "../src/DotEnv/loader.ts"
+    "../src/dot-env/loader.ts"
   ]
 }

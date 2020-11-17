@@ -24,8 +24,8 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "ESNext",
-    "removeComments": true,
     "diagnostics": true,
+    "allowJs": true,
     "types": [
       "node",
       "jasmine",

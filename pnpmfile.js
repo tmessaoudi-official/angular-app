@@ -1,11 +1,11 @@
 const { resolutions } = JSON.parse(
-  require('fs').readFileSync('./package.json', 'utf-8')
+	require(`fs`).readFileSync(`./package.json`, `utf-8`)
 );
 
 if (resolutions) {
-  // console.log('resolutions !!');
-  module.exports = {};
-  /*module.exports = {
+	// console.log('resolutions !!');
+	module.exports = {};
+	/*module.exports = {
     hooks: {
       readPackage,
     },
@@ -16,7 +16,7 @@ if (resolutions) {
       for (const k in resolutions) {
         if (pkg.dependencies[k] && pkg.dependencies[k] !== resolutions[k]) {
           context.log(
-            `"${k}@${pkg.dependencies[k]}" overriden in "${pkg.name}" to "${k}@${resolutions[k]}"`
+            `"${k}@${pkg.dependencies[k]}" overrided in "${pkg.name}" to "${k}@${resolutions[k]}"`
           );
           pkg.dependencies[k] = resolutions[k];
         }
@@ -25,7 +25,7 @@ if (resolutions) {
 
     return pkg;
   }*/
-  /*"resolutions": {
+	/*"resolutions": {
     "webpack": "^5.0.0"
   },
   "pnpm": {
@@ -34,6 +34,6 @@ if (resolutions) {
     }
   },*/
 } else {
-  // console.log('no resolutions !!');
-  module.exports = {};
+	// console.log('no resolutions !!');
+	module.exports = {};
 }

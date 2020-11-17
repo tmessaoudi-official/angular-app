@@ -25,6 +25,7 @@ let protractorConfig = {
   capabilities: {
     browserName: 'chrome'
   },
+  SELENIUM_PROMISE_MANAGER: false,
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,

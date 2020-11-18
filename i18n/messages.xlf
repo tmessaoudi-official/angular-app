@@ -81,14 +81,6 @@
         <source>app.dummy.title</source>
       </segment>
     </unit>
-    <unit id="7249072834034853576">
-      <notes>
-        <note category="location">src/app/dumbest/dumber/dumber.component.html:1</note>
-      </notes>
-      <segment>
-        <source>app.dumber.title</source>
-      </segment>
-    </unit>
     <unit id="303063580277194129">
       <notes>
         <note category="location">src/app/dumbest/dumb/dumb.component.html:1</note>
@@ -103,6 +95,14 @@
       </notes>
       <segment>
         <source>app.dumb.title2</source>
+      </segment>
+    </unit>
+    <unit id="7249072834034853576">
+      <notes>
+        <note category="location">src/app/dumbest/dumber/dumber.component.html:1</note>
+      </notes>
+      <segment>
+        <source>app.dumber.title</source>
       </segment>
     </unit>
     <unit id="3777802817951822482">

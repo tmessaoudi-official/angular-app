@@ -60,7 +60,6 @@ export class EnvironmentVariableHandler {
 		value: any | string | undefined | never
 	): IEnvironmentVariableHandlerPreProcess {
 		const regex = new RegExp(
-			// eslint-disable-next-line max-len
 			`^(((?<quote>['"]?)(?<handlers>environment.(processors|validators).[a-zA-Z~=.\\` +
 				this.envHandlerSeparator +
 				`]*)(\\` +
@@ -104,7 +103,6 @@ export class EnvironmentVariableHandler {
 
 	eval(value: any | undefined | null): any | undefined | null {
 		const regex = new RegExp(
-			// eslint-disable-next-line max-len
 			`^(.*)?(?<placeHolder>(\\\${(?<varName>[^}]+)}))(.*)?$`,
 			`i`
 		);
@@ -162,7 +160,6 @@ export class EnvironmentVariableHandler {
 			}
 
 			if (typeof varValue !== `string`) {
-				// eslint-disable-next-line max-len
 				throw new Error(
 					`Environment variable has an invalid refenrece (it should only refence a string but it is referencing this '` +
 						matches.groups.varName +

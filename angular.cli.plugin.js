@@ -1,6 +1,6 @@
 const webpack = require(`webpack`);
 
-const Loader = require(`./webpack/dotenv/Loader.js`);
+const loader = require(`./webpack/dotenv/Loader.js`);
 
 const processNodeEnv =
 	typeof process.env.NODE_ENV === `string` && process.env.NODE_ENV !== ``
@@ -11,12 +11,13 @@ const forceEnvRebuild =
 		process.env.APP_ENV_RUN_BUILD === `true`) ||
 	(typeof process.env.APP_ENV_FORCE_REBUILD === `string` &&
 		process.env.APP_ENV_FORCE_REBUILD === `true`);
-Loader.run(processNodeEnv, forceEnvRebuild);
+
+loader.run(processNodeEnv, forceEnvRebuild);
 
 exports.default = {
 	pre(options) {
 		// console.log('pre build');
-
+		
 		return options;
 	},
 	config(cfg) {

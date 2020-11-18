@@ -2,7 +2,6 @@
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 const Loader = require(`./webpack/dotenv/Loader.js`);
 
-// eslint-disable-next-line max-len
 const processNodeEnv =
 	typeof process.env.NODE_ENV === `undefined` ||
 	(typeof process.env.NODE_ENV === `string` && process.env.NODE_ENV !== ``)
@@ -17,6 +16,7 @@ const forceEnvRebuild =
 	(typeof process.env.APP_ENV_FORCE_REBUILD === `string` &&
 		(process.env.APP_ENV_FORCE_REBUILD === `` ||
 			process.env.APP_ENV_FORCE_REBUILD === `true`));
+
 Loader.run(processNodeEnv, forceEnvRebuild);
 
 module.exports = function (config) {

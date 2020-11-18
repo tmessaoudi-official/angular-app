@@ -6,7 +6,6 @@
 const { SpecReporter, StacktraceOption } = require(`jasmine-spec-reporter`);
 const Loader = require(`../webpack/dotenv/Loader.js`);
 
-// eslint-disable-next-line max-len
 const processNodeEnv =
 	typeof process.env.NODE_ENV_FORCE === `string` &&
 	process.env.NODE_ENV_FORCE !== ``
@@ -16,7 +15,7 @@ const processNodeEnv =
 				process.env.NODE_ENV !== ``)
 		? process.env.NODE_ENV
 		: `test`;
-// eslint-disable-next-line max-len
+
 const forceEnvRebuild =
 	typeof process.env.APP_ENV_RUN_BUILD === `undefined` ||
 	(typeof process.env.APP_ENV_RUN_BUILD === `string` &&

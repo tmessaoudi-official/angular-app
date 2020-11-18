@@ -59,7 +59,6 @@ export class EnvironmentVariableProcessors {
 				(configValue: string): any =>
 					configValue === `fail=true` || configValue === `fail`
 			);
-			// eslint-disable-next-line max-len
 			if (
 				fail === true ||
 				(typeof config !== `undefined` &&

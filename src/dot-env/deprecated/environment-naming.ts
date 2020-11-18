@@ -3,7 +3,6 @@ import { processEnv } from '../process-env';
 export class EnvironmentNaming {
 	camelize(str: string): string {
 		const regex = new RegExp(
-			// eslint-disable-next-line max-len
 			`^([^\\` +
 				processEnv.APP_ENV_VAR_WORD_SEPARATOR +
 				`]*)|\\` +

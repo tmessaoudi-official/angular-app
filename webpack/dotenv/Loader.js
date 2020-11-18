@@ -18,7 +18,6 @@ const Loader = {
 				console.warn(`File '` + fileName + `' already loaded !!`);
 				return;
 			}
-			// eslint-disable-next-line max-len
 			const envIncludes = Loader.populate(
 				dotenvParse(fs.readFileSync(fileName), {
 					debug: Loader.handlers.processors.boolean.isTrue(
@@ -77,7 +76,6 @@ const Loader = {
 			}
 		},
 		canDebug: function () {
-			// eslint-disable-next-line max-len
 			return (
 				Loader.handlers.processors.boolean.isTrue(
 					process.env.NODE_DEBUG
@@ -95,7 +93,6 @@ const Loader = {
 		}
 		if (typeof includes === `string` && includes !== ``) {
 			includes.split(`,`).forEach(function (item) {
-				// eslint-disable-next-line max-len
 				item = item
 					.replace(
 						`\${NODE_ENV}`,
@@ -135,7 +132,6 @@ const Loader = {
 					typeof handlers.handlers !== `undefined` &&
 					handlers.handlers.indexOf(`process.env.get`) !== -1
 				) {
-					// eslint-disable-next-line max-len
 					let newHandlers = handlers.handlers
 						.replace(`|process.env.get`, ``)
 						.replace(`process.env.get|`, ``)
@@ -146,7 +142,6 @@ const Loader = {
 					if (
 						handlers.unHandledValue === `~APP_PROCESS_ENV_INCLUDES`
 					) {
-						// eslint-disable-next-line max-len
 						item =
 							typeof process.env[
 								handlers.unHandledValue.replace(`~`, ``)
@@ -156,7 +151,6 @@ const Loader = {
 								  ]
 								: ``;
 					} else {
-						// eslint-disable-next-line max-len
 						item =
 							newHandlers +
 							(typeof process.env[handlers.unHandledValue] !==
@@ -191,7 +185,6 @@ const Loader = {
 		value: function (value) {
 			if (typeof value === `string`) {
 				const regex = new RegExp(
-					// eslint-disable-next-line max-len
 					`^(['"])(.*)(['"])$`,
 					`ig`
 				);
@@ -223,7 +216,6 @@ const Loader = {
 				envHandlerSeparator = process.env.APP_ENV_HANDLER_SEPARATOR;
 			}
 			const regex = new RegExp(
-				// eslint-disable-next-line max-len
 				`^(((?<quote>['"]?)(?<handlers>(environment|process).(processors|validators|env).[a-zA-Z~=.\\` +
 					envHandlerSeparator +
 					`]*)(\\` +
@@ -309,7 +301,6 @@ const Loader = {
 		if (typeof format !== `string` || format === ``) {
 			format = `log`;
 		}
-		// eslint-disable-next-line max-len
 		if (Loader.debug.canDebug()) {
 			switch (format) {
 				case `warn`: {
@@ -404,7 +395,6 @@ const Loader = {
 		Loader.log(`     ----- All Used Files : `);
 		Object.keys(Loader.data.APP_ENV_FILES_ALL_LOADED.used).forEach(
 			function (item) {
-				// eslint-disable-next-line max-len
 				Loader.log(
 					`            -- ` +
 						item +
@@ -423,7 +413,6 @@ const Loader = {
 		Loader.log(`     ----- Includes : `);
 		Object.keys(Loader.data.APP_ENV_FILES_ALL_LOADED.included).forEach(
 			function (item) {
-				// eslint-disable-next-line max-len
 				Loader.log(
 					`            -- ` +
 						item +
@@ -453,7 +442,6 @@ if (
 	) {
 		process.env.NODE_ENV = process.env.NODE_ENV_FORCE;
 	}
-	// eslint-disable-next-line max-len
 	Loader.run(
 		typeof process.env.NODE_ENV_FORCE === `string` &&
 			process.env.NODE_ENV_FORCE !== ``

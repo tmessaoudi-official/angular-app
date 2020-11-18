@@ -20,6 +20,7 @@ describe(`AppComponent`, () => {
 		const fixture = TestBed.createComponent(AppComponent);
 		// eslint-disable-next-line no-unused-vars
 		const app = fixture.componentInstance;
+		// expect(app.title).toEqual('ng-app');
 	});
 
 	it(`should render title`, () => {
@@ -27,5 +28,7 @@ describe(`AppComponent`, () => {
 		fixture.detectChanges();
 		// eslint-disable-next-line no-unused-vars
 		const compiled = fixture.nativeElement;
+		// expect(compiled.querySelector('.content span').textContent).toContain('ng-app app is running!');
 	});
 });
+

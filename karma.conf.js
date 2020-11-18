@@ -21,10 +21,10 @@ Loader.run(processNodeEnv, forceEnvRebuild);
 
 module.exports = function (config) {
 	config.set({
+		basePath: `/`,
 		instrumenterOptions: {
 			istanbul: { noCompact: true }
 		},
-		basePath: `/`,
 		frameworks: [`jasmine`, `@angular-devkit/build-angular`],
 		plugins: [
 			require(`karma-jasmine`),
@@ -36,6 +36,9 @@ module.exports = function (config) {
 		client: {
 			clearContext: false // leave Jasmine Spec Runner output visible in browser
 		},
+		jasmineHtmlReporter: {
+      		suppressAll: true // removes the duplicated traces
+    	},
 		coverageReporter: {
 			// specify a common output directory
 			dir: require(`path`).join(__dirname, `./coverage`),
@@ -63,3 +66,4 @@ module.exports = function (config) {
 		restartOnFileChange: true
 	});
 };
+

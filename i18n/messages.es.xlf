@@ -164,13 +164,13 @@
         <source>app.nav.home</source>
         <target>app.nav.home_es</target>
       </segment>
-    </unit><unit id="3277344663848389123">
+    </unit><unit id="1243080576181568804">
       <notes>
-
-      <note category="location">src/app/core/header/header.component.html:10</note></notes>
+        <note category="location">src/app/core/header/header.component.html:10</note>
+      </notes>
       <segment state="initial">
         <source>app.nav.dumbest.module</source>
-      <target>app.nav.dumbest.module_es</target></segment>
+      <target>app.nav.dumbest.module</target></segment>
     </unit>
     <unit id="8215035420062173710">
       <notes>

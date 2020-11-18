@@ -17,7 +17,7 @@ declare interface IEnvironment {
 	appEnvTest?: any;
 	appEnvTestSecond?: any;
 	appEnvTestThird?: any;
-	appE2eProtractorDirectConnect?: boolean | undefined | null | never;
-	appE2eProtractorBaseUrl?: string | undefined | null | never;
-	appE2eProtractorSeleniumAddress?: string | undefined | null | never;
+	appTestE2eProtractorDirectConnect?: boolean | undefined | null | never;
+	appTestE2eProtractorBaseUrl?: string | undefined | null | never;
+	appTestE2eProtractorSeleniumAddress?: string | undefined | null | never;
 }

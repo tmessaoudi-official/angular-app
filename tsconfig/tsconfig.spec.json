@@ -18,12 +18,12 @@
     "src/**/*.spec.ts",
     "../src/**/*.d.ts",
     "src/**/*.d.ts",
-    "../src/**/*.dotenv.ts",
-    "src/**/*.dotenv.ts",
-    "../src/**/*.dotenv.run.ts",
-    "src/**/*.dotenv.run.ts"
+    "../src/**/*.dot-env.*",
+    "src/**/*.dot-env.*",
+    "../src/**/*.dot-env.run.*",
+    "src/**/*.dot-env.run.*"
   ],
   "exclude": [
-    "../src/dot-env/loader.ts"
+    "../src/dot-env/loader.dot-env.run.*"
   ]
 }

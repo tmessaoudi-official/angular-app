@@ -14,7 +14,7 @@
   "scripts": {
     "ng": "ng",
     "load-env-js": "ts-node ./webpack/dotenv/Loader.js",
-    "load-env-ts": "ts-node ./src/dot-env/loader.ts",
+    "load-env-ts": "ts-node src/dot-env/loader.dot-env.run.js",
     "build": "ng build ${APP_CONFIGURATION}",
     "serve": "ng serve ${APP_CONFIGURATION}",
     "start-home": "ng serve --configuration=home",

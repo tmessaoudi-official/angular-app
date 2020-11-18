@@ -95,7 +95,7 @@
             ]
           },
           "configurations": {
-            "dev": {
+            "development": {
               "buildOptimizer": false,
               "optimization": false,
               "outputHashing": "none",
@@ -347,59 +347,59 @@
             "liveReload": true,
             "host": "0.0.0.0",
             "disableHostCheck": true,
-            "browserTarget": "localization:build:dev,ignore-i18n,home,home-en,no-base-href,aot"
+            "browserTarget": "localization:build:development,ignore-i18n,home,home-en,no-base-href,aot"
           },
           "configurations": {
             "open": {
               "open": true
             },
             "home": {
-              "browserTarget": "localization:build:dev,ignore-i18n,home,no-base-href,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,home,no-base-href,aot"
             },
             "dummy": {
-              "browserTarget": "localization:build:dev,ignore-i18n,home,no-base-href,home-config,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,home,no-base-href,home-config,aot"
             },
             "home-en": {
-              "browserTarget": "localization:build:dev,ignore-i18n,home-locale-en,home,no-base-href,home-config,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,home-locale-en,home,no-base-href,home-config,aot"
             },
             "home-fr": {
-              "browserTarget": "localization:build:dev,ignore-i18n,home-locale-fr,home,no-base-href,home-config,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,home-locale-fr,home,no-base-href,home-config,aot"
             },
             "home-de": {
-              "browserTarget": "localization:build:dev,ignore-i18n,home-locale-de,home,no-base-href,home-config,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,home-locale-de,home,no-base-href,home-config,aot"
             },
             "home-es": {
-              "browserTarget": "localization:build:dev,ignore-i18n,home-locale-es,home,no-base-href,home-config,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,home-locale-es,home,no-base-href,home-config,aot"
             },
             "home-pt": {
-              "browserTarget": "localization:build:dev,ignore-i18n,home-locale-pt,home,no-base-href,home-config,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,home-locale-pt,home,no-base-href,home-config,aot"
             },
             "home-it": {
-              "browserTarget": "localization:build:dev,ignore-i18n,home-locale-it,home,no-base-href,home-config,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,home-locale-it,home,no-base-href,home-config,aot"
             },
             "home-ar": {
-              "browserTarget": "localization:build:dev,ignore-i18n,home-locale-ar,home,no-base-href,home-config,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,home-locale-ar,home,no-base-href,home-config,aot"
             },
             "en": {
-              "browserTarget": "localization:build:dev,ignore-i18n,en-locale,en,no-base-href,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,en-locale,en,no-base-href,aot"
             },
             "fr": {
-              "browserTarget": "localization:build:dev,ignore-i18n,fr-locale,fr,no-base-href,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,fr-locale,fr,no-base-href,aot"
             },
             "de": {
-              "browserTarget": "localization:build::dev,ignore-i18n,fr-locale,fr,no-base-href,aot"
+              "browserTarget": "localization:build::development,ignore-i18n,fr-locale,fr,no-base-href,aot"
             },
             "es": {
-              "browserTarget": "localization:build:dev,ignore-i18n,es-locale,es,no-base-href,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,es-locale,es,no-base-href,aot"
             },
             "ar": {
-              "browserTarget": "localization:build:dev,ignore-i18n,ar-locale,ar,no-base-href,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,ar-locale,ar,no-base-href,aot"
             },
             "pt": {
-              "browserTarget": "localization:build:dev,ignore-i18n,pt-locale,pt,no-base-href,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,pt-locale,pt,no-base-href,aot"
             },
             "it": {
-              "browserTarget": "localization:build:dev,ignore-i18n,it-locale,it,no-base-href,aot"
+              "browserTarget": "localization:build:development,ignore-i18n,it-locale,it,no-base-href,aot"
             }
           }
         },
@@ -495,7 +495,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "localization:build:dev,home,force",
+            "browserTarget": "localization:build:development,home,force",
             "outputPath": "i18n",
             "outFile": "messages.xlf",
             "format": "xlf2",
@@ -503,11 +503,11 @@
           },
           "configurations": {
             "source": {
-              "browserTarget": "localization:build:dev,home,force",
+              "browserTarget": "localization:build:development,home,force",
               "outFile": "messages.xlf"
             },
             "home-source": {
-              "browserTarget": "localization:build:dev,home,home,home-config,dummy-env",
+              "browserTarget": "localization:build:development,home,home,home-config,dummy-env",
               "outputPath": "i18n/home",
               "outFile": "messages.xlf"
             },

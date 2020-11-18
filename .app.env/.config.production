@@ -1,0 +1,3 @@
+NODE_ENV=production
+NODE_DEBUG=false
+--includes=./.app.env/.config.production.local

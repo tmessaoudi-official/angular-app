@@ -14,12 +14,11 @@
   "include": [
     "../src/**/*.d.ts",
     "src/**/*.d.ts",
-    "../src/**/*.dotenv.ts",
-    "src/**/*.dotenv.ts"
+    "../src/**/*.dot-env.*",
+    "src/**/*.dot-env.*"
   ],
   "exclude": [
-    "../src/**/*.dotenv.run.ts",
-    "src/**/*.dotenv.run.ts",
-    "../src/dot-env/loader.ts"
+    "../src/**/*.dot-env.run.*",
+    "src/**/*.dot-env.run.*"
   ]
 }

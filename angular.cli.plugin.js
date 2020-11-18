@@ -1,5 +1,7 @@
 const webpack = require(`webpack`);
 
+const tsLoader = require(`./src/dot-env/loader.dot-env.run.js`).default;
+process.exit(1);
 const loader = require(`./webpack/dotenv/Loader.js`);
 
 const processNodeEnv =

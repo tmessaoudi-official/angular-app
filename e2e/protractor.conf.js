@@ -56,7 +56,7 @@ const protractorConfig = {
 };
 
 const seleniumAddress = Loader.unquote.value(
-	process.env.APP_E2E_PROTRACTOR_SELENIUM_ADDRESS
+	process.env.APP_TEST_E2E_PROTRACTOR_SELENIUM_ADDRESS
 );
 
 if (typeof seleniumAddress === `string` && seleniumAddress !== ``) {
@@ -64,10 +64,11 @@ if (typeof seleniumAddress === `string` && seleniumAddress !== ``) {
 	protractorConfig.seleniumAddress = seleniumAddress;
 }
 
-const directConnect = process.env.APP_E2E_PROTRACTOR_DIRECT_CONNECT === `true`;
+const directConnect =
+	process.env.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT === `true`;
 
 if (
-	typeof process.env.APP_E2E_PROTRACTOR_DIRECT_CONNECT !== `undefined` &&
+	typeof process.env.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT !== `undefined` &&
 	typeof directConnect === `boolean`
 ) {
 	// @ts-ignore
@@ -77,7 +78,9 @@ if (
 	protractorConfig.directConnect = true;
 }
 
-const baseUrl = Loader.unquote.value(process.env.APP_E2E_PROTRACTOR_BASE_URL);
+const baseUrl = Loader.unquote.value(
+	process.env.APP_TEST_E2E_PROTRACTOR_BASE_URL
+);
 
 if (typeof baseUrl === `string` && baseUrl !== ``) {
 	// @ts-ignore

@@ -4,11 +4,11 @@ export class EnvironmentNaming {
 	camelize(str: string): string {
 		const regex = new RegExp(
 			`^([^\\` +
-				processEnv.APP_ENV_VAR_WORD_SEPARATOR +
+				processEnv.APP_ENV_CONFIG_VAR_WORD_SEPARATOR +
 				`]*)|\\` +
-				processEnv.APP_ENV_VAR_WORD_SEPARATOR +
+				processEnv.APP_ENV_CONFIG_VAR_WORD_SEPARATOR +
 				`([^\\` +
-				processEnv.APP_ENV_VAR_WORD_SEPARATOR +
+				processEnv.APP_ENV_CONFIG_VAR_WORD_SEPARATOR +
 				`]*)`,
 			`g`
 		);

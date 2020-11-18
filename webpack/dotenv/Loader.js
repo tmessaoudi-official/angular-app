@@ -140,7 +140,7 @@ const Loader = {
 						newHandlers += `:`;
 					}
 					if (
-						handlers.unHandledValue === `~APP_PROCESS_ENV_INCLUDES`
+						handlers.unHandledValue === `~APP_PROCESS_FORCE_ENV_INCLUDES`
 					) {
 						item =
 							typeof process.env[
@@ -210,10 +210,10 @@ const Loader = {
 		getHandlers: function (value) {
 			let envHandlerSeparator = `|`;
 			if (
-				typeof process.env.APP_ENV_HANDLER_SEPARATOR === `string` &&
-				process.env.APP_ENV_HANDLER_SEPARATOR !== ``
+				typeof process.env.APP_ENV_CONFIG_HANDLER_SEPARATOR === `string` &&
+				process.env.APP_ENV_CONFIG_HANDLER_SEPARATOR !== ``
 			) {
-				envHandlerSeparator = process.env.APP_ENV_HANDLER_SEPARATOR;
+				envHandlerSeparator = process.env.APP_ENV_CONFIG_HANDLER_SEPARATOR;
 			}
 			const regex = new RegExp(
 				`^(((?<quote>['"]?)(?<handlers>(environment|process).(processors|validators|env).[a-zA-Z~=.\\` +
@@ -365,9 +365,9 @@ const Loader = {
 			);
 		}
 
-		if (typeof process.env.APP_ENV_MISSABLE !== `undefined`) {
+		if (typeof process.env.APP_ENV_CONFIG_MISSABLE !== `undefined`) {
 			JSON.parse(
-				Loader.handlers.getHandlers(process.env.APP_ENV_MISSABLE)
+				Loader.handlers.getHandlers(process.env.APP_ENV_CONFIG_MISSABLE)
 					.unHandledValue
 			).forEach(function (item) {
 				if (!Loader.data.APP_ENV_KEYS.includes(item)) {

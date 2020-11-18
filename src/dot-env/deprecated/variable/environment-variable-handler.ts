@@ -17,10 +17,10 @@ export class EnvironmentVariableHandler {
 		this.environmentVariableProcessors = new EnvironmentVariableProcessors();
 		this.environmentVariableValidators = new EnvironmentVariableValidators();
 		if (
-			typeof processEnv.APP_ENV_HANDLER_SEPARATOR === `string` &&
-			processEnv.APP_ENV_HANDLER_SEPARATOR !== ``
+			typeof processEnv.APP_ENV_CONFIG_HANDLER_SEPARATOR === `string` &&
+			processEnv.APP_ENV_CONFIG_HANDLER_SEPARATOR !== ``
 		) {
-			this.envHandlerSeparator = processEnv.APP_ENV_HANDLER_SEPARATOR;
+			this.envHandlerSeparator = processEnv.APP_ENV_CONFIG_HANDLER_SEPARATOR;
 		}
 	}
 

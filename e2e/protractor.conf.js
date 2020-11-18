@@ -96,7 +96,6 @@ if (
 	protractorConfig.baseUrl += `` + process.env.APP_LOCALE + `/`;
 }
 
-console.log(protractorConfig);
 /**
  * @type { import("protractor").Config }
  */

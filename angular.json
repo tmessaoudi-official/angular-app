@@ -587,6 +587,8 @@
                 "format": "xlf2",
                 "i18nFormat": "xlf2",
                 "defaultLanguage": "home",
+                "removeUnusedIds": true,
+                "verbose": true,
                 "languages": [
                   "en",
                   "fr",
@@ -605,6 +607,8 @@
                 "format": "xlf2",
                 "i18nFormat": "xlf2",
                 "defaultLanguage": "home",
+                "removeUnusedIds": true,
+                "verbose": true,
                 "languages": [
                   "en",
                   "fr",

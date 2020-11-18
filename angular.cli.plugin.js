@@ -17,7 +17,7 @@ loader.run(processNodeEnv, forceEnvRebuild);
 exports.default = {
 	pre(options) {
 		// console.log('pre build');
-		
+
 		return options;
 	},
 	config(cfg) {

@@ -1,39 +1,35 @@
-const { resolutions } = JSON.parse(
+const { pnpm } = JSON.parse(
 	require(`fs`).readFileSync(`./package.json`, `utf-8`)
 );
 
-if (resolutions) {
-	// console.log('resolutions !!');
+if (pnpm && pnpm.replacements) {
 	module.exports = {};
-	/*module.exports = {
-    hooks: {
-      readPackage,
-    },
-  };
+	module.exports = {
+		hooks: {
+			readPackage
+		}
+	};
 
-  function readPackage(pkg, context) {
-    if (pkg.dependencies) {
-      for (const k in resolutions) {
-        if (pkg.dependencies[k] && pkg.dependencies[k] !== resolutions[k]) {
-          context.log(
-            `"${k}@${pkg.dependencies[k]}" overrided in "${pkg.name}" to "${k}@${resolutions[k]}"`
-          );
-          pkg.dependencies[k] = resolutions[k];
-        }
-      }
-    }
+	function readPackage(pkg, context) {
+		if (pkg.dependencies) {
+			for (const k in pnpm.replacements) {
+				if (
+					pkg.dependencies[k] &&
+					pkg.dependencies[k] !== pnpm.replacements[k]
+				) {
+					const splitted = pnpm.replacements[k].split(`!!`);
+					context.log(
+						`"${k}@${pkg.dependencies[k]}" replaced in "${pkg.name}" to "${splitted[0]}@${splitted[1]}"`
+					);
+					delete pkg.dependencies[k];
+					pkg.dependencies[splitted[0]] = splitted[1];
+				}
+			}
+		}
 
-    return pkg;
-  }*/
-	/*"resolutions": {
-    "webpack": "^5.0.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "webpack": "^5.0.0"
-    }
-  },*/
+		return pkg;
+	}
 } else {
-	// console.log('no resolutions !!');
+	/*// console.log('no resolutions !!');*/
 	module.exports = {};
 }

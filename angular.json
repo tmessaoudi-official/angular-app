@@ -90,7 +90,7 @@
             "resourcesOutputPath": "assets",
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
@@ -345,7 +345,6 @@
             "keepStyles": true,
             "progress": true,
             "liveReload": true,
-            "hmrWarning": true,
             "host": "0.0.0.0",
             "disableHostCheck": true,
             "browserTarget": "localization:build:dev,ignore-i18n,home,home-en,no-base-href,aot"
@@ -425,7 +424,7 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           }

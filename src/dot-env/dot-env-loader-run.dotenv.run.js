@@ -85,8 +85,8 @@ exports.default = function (source = null) {
 				delete this.content[item];
 			}, this);
 
-			this.populateProcessEnvs();
-			this.populateAppEnvs();
+			this.evalProcessEnvs();
+			this.evalAppEnvs();
 
 			console.log(this.config);
 			console.log(this.content);
@@ -306,7 +306,7 @@ exports.default = function (source = null) {
 				  this.content.NODE_DEBUG === true
 				: isConfig;
 		},
-		populateProcessEnvs: function () {
+		evalProcessEnvs: function () {
 			Object.keys(this.content).forEach(function (item) {
 				const regex = new RegExp(
 					// eslint-disable-next-line max-len
@@ -361,7 +361,7 @@ exports.default = function (source = null) {
 				}
 			}, this);
 		},
-		populateAppEnvs: function () {
+		evalAppEnvs: function () {
 			Object.keys(this.content).forEach(function (item) {
 				const regex = new RegExp(
 					// eslint-disable-next-line max-len

@@ -99,8 +99,8 @@ const Loader = {
 						Loader.unquote.value(process.env.NODE_ENV)
 					)
 					.replace(
-						`\${NODE_ENV_FORCE}`,
-						Loader.unquote.value(process.env.NODE_ENV_FORCE)
+						`\${NODE_ENV_INCLUDE}`,
+						Loader.unquote.value(process.env.NODE_ENV_INCLUDE)
 					);
 				if (item === parentFile) {
 					console.error(
@@ -140,7 +140,7 @@ const Loader = {
 						newHandlers += `:`;
 					}
 					if (
-						handlers.unHandledValue === `~APP_PROCESS_FORCE_ENV_INCLUDES`
+						handlers.unHandledValue === `~APP_PROCESS_ENV_INCLUDES`
 					) {
 						item =
 							typeof process.env[
@@ -437,15 +437,15 @@ if (
 		fs.unlinkSync(`./.app.env/.env.local.build`);
 	} catch (err) {}
 	if (
-		typeof process.env.NODE_ENV_FORCE === `string` &&
-		process.env.NODE_ENV_FORCE !== ``
+		typeof process.env.NODE_ENV_INCLUDE === `string` &&
+		process.env.NODE_ENV_INCLUDE !== ``
 	) {
-		process.env.NODE_ENV = process.env.NODE_ENV_FORCE;
+		process.env.NODE_ENV = process.env.NODE_ENV_INCLUDE;
 	}
 	Loader.run(
-		typeof process.env.NODE_ENV_FORCE === `string` &&
-			process.env.NODE_ENV_FORCE !== ``
-			? process.env.NODE_ENV_FORCE
+		typeof process.env.NODE_ENV_INCLUDE === `string` &&
+			process.env.NODE_ENV_INCLUDE !== ``
+			? process.env.NODE_ENV_INCLUDE
 			: typeof process.env.NODE_ENV === `string` &&
 			  process.env.NODE_ENV !== ``
 			? process.env.NODE_ENV

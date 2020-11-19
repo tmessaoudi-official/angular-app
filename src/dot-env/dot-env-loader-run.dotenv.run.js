@@ -9,6 +9,7 @@ exports.default = function (source = null) {
 	return Object.assign(init(source), {
 		fs: null,
 		config: { tmp: [], files: {} },
+		content: { tmp: [] },
 		validateFs: function (fs) {
 			if (
 				!fs ||
@@ -47,11 +48,12 @@ exports.default = function (source = null) {
 		run: function (
 			env = ``,
 			encoding = `utf8`,
-			envConfigPath = `./.app.env/.config`,
-			putInProcessEnv = false
+			envConfigPath = `./.app.env/.env.configuration`,
+			// eslint-disable-next-line no-unused-vars
+			putInProcessEnv = true
 		) {
 			if (typeof envConfigPath !== `string` || envConfigPath === ``) {
-				envConfigPath = `./.app.env/.config`;
+				envConfigPath = `./.app.env/.env.configuration`;
 			}
 			if (typeof encoding !== `string` || encoding === ``) {
 				encoding = `utf8`;
@@ -66,19 +68,20 @@ exports.default = function (source = null) {
 
 			this.load({ current: envConfigPath }, encoding, true);
 
-			const content = this.load(
+			delete this.config.tmp;
+			this.load(
 				{
 					current: this.config.APP_ENV_CONFIG_DIST_FILE_PATH
 				},
 				this.config.APP_ENV_CONFIG_ENCODING
 			);
+			delete this.content.tmp;
 
-			console.log(this.config);
-			console.log(content);
+			console.log(this.content);
 
 			return `running !!`;
 		},
-		load(filePath, encoding = `utf8`, isConfig = false) {
+		load: function (filePath, encoding = `utf8`, isConfig = false) {
 			if (typeof isConfig !== `boolean`) {
 				isConfig = false;
 			}
@@ -101,7 +104,6 @@ exports.default = function (source = null) {
 					} file with encoding '${encoding}'`
 				);
 			}
-			let content = { tmp: [] };
 			this.getFs()
 				.readFileSync(filePath.current, {
 					encoding: encoding
@@ -119,32 +121,29 @@ exports.default = function (source = null) {
 					);
 					const matches = regex.exec(line);
 					if (matches && matches.groups) {
-						content[matches.groups.key] = matches.groups.value;
+						this.content[matches.groups.key] = matches.groups.value;
 					} else {
-						content[`tmp`].push({
+						this.content.tmp.push({
 							content: line,
 							line: index + 1
 						});
 					}
 				}, this);
 			if (isConfig) {
-				Object.keys(content).forEach(function (item) {
-					this.config[item] = content[item];
+				Object.keys(this.content).forEach(function (item) {
+					if (item !== `tmp`) {
+						this.config[item] = this.content[item];
+					}
 				}, this);
 			}
-			content = this.include(
-				filePath,
-				content,
-				encoding,
-				debug,
-				isConfig
-			);
-			content[`tmp`] = [];
-			return content;
+			this.treatGarbage(filePath, encoding, debug, isConfig);
+			this.content.tmp = [];
 		},
-		include: function (filePath, content, encoding, debug, isConfig) {
-			if (content[`tmp`].length > 0) {
-				content[`tmp`].forEach(function (item) {
+		treatGarbage: function (filePath, encoding, debug, isConfig) {
+			const tmp = this.content.tmp;
+			this.content.tmp = [];
+			if (tmp.length > 0) {
+				tmp.forEach(function (item) {
 					if (item.content.startsWith(`#`) || item.content === ``) {
 						if (debug) {
 							console.warn(
@@ -188,16 +187,26 @@ exports.default = function (source = null) {
 									}
 									item = item
 										.replace(
-											`\$\{NODE_ENV\}`,
+											`\${app.env::NODE_ENV}`,
 											this.config.NODE_ENV
 										)
 										.replace(
-											`\$\{NODE_ENV_FORCE\}`,
-											process.env.NODE_ENV_FORCE
+											`\${app.env::APP_ENV}`,
+											this.content.APP_ENV
 										)
 										.replace(
-											`\$\{\~APP_PROCESS_ENV_INCLUDES\}`,
-											process.env.APP_PROCESS_ENV_INCLUDES
+											`\${process.env::${this.config.APP_ENV_CONFIG_NODE_ENV_INCLUDE}}`,
+											process.env[
+												this.config
+													.APP_ENV_CONFIG_NODE_ENV_INCLUDE
+											]
+										)
+										.replace(
+											`\${process.env::${this.config.APP_ENV_CONFIG_PROCESS_FILE_INCLUDES_KEY}}`,
+											process.env[
+												this.config
+													.APP_ENV_CONFIG_PROCESS_FILE_INCLUDES_KEY
+											]
 										);
 									if (
 										item.includes(
@@ -205,10 +214,33 @@ exports.default = function (source = null) {
 												.APP_ENV_CONFIG_INCLUDES_SEPARATOR
 										)
 									) {
-                    item.split(
-                        this.config
-                          .APP_ENV_CONFIG_INCLUDES_SEPARATOR
-                      )
+										item.split(
+											this.config
+												.APP_ENV_CONFIG_INCLUDES_SEPARATOR
+										).forEach(function (item) {
+											if (
+												this.fileExists(item, {
+													message: `${
+														!filePath.from
+															? ``
+															: `      `
+													} -- File ${item} ${
+														!filePath.from
+															? ``
+															: ` !! included by ${filePath.from}`
+													} does not exists !!`
+												})
+											) {
+												this.load(
+													{
+														current: item,
+														from: filePath.current
+													},
+													encoding,
+													isConfig
+												);
+											}
+										}, this);
 									} else {
 										if (
 											this.fileExists(item, {
@@ -223,7 +255,7 @@ exports.default = function (source = null) {
 												} does not exists !!`
 											})
 										) {
-											const includedContent = this.load(
+											this.load(
 												{
 													current: item,
 													from: filePath.current
@@ -231,16 +263,6 @@ exports.default = function (source = null) {
 												encoding,
 												isConfig
 											);
-											Object.keys(
-												includedContent
-											).forEach(function (item) {
-												content[item] =
-													includedContent[item];
-												if (isConfig) {
-													this.config[item] =
-														content[item];
-												}
-											}, this);
 										}
 									}
 								}, this);
@@ -254,9 +276,8 @@ exports.default = function (source = null) {
 					}
 				}, this);
 			}
-			return content;
 		},
-		populate(x) {
+		populate: function (x) {
 			console.log(`populating !! '${x}'`);
 
 			return x;

@@ -7,9 +7,9 @@ const { SpecReporter, StacktraceOption } = require(`jasmine-spec-reporter`);
 const Loader = require(`../webpack/dotenv/Loader.js`);
 
 const processNodeEnv =
-	typeof process.env.NODE_ENV_FORCE === `string` &&
-	process.env.NODE_ENV_FORCE !== ``
-		? process.env.NODE_ENV_FORCE
+	typeof process.env.APP_NODE_ENV_INCLUDE === `string` &&
+	process.env.APP_NODE_ENV_INCLUDE !== ``
+		? process.env.APP_NODE_ENV_INCLUDE
 		: typeof process.env.NODE_ENV === `undefined` ||
 		  (typeof process.env.NODE_ENV === `string` &&
 				process.env.NODE_ENV !== ``)

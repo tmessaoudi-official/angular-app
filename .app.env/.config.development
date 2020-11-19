@@ -1,3 +1,0 @@
-NODE_ENV=development
-NODE_DEBUG=true
---includes=./.app.env/.config.development.local

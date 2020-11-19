@@ -1,3 +1,0 @@
-NODE_ENV=test
-NODE_DEBUG=true
---includes=./.app.env/.config.test.local

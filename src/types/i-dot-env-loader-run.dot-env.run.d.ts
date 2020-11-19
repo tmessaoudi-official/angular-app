@@ -2,6 +2,9 @@
 declare interface IDotEnvLoaderRun extends IDotEnvLoader {
 	fs: any | null;
 	config: Array<string | Array<Array<string>>> | null;
+	content: Array<
+		string | Array<Array<string>> | Array<Array<any>> | any
+	> | null;
 	// eslint-disable-next-line no-unused-vars
 	setFs(fs: any): IDotEnvLoaderRun;
 	// eslint-disable-next-line no-unused-vars
@@ -32,19 +35,17 @@ declare interface IDotEnvLoaderRun extends IDotEnvLoader {
 		encoding?: string,
 		// eslint-disable-next-line no-unused-vars
 		isConfig?: boolean
-	): Array<string | Array<string>> | [];
-	include(
+	): void;
+	treatGarbage(
 		// eslint-disable-next-line no-unused-vars
 		filePath: string | { current?: string; from?: string },
-		// eslint-disable-next-line no-unused-vars
-		content: Array<string | Array<string>> | [],
 		// eslint-disable-next-line no-unused-vars
 		encoding?: string,
 		// eslint-disable-next-line no-unused-vars
 		debug?: boolean,
 		// eslint-disable-next-line no-unused-vars
 		isConfig?: boolean
-	): Array<string | Array<string>> | [];
+	): void;
 	// eslint-disable-next-line no-unused-vars
 	populate(x: string): string;
 }

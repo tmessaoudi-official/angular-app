@@ -81,6 +81,16 @@ exports.default = function (source = null) {
 			process.env.NODE_DEBUG = this.doDebug();
 			process.env.APP_ENV = this.content.APP_ENV;
 
+			Object.keys(this.config).forEach(function (item) {
+				delete this.content[item];
+			}, this);
+
+			this.populateProcessEnvs();
+			this.populateAppEnvs();
+
+			console.log(this.config);
+			console.log(this.content);
+
 			if (
 				typeof process.env.APP_ENV_RUN_BUILD === `string` &&
 				process.env.APP_ENV_RUN_BUILD === `true`
@@ -291,12 +301,158 @@ exports.default = function (source = null) {
 				: this.config && typeof this.config.NODE_DEBUG !== `undefined`
 				? this.config.NODE_DEBUG === `true` ||
 				  this.config.NODE_DEBUG === true
+				: this.content && typeof this.content.NODE_DEBUG !== `undefined`
+				? this.content.NODE_DEBUG === `true` ||
+				  this.content.NODE_DEBUG === true
 				: isConfig;
 		},
-		populate: function (x) {
-			console.log(`populating !! '${x}'`);
+		populateProcessEnvs: function () {
+			Object.keys(this.content).forEach(function (item) {
+				const regex = new RegExp(
+					// eslint-disable-next-line max-len
+					`(?<placeHolder>\\\$\{${this.config.APP_ENV_CONFIG_PROCESS_ENV_EVAL_PREFIX}${this.config.APP_ENV_CONFIG_ENV_EVAL_SEPARATOR}(?<varName>[^${this.config.APP_ENV_CONFIG_EVAL_DEFAULT_PREFIX}\}]*)(${this.config.APP_ENV_CONFIG_EVAL_DEFAULT_PREFIX}?(?<default>[^\}]*)?)?\})`
+				);
+				let doWhile = true;
+				while (doWhile) {
+					const matches = this.content[item].match(regex);
 
-			return x;
+					if (
+						!matches ||
+						!matches.groups ||
+						!matches.groups.varName
+					) {
+						doWhile = false;
+						break;
+					}
+
+					let value = process.env[matches.groups.varName];
+					let empty = false;
+					if (typeof value === `undefined`) {
+						value = this.formatUndefined(
+							value,
+							matches.groups.varName
+						);
+						empty = true;
+					}
+					if (value === null) {
+						value = this.formatNull(value, matches.groups.varName);
+						empty = true;
+					}
+					if (empty) {
+						if (matches.groups.default) {
+							if (this.content[matches.groups.default]) {
+								value = this.content[matches.groups.default];
+							} else if (process.env[matches.groups.default]) {
+								value = process.env[matches.groups.default];
+							} else {
+								value = matches.groups.default;
+							}
+						}
+					}
+
+					console.log(`matches.groups.placeHolder process`);
+					console.log(matches.groups.placeHolder);
+					console.log(value);
+
+					this.content[item] = this.content[item].replace(
+						matches.groups.placeHolder,
+						value
+					);
+				}
+			}, this);
+		},
+		populateAppEnvs: function () {
+			Object.keys(this.content).forEach(function (item) {
+				const regex = new RegExp(
+					// eslint-disable-next-line max-len
+					`(?<placeHolder>\\\$\{${this.config.APP_ENV_CONFIG_APP_ENV_EVAL_PREFIX}${this.config.APP_ENV_CONFIG_ENV_EVAL_SEPARATOR}(?<varName>[^${this.config.APP_ENV_CONFIG_EVAL_DEFAULT_PREFIX}\}]*)(${this.config.APP_ENV_CONFIG_EVAL_DEFAULT_PREFIX}?(?<default>[^\}]*)?)?\})`
+				);
+				let doWhile = true;
+				while (doWhile) {
+					const matches = this.content[item].match(regex);
+
+					if (
+						!matches ||
+						!matches.groups ||
+						!matches.groups.varName
+					) {
+						doWhile = false;
+						break;
+					}
+
+					let value = this.content[matches.groups.varName];
+					let empty = false;
+					if (typeof value === `undefined`) {
+						value = this.formatUndefined(
+							value,
+							matches.groups.varName
+						);
+						empty = true;
+					}
+					if (value === null) {
+						value = this.formatNull(value, matches.groups.varName);
+						empty = true;
+					}
+					if (empty) {
+						if (matches.groups.default) {
+							if (this.content[matches.groups.default]) {
+								value = this.content[matches.groups.default];
+							} else if (process.env[matches.groups.default]) {
+								value = process.env[matches.groups.default];
+							} else {
+								value = matches.groups.default;
+							}
+						}
+					}
+
+					console.log(`matches.groups.placeHolder app`);
+					console.log(matches.groups.placeHolder);
+					console.log(value);
+
+					this.content[item] = this.content[item].replace(
+						matches.groups.placeHolder,
+						value
+					);
+				}
+			}, this);
+		},
+		formatUndefined: function (value, varName) {
+			if (this.doDebug()) {
+				console.warn(
+					`     ---- DotEnv : ${varName} is not defined in process.env !!`
+				);
+			}
+			if (this.config.APP_ENV_CONFIG_UNDEFINED_BEHAVIOUR === `empty`) {
+				return ``;
+			}
+			if (this.config.APP_ENV_CONFIG_UNDEFINED_BEHAVIOUR === `null`) {
+				return null;
+			}
+			if (
+				this.config.APP_ENV_CONFIG_UNDEFINED_BEHAVIOUR === `undefined`
+			) {
+				return undefined;
+			}
+
+			return value;
+		},
+		formatNull: function (value, varName) {
+			if (this.doDebug()) {
+				console.warn(
+					`     ---- DotEnv : ${varName} is equal to null in process.env !!`
+				);
+			}
+			if (this.config.APP_ENV_CONFIG_NULL_BEHAVIOUR === `empty`) {
+				return ``;
+			}
+			if (this.config.APP_ENV_CONFIG_NULL_BEHAVIOUR === `null`) {
+				return null;
+			}
+			if (this.config.APP_ENV_CONFIG_NULL_BEHAVIOUR === `undefined`) {
+				return undefined;
+			}
+
+			return value;
 		}
 	};
 };

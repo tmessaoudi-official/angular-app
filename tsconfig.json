@@ -32,7 +32,7 @@
       "jasminewd2"
     ],
     "lib": [
-      "ESNext",
+      "es2018",
       "dom"
     ]
   },

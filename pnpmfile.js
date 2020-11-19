@@ -33,3 +33,6 @@ if (pnpm && pnpm.replacements) {
 	/*// console.log('no resolutions !!');*/
 	module.exports = {};
 }
+
+// @fortawesome/fontawesome-free prerelease 5.12.0-2
+// @typescript-eslint/eslint-plugin alpha !!

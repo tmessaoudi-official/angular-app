@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
-declare interface IDotEnvLoaderRun extends IDotEnvLoader {
+declare interface IDotEnvLoaderRun {
+	source: EDotEnvLoaderSource;
 	fs: any | null;
 	config: Array<string | Array<Array<string>>> | null;
 	content: Array<
@@ -14,13 +15,9 @@ declare interface IDotEnvLoaderRun extends IDotEnvLoader {
 	// by default it is ./.app.env/.config it should be encoded with utf8
 	run(
 		// eslint-disable-next-line no-unused-vars
-		env?: string,
-		// eslint-disable-next-line no-unused-vars
 		envConfigPath?: string,
 		// eslint-disable-next-line no-unused-vars
-		encoding?: string,
-		// eslint-disable-next-line no-unused-vars
-		putInProcessEnv?: boolean
+		encoding?: string
 	): Array<string | Array<string>> | [];
 	fileExists(
 		// eslint-disable-next-line no-unused-vars
@@ -48,4 +45,6 @@ declare interface IDotEnvLoaderRun extends IDotEnvLoader {
 	): void;
 	// eslint-disable-next-line no-unused-vars
 	populate(x: string): string;
+	// eslint-disable-next-line no-unused-vars
+	doDebug(isConfig: boolean): boolean;
 }

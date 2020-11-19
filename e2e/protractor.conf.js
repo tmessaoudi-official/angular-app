@@ -1,32 +1,15 @@
 // @ts-check
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
+// eslint-disable-next-line no-unused-vars
+const appEnv = new (require(`./src/dot-env/dot-env-loader-run.dotenv.run`).default)(
+	`process`
+)
+	.setFs(require(`fs`))
+	.run();
 
 // @ts-ignore
 const { SpecReporter, StacktraceOption } = require(`jasmine-spec-reporter`);
-const Loader = require(`../webpack/dotenv/Loader.js`);
-
-const processNodeEnv =
-	typeof process.env.APP_NODE_ENV_INCLUDE === `string` &&
-	process.env.APP_NODE_ENV_INCLUDE !== ``
-		? process.env.APP_NODE_ENV_INCLUDE
-		: typeof process.env.NODE_ENV === `undefined` ||
-		  (typeof process.env.NODE_ENV === `string` &&
-				process.env.NODE_ENV !== ``)
-		? process.env.NODE_ENV
-		: `test`;
-
-const forceEnvRebuild =
-	typeof process.env.APP_ENV_RUN_BUILD === `undefined` ||
-	(typeof process.env.APP_ENV_RUN_BUILD === `string` &&
-		(process.env.APP_ENV_RUN_BUILD === `` ||
-			process.env.APP_ENV_RUN_BUILD === `true`)) ||
-	typeof process.env.APP_ENV_FORCE_REBUILD === `undefined` ||
-	(typeof process.env.APP_ENV_FORCE_REBUILD === `string` &&
-		(process.env.APP_ENV_FORCE_REBUILD === `` ||
-			process.env.APP_ENV_FORCE_REBUILD === `true`));
-
-Loader.run(processNodeEnv, forceEnvRebuild);
 
 const protractorConfig = {
 	allScriptsTimeout: 11000,
@@ -55,36 +38,27 @@ const protractorConfig = {
 	}
 };
 
-const seleniumAddress = Loader.unquote.value(
-	process.env.APP_TEST_E2E_PROTRACTOR_SELENIUM_ADDRESS
-);
-
-if (typeof seleniumAddress === `string` && seleniumAddress !== ``) {
+if (typeof appEnv.APP_TEST_E2E_PROTRACTOR_SELENIUM_ADDRESS !== `string`) {
 	// @ts-ignore
-	protractorConfig.seleniumAddress = seleniumAddress;
+	protractorConfig.seleniumAddress =
+		appEnv.APP_TEST_E2E_PROTRACTOR_SELENIUM_ADDRESS;
 }
 
-const directConnect =
-	process.env.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT === `true`;
-
-if (
-	typeof process.env.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT !== `undefined` &&
-	typeof directConnect === `boolean`
-) {
+if (typeof process.env.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT === `boolean`) {
 	// @ts-ignore
-	protractorConfig.directConnect = directConnect;
+	protractorConfig.directConnect =
+		appEnv.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT;
 } else {
 	// @ts-ignore
 	protractorConfig.directConnect = true;
 }
 
-const baseUrl = Loader.unquote.value(
-	process.env.APP_TEST_E2E_PROTRACTOR_BASE_URL
-);
-
-if (typeof baseUrl === `string` && baseUrl !== ``) {
+if (
+	typeof appEnv.APP_TEST_E2E_PROTRACTOR_BASE_URL === `string` &&
+	appEnv.APP_TEST_E2E_PROTRACTOR_BASE_URL !== ``
+) {
 	// @ts-ignore
-	protractorConfig.baseUrl = baseUrl;
+	protractorConfig.baseUrl = appEnv.APP_TEST_E2E_PROTRACTOR_BASE_URL;
 } else {
 	// @ts-ignore
 	protractorConfig.baseUrl = `http://localhost:4200/`;
@@ -96,7 +70,7 @@ if (
 	protractorConfig.seleniumAddress !== undefined
 ) {
 	// @ts-ignore
-	protractorConfig.baseUrl += `` + process.env.APP_LOCALE + `/`;
+	protractorConfig.baseUrl += `` + appEnv.APP_LOCALE + `/`;
 }
 
 /**

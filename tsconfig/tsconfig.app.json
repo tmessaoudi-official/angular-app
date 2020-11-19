@@ -13,9 +13,7 @@
   ],
   "include": [
     "../src/**/*.d.ts",
-    "src/**/*.d.ts",
-    "../src/**/*.dot-env.*",
-    "src/**/*.dot-env.*"
+    "src/**/*.d.ts"
   ],
   "exclude": [
     "../src/**/*.dot-env.run.*",

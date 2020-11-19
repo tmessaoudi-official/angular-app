@@ -3,12 +3,18 @@ exports.default = function (source = null) {
 		if (typeof source !== `string` || source === ``) {
 			source = `process`;
 		}
-		return require(`./dot-env-loader.dotenv`).default(source);
+		if (source !== `process`) {
+			throw new Error(
+				` - DotEnvLoader : Unknown execution source '${source}' provided`
+			);
+		}
+		return source;
 	};
 
-	return Object.assign(init(source), {
+	return {
+		source: init(source),
 		fs: null,
-		config: { tmp: [], files: {} },
+		config: { tmp: [], files: [] },
 		content: { tmp: [] },
 		validateFs: function (fs) {
 			if (
@@ -38,7 +44,7 @@ exports.default = function (source = null) {
 					throw new Error(error.message);
 				}
 
-				if (this.config && this.config.NODE_DEBUG === `true`) {
+				if (this.doDebug()) {
 					console.warn(error.message);
 				}
 				return false;
@@ -46,20 +52,14 @@ exports.default = function (source = null) {
 			return true;
 		},
 		run: function (
-			env = ``,
 			encoding = `utf8`,
-			envConfigPath = `./.app.env/.env.configuration`,
-			// eslint-disable-next-line no-unused-vars
-			putInProcessEnv = true
+			envConfigPath = `./.app.env/.env.configuration`
 		) {
 			if (typeof envConfigPath !== `string` || envConfigPath === ``) {
 				envConfigPath = `./.app.env/.env.configuration`;
 			}
 			if (typeof encoding !== `string` || encoding === ``) {
 				encoding = `utf8`;
-			}
-			if (typeof env !== `string` || env === ``) {
-				env = null;
 			}
 			this.fileExists(envConfigPath, {
 				message: `envConfigFile '${envConfigPath}' not found !!`,
@@ -77,7 +77,16 @@ exports.default = function (source = null) {
 			);
 			delete this.content.tmp;
 
-			console.log(this.content);
+			process.env.NODE_ENV = this.content.NODE_ENV;
+			process.env.NODE_DEBUG = this.doDebug();
+			process.env.APP_ENV = this.content.APP_ENV;
+
+			if (
+				typeof process.env.APP_ENV_RUN_BUILD === `string` &&
+				process.env.APP_ENV_RUN_BUILD === `true`
+			) {
+				// build .env.local.build
+			}
 
 			return `running !!`;
 		},
@@ -88,10 +97,7 @@ exports.default = function (source = null) {
 			if (this.config && this.config.APP_ENV_CONFIG_ENCODING) {
 				encoding = this.config.APP_ENV_CONFIG_ENCODING;
 			}
-			const debug =
-				this.config && typeof this.config.NODE_DEBUG !== `undefined`
-					? this.config.NODE_DEBUG === `true`
-					: isConfig;
+			const debug = this.doDebug(isConfig);
 			if (debug) {
 				console.log(
 					`${
@@ -136,6 +142,7 @@ exports.default = function (source = null) {
 					}
 				}, this);
 			}
+			this.config.files.push(filePath);
 			this.treatGarbage(filePath, encoding, debug, isConfig);
 			this.content.tmp = [];
 		},
@@ -277,10 +284,19 @@ exports.default = function (source = null) {
 				}, this);
 			}
 		},
+		doDebug: function (isConfig = false) {
+			return typeof process.env.NODE_DEBUG_FORCE === `string` &&
+				process.env.NODE_DEBUG_FORCE !== ``
+				? process.env.NODE_DEBUG_FORCE === `true`
+				: this.config && typeof this.config.NODE_DEBUG !== `undefined`
+				? this.config.NODE_DEBUG === `true` ||
+				  this.config.NODE_DEBUG === true
+				: isConfig;
+		},
 		populate: function (x) {
 			console.log(`populating !! '${x}'`);
 
 			return x;
 		}
-	});
+	};
 };

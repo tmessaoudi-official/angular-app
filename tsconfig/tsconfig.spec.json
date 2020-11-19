@@ -18,12 +18,7 @@
     "src/**/*.spec.ts",
     "../src/**/*.d.ts",
     "src/**/*.d.ts",
-    "../src/**/*.dot-env.*",
-    "src/**/*.dot-env.*",
     "../src/**/*.dot-env.run.*",
     "src/**/*.dot-env.run.*"
-  ],
-  "exclude": [
-    "../src/dot-env/loader.dot-env.run.*"
   ]
 }

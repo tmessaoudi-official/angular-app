@@ -3,6 +3,7 @@ declare interface IDotEnvLoaderRun {
 	source: EDotEnvLoaderSource;
 	fs: any | null;
 	config: Array<string | Array<Array<string>>> | null;
+	tmp: Array<string | Array<Array<string>> | Array<Array<any>> | any> | null;
 	content: Array<
 		string | Array<Array<string>> | Array<Array<any>> | any
 	> | null;

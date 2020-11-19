@@ -91,6 +91,7 @@ exports.default = function (source = null) {
 
 			console.log(this.config);
 			console.log(this.tmp);
+			console.log(this.content);
 
 			if (
 				typeof process.env.APP_ENV_RUN_BUILD === `string` &&
@@ -350,13 +351,9 @@ exports.default = function (source = null) {
 						}
 					}
 
-					console.log(`matches.groups.placeHolder process`);
-					console.log(matches.groups.placeHolder);
-					console.log(value);
-
-					this.tmp[item] = this.tmp[item].replace(
+					this.content[item] = this.tmp[item].replace(
 						matches.groups.placeHolder,
-						value
+						this.processValue(value)
 					);
 				}
 			}, this);
@@ -405,16 +402,17 @@ exports.default = function (source = null) {
 						}
 					}
 
-					console.log(`matches.groups.placeHolder app`);
-					console.log(matches.groups.placeHolder);
-					console.log(value);
-
-					this.tmp[item] = this.tmp[item].replace(
+					this.content[item] = this.tmp[item].replace(
 						matches.groups.placeHolder,
-						value
+						this.processValue(value)
 					);
 				}
 			}, this);
+		},
+		processValue: function (value) {
+			console.log(`processing value !! : `);
+			console.log(value);
+			return value;
 		},
 		formatUndefined: function (value, varName) {
 			if (this.doDebug()) {

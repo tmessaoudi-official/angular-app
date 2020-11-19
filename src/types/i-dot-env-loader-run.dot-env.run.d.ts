@@ -49,6 +49,8 @@ declare interface IDotEnvLoaderRun {
 	// eslint-disable-next-line no-unused-vars
 	evalAppEnvs(): void;
 	// eslint-disable-next-line no-unused-vars
+	processValue(value: string): any;
+	// eslint-disable-next-line no-unused-vars
 	doDebug(isConfig: boolean): boolean;
 	// eslint-disable-next-line no-unused-vars
 	formatUndefined(

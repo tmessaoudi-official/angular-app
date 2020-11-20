@@ -16,6 +16,8 @@ const environment: IEnvironment = {
 	// @ts-ignore : APP_ENV comes from webpack
 	appI18nLocaleDummy: APP_ENV.APP_I18N_LOCALE_DUMMY,
 	// @ts-ignore : APP_ENV comes from webpack
+	appI18nSingleLocale: APP_ENV.APP_I18N_SINGLE_LOCALE,
+	// @ts-ignore : APP_ENV comes from webpack
 	appI18nSupportedLocales: APP_ENV.APP_I18N_SUPPORTED_LOCALES,
 	// @ts-ignore : APP_ENV comes from webpack
 	appI18nSwitcherBehaviour: APP_ENV.APP_I18N_SWITCHER_BEHAVIOUR,

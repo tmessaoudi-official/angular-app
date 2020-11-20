@@ -25,9 +25,12 @@ export class I18nSwitcherService {
 			window.location.href = `/${locale}/${window.location.hash}`;
 		}
 	}
+	isSingleLocale(): boolean {
+		return environment.appI18nSingleLocale;
+	}
 	isLocaleDummy(): boolean {
 		let pathLocale = ``;
-		if (environment.appI18nSwitcherCheckPathLocale === true) {
+		if (environment.appI18nSwitcherCheckPathLocale) {
 			const splittedPathname = window.location.pathname.split(`/`);
 			if (splittedPathname[splittedPathname.length - 1] !== ``) {
 				pathLocale = splittedPathname[splittedPathname.length - 1];
@@ -35,7 +38,7 @@ export class I18nSwitcherService {
 				pathLocale = splittedPathname[splittedPathname.length - 2];
 			}
 		}
-		if (environment.appDebug === true) {
+		if (environment.appDebug) {
 			console.log(`pathLocale === environment.appI18nLocaleDummy`);
 			console.log(pathLocale);
 			console.log(environment.appI18nLocaleDummy);
@@ -61,7 +64,7 @@ export class I18nSwitcherService {
 		);
 	}
 	init(): void {
-		if (environment.appDebug === true) {
+		if (environment.appDebug) {
 			console.log(`this.locale`);
 			console.log(this.locale);
 			console.log(window.location.href);
@@ -74,7 +77,7 @@ export class I18nSwitcherService {
 				this.switch();
 			}
 		} else if (environment.appI18nSwitcherBehaviour === `default`) {
-			if (environment.appDebug === true) {
+			if (environment.appDebug) {
 				console.log(`this.isLocaleDummy()`);
 				console.log(this.isLocaleDummy());
 			}

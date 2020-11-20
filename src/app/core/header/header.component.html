@@ -19,7 +19,7 @@
       <ul class="navbar-nav -pull-right">
         <li class="nav-item dropdown language-selector -pull-left open" style="padding-left: 40px;" ngbDropdown>
           <a class="nav-link dropdown-toggle" id="id02" style="cursor: pointer" ngbDropdownToggle>{{ i18nLocaleService.getCurrentLocaleLabel().label }}</a>
-          <div class="dropdown-menu -pull-left" aria-labelledby="id02" ngbDropdownMenu>
+          <div class="dropdown-menu -pull-left" aria-labelledby="id02" *ngIf="!i18nLocaleService.isSingleLocale()" ngbDropdownMenu>
             <ul class="-pull-left">
               <li class="-pull-left" *ngFor="let item of i18nLocaleService.getSupportedLocales(); index as i;" (click)="i18nLocaleService.i18nSwitcherService.switch(item.id)">
                 <a href="#" class="-pull-left">{{ item.label }}</a>

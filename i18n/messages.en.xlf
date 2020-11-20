@@ -1,564 +1,500 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="home" trgLang="en">
   <file id="ngi18n" original="ng.template">
     <unit id="8202903159216468577">
       <notes>
-
-      <note category="location">src/app/core/app.component.ts:22</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/core/app.component.ts:22</note>
+      </notes>
+      <segment state="final">
         <source>app.index.title</source>
         <target>app.index.title_en</target>
       </segment>
     </unit>
     <unit id="4162997551392921684">
       <notes>
-
-
-      <note category="location">src/app/dumbest/dummy/dummy.component.html:1</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/dumbest/dummy/dummy.component.html:1</note>
+      </notes>
+      <segment state="final">
         <source>app.dummy.title</source>
         <target>app.dummy.title_en</target>
       </segment>
     </unit>
     <unit id="303063580277194129">
       <notes>
-
-
-      <note category="location">src/app/dumbest/dumb/dumb.component.html:1</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/dumbest/dumb/dumb.component.html:1</note>
+      </notes>
+      <segment state="final">
         <source>app.dumb.title</source>
         <target>app.dumb.title_en</target>
       </segment>
     </unit>
     <unit id="8280334145137016148">
       <notes>
-
-
-      <note category="location">src/app/dumbest/dumb/dumb.component.html:2</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/dumbest/dumb/dumb.component.html:2</note>
+      </notes>
+      <segment state="final">
         <source>app.dumb.title2</source>
         <target>app.dumb.title2_en</target>
       </segment>
     </unit>
     <unit id="7249072834034853576">
       <notes>
-
-
-      <note category="location">src/app/dumbest/dumber/dumber.component.html:1</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/dumbest/dumber/dumber.component.html:1</note>
+      </notes>
+      <segment state="final">
         <source>app.dumber.title</source>
         <target>app.dumber.title_en</target>
       </segment>
     </unit>
     <unit id="3777802817951822482">
       <notes>
-
-      <note category="location">src/app/dumbest/home/home.component.ts:59</note></notes>
-      <segment state="initial">
+        <note category="location">src/app/dumbest/home/home.component.ts:59</note>
+      </notes>
+      <segment state="final">
         <source>can t set minutes less than 0</source>
-        <target>can t set minutes less than 0 en</target>
+        <target>can t set minutes less than 0 ar</target>
       </segment>
     </unit>
     <unit id="3141899919268928026">
       <notes>
-
-
-      <note category="location">src/app/dumbest/home/home.component.html:1</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/dumbest/home/home.component.html:1</note>
+      </notes>
+      <segment state="final">
         <source>app.home.title</source>
         <target>app.home.title_en</target>
       </segment>
     </unit>
     <unit id="636666793223463925">
       <notes>
-
-
-      <note category="location">src/app/dumbest/home/home.component.html:4</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/dumbest/home/home.component.html:4</note>
+      </notes>
+      <segment state="final">
         <source>app.welcome</source>
         <target>app.welcome_en</target>
       </segment>
     </unit>
     <unit id="app_welcome">
       <notes>
-
         <note category="description">Description test</note>
         <note category="meaning">Meaning test</note>
-
-      <note category="location">src/app/dumbest/home/home.component.html:5</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/dumbest/home/home.component.html:5</note>
+      </notes>
+      <segment state="final">
         <source>app.welcome_with_meaning_and_description_and_id</source>
         <target>app.welcome_with_meaning_and_description_and_id_en</target>
       </segment>
     </unit>
     <unit id="app_welcome_second">
       <notes>
-
         <note category="description">Description test second</note>
         <note category="meaning">Meaning test welcome second</note>
-
-      <note category="location">src/app/dumbest/home/home.component.html:6</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/dumbest/home/home.component.html:6</note>
+      </notes>
+      <segment state="final">
         <source>app.welcome_with_meaning_and_description_and_id</source>
         <target>app.welcome_with_meaning_and_description_and_id_en</target>
       </segment>
-    </unit><unit id="5954340323365579654">
-      <notes>
-        <note category="location">src/app/dumbest/home/home.component.html:7</note>
-      </notes>
-      <segment state="initial">
-        <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</source>
-      <target>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</target></segment>
-    </unit><unit id="9060885231713053076">
-      <notes>
-        <note category="location">src/app/dumbest/home/home.component.html:7</note>
-      </notes>
-      <segment state="initial">
-        <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></source>
-      <target>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></target></segment>
-    </unit><unit id="7670372064920373295">
-      <notes>
-        <note category="location">src/app/dumbest/home/home.component.html:13</note>
-      </notes>
-      <segment state="initial">
-        <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
-      <target>{VAR_SELECT, select, male {male} female {female} other {other}}</target></segment>
-    </unit><unit id="8041008881369542359">
-      <notes>
-        <note category="location">src/app/dumbest/home/home.component.html:13</note>
-      </notes>
-      <segment state="initial">
-        <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></source>
-      <target>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></target></segment>
     </unit>
-    
-    
-    
-    
+    <unit id="5954340323365579654">
+      <notes>
+        <note category="location">src/app/dumbest/home/home.component.html:7</note>
+      </notes>
+      <segment state="final">
+        <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</source>
+        <target>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}_en</target>
+      </segment>
+    </unit>
+    <unit id="9060885231713053076">
+      <notes>
+        <note category="location">src/app/dumbest/home/home.component.html:7</note>
+      </notes>
+      <segment state="final">
+        <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>
+        </source>
+        <target>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>_en
+        </target>
+      </segment>
+    </unit>
+    <unit id="7670372064920373295">
+      <notes>
+        <note category="location">src/app/dumbest/home/home.component.html:13</note>
+      </notes>
+      <segment state="final">
+        <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
+        <target>{VAR_SELECT, select, male {male} female {female} other {other}}_en</target>
+      </segment>
+    </unit>
+    <unit id="8041008881369542359">
+      <notes>
+        <note category="location">src/app/dumbest/home/home.component.html:13</note>
+      </notes>
+      <segment state="final">
+        <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></source>
+        <target>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/>_en</target>
+      </segment>
+    </unit>
     <unit id="4654714685343745812">
       <notes>
-
-
-      <note category="location">src/app/core/not-found/not-found.component.html:1</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/core/not-found/not-found.component.html:1</note>
+      </notes>
+      <segment state="final">
         <source>app.not_found</source>
         <target>app.not_found_en</target>
       </segment>
     </unit>
     <unit id="5335356958891281272">
       <notes>
-
-
-      <note category="location">src/app/core/header/header.component.html:3</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/core/header/header.component.html:3</note>
+      </notes>
+      <segment state="final">
         <source>app.nav.home</source>
         <target>app.nav.home_en</target>
       </segment>
-    </unit><unit id="1243080576181568804">
+    </unit>
+    <unit id="1243080576181568804">
       <notes>
         <note category="location">src/app/core/header/header.component.html:10</note>
       </notes>
-      <segment state="initial">
+      <segment state="final">
         <source>app.nav.dumbest.module</source>
-      <target>app.nav.dumbest.module</target></segment>
+        <target>app.nav.dumbest.module_en</target>
+      </segment>
     </unit>
     <unit id="8215035420062173710">
       <notes>
-
-
-      <note category="location">src/app/core/header/header.component.html:12</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/core/header/header.component.html:12</note>
+      </notes>
+      <segment state="final">
         <source>app.nav.dummy</source>
         <target>app.nav.dummy_en</target>
       </segment>
     </unit>
     <unit id="8856170510253505863">
       <notes>
-
-
-      <note category="location">src/app/core/header/header.component.html:13</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/core/header/header.component.html:13</note>
+      </notes>
+      <segment state="final">
         <source>app.nav.dumb</source>
         <target>app.nav.dumb_en</target>
       </segment>
     </unit>
     <unit id="7563047614717127693">
       <notes>
-
-
-
-
-      <note category="location">src/app/core/header/header.component.html:14</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/core/header/header.component.html:14</note>
+      </notes>
+      <segment state="final">
         <source>app.nav.dumber</source>
         <target>app.nav.dumber_en</target>
       </segment>
     </unit>
     <unit id="6010898872571258196">
       <notes>
-
-
-      <note category="location">src/app/core/header/header.component.html:15</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/core/header/header.component.html:15</note>
+      </notes>
+      <segment state="final">
         <source>app.nav.dumber_with_id</source>
         <target>app.nav.dumber_with_id_en</target>
       </segment>
     </unit>
     <unit id="3104991395163537922">
       <notes>
-
-      <note category="location">src/app/core/footer/footer.component.ts:10</note></notes>
-      <segment state="translated">
-        <source>app.footer.text <ph id="0" equiv="PH" disp="this.name"/>
-        </source>
+        <note category="location">src/app/core/footer/footer.component.ts:10</note>
+      </notes>
+      <segment state="final">
+        <source>app.footer.text <ph id="0" equiv="PH" disp="this.name"/></source>
         <target>app.footer.text <ph id="0" equiv="PH" disp="this.name"/>_en</target>
       </segment>
     </unit>
     <unit id="ngb.alert.close">
       <notes>
-
-
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/alert/alert.ts:55</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/alert/alert.ts:70</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/alert/alert.ts:55</note>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/alert/alert.ts:70</note>
+      </notes>
+      <segment state="final">
         <source>Close</source>
         <target>Close_en</target>
       </segment>
     </unit>
     <unit id="ngb.carousel.slide-number">
       <notes>
-
         <note category="description">Currently selected slide number read by screen reader</note>
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/carousel/carousel.ts:114</note></notes>
-      <segment state="translated">
-        <source> Slide <ph id="0" equiv="INTERPOLATION" disp="ate _pauseOnHov"/> of <ph id="1" equiv="INTERPOLATION_1" disp="ect(false);
-  p"/>
-        </source>
-        <target> Slide <ph id="0" equiv="INTERPOLATION" disp="ate _pauseOnHov"/> of <ph id="1" equiv="INTERPOLATION_1" disp="ect(false);
-  p"/>
-        </target>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/carousel/carousel.ts:114</note>
+      </notes>
+      <segment state="final">
+        <source> Slide <ph id="0" equiv="INTERPOLATION" disp="ate _pauseOnHov"/> of <ph id="1" equiv="INTERPOLATION_1" disp="ect(false);p"/></source>
+        <target> Slide <ph id="0" equiv="INTERPOLATION" disp="ate _pauseOnHov"/> of <ph id="1" equiv="INTERPOLATION_1" disp="ect(false);p"/></target>
       </segment>
     </unit>
     <unit id="ngb.carousel.previous">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/carousel/carousel.ts:132</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/carousel/carousel.ts:132</note>
+      </notes>
+      <segment state="final">
         <source>Previous</source>
         <target>Previous_en</target>
       </segment>
     </unit>
     <unit id="ngb.carousel.next">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/carousel/carousel.ts:147</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/carousel/carousel.ts:147</note>
+      </notes>
+      <segment state="final">
         <source>Next</source>
         <target>Next_en</target>
       </segment>
     </unit>
     <unit id="ngb.datepicker.previous-month">
       <notes>
-
-
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:24</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:34</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:24</note>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:34</note>
+      </notes>
+      <segment state="final">
         <source>Previous month</source>
         <target>Previous month_en</target>
       </segment>
     </unit>
     <unit id="ngb.datepicker.next-month">
       <notes>
-
-
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:44</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:57</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:44</note>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:57</note>
+      </notes>
+      <segment state="final">
         <source>Next month</source>
         <target>Next month_en</target>
       </segment>
     </unit>
     <unit id="ngb.datepicker.select-month">
       <notes>
-
-
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:44</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:49</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:44</note>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:49</note>
+      </notes>
+      <segment state="final">
         <source>Select month</source>
         <target>Select month_en</target>
       </segment>
     </unit>
     <unit id="ngb.datepicker.select-year">
       <notes>
-
-
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:59</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:72</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:59</note>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:72</note>
+      </notes>
+      <segment state="final">
         <source>Select year</source>
         <target>Select year_en</target>
       </segment>
     </unit>
     <unit id="ngb.pagination.first">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:147</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/pagination/pagination.ts:147</note>
+      </notes>
+      <segment state="final">
         <source>««</source>
         <target>««_en</target>
       </segment>
     </unit>
     <unit id="ngb.pagination.previous">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:153</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/pagination/pagination.ts:153</note>
+      </notes>
+      <segment state="final">
         <source>«</source>
         <target>«_en</target>
       </segment>
     </unit>
     <unit id="ngb.pagination.next">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:158</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/pagination/pagination.ts:158</note>
+      </notes>
+      <segment state="final">
         <source>»</source>
         <target>»_en</target>
       </segment>
     </unit>
     <unit id="ngb.pagination.last">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:164</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/pagination/pagination.ts:164</note>
+      </notes>
+      <segment state="final">
         <source>»»</source>
         <target>»»_en</target>
       </segment>
     </unit>
     <unit id="ngb.pagination.first-aria">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:168</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/pagination/pagination.ts:168</note>
+      </notes>
+      <segment state="final">
         <source>First</source>
         <target>First_en</target>
       </segment>
     </unit>
     <unit id="ngb.pagination.previous-aria">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:176</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/pagination/pagination.ts:176</note>
+      </notes>
+      <segment state="final">
         <source>Previous</source>
         <target>Previous_en</target>
       </segment>
     </unit>
     <unit id="ngb.pagination.next-aria">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:188</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/pagination/pagination.ts:188</note>
+      </notes>
+      <segment state="final">
         <source>Next</source>
         <target>Next_en</target>
       </segment>
     </unit>
     <unit id="ngb.pagination.last-aria">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:195</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/pagination/pagination.ts:195</note>
+      </notes>
+      <segment state="final">
         <source>Last</source>
         <target>Last_en</target>
       </segment>
     </unit>
     <unit id="ngb.progressbar.value">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/progressbar/progressbar.ts:31</note></notes>
-      <segment state="translated">
-        <source>
-<ph id="0" equiv="INTERPOLATION" disp="turn this._max;"/>
-        </source>
-        <target>
-<ph id="0" equiv="INTERPOLATION" disp="turn this._max;"/>_en</target>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/progressbar/progressbar.ts:31</note>
+      </notes>
+      <segment state="final">
+        <source><ph id="0" equiv="INTERPOLATION" disp="turn this._max;"/></source>
+        <target><ph id="0" equiv="INTERPOLATION" disp="turn this._max;"/>_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.HH">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:46</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:46</note>
+      </notes>
+      <segment state="final">
         <source>HH</source>
         <target>HH_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.hours">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:50</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:50</note>
+      </notes>
+      <segment state="final">
         <source>Hours</source>
         <target>Hours_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.MM">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:55</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:55</note>
+      </notes>
+      <segment state="final">
         <source>MM</source>
         <target>MM_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.minutes">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:62</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:62</note>
+      </notes>
+      <segment state="final">
         <source>Minutes</source>
         <target>Minutes_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.increment-hours">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:68</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:68</note>
+      </notes>
+      <segment state="final">
         <source>Increment hours</source>
         <target>Increment hours_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.decrement-hours">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:73</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:73</note>
+      </notes>
+      <segment state="final">
         <source>Decrement hours</source>
         <target>Decrement hours_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.increment-minutes">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:80</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:80</note>
+      </notes>
+      <segment state="final">
         <source>Increment minutes</source>
         <target>Increment minutes_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.decrement-minutes">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:86</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:86</note>
+      </notes>
+      <segment state="final">
         <source>Decrement minutes</source>
         <target>Decrement minutes_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.SS">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:91</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:91</note>
+      </notes>
+      <segment state="final">
         <source>SS</source>
         <target>SS_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.seconds">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:96</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:96</note>
+      </notes>
+      <segment state="final">
         <source>Seconds</source>
         <target>Seconds_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.increment-seconds">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:103</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:103</note>
+      </notes>
+      <segment state="final">
         <source>Increment seconds</source>
         <target>Increment seconds_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.decrement-seconds">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:109</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:109</note>
+      </notes>
+      <segment state="final">
         <source>Decrement seconds</source>
         <target>Decrement seconds_en</target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.PM">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:131</note></notes>
-      <segment state="translated">
-        <source>
-<ph id="0" equiv="INTERPOLATION" disp="sible.
-   */
-  "/>
-        </source>
-        <target>
-<ph id="0" equiv="INTERPOLATION" disp="sible.
-   */
-  "/>
-        </target>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:131</note>
+      </notes>
+      <segment state="final">
+        <source><ph id="0" equiv="INTERPOLATION" disp="sible.*/"/></source>
+        <target><ph id="0" equiv="INTERPOLATION" disp="sible.*/"/></target>
       </segment>
     </unit>
     <unit id="ngb.timepicker.AM">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:154</note></notes>
-      <segment state="translated">
-        <source>
-<ph id="0" equiv="INTERPOLATION" disp="nts ControlValu"/>
-        </source>
-        <target>
-<ph id="0" equiv="INTERPOLATION" disp="nts ControlValu"/>_en</target>
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:154</note>
+      </notes>
+      <segment state="final">
+        <source><ph id="0" equiv="INTERPOLATION" disp="nts ControlValu"/></source>
+        <target><ph id="0" equiv="INTERPOLATION" disp="nts ControlValu"/>_en</target>
       </segment>
     </unit>
     <unit id="ngb.toast.close-aria">
       <notes>
-
-
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/toast/toast.ts:78</note></notes>
-      <segment state="translated">
+        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_e153978a8700d4e8c1fddb793d19ec7b/node_modules/@ng-bootstrap/src/toast/toast.ts:78</note>
+      </notes>
+      <segment state="final">
         <source>Close</source>
         <target>Close_en</target>
       </segment>

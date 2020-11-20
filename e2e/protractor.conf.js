@@ -1,14 +1,10 @@
-// @ts-check
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 // eslint-disable-next-line no-unused-vars
-const appEnv = new (require(`./src/dot-env/dot-env-loader-run.dotenv.run`).default)(
+const appEnv = new (require(`../src/dot-env/dot-env-loader-run.dot-env.run`).default)(
 	`process`
-)
-	.setFs(require(`fs`))
-	.run();
+).run();
 
-// @ts-ignore
 const { SpecReporter, StacktraceOption } = require(`jasmine-spec-reporter`);
 
 const protractorConfig = {
@@ -38,18 +34,15 @@ const protractorConfig = {
 	}
 };
 
-if (typeof appEnv.APP_TEST_E2E_PROTRACTOR_SELENIUM_ADDRESS !== `string`) {
-	// @ts-ignore
+if (typeof appEnv.APP_TEST_E2E_PROTRACTOR_SELENIUM_ADDRESS === `string`) {
 	protractorConfig.seleniumAddress =
 		appEnv.APP_TEST_E2E_PROTRACTOR_SELENIUM_ADDRESS;
 }
 
-if (typeof process.env.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT === `boolean`) {
-	// @ts-ignore
+if (typeof appEnv.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT === `boolean`) {
 	protractorConfig.directConnect =
 		appEnv.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT;
 } else {
-	// @ts-ignore
 	protractorConfig.directConnect = true;
 }
 
@@ -57,21 +50,19 @@ if (
 	typeof appEnv.APP_TEST_E2E_PROTRACTOR_BASE_URL === `string` &&
 	appEnv.APP_TEST_E2E_PROTRACTOR_BASE_URL !== ``
 ) {
-	// @ts-ignore
 	protractorConfig.baseUrl = appEnv.APP_TEST_E2E_PROTRACTOR_BASE_URL;
 } else {
-	// @ts-ignore
 	protractorConfig.baseUrl = `http://localhost:4200/`;
 }
 
 if (
-	process.env.APP_LOCALE !== undefined &&
-	// @ts-ignore
+	appEnv.APP_LOCALE !== undefined &&
 	protractorConfig.seleniumAddress !== undefined
 ) {
-	// @ts-ignore
 	protractorConfig.baseUrl += `` + appEnv.APP_LOCALE + `/`;
 }
+
+console.log(protractorConfig);
 
 /**
  * @type { import("protractor").Config }

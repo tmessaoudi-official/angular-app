@@ -13,7 +13,7 @@
   "engineStrict": true,
   "scripts": {
     "ng": "ng",
-    "load-env-js": "ts-node src/dot-env/loader.dot-env.run.js",
+    "load-env-js": "APP_ENV_RUN=true ts-node ./src/dot-env/dot-env-loader-run.dot-env.run.js",
     "build": "ng build ${APP_CONFIGURATION}",
     "serve": "ng serve ${APP_CONFIGURATION}",
     "start-home": "ng serve --configuration=home",
@@ -83,7 +83,6 @@
     "@typescript-eslint/eslint-plugin": "4.8.1",
     "@typescript-eslint/eslint-plugin-tslint": "^4.8.1",
     "@typescript-eslint/parser": "4.8.1",
-    "dotenv": "^8.2.0",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-filenames": "^1.3.2",

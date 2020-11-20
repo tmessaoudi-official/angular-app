@@ -1,38 +1,31 @@
-import DotEnvLoader from '../dot-env/dot-env-loader.dotenv';
-
-const dotEnvLoader = new DotEnvLoader();
-
-console.log(dotEnvLoader.process(`hello world from inside`, `testing`));
-
-import { EnvironmentVariableHandler } from '../dot-env/deprecated/variable/environment-variable-handler';
-import { processEnv } from '../dot-env/process-env';
-import { EnvironmentNaming } from '../dot-env/deprecated/environment-naming';
-
-const environmentVariableHandler = new EnvironmentVariableHandler();
-const environmentNaming = new EnvironmentNaming();
-
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-const environment: IEnvironment = {};
-Object.keys(processEnv).forEach((item) => {
-	environment[
-		environmentNaming.camelize(item) as keyof IEnvironment
-	] = environmentVariableHandler.process(
-		processEnv[item as keyof IProcessEnv],
-		item
-	);
-});
+const environment: IEnvironment = {
+	appI18nIsLocaleDummy: true,
+	appI18nIsLocaleLanding: true,
+	// @ts-ignore : APP_ENV comes from webpack
+	production: APP_ENV.APP_ENV === `production`,
+	// @ts-ignore : APP_ENV comes from webpack
+	appEnv: APP_ENV.APP_ENV,
+	// @ts-ignore : APP_ENV comes from webpack
+	appDebug: APP_ENV.APP_DEBUG,
+	// @ts-ignore : APP_ENV comes from webpack
+	appI18nLocaleDefault: APP_ENV.APP_I18N_LOCALE_DEFAULT,
+	// @ts-ignore : APP_ENV comes from webpack
+	appI18nLocaleDummy: APP_ENV.APP_I18N_LOCALE_DUMMY,
+	// @ts-ignore : APP_ENV comes from webpack
+	appI18nSupportedLocales: APP_ENV.APP_I18N_SUPPORTED_LOCALES,
+	// @ts-ignore : APP_ENV comes from webpack
+	appI18nSwitcherBehaviour: APP_ENV.APP_I18N_SWITCHER_BEHAVIOUR,
+	// @ts-ignore : APP_ENV comes from webpack
+	appI18nSwitcherCheckPathLocale: APP_ENV.APP_I18N_SWITCHER_CHECK_PATH_LOCALE
+};
 
-environment.production = environment.nodeEnv === `production`;
-environment.appI18nIsLocaleDummy = true;
-environment.appI18nIsLocaleLanding = true;
-
-if (environment.appDebug === true) {
+if (environment.appDebug) {
 	console.log(`***** Environment : `);
 	console.log(environment);
-	console.log(processEnv);
 }
 
 export { environment };

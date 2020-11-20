@@ -4,15 +4,6 @@ declare interface IDotEnvLoaderRun {
 	fs: any | null;
 	config: Array<string | Array<Array<string>>> | null;
 	tmp: Array<string | Array<Array<string>> | Array<Array<any>> | any> | null;
-	content: Array<
-		string | Array<Array<string>> | Array<Array<any>> | any
-	> | null;
-	// eslint-disable-next-line no-unused-vars
-	setFs(fs: any): IDotEnvLoaderRun;
-	// eslint-disable-next-line no-unused-vars
-	getFs(): any;
-	// eslint-disable-next-line no-unused-vars
-	validateFs(): void;
 	// by default it is ./.app.env/.config it should be encoded with utf8
 	run(
 		// eslint-disable-next-line no-unused-vars

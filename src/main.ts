@@ -5,11 +5,10 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import { LocaleInitializerService } from './i18n/service/locale-initializer.service';
-import { processEnv } from './dot-env/process-env';
 
 LocaleInitializerService.do(
-	processEnv.APP_I18N_LOCALE_DEFAULT,
-	processEnv.APP_I18N_LOCALE_DUMMY
+	environment.appI18nLocaleDefault,
+	environment.appI18nLocaleDummy
 );
 
 // @ts-ignore : this variable comes when building, if it's not there we can't build !!

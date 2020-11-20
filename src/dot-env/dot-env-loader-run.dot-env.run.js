@@ -1,4 +1,4 @@
-exports.default = function (source = null) {
+const dotEnvLoaderRun = function (source = null) {
 	const init = function (source = null) {
 		if (typeof source !== `string` || source === ``) {
 			source = `process`;
@@ -13,34 +13,11 @@ exports.default = function (source = null) {
 
 	return {
 		source: init(source),
-		fs: null,
+		fs: require(`fs`),
 		config: { garbage: [], files: [] },
 		tmp: { garbage: [] },
-		content: {},
-		validateFs: function (fs) {
-			if (
-				!fs ||
-				!fs.readFileSync ||
-				typeof fs.readFileSync !== `function`
-			) {
-				throw new Error(
-					`Unknown fs provided !! can't find function readFileSync :(`
-				);
-			}
-		},
-		setFs: function (fs) {
-			this.validateFs(fs);
-			this.fs = fs;
-
-			return this;
-		},
-		getFs: function () {
-			this.validateFs(this.fs);
-
-			return this.fs;
-		},
 		fileExists: function (filePath, error) {
-			if (!this.getFs().existsSync(filePath)) {
+			if (!this.fs.existsSync(filePath)) {
 				if (error.error === true) {
 					throw new Error(error.message);
 				}
@@ -90,17 +67,39 @@ exports.default = function (source = null) {
 			this.evalAppItems();
 			this.handleValues();
 
-			console.log(this.tmp);
-			console.log(this.content);
+			if (this.tmp.APP_DEBUG) {
+				console.log(this.tmp);
+				console.log(this.config.files);
+			}
 
 			if (
 				typeof process.env.APP_ENV_RUN_BUILD === `string` &&
 				process.env.APP_ENV_RUN_BUILD === `true`
 			) {
-				// build .env.local.build
+				const envBuildPath = this.config.APP_ENV_CONFIG_BUILD_FILE_PATH;
+				try {
+					this.fs.unlinkSync(envBuildPath);
+				} catch (err) {}
+				let data = ``;
+				Object.keys(this.tmp).forEach(function (item) {
+					data += item + `=${this.tmp[item]}\n`;
+				}, this);
+				Object.keys(this.config).forEach(function (item) {
+					if (item === `files`) {
+						return;
+					}
+					data += item + `=${this.config[item]}\n`;
+				}, this);
+				try {
+					this.fs.writeFileSync(envBuildPath, data);
+				} catch (exception) {
+					console.log(
+						`there was an error when creating ${envBuildPath}`
+					);
+				}
 			}
 
-			return `running !!`;
+			return this.tmp;
 		},
 		load: function (filePath, encoding = `utf8`, isConfig = false) {
 			if (typeof isConfig !== `boolean`) {
@@ -122,7 +121,7 @@ exports.default = function (source = null) {
 					} file with encoding '${encoding}'`
 				);
 			}
-			this.getFs()
+			this.fs
 				.readFileSync(filePath.current, {
 					encoding: encoding
 				})
@@ -619,13 +618,10 @@ exports.default = function (source = null) {
 						handler: splitted[0],
 						options: splitted.splice(1)
 					};
-					value = value.replace(
-						standaloneHandlers.groups.placeHolder,
-						this.handle(
-							item,
-							standaloneHandlers.groups.value,
-							standaloneHandlers.groups.default
-						)
+					value = this.handle(
+						item,
+						standaloneHandlers.groups.value,
+						standaloneHandlers.groups.default
 					);
 					return item;
 				}, this);
@@ -725,6 +721,24 @@ exports.default = function (source = null) {
 
 			return value;
 		},
+		webpackify: function (data) {
+			const APP_ENV = {};
+			Object.keys(data).forEach(function (item) {
+				if (typeof data[item] === `boolean`) {
+					APP_ENV[item] = data[item];
+				} else if (typeof data[item] === `string`) {
+					APP_ENV[item] = `\`` + data[item] + `\``;
+				} else if (typeof data[item] === `undefined`) {
+					APP_ENV[item] = data[item];
+				} else if (data[item] === null) {
+					APP_ENV[item] = data[item];
+				} else {
+					APP_ENV[item] = JSON.stringify(data[item]);
+				}
+			});
+
+			return APP_ENV;
+		},
 		formatNull: function (value, varName) {
 			if (this.doDebug()) {
 				console.warn(
@@ -745,3 +759,8 @@ exports.default = function (source = null) {
 		}
 	};
 };
+exports.default = dotEnvLoaderRun;
+
+if (process.env.APP_ENV_RUN === `true`) {
+	new dotEnvLoaderRun(`process`).run();
+}

@@ -102,49 +102,39 @@
         <source>app.welcome_with_meaning_and_description_and_id</source>
         <target>app.welcome_with_meaning_and_description_and_id_it</target>
       </segment>
-    </unit>
-    <unit id="1803531417720015616">
+    </unit><unit id="5954340323365579654">
       <notes>
-
-
-      <note category="location">src/app/dumbest/home/home.component.html:7</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/dumbest/home/home.component.html:7</note>
+      </notes>
+      <segment state="initial">
         <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</source>
-        <target>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}_it</target>
-      </segment>
-    </unit>
-    <unit id="7282916492820826755">
+      <target>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</target></segment>
+    </unit><unit id="9060885231713053076">
       <notes>
-
-
-      <note category="location">src/app/dumbest/home/home.component.html:7</note></notes>
-      <segment state="translated">
-        <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>
-        </source>
-        <target>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>_it</target>
-      </segment>
-    </unit>
-    <unit id="7842238767399919809">
+        <note category="location">src/app/dumbest/home/home.component.html:7</note>
+      </notes>
+      <segment state="initial">
+        <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></source>
+      <target>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/></target></segment>
+    </unit><unit id="7670372064920373295">
       <notes>
-
-
-      <note category="location">src/app/dumbest/home/home.component.html:13</note></notes>
-      <segment state="translated">
+        <note category="location">src/app/dumbest/home/home.component.html:13</note>
+      </notes>
+      <segment state="initial">
         <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
-        <target>{VAR_SELECT, select, male {male} female {female} other {other}}_it</target>
-      </segment>
-    </unit>
-    <unit id="8719020961091149048">
+      <target>{VAR_SELECT, select, male {male} female {female} other {other}}</target></segment>
+    </unit><unit id="8041008881369542359">
       <notes>
-
-
-      <note category="location">src/app/dumbest/home/home.component.html:13</note></notes>
-      <segment state="translated">
-        <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/>
-        </source>
-        <target>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/>_it</target>
-      </segment>
+        <note category="location">src/app/dumbest/home/home.component.html:13</note>
+      </notes>
+      <segment state="initial">
+        <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></source>
+      <target>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></target></segment>
     </unit>
+    
+    
+    
+    
     <unit id="4654714685343745812">
       <notes>
 
@@ -230,7 +220,7 @@
 
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/alert/alert.ts:55</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/alert/alert.ts:70</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/alert/alert.ts:55</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/alert/alert.ts:70</note></notes>
       <segment state="translated">
         <source>Close</source>
         <target>Close_it</target>
@@ -241,7 +231,7 @@
 
         <note category="description">Currently selected slide number read by screen reader</note>
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts:114</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/carousel/carousel.ts:114</note></notes>
       <segment state="translated">
         <source> Slide <ph id="0" equiv="INTERPOLATION" disp="ate _pauseOnHov"/> of <ph id="1" equiv="INTERPOLATION_1" disp="ect(false);
   p"/>
@@ -255,7 +245,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts:132</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/carousel/carousel.ts:132</note></notes>
       <segment state="translated">
         <source>Previous</source>
         <target>Previous_it</target>
@@ -265,7 +255,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/carousel/carousel.ts:147</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/carousel/carousel.ts:147</note></notes>
       <segment state="translated">
         <source>Next</source>
         <target>Next_it</target>
@@ -277,7 +267,7 @@
 
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:24</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:34</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:24</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:34</note></notes>
       <segment state="translated">
         <source>Previous month</source>
         <target>Previous month_it</target>
@@ -289,7 +279,7 @@
 
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:44</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:57</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:44</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation.ts:57</note></notes>
       <segment state="translated">
         <source>Next month</source>
         <target>Next month_it</target>
@@ -301,7 +291,7 @@
 
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:44</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:49</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:44</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:49</note></notes>
       <segment state="translated">
         <source>Select month</source>
         <target>Select month_it</target>
@@ -313,7 +303,7 @@
 
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:59</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:72</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:59</note><note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/datepicker/datepicker-navigation-select.ts:72</note></notes>
       <segment state="translated">
         <source>Select year</source>
         <target>Select year_it</target>
@@ -323,7 +313,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:147</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:147</note></notes>
       <segment state="translated">
         <source>««</source>
         <target>««_it</target>
@@ -333,7 +323,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:153</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:153</note></notes>
       <segment state="translated">
         <source>«</source>
         <target>«_it</target>
@@ -343,7 +333,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:158</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:158</note></notes>
       <segment state="translated">
         <source>»</source>
         <target>»_it</target>
@@ -353,7 +343,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:164</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:164</note></notes>
       <segment state="translated">
         <source>»»</source>
         <target>»»_it</target>
@@ -363,7 +353,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:168</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:168</note></notes>
       <segment state="translated">
         <source>First</source>
         <target>First_it</target>
@@ -373,7 +363,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:176</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:176</note></notes>
       <segment state="translated">
         <source>Previous</source>
         <target>Previous_it</target>
@@ -383,7 +373,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:188</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:188</note></notes>
       <segment state="translated">
         <source>Next</source>
         <target>Next_it</target>
@@ -393,7 +383,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/pagination/pagination.ts:195</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/pagination/pagination.ts:195</note></notes>
       <segment state="translated">
         <source>Last</source>
         <target>Last_it</target>
@@ -403,7 +393,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/progressbar/progressbar.ts:31</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/progressbar/progressbar.ts:31</note></notes>
       <segment state="translated">
         <source>
 <ph id="0" equiv="INTERPOLATION" disp="turn this._max;"/>
@@ -416,7 +406,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:46</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:46</note></notes>
       <segment state="translated">
         <source>HH</source>
         <target>HH_it</target>
@@ -426,7 +416,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:50</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:50</note></notes>
       <segment state="translated">
         <source>Hours</source>
         <target>Hours_it</target>
@@ -436,7 +426,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:55</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:55</note></notes>
       <segment state="translated">
         <source>MM</source>
         <target>MM_it</target>
@@ -446,7 +436,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:62</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:62</note></notes>
       <segment state="translated">
         <source>Minutes</source>
         <target>Minutes_it</target>
@@ -456,7 +446,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:68</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:68</note></notes>
       <segment state="translated">
         <source>Increment hours</source>
         <target>Increment hours_it</target>
@@ -466,7 +456,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:73</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:73</note></notes>
       <segment state="translated">
         <source>Decrement hours</source>
         <target>Decrement hours_it</target>
@@ -476,7 +466,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:80</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:80</note></notes>
       <segment state="translated">
         <source>Increment minutes</source>
         <target>Increment minutes_it</target>
@@ -486,7 +476,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:86</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:86</note></notes>
       <segment state="translated">
         <source>Decrement minutes</source>
         <target>Decrement minutes_it</target>
@@ -496,7 +486,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:91</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:91</note></notes>
       <segment state="translated">
         <source>SS</source>
         <target>SS_it</target>
@@ -506,7 +496,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:96</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:96</note></notes>
       <segment state="translated">
         <source>Seconds</source>
         <target>Seconds_it</target>
@@ -516,7 +506,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:103</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:103</note></notes>
       <segment state="translated">
         <source>Increment seconds</source>
         <target>Increment seconds_it</target>
@@ -526,7 +516,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:109</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:109</note></notes>
       <segment state="translated">
         <source>Decrement seconds</source>
         <target>Decrement seconds_it</target>
@@ -536,7 +526,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:131</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:131</note></notes>
       <segment state="translated">
         <source>
 <ph id="0" equiv="INTERPOLATION" disp="sible.
@@ -554,7 +544,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:154</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/timepicker/timepicker.ts:154</note></notes>
       <segment state="translated">
         <source>
 <ph id="0" equiv="INTERPOLATION" disp="nts ControlValu"/>
@@ -567,7 +557,7 @@
       <notes>
 
 
-      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_5b232ccb1759f19d597f6aa0fa7df453/node_modules/@ng-bootstrap/src/toast/toast.ts:78</note></notes>
+      <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_76c8368ef5351675f2479694020f1451/node_modules/@ng-bootstrap/src/toast/toast.ts:78</note></notes>
       <segment state="translated">
         <source>Close</source>
         <target>Close_it</target>

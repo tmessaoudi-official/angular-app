@@ -42,7 +42,6 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 4.8.1_8d0850e71f524483417e807b99397456
   '@typescript-eslint/eslint-plugin-tslint': 4.8.1_eslint@7.13.0+typescript@4.0.5
   '@typescript-eslint/parser': 4.8.1_eslint@7.13.0+typescript@4.0.5
-  dotenv: 8.2.0
   eslint: 7.13.0
   eslint-config-prettier: 6.15.0_eslint@7.13.0
   eslint-plugin-filenames: 1.3.2_eslint@7.13.0
@@ -5113,12 +5112,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==
-  /dotenv/8.2.0:
-    dev: true
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
   /duplexify/3.7.1:
     dependencies:
       end-of-stream: 1.4.4
@@ -12501,7 +12494,6 @@ specifiers:
   '@typescript-eslint/eslint-plugin-tslint': ^4.8.1
   '@typescript-eslint/parser': 4.8.1
   bootstrap: ^5.0.0-alpha3
-  dotenv: ^8.2.0
   eslint: ^7.13.0
   eslint-config-prettier: ^6.15.0
   eslint-plugin-filenames: ^1.3.2

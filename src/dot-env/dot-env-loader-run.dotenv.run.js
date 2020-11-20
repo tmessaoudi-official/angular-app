@@ -88,9 +88,8 @@ exports.default = function (source = null) {
 
 			this.evalProcessItems();
 			this.evalAppItems();
-			this.processValues();
+			this.handleValues();
 
-			console.log(this.config);
 			console.log(this.tmp);
 			console.log(this.content);
 
@@ -353,9 +352,45 @@ exports.default = function (source = null) {
 					}
 				}
 
+				if (itemValue !== matches.groups.placeHolder) {
+					value = this.handleValue(value);
+					if (typeof value !== `string`) {
+						if (
+							this.config.APP_ENV_CONFIG_EVAL_EMBED_NON_STRING ===
+							`error`
+						) {
+							console.warn(value);
+							throw new Error(
+								`     ---- DotEnv : ${item} is trying to include a non string value`
+							);
+						} else {
+							if (
+								this.config
+									.APP_ENV_CONFIG_EVAL_EMBED_NON_STRING ===
+								`empty`
+							) {
+								value = ``;
+							}
+							if (
+								this.config
+									.APP_ENV_CONFIG_EVAL_EMBED_NON_STRING ===
+								`null`
+							) {
+								value = null;
+							}
+							if (
+								this.config
+									.APP_ENV_CONFIG_EVAL_EMBED_NON_STRING ===
+								`undefined`
+							) {
+								value = undefined;
+							}
+						}
+					}
+				}
 				itemValue = itemValue.replace(
 					matches.groups.placeHolder,
-					this.processValue(value)
+					value
 				);
 				if (item) {
 					this.tmp[item] = itemValue;
@@ -411,9 +446,45 @@ exports.default = function (source = null) {
 					}
 				}
 
+				if (itemValue !== matches.groups.placeHolder) {
+					value = this.handleValue(value);
+					if (typeof value !== `string`) {
+						if (
+							this.config.APP_ENV_CONFIG_EVAL_EMBED_NON_STRING ===
+							`error`
+						) {
+							console.warn(value);
+							throw new Error(
+								`     ---- DotEnv : ${item} is trying to include a non string value`
+							);
+						} else {
+							if (
+								this.config
+									.APP_ENV_CONFIG_EVAL_EMBED_NON_STRING ===
+								`empty`
+							) {
+								value = ``;
+							}
+							if (
+								this.config
+									.APP_ENV_CONFIG_EVAL_EMBED_NON_STRING ===
+								`null`
+							) {
+								value = null;
+							}
+							if (
+								this.config
+									.APP_ENV_CONFIG_EVAL_EMBED_NON_STRING ===
+								`undefined`
+							) {
+								value = undefined;
+							}
+						}
+					}
+				}
 				itemValue = itemValue.replace(
 					matches.groups.placeHolder,
-					this.processValue(value)
+					value
 				);
 				if (item) {
 					this.tmp[item] = itemValue;
@@ -421,12 +492,13 @@ exports.default = function (source = null) {
 			}
 			return itemValue;
 		},
-		processValues: function () {
+		handleValues: function () {
 			Object.keys(this.tmp).forEach(function (item) {
-				this.tmp[item] = this.processValue(this.tmp[item], item);
+				this.tmp[item] = this.handleValue(this.tmp[item], item);
 			}, this);
 		},
-		processValue: function (value, item = null) {
+		// eslint-disable-next-line no-unused-vars
+		handleValue: function (value, item = null) {
 			value = this.evalProcessItem(value);
 			value = this.evalAppItem(value);
 			if (value === this.config.APP_ENV_CONFIG_NULL) {
@@ -455,18 +527,159 @@ exports.default = function (source = null) {
 				value = false;
 			}
 
-			console.log(`processing value !! : `);
-			console.log(`item`);
-			console.log(item);
-			console.log(`value`);
-			console.log(value);
-			console.log(`typeof value`);
-			console.log(typeof value);
-			console.log(`this.getHandlers(value)`);
-			console.log(this.getHandlers(value));
-			console.log(`this.getHandlers(value, 'embedded')`);
-			console.log(this.getHandlers(value, `embedded`));
+			let doWhile = true;
+			while (doWhile) {
+				const embededHandlers = this.getHandlers(value, `embedded`);
+
+				if (
+					!embededHandlers ||
+					!embededHandlers.groups ||
+					!embededHandlers.groups.placeHolder
+				) {
+					doWhile = false;
+					break;
+				}
+
+				if (
+					typeof this.tmp[embededHandlers.groups.value] !==
+					`undefined`
+				) {
+					value = this.tmp[embededHandlers.groups.value];
+				} else if (
+					typeof this.config[embededHandlers.groups.value] !==
+					`undefined`
+				) {
+					value = this.config[embededHandlers.groups.value];
+				} else if (
+					typeof process.env[embededHandlers.groups.value] !==
+					`undefined`
+				) {
+					value = process.env[embededHandlers.groups.value];
+				}
+
+				value = this.evalProcessItem(value);
+				value = this.evalAppItem(value);
+
+				let environmentHandlers = embededHandlers.groups.environmentHandlers.split(
+					this.config.APP_ENV_CONFIG_HANDLER_SEPARATOR
+				);
+				environmentHandlers = environmentHandlers.map(function (item) {
+					const splitted = item.split(
+						this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX
+					);
+					item = {
+						handler: splitted[0],
+						options: splitted.splice(1)
+					};
+					value = value.replace(
+						embededHandlers.groups.placeHolder,
+						this.handle(
+							item,
+							embededHandlers.groups.value,
+							embededHandlers.groups.default
+						)
+					);
+					return item;
+				}, this);
+			}
+			const standaloneHandlers = this.getHandlers(value);
+			if (
+				standaloneHandlers &&
+				standaloneHandlers.groups &&
+				standaloneHandlers.groups.placeHolder
+			) {
+				if (
+					typeof this.tmp[standaloneHandlers.groups.value] !==
+					`undefined`
+				) {
+					value = this.tmp[standaloneHandlers.groups.value];
+				} else if (
+					typeof this.config[standaloneHandlers.groups.value] !==
+					`undefined`
+				) {
+					value = this.config[standaloneHandlers.groups.value];
+				} else if (
+					typeof process.env[standaloneHandlers.groups.value] !==
+					`undefined`
+				) {
+					value = process.env[standaloneHandlers.groups.value];
+				}
+
+				value = this.evalProcessItem(value);
+				value = this.evalAppItem(value);
+
+				let environmentHandlers = standaloneHandlers.groups.environmentHandlers.split(
+					this.config.APP_ENV_CONFIG_HANDLER_SEPARATOR
+				);
+				environmentHandlers = environmentHandlers.map(function (item) {
+					const splitted = item.split(
+						this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX
+					);
+					item = {
+						handler: splitted[0],
+						options: splitted.splice(1)
+					};
+					value = value.replace(
+						standaloneHandlers.groups.placeHolder,
+						this.handle(
+							item,
+							standaloneHandlers.groups.value,
+							standaloneHandlers.groups.default
+						)
+					);
+					return item;
+				}, this);
+			}
 			return value;
+		},
+		handle: function (item, value, defaultValue) {
+			const splittedHandler = item.handler
+				.split(this.config.APP_ENV_CONFIG_APP_ENV_HANDLER_PREFIX)[1]
+				.split(`.`);
+			return this.environment[splittedHandler[0]][splittedHandler[1]](
+				value,
+				defaultValue,
+				item.options
+			);
+		},
+		environment: {
+			processor: {
+				// eslint-disable-next-line no-unused-vars
+				none: function (value, defaultValue, options) {
+					return value;
+				},
+				json: function (value, defaultValue, options) {
+					try {
+						return JSON.parse(value);
+					} catch (exception) {
+						options.forEach(function (item) {
+							console.error(
+								`   -- DotEnv : Invalid json '${value}'`
+							);
+							if (item === `fail` || item === `fail=true`) {
+								throw new Error(
+									`   -- DotEnv : Invalid json '${value}'`
+								);
+							}
+						});
+					}
+					if (defaultValue !== undefined && defaultValue !== null) {
+						return JSON.parse(defaultValue);
+					}
+				}
+			},
+			validator: {
+				// eslint-disable-next-line no-unused-vars
+				none: function (value, defaultValue, options) {
+					return value;
+				}
+			},
+			formatter: {
+				// eslint-disable-next-line no-unused-vars
+				none: function (value, defaultValue, options) {
+					return value;
+				}
+			}
 		},
 		getHandlers: function (value, position = `standalone`) {
 			const regex = new RegExp(
@@ -490,8 +703,7 @@ exports.default = function (source = null) {
 				}`,
 				`ig`
 			);
-			const matches = regex.exec(value);
-			return matches;
+			return regex.exec(value);
 		},
 		formatUndefined: function (value, varName) {
 			if (this.doDebug()) {

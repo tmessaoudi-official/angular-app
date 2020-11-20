@@ -53,11 +53,13 @@ declare interface IDotEnvLoaderRun {
 	// eslint-disable-next-line no-unused-vars
 	evalAppItem(itemValue: any, item: string): any;
 	// eslint-disable-next-line no-unused-vars
-	processValues(): void;
+	handleValues(): void;
 	// eslint-disable-next-line no-unused-vars
-	processValue(value: any, item: string | null): any;
+	handleValue(value: any, item: string | null): any;
 	// eslint-disable-next-line no-unused-vars
-	getHandlers(value: any, position: string | null): any;
+	handle(item: any, value: string | null, defaultValue: string | null): any;
+	// eslint-disable-next-line no-unused-vars
+	getHandlers(value: any, position: string | null): RegExpExecArray | null;
 	// eslint-disable-next-line no-unused-vars
 	doDebug(isConfig: boolean): boolean;
 	// eslint-disable-next-line no-unused-vars

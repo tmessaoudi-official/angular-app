@@ -5,14 +5,13 @@ import { AppHomeModule } from '../../app/i18n/home/app.home.module';
 import { environment } from '../../environments/environment';
 
 import { LocaleInitializerService } from '../service/locale-initializer.service';
-import { processEnv } from '../../dot-env/process-env';
 
 LocaleInitializerService.do(
-	processEnv.APP_I18N_LOCALE_DEFAULT,
-	processEnv.APP_I18N_LOCALE_DUMMY
+	environment.appI18nLocaleDefault,
+	environment.appI18nLocaleDummy
 );
 
-// @ts-ignore
+// @ts-ignore : this variable comes when building, if it's not there we can't build !!
 environment.appI18nSupportedLocales.forEach((value: I18nLocale) => {
 	LocaleInitializerService.do(value.id);
 });
@@ -25,7 +24,7 @@ platformBrowserDynamic()
 	.bootstrapModule(AppHomeModule, {
 		defaultEncapsulation: ViewEncapsulation.ShadowDom,
 		providers: [
-			{ provide: LOCALE_ID, useValue: processEnv.APP_I18N_LOCALE_DUMMY }
+			{ provide: LOCALE_ID, useValue: environment.appI18nLocaleDummy }
 		]
 	})
 	.catch((err) => console.error(err));

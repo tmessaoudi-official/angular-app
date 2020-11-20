@@ -1,23 +1,10 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
-const Loader = require(`./webpack/dotenv/Loader.js`);
 
-const processNodeEnv =
-	typeof process.env.NODE_ENV === `undefined` ||
-	(typeof process.env.NODE_ENV === `string` && process.env.NODE_ENV !== ``)
-		? process.env.NODE_ENV
-		: `test`;
-const forceEnvRebuild =
-	typeof process.env.APP_ENV_RUN_BUILD === `undefined` ||
-	(typeof process.env.APP_ENV_RUN_BUILD === `string` &&
-		(process.env.APP_ENV_RUN_BUILD === `` ||
-			process.env.APP_ENV_RUN_BUILD === `true`)) ||
-	typeof process.env.APP_ENV_FORCE_REBUILD === `undefined` ||
-	(typeof process.env.APP_ENV_FORCE_REBUILD === `string` &&
-		(process.env.APP_ENV_FORCE_REBUILD === `` ||
-			process.env.APP_ENV_FORCE_REBUILD === `true`));
-
-Loader.run(processNodeEnv, forceEnvRebuild);
+// eslint-disable-next-line no-unused-vars
+const dotEnvLoaderRun = new (require(`./src/dot-env/dot-env-loader-run.dot-env.run`).default)(
+	`process`
+).run();
 
 module.exports = function (config) {
 	config.set({
@@ -37,8 +24,8 @@ module.exports = function (config) {
 			clearContext: false // leave Jasmine Spec Runner output visible in browser
 		},
 		jasmineHtmlReporter: {
-      		suppressAll: true // removes the duplicated traces
-    	},
+			suppressAll: true // removes the duplicated traces
+		},
 		coverageReporter: {
 			// specify a common output directory
 			dir: require(`path`).join(__dirname, `./coverage`),
@@ -66,4 +53,3 @@ module.exports = function (config) {
 		restartOnFileChange: true
 	});
 };
-

@@ -1,18 +1,14 @@
+// eslint-disable-next-line no-unused-vars
+const dotEnvLoader = new (require(`./src/dot-env/dot-env-loader-run.dot-env.run`).default)(
+	`process`
+);
+const APP_ENV = dotEnvLoader.webpackify(dotEnvLoader.run());
+
+if (APP_ENV.APP_DEBUG) {
+	console.log(APP_ENV);
+}
+
 const webpack = require(`webpack`);
-
-const loader = require(`./webpack/dotenv/Loader.js`);
-
-const processNodeEnv =
-	typeof process.env.NODE_ENV === `string` && process.env.NODE_ENV !== ``
-		? process.env.NODE_ENV
-		: ``;
-const forceEnvRebuild =
-	(typeof process.env.APP_ENV_RUN_BUILD === `string` &&
-		process.env.APP_ENV_RUN_BUILD === `true`) ||
-	(typeof process.env.APP_ENV_FORCE_REBUILD === `string` &&
-		process.env.APP_ENV_FORCE_REBUILD === `true`);
-
-loader.run(processNodeEnv, forceEnvRebuild);
 
 exports.default = {
 	pre(options) {
@@ -23,7 +19,7 @@ exports.default = {
 	config(cfg) {
 		cfg.plugins.push(
 			new webpack.DefinePlugin({
-				'process.env': process.env
+				'APP_ENV': APP_ENV
 			})
 		);
 

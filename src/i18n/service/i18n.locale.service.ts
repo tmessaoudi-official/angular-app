@@ -53,4 +53,8 @@ export class I18nLocaleService {
 	isLocaleDummy(): boolean {
 		return this.i18nSwitcherService.isLocaleDummy();
 	}
+
+	isSingleLocale(): boolean {
+		return this.i18nSwitcherService.isSingleLocale();
+	}
 }

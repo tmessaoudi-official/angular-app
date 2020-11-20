@@ -13,13 +13,10 @@
   ],
   "include": [
     "../src/**/*.d.ts",
-    "src/**/*.d.ts",
-    "../src/**/*.dotenv.ts",
-    "src/**/*.dotenv.ts"
+    "src/**/*.d.ts"
   ],
   "exclude": [
-    "../src/**/*.dotenv.run.ts",
-    "src/**/*.dotenv.run.ts",
-    "../src/dot-env/loader.ts"
+    "../src/**/*.dot-env.run.*",
+    "src/**/*.dot-env.run.*"
   ]
 }

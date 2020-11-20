@@ -20,7 +20,8 @@ export class EnvironmentVariableHandler {
 			typeof processEnv.APP_ENV_CONFIG_HANDLER_SEPARATOR === `string` &&
 			processEnv.APP_ENV_CONFIG_HANDLER_SEPARATOR !== ``
 		) {
-			this.envHandlerSeparator = processEnv.APP_ENV_CONFIG_HANDLER_SEPARATOR;
+			this.envHandlerSeparator =
+				processEnv.APP_ENV_CONFIG_HANDLER_SEPARATOR;
 		}
 	}
 

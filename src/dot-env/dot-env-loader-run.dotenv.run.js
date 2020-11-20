@@ -86,8 +86,8 @@ exports.default = function (source = null) {
 				delete this.tmp[item];
 			}, this);
 
-			this.evalProcessEnvs();
-			this.evalAppEnvs();
+			this.evalProcessItems();
+			this.evalAppItems();
 			this.processValues();
 
 			console.log(this.config);
@@ -308,7 +308,7 @@ exports.default = function (source = null) {
 				? this.tmp.NODE_DEBUG === `true` || this.tmp.NODE_DEBUG === true
 				: isConfig;
 		},
-		evalProcessEnvs: function () {
+		evalProcessItems: function () {
 			Object.keys(this.tmp).forEach(function (item) {
 				this.tmp[item] = this.evalProcessItem(this.tmp[item], item);
 			}, this);
@@ -345,6 +345,8 @@ exports.default = function (source = null) {
 							value = this.tmp[matches.groups.default];
 						} else if (process.env[matches.groups.default]) {
 							value = process.env[matches.groups.default];
+						} else if (this.config[matches.groups.default]) {
+							value = this.config[matches.groups.default];
 						} else {
 							value = matches.groups.default;
 						}
@@ -361,7 +363,7 @@ exports.default = function (source = null) {
 			}
 			return itemValue;
 		},
-		evalAppEnvs: function () {
+		evalAppItems: function () {
 			Object.keys(this.tmp).forEach(function (item) {
 				this.tmp[item] = this.evalAppItem(this.tmp[item], item);
 			}, this);
@@ -383,6 +385,9 @@ exports.default = function (source = null) {
 				}
 
 				let value = this.tmp[matches.groups.varName];
+				if (!value && this.config[matches.groups.varName]) {
+					value = this.config[matches.groups.varName];
+				}
 				let empty = false;
 				if (typeof value === `undefined`) {
 					value = this.formatUndefined(value, matches.groups.varName);
@@ -398,6 +403,8 @@ exports.default = function (source = null) {
 							value = this.tmp[matches.groups.default];
 						} else if (process.env[matches.groups.default]) {
 							value = process.env[matches.groups.default];
+						} else if (this.config[matches.groups.default]) {
+							value = this.config[matches.groups.default];
 						} else {
 							value = matches.groups.default;
 						}
@@ -447,13 +454,44 @@ exports.default = function (source = null) {
 			if (value === `false`) {
 				value = false;
 			}
+
 			console.log(`processing value !! : `);
 			console.log(`item`);
 			console.log(item);
 			console.log(`value`);
 			console.log(value);
+			console.log(`typeof value`);
 			console.log(typeof value);
+			console.log(`this.getHandlers(value)`);
+			console.log(this.getHandlers(value));
+			console.log(`this.getHandlers(value, 'embedded')`);
+			console.log(this.getHandlers(value, `embedded`));
 			return value;
+		},
+		getHandlers: function (value, position = `standalone`) {
+			const regex = new RegExp(
+				// eslint-disable-next-line max-len
+				`${
+					position === `embedded`
+						? `(?<placeHolder>\\$\{`
+						: `^(?<placeHolder>`
+				}(?<environmentHandlers>${
+					this.config.APP_ENV_CONFIG_APP_ENV_HANDLER_PREFIX
+				}[^${this.config.APP_ENV_CONFIG_ENV_EVAL_SEPARATOR}]*)${
+					this.config.APP_ENV_CONFIG_ENV_EVAL_SEPARATOR
+				}(?<value>${
+					position === `embedded`
+						? `[^\}${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}]*`
+						: `[^${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}]*`
+				})${
+					position === `embedded`
+						? `(${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}?(?<default>[^\}]*)?)?\})`
+						: `(${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}?(?<default>(.*)*)?)?)$`
+				}`,
+				`ig`
+			);
+			const matches = regex.exec(value);
+			return matches;
 		},
 		formatUndefined: function (value, varName) {
 			if (this.doDebug()) {

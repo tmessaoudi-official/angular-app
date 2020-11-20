@@ -88,6 +88,7 @@ exports.default = function (source = null) {
 
 			this.evalProcessEnvs();
 			this.evalAppEnvs();
+			this.processValues();
 
 			console.log(this.config);
 			console.log(this.tmp);
@@ -309,109 +310,149 @@ exports.default = function (source = null) {
 		},
 		evalProcessEnvs: function () {
 			Object.keys(this.tmp).forEach(function (item) {
-				const regex = new RegExp(
-					// eslint-disable-next-line max-len
-					`(?<placeHolder>\\\$\{${this.config.APP_ENV_CONFIG_PROCESS_ENV_EVAL_PREFIX}${this.config.APP_ENV_CONFIG_ENV_EVAL_SEPARATOR}(?<varName>[^${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}\}]*)(${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}?(?<default>[^\}]*)?)?\})`
+				this.tmp[item] = this.evalProcessItem(this.tmp[item], item);
+			}, this);
+		},
+		evalProcessItem: function (itemValue, item = null) {
+			const regex = new RegExp(
+				// eslint-disable-next-line max-len
+				`(?<placeHolder>\\\$\{${this.config.APP_ENV_CONFIG_PROCESS_ENV_EVAL_PREFIX}${this.config.APP_ENV_CONFIG_ENV_EVAL_SEPARATOR}(?<varName>[^${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}\}]*)(${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}?(?<default>[^\}]*)?)?\})`
+			);
+			let doWhile = true;
+			while (doWhile) {
+				const matches = (item ? this.tmp[item] : itemValue).match(
+					regex
 				);
-				let doWhile = true;
-				while (doWhile) {
-					const matches = this.tmp[item].match(regex);
 
-					if (
-						!matches ||
-						!matches.groups ||
-						!matches.groups.varName
-					) {
-						doWhile = false;
-						break;
-					}
+				if (!matches || !matches.groups || !matches.groups.varName) {
+					doWhile = false;
+					break;
+				}
 
-					let value = process.env[matches.groups.varName];
-					let empty = false;
-					if (typeof value === `undefined`) {
-						value = this.formatUndefined(
-							value,
-							matches.groups.varName
-						);
-						empty = true;
-					}
-					if (value === null) {
-						value = this.formatNull(value, matches.groups.varName);
-						empty = true;
-					}
-					if (empty) {
-						if (matches.groups.default) {
-							if (this.tmp[matches.groups.default]) {
-								value = this.tmp[matches.groups.default];
-							} else if (process.env[matches.groups.default]) {
-								value = process.env[matches.groups.default];
-							} else {
-								value = matches.groups.default;
-							}
+				let value = process.env[matches.groups.varName];
+				let empty = false;
+				if (typeof value === `undefined`) {
+					value = this.formatUndefined(value, matches.groups.varName);
+					empty = true;
+				}
+				if (value === null) {
+					value = this.formatNull(value, matches.groups.varName);
+					empty = true;
+				}
+				if (empty) {
+					if (matches.groups.default) {
+						if (this.tmp[matches.groups.default]) {
+							value = this.tmp[matches.groups.default];
+						} else if (process.env[matches.groups.default]) {
+							value = process.env[matches.groups.default];
+						} else {
+							value = matches.groups.default;
 						}
 					}
-
-					this.content[item] = this.tmp[item].replace(
-						matches.groups.placeHolder,
-						this.processValue(value)
-					);
 				}
-			}, this);
+
+				itemValue = itemValue.replace(
+					matches.groups.placeHolder,
+					this.processValue(value)
+				);
+				if (item) {
+					this.tmp[item] = itemValue;
+				}
+			}
+			return itemValue;
 		},
 		evalAppEnvs: function () {
 			Object.keys(this.tmp).forEach(function (item) {
-				const regex = new RegExp(
-					// eslint-disable-next-line max-len
-					`(?<placeHolder>\\\$\{${this.config.APP_ENV_CONFIG_APP_ENV_EVAL_PREFIX}${this.config.APP_ENV_CONFIG_ENV_EVAL_SEPARATOR}(?<varName>[^${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}\}]*)(${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}?(?<default>[^\}]*)?)?\})`
-				);
-				let doWhile = true;
-				while (doWhile) {
-					const matches = this.tmp[item].match(regex);
-
-					if (
-						!matches ||
-						!matches.groups ||
-						!matches.groups.varName
-					) {
-						doWhile = false;
-						break;
-					}
-
-					let value = this.tmp[matches.groups.varName];
-					let empty = false;
-					if (typeof value === `undefined`) {
-						value = this.formatUndefined(
-							value,
-							matches.groups.varName
-						);
-						empty = true;
-					}
-					if (value === null) {
-						value = this.formatNull(value, matches.groups.varName);
-						empty = true;
-					}
-					if (empty) {
-						if (matches.groups.default) {
-							if (this.tmp[matches.groups.default]) {
-								value = this.tmp[matches.groups.default];
-							} else if (process.env[matches.groups.default]) {
-								value = process.env[matches.groups.default];
-							} else {
-								value = matches.groups.default;
-							}
-						}
-					}
-
-					this.content[item] = this.tmp[item].replace(
-						matches.groups.placeHolder,
-						this.processValue(value)
-					);
-				}
+				this.tmp[item] = this.evalAppItem(this.tmp[item], item);
 			}, this);
 		},
-		processValue: function (value) {
+		evalAppItem: function (itemValue, item = null) {
+			const regex = new RegExp(
+				// eslint-disable-next-line max-len
+				`(?<placeHolder>\\\$\{${this.config.APP_ENV_CONFIG_APP_ENV_EVAL_PREFIX}${this.config.APP_ENV_CONFIG_ENV_EVAL_SEPARATOR}(?<varName>[^${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}\}]*)(${this.config.APP_ENV_CONFIG_EVAL_CONFIG_PREFIX}?(?<default>[^\}]*)?)?\})`
+			);
+			let doWhile = true;
+			while (doWhile) {
+				const matches = (item ? this.tmp[item] : itemValue).match(
+					regex
+				);
+
+				if (!matches || !matches.groups || !matches.groups.varName) {
+					doWhile = false;
+					break;
+				}
+
+				let value = this.tmp[matches.groups.varName];
+				let empty = false;
+				if (typeof value === `undefined`) {
+					value = this.formatUndefined(value, matches.groups.varName);
+					empty = true;
+				}
+				if (value === null) {
+					value = this.formatNull(value, matches.groups.varName);
+					empty = true;
+				}
+				if (empty) {
+					if (matches.groups.default) {
+						if (this.tmp[matches.groups.default]) {
+							value = this.tmp[matches.groups.default];
+						} else if (process.env[matches.groups.default]) {
+							value = process.env[matches.groups.default];
+						} else {
+							value = matches.groups.default;
+						}
+					}
+				}
+
+				itemValue = itemValue.replace(
+					matches.groups.placeHolder,
+					this.processValue(value)
+				);
+				if (item) {
+					this.tmp[item] = itemValue;
+				}
+			}
+			return itemValue;
+		},
+		processValues: function () {
+			Object.keys(this.tmp).forEach(function (item) {
+				this.tmp[item] = this.processValue(this.tmp[item], item);
+			}, this);
+		},
+		processValue: function (value, item = null) {
+			value = this.evalProcessItem(value);
+			value = this.evalAppItem(value);
+			if (value === this.config.APP_ENV_CONFIG_NULL) {
+				value = null;
+			}
+			if (value === this.config.APP_ENV_CONFIG_UNDEFINED) {
+				value = undefined;
+			}
+			if (value === ``) {
+				if (this.config.APP_ENV_CONFIG_EMPTY_BEHAVIOUR === `empty`) {
+					value = ``;
+				}
+				if (this.config.APP_ENV_CONFIG_EMPTY_BEHAVIOUR === `null`) {
+					value = null;
+				}
+				if (
+					this.config.APP_ENV_CONFIG_EMPTY_BEHAVIOUR === `undefined`
+				) {
+					value = undefined;
+				}
+			}
+			if (value === `true`) {
+				value = true;
+			}
+			if (value === `false`) {
+				value = false;
+			}
 			console.log(`processing value !! : `);
+			console.log(`item`);
+			console.log(item);
+			console.log(`value`);
 			console.log(value);
+			console.log(typeof value);
 			return value;
 		},
 		formatUndefined: function (value, varName) {

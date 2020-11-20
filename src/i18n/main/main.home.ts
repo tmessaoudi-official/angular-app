@@ -12,7 +12,7 @@ LocaleInitializerService.do(
 	processEnv.APP_I18N_LOCALE_DUMMY
 );
 
-// @ts-ignore
+// @ts-ignore : this variable comes when building, if it's not there we can't build !!
 environment.appI18nSupportedLocales.forEach((value: I18nLocale) => {
 	LocaleInitializerService.do(value.id);
 });

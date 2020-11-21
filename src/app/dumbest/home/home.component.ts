@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import { I18nSwitcherService } from '../../../i18n/service/switcher/i18n.switcher.service';
 import { createPopper } from '@popperjs/core';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
 	selector: `app-home`,
@@ -18,6 +19,7 @@ export class HomeComponent implements OnInit {
 	minutes: number;
 	gender: string;
 	popoverShow = false;
+	closeResult: string | undefined;
 	@ViewChild(`btnRef`, { static: false }) btnRef: ElementRef | undefined;
 	popper = document.createElement(`div`);
 
@@ -25,7 +27,9 @@ export class HomeComponent implements OnInit {
 		// eslint-disable-next-line no-unused-vars
 		@Inject(LOCALE_ID) public locale: string,
 		// eslint-disable-next-line no-unused-vars
-		public i18nSwitcherService: I18nSwitcherService
+		public i18nSwitcherService: I18nSwitcherService,
+		// eslint-disable-next-line no-unused-vars
+		private modalService: NgbModal
 	) {
 		this.minutes = this.getMinutes();
 		this.gender = this.getGender();
@@ -122,5 +126,29 @@ export class HomeComponent implements OnInit {
 			// @ts-ignore : this is not undefined, i have an element with this id in the view
 			this.btnRef.nativeElement.nextSibling
 		);
+	}
+	toggleModal(content: any) {
+		this.modalService
+			.open(content, { ariaLabelledBy: `modal-basic-title` })
+			.result.then(
+				(result) => {
+					this.closeResult = `Closed with: ${result}`;
+				},
+				(reason) => {
+					this.closeResult = `Dismissed ${this.getDismissReason(
+						reason
+					)}`;
+				}
+			);
+	}
+
+	private getDismissReason(reason: any): string {
+		if (reason === ModalDismissReasons.ESC) {
+			return `by pressing ESC`;
+		} else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+			return `by clicking on a backdrop`;
+		} else {
+			return `with: ${reason}`;
+		}
 	}
 }

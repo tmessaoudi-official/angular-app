@@ -1,0 +1,21 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/spec",
+    "noEmitHelpers": true, // this need true for unit test
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "files": [
+    "../../tests/karma-unit/test.ts",
+    "../../src/polyfills.ts"
+  ],
+  "include": [
+    "../../tests/karma-unit/**/*.spec.ts",
+    "../../src/**/*.d.ts",
+    "../../src/**/*.dot-env.run.*"
+  ]
+}

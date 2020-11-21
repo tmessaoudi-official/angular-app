@@ -1,7 +1,7 @@
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 // eslint-disable-next-line no-unused-vars
-const appEnv = new (require(`../src/dot-env/dot-env-loader-run.dot-env.run`).default)(
+const appEnv = new (require(`../../src/dot-env/dot-env-loader-run.dot-env.run`).default)(
 	`process`
 ).run();
 
@@ -22,7 +22,7 @@ const protractorConfig = {
 	},
 	onPrepare() {
 		require(`ts-node`).register({
-			project: require(`path`).join(__dirname, `./tsconfig.json`)
+			project: require(`path`).join(__dirname, `./tsconfig.e2e.json`)
 		});
 		jasmine.getEnv().addReporter(
 			new SpecReporter({

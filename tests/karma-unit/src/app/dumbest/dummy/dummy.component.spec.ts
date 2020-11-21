@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DummyComponent } from './dummy.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { DummyComponent } from '../../../../../../src/app/dumbest/dummy/dummy.component';
 
 describe(`DummyComponent`, () => {
 	let component: DummyComponent;

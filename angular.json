@@ -415,10 +415,10 @@
             "configHook": "",
             "plugin": "~angular.cli.plugin.js",
             "progress": true,
-            "main": "src/test.ts",
+            "main": "tests/karma-unit/test.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig/tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
+            "tsConfig": "tests/karma-unit/tsconfig.spec.json",
+            "karmaConfig": "tests/karma-unit/karma.conf.js",
             "codeCoverage": true,
             "assets": [
               "src/favicon.ico",
@@ -428,16 +428,16 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/@popperjs/core/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/@popperjs/core/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           }
         },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
+            "protractorConfig": "tests/protractor-e2e/protractor.conf.js",
             "devServerTarget": "localization:serve"
           },
           "configurations": {

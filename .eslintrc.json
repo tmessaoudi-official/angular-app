@@ -26,9 +26,10 @@
         "project": [
           "tsconfig.*?.json",
           "tsconfig/tsconfig.*?.json",
-          "e2e/tsconfig.json",
-          "e2e/tsconfig.*?.json",
-          "e2e/tsconfig/tsconfig.*?.json"
+          "tests/karma-unit/tsconfig.*?.json",
+          "tests/karma-unit/tsconfig/tsconfig.*?.json",
+          "tests/protractor-e2e/tsconfig.*?.json",
+          "tests/protractor-e2e/tsconfig/tsconfig.*?.json"
         ],
         "createDefaultProgram": true
       },

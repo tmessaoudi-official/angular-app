@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComponent } from './header.component';
+import { DumbestComponent } from '../../../../../src/app/dumbest/dumbest.component';
 
-describe(`HeaderComponent`, () => {
-	let component: HeaderComponent;
-	let fixture: ComponentFixture<HeaderComponent>;
+describe(`DumbestComponent`, () => {
+	let component: DumbestComponent;
+	let fixture: ComponentFixture<DumbestComponent>;
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			declarations: [HeaderComponent]
+			declarations: [DumbestComponent]
 		}).compileComponents();
 	});
 
 	beforeEach(() => {
-		fixture = TestBed.createComponent(HeaderComponent);
+		fixture = TestBed.createComponent(DumbestComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});

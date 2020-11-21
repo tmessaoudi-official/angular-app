@@ -1,22 +1,22 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DumbComponent } from './dumb.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { DumberComponent } from '../../../../../../src/app/dumbest/dumber/dumber.component';
 
-describe(`DumbComponent`, () => {
-	let component: DumbComponent;
-	let fixture: ComponentFixture<DumbComponent>;
+describe(`DumberComponent`, () => {
+	let component: DumberComponent;
+	let fixture: ComponentFixture<DumberComponent>;
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			declarations: [DumbComponent],
+			declarations: [DumberComponent],
 			imports: [RouterTestingModule, HttpClientTestingModule]
 		}).compileComponents();
 	});
 
 	beforeEach(() => {
-		fixture = TestBed.createComponent(DumbComponent);
+		fixture = TestBed.createComponent(DumberComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});

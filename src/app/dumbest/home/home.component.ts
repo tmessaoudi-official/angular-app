@@ -9,6 +9,7 @@ import {
 import { I18nSwitcherService } from '../../../i18n/service/switcher/i18n.switcher.service';
 import { createPopper } from '@popperjs/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
 	selector: `app-home`,
@@ -29,7 +30,9 @@ export class HomeComponent implements OnInit {
 		// eslint-disable-next-line no-unused-vars
 		public i18nSwitcherService: I18nSwitcherService,
 		// eslint-disable-next-line no-unused-vars
-		private modalService: NgbModal
+		private modalService: NgbModal,
+		// eslint-disable-next-line no-unused-vars
+		private toastr: ToastrService
 	) {
 		this.minutes = this.getMinutes();
 		this.gender = this.getGender();
@@ -150,5 +153,12 @@ export class HomeComponent implements OnInit {
 		} else {
 			return `with: ${reason}`;
 		}
+	}
+
+	showSuccess() {
+		this.toastr.success(`Hello world!`, `Toastr fun!`, {
+			closeButton: true,
+			positionClass: `toast-top-right`
+		});
 	}
 }

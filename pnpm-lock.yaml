@@ -11,9 +11,10 @@ dependencies:
   '@fortawesome/fontawesome-free': 5.15.1
   '@ng-bootstrap/ng-bootstrap': 8.0.0_e153978a8700d4e8c1fddb793d19ec7b
   '@popperjs/core': 2.5.4
-  bootstrap: 5.0.0-alpha3
+  bootstrap: 4.5.3_jquery@3.5.1
   intl: 1.2.5
   jquery: 3.5.1
+  ngx-toastr: 13.1.0_10d80125a17ad6184ddbf6900786d81d
   rxjs: 6.6.3
   rxjs-compat: 6.6.3
   systemjs: 6.7.1
@@ -2773,12 +2774,15 @@ packages:
     dev: true
     resolution:
       integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=
-  /bootstrap/5.0.0-alpha3:
+  /bootstrap/4.5.3_jquery@3.5.1:
+    dependencies:
+      jquery: 3.5.1
     dev: false
     peerDependencies:
+      jquery: 1.9.1 - 3
       popper.js: ^1.16.1
     resolution:
-      integrity: sha512-ghwrMFNzqOwfB0nJ1iYbkERd+EK1PblUl7rEEynY35jD0TUlSY6yrjG2M42qI++NhAUBEqGcjmmHkMGs3QyNHA==
+      integrity: sha512-o9ppKQioXGqhw8Z7mah6KdTYpNQY//tipnkxppWhPbiSWdD+1raYsnhwEZjkTHYbGee4cVQ0Rx65EhOY/HNLcQ==
   /brace-expansion/1.1.11:
     dependencies:
       balanced-match: 1.0.0
@@ -7074,6 +7078,19 @@ packages:
       '@angular-devkit/build-angular': '>=0.900.0'
     resolution:
       integrity: sha512-l3uj/LpQfX9BTQLdpSN3Um5xBaXBgrx8hcbwnzKS2P1nKjgUJd/V85pkt5tGYBlAwE1/waLBNT1a7WEraXWnrg==
+  /ngx-toastr/13.1.0_10d80125a17ad6184ddbf6900786d81d:
+    dependencies:
+      '@angular/common': 11.1.0-next.0_c2ccad7415c9ba8adb7fb322cf179e99
+      '@angular/core': 11.1.0-next.0_rxjs@6.6.3+zone.js@0.11.3
+      '@angular/platform-browser': 11.1.0-next.0_ef1b5562e5f7925977aedffe20549814
+      tslib: 2.0.3
+    dev: false
+    peerDependencies:
+      '@angular/common': '>=10.0.0-0'
+      '@angular/core': '>=10.0.0-0'
+      '@angular/platform-browser': '>=10.0.0-0'
+    resolution:
+      integrity: sha512-TS4rIfg/oPmmjKadsXLSNIN/A9LktcYPZayGhqLpzcjMud7XLLubLqbrmnH34UakMrUq6QCXXYYiU0QTMW5Qhw==
   /nice-try/1.0.5:
     dev: true
     resolution:
@@ -10989,7 +11006,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 4.8.1
   '@typescript-eslint/eslint-plugin-tslint': ^4.8.1
   '@typescript-eslint/parser': 4.8.1
-  bootstrap: ~5.0.0-alpha3
+  bootstrap: ^4.5.3
   eslint: ^7.13.0
   eslint-config-prettier: ^6.15.0
   eslint-plugin-filenames: ^1.3.2
@@ -11007,6 +11024,7 @@ specifiers:
   karma-jasmine: ^4.0.1
   karma-jasmine-html-reporter: ^1.5.4
   ngx-build-plus: ^10.1.1
+  ngx-toastr: ^13.1.0
   prettier: ^2.2.0
   prettier-eslint: ^11.0.0
   protractor: ^7.0.0

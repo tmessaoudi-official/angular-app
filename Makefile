@@ -26,6 +26,8 @@ test-unit-selenium:
 	APP_PROCESS_ENV_INCLUDES="./.app.env/.env.i18n.serve,./.app.env/.env.test.unit.selenium" APP_NODE_ENV_INCLUDE=test pnpm run test
 test-e2e:
 	APP_PROCESS_ENV_INCLUDES="./.app.env/.env.i18n.serve,./.app.env/.env.test.e2e" APP_NODE_ENV_INCLUDE=test APP_NODE_ENV_INCLUDE=test pnpm run e2e
+test-e2e-selenium:
+	APP_PROCESS_ENV_INCLUDES="./.app.env/.env.test.e2e.selenium.build" APP_NODE_ENV_INCLUDE=test APP_CONFIGURATION="--configuration=selenium-build" pnpm run e2e
 test-e2e-selenium-build:
 	APP_PROCESS_ENV_INCLUDES="./.app.env/.env.test.e2e.selenium.build" APP_NODE_ENV_INCLUDE=test make build-test
 	APP_PROCESS_ENV_INCLUDES="./.app.env/.env.test.e2e.selenium.build" APP_NODE_ENV_INCLUDE=test APP_CONFIGURATION="--configuration=selenium-build" pnpm run e2e

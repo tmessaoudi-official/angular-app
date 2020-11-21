@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from '../../../../../../src/app/dumbest/home/home.component';
+import { ToastrModule } from 'ngx-toastr';
 
 describe(`HomeComponent`, () => {
 	let component: HomeComponent;
@@ -8,7 +9,8 @@ describe(`HomeComponent`, () => {
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			declarations: [HomeComponent]
+			declarations: [HomeComponent],
+			imports: [ToastrModule.forRoot()]
 		}).compileComponents();
 	});
 

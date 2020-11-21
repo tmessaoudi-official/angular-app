@@ -51,7 +51,7 @@
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@ng-bootstrap/ng-bootstrap": "^8.0.0",
     "@popperjs/core": "^2.5.4",
-    "bootstrap": "5.0.0-alpha3",
+    "bootstrap": "~5.0.0-alpha3",
     "intl": "^1.2.5",
     "jquery": "^3.5.1",
     "rxjs": "^6.6.3",
@@ -103,10 +103,6 @@
     "protractor": "^7.0.0",
     "ts-node": "^9.0.0",
     "typescript": "~4.0.5"
-  },
-  "resolutions": {
-    "fsevents": "^2.0.0",
-    "chokidar": "^3.0.0"
   },
   "pnpm": {
     "overrides": {

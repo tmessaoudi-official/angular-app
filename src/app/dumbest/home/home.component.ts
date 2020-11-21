@@ -1,14 +1,25 @@
-import { Component, Inject, LOCALE_ID } from '@angular/core';
+import {
+	Component,
+	ElementRef,
+	Inject,
+	LOCALE_ID,
+	OnInit,
+	ViewChild
+} from '@angular/core';
 import { I18nSwitcherService } from '../../../i18n/service/switcher/i18n.switcher.service';
+import { createPopper } from '@popperjs/core';
 
 @Component({
 	selector: `app-home`,
 	templateUrl: `./home.component.html`,
 	styleUrls: [`./home.component.scss`]
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 	minutes: number;
 	gender: string;
+	popoverShow = false;
+	@ViewChild(`btnRef`, { static: false }) btnRef: ElementRef | undefined;
+	popper = document.createElement(`div`);
 
 	constructor(
 		// eslint-disable-next-line no-unused-vars
@@ -56,6 +67,7 @@ export class HomeComponent {
 				if (this.minutes > 0) {
 					this.minutes--;
 				} else {
+					// @ts-ignore : i have a probleme with the ide but it exists !!
 					alert($localize`can t set minutes less than 0`);
 				}
 				break;
@@ -66,5 +78,49 @@ export class HomeComponent {
 			}
 		}
 		localStorage.setItem(`minutes`, this.minutes.toString());
+	}
+
+	ngOnInit() {
+		this.popper.innerHTML = `
+    <div
+    class="bg-dark border-0 mt-3 block z-50 font-normal leading-normal text-sm max-w-xs text-left no-underline break-words rounded-lg">
+        <div>
+            <div
+            class="bg-dark text-white opacity-75 font-semibold p-3 mb-0 border-b border-solid border-gray-200 uppercase rounded-t-lg">
+                red tooltip title
+            </div>
+            <div class="text-white p-3">
+                And here's some amazing content. It's very engaging. Right?
+            </div>
+        </div>
+    </div>`;
+	}
+
+	toggleTooltip() {
+		if (this.popoverShow) {
+			this.popoverShow = false;
+			this.destroyPopper();
+		} else {
+			this.popoverShow = true;
+			this.createPoppper();
+		}
+	}
+
+	destroyPopper() {
+		// @ts-ignore : this is not null, i created a div here
+		this.popper.parentNode.removeChild(this.popper);
+	}
+
+	createPoppper() {
+		// @ts-ignore : this is not undefined, i have an element with this id in the view
+		createPopper(this.btnRef.nativeElement, this.popper, {
+			placement: `bottom-start`
+		});
+		// @ts-ignore : this is not undefined, i have an element with this id in the view
+		this.btnRef.nativeElement.parentNode.insertBefore(
+			this.popper,
+			// @ts-ignore : this is not undefined, i have an element with this id in the view
+			this.btnRef.nativeElement.nextSibling
+		);
 	}
 }

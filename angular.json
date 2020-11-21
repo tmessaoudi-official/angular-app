@@ -87,12 +87,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "resourcesOutputPath": "assets",
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/@popperjs/core/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
+            "resourcesOutputPath": "assets"
           },
           "configurations": {
             "development": {
@@ -114,6 +109,11 @@
                   "maximumWarning": "10kb",
                   "maximumError": "20kb"
                 }
+              ],
+              "scripts": [
+                "node_modules/jquery/dist/jquery.js",
+                "node_modules/@popperjs/core/dist/umd/popper.js",
+                "node_modules/bootstrap/dist/js/bootstrap.js"
               ]
             },
             "production": {
@@ -123,7 +123,12 @@
               "namedChunks": false,
               "vendorChunk": false,
               "commonChunk": false,
-              "sourceMap": false
+              "sourceMap": false,
+              "scripts": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "node_modules/@popperjs/core/dist/umd/popper.min.js",
+                "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              ]
             },
             "force": {
               "force": true

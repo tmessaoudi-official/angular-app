@@ -57,6 +57,7 @@ devDependencies:
   karma-coverage: 2.0.3
   karma-jasmine: 4.0.1_karma@5.2.3
   karma-jasmine-html-reporter: 1.5.4_18b14e7400d2a108f8d2c75cce7d238a
+  karma-selenium-webdriver-launcher: 0.0.4_karma@5.2.3
   ngx-build-plus: 10.1.1_307879cfaff95c367f9327cf21ee1402
   prettier: 2.2.0
   prettier-eslint: 11.0.0
@@ -6343,6 +6344,16 @@ packages:
       karma: '*'
     resolution:
       integrity: sha512-h8XDAhTiZjJKzfkoO1laMH+zfNlra+dEQHUAjpn5JV1zCPtOIVWGQjLBrqhnzQa/hrU2XrZwSyBa6XjEBzfXzw==
+  /karma-selenium-webdriver-launcher/0.0.4_karma@5.2.3:
+    dependencies:
+      karma: 5.2.3
+      q: 0.9.7
+    dev: true
+    peerDependencies:
+      karma: '>=0.9'
+      selenium-webdriver: ^2.44.0
+    resolution:
+      integrity: sha1-3xv9TMPzwP+r+pIi6VKbAfVlkvo=
   /karma-source-map-support/1.4.0:
     dependencies:
       source-map-support: 0.5.19
@@ -8435,6 +8446,13 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+  /q/0.9.7:
+    dev: true
+    engines:
+      node: '>=0.6.0'
+      teleport: '>=0.2.0'
+    resolution:
+      integrity: sha1-TeLmyzspCIyeTLwDv51C+5bOL3U=
   /q/1.4.1:
     dev: true
     engines:
@@ -11023,6 +11041,7 @@ specifiers:
   karma-coverage: ^2.0.3
   karma-jasmine: ^4.0.1
   karma-jasmine-html-reporter: ^1.5.4
+  karma-selenium-webdriver-launcher: ^0.0.4
   ngx-build-plus: ^10.1.1
   ngx-toastr: ^13.1.0
   prettier: ^2.2.0

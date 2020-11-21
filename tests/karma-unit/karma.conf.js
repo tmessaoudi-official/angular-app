@@ -6,6 +6,8 @@ const appEnv = new (require(`../../src/dot-env/dot-env-loader-run.dot-env.run`).
 	`process`
 ).run();
 
+const webdriver = require(`selenium-webdriver`);
+
 module.exports = function (config) {
 	config.set({
 		basePath: `/`,
@@ -16,6 +18,7 @@ module.exports = function (config) {
 		plugins: [
 			require(`karma-jasmine`),
 			require(`karma-chrome-launcher`),
+			require(`karma-selenium-webdriver-launcher`),
 			require(`karma-jasmine-html-reporter`),
 			require(`karma-coverage`),
 			require(`@angular-devkit/build-angular/plugins/karma`)
@@ -44,12 +47,26 @@ module.exports = function (config) {
 			]
 		},
 		reporters: [`progress`, `kjhtml`, `coverage`],
+		hostname: appEnv.APP_TEST_UNIT_KARMA_HOSTNAME,
 		port: 9876,
 		colors: true,
 		logLevel: config.LOG_INFO,
-		autoWatch: true,
-		browsers: [`Chrome`],
-		singleRun: false,
-		restartOnFileChange: true
+		autoWatch: false,
+		customLaunchers: {
+			swd_chrome: {
+				base: `SeleniumWebdriver`,
+				browserName: `Chrome`,
+				getDriver: function () {
+					// example from https://www.npmjs.com/package/selenium-webdriver#usage
+					return new webdriver.Builder()
+						.forBrowser(`chrome`)
+						.usingServer(appEnv.APP_TEST_SELENIUM_ADDRESS)
+						.build();
+				}
+			}
+		},
+		browsers: appEnv.APP_TEST_UNIT_KARMA_BROWSERS,
+		singleRun: true,
+		restartOnFileChange: false
 	});
 };

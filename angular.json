@@ -350,13 +350,15 @@
             "keepStyles": true,
             "progress": true,
             "liveReload": true,
-            "host": "0.0.0.0",
-            "disableHostCheck": true,
             "browserTarget": "localization:build:development,ignore-i18n,home,home-en,no-base-href,aot"
           },
           "configurations": {
             "open": {
               "open": true
+            },
+            "disable-host-check": {
+              "host": "0.0.0.0",
+              "disableHostCheck": true
             },
             "home": {
               "browserTarget": "localization:build:development,ignore-i18n,home,no-base-href,aot"
@@ -441,7 +443,7 @@
             "devServerTarget": "localization:serve"
           },
           "configurations": {
-            "selenium": {
+            "selenium-build": {
               "devServerTarget": ""
             },
             "home-en": {

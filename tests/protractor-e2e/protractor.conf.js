@@ -34,9 +34,8 @@ const protractorConfig = {
 	}
 };
 
-if (typeof appEnv.APP_TEST_E2E_PROTRACTOR_SELENIUM_ADDRESS === `string`) {
-	protractorConfig.seleniumAddress =
-		appEnv.APP_TEST_E2E_PROTRACTOR_SELENIUM_ADDRESS;
+if (typeof appEnv.APP_TEST_SELENIUM_ADDRESS === `string`) {
+	protractorConfig.seleniumAddress = appEnv.APP_TEST_SELENIUM_ADDRESS;
 }
 
 if (typeof appEnv.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT === `boolean`) {

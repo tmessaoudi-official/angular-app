@@ -9,7 +9,7 @@ import {
 import { I18nSwitcherService } from '../../../i18n/service/switcher/i18n.switcher.service';
 import { createPopper } from '@popperjs/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-import { ToastrService } from 'ngx-toastr';
+import { ToastrService } from '../../core/service/toastr.service';
 
 @Component({
 	selector: `app-home`,
@@ -156,7 +156,7 @@ export class HomeComponent implements OnInit {
 	}
 
 	showSuccess() {
-		this.toastr.success(`Hello world!`, `Toastr fun!`, {
+		this.toastr.show(`success`, `Hello world!`, `Toastr fun!`, {
 			closeButton: true,
 			positionClass: `toast-top-right`
 		});

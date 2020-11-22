@@ -14,6 +14,14 @@ const protractorConfig = {
 		browserName: `chrome`
 	},
 	SELENIUM_PROMISE_MANAGER: false,
+	seleniumAddress: appEnv.APP_TEST_SELENIUM_ADDRESS,
+	directConnect: appEnv.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT,
+	baseUrl:
+		appEnv.APP_TEST_E2E_PROTRACTOR_BASE_URL +
+		(appEnv.APP_TEST_SELENIUM_ADDRESS !== undefined &&
+		appEnv.APP_LOCALE !== undefined
+			? `` + appEnv.APP_LOCALE + `/`
+			: ``),
 	framework: `jasmine`,
 	jasmineNodeOpts: {
 		showColors: true,
@@ -33,33 +41,6 @@ const protractorConfig = {
 		);
 	}
 };
-
-if (typeof appEnv.APP_TEST_SELENIUM_ADDRESS === `string`) {
-	protractorConfig.seleniumAddress = appEnv.APP_TEST_SELENIUM_ADDRESS;
-}
-
-if (typeof appEnv.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT === `boolean`) {
-	protractorConfig.directConnect =
-		appEnv.APP_TEST_E2E_PROTRACTOR_DIRECT_CONNECT;
-} else {
-	protractorConfig.directConnect = true;
-}
-
-if (
-	typeof appEnv.APP_TEST_E2E_PROTRACTOR_BASE_URL === `string` &&
-	appEnv.APP_TEST_E2E_PROTRACTOR_BASE_URL !== ``
-) {
-	protractorConfig.baseUrl = appEnv.APP_TEST_E2E_PROTRACTOR_BASE_URL;
-} else {
-	protractorConfig.baseUrl = `http://localhost:4200/`;
-}
-
-if (
-	appEnv.APP_LOCALE !== undefined &&
-	protractorConfig.seleniumAddress !== undefined
-) {
-	protractorConfig.baseUrl += `` + appEnv.APP_LOCALE + `/`;
-}
 
 console.log(protractorConfig);
 

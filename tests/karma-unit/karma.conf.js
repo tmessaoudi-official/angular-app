@@ -9,7 +9,7 @@ const appEnv = new (require(`../../node_modules/@tmessaoudi-official/dot-env-loa
 const webdriver = require(`selenium-webdriver`);
 
 module.exports = function (config) {
-	config.set({
+	const params = {
 		basePath: `/`,
 		instrumenterOptions: {
 			istanbul: { noCompact: true }
@@ -68,5 +68,9 @@ module.exports = function (config) {
 		browsers: appEnv.APP_TEST_UNIT_KARMA_BROWSERS,
 		singleRun: appEnv.APP_TEST_UNIT_KARMA_SINGLERUN,
 		restartOnFileChange: appEnv.APP_TEST_UNIT_KARMA_RESTARTONFILECHANGE
-	});
+	};
+
+	console.log(params);
+
+	config.set(params);
 };

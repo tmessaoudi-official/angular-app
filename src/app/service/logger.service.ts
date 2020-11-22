@@ -4,8 +4,7 @@ import { environment } from '../../environments/environment';
 	providedIn: `root`
 })
 export class LoggerService {
-	constructor() {}
-	log(message: any, format: string = `log`): void {
+	log(message: never, format: string = `log`): LoggerService {
 		if (environment.appDebug) {
 			switch (format) {
 				case `log`:
@@ -14,5 +13,6 @@ export class LoggerService {
 				}
 			}
 		}
+		return this;
 	}
 }

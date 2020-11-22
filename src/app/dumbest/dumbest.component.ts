@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
 	templateUrl: `./dumbest.component.html`,
 	styleUrls: [`./dumbest.component.css`]
 })
-export class DumbestComponent {
-	constructor() {}
-}
+export class DumbestComponent {}

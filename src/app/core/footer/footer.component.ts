@@ -8,6 +8,4 @@ import { Component } from '@angular/core';
 export class FooterComponent {
 	name = `Developer`;
 	footerText: string = $localize`app.footer.text ${this.name}`;
-
-	constructor() {}
 }

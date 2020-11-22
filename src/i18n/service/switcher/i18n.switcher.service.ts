@@ -14,7 +14,7 @@ export class I18nSwitcherService {
 		// eslint-disable-next-line no-unused-vars
 		@Inject(LoggerService) public loggerService: LoggerService
 	) {
-		this.locales = environment.appI18nSupportedLocales as I18nLocale[];
+		this.locales = environment.appI18nSupportedLocales;
 	}
 
 	switch(locale: string = ``): void {
@@ -59,9 +59,9 @@ export class I18nSwitcherService {
 				if (!localStorage.getItem(`locale`)) {
 					localStorage.setItem(
 						`locale`,
-						environment.appI18nLocaleDefault as string
+						environment.appI18nLocaleDefault
 					);
-					targetLocale = environment.appI18nLocaleDefault as string;
+					targetLocale = environment.appI18nLocaleDefault;
 				} else {
 					targetLocale = localStorage.getItem(`locale`) as string;
 				}

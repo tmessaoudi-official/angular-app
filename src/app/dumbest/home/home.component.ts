@@ -61,16 +61,17 @@ export class HomeComponent {
 		return gender;
 	}
 
-	setGender(): void {
+	setGender(): HomeComponent {
 		if (this.gender === `male`) {
 			this.gender = `female`;
 		} else {
 			this.gender = `male`;
 		}
 		localStorage.setItem(`gender`, this.gender);
+		return this;
 	}
 
-	setMinutes(operation: string = `+`): void {
+	setMinutes(operation: string = `+`): HomeComponent {
 		switch (operation) {
 			case `+`: {
 				this.minutes++;
@@ -91,9 +92,10 @@ export class HomeComponent {
 			}
 		}
 		localStorage.setItem(`minutes`, this.minutes.toString());
+		return this;
 	}
 
-	toggleTooltip() {
+	toggleTooltip(): HomeComponent {
 		if (this.popoverShow) {
 			this.popoverShow = false;
 			this.popper.destroyPopper();
@@ -118,8 +120,9 @@ export class HomeComponent {
 				this.popoverRef
 			);
 		}
+		return this;
 	}
-	toggleTooltip2() {
+	toggleTooltip2(): HomeComponent {
 		if (this.popoverShow) {
 			this.popoverShow = false;
 			this.popper.destroyPopper();
@@ -144,9 +147,10 @@ export class HomeComponent {
 				this.popoverRef2
 			);
 		}
+		return this;
 	}
 
-	toggleModal(content: TemplateRef<ElementRef>) {
+	toggleModal(content: TemplateRef<ElementRef>): HomeComponent {
 		this.ngbModal.toggleModal(
 			content,
 			{
@@ -160,12 +164,14 @@ export class HomeComponent {
 				console.log(how);
 			}
 		);
+		return this;
 	}
 
-	showSuccess() {
+	showSuccess(): HomeComponent {
 		this.toastr.show(`success`, `Toastr fun!`, `Hello world!`, {
 			closeButton: true,
 			positionClass: `toast-top-right`
 		});
+		return this;
 	}
 }

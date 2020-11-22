@@ -16,7 +16,8 @@ export class ToastrService {
 		title: string,
 		message: string,
 		overrides?: Partial<IndividualConfig>
-	) {
+	): ToastrService {
 		this.toastr[method](message, title, overrides);
+		return this;
 	}
 }

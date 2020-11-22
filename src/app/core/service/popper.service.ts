@@ -7,31 +7,35 @@ import { OptionsGeneric } from '@popperjs/core/lib/types';
 })
 export class PopperService {
 	popper = document.createElement(`div`);
-	constructor() {}
 
-	createdElement(content: string) {
+	createdElement(content: string): PopperService {
 		this.popper.innerHTML = content;
+		return this;
 	}
 
-	destroyPopper() {
-		// @ts-ignore : this is not null, i created a div here
+	destroyPopper(): PopperService {
+		// @ts-ignore : this is not null, i created a div here @todo fix
 		this.popper.parentNode.removeChild(this.popper);
+		return this;
 	}
 
 	createPoppper(
 		content: string,
-		// @ts-ignore : type exists but i dont know from where !!
+		// @ts-ignore : type exists but i dont know from where !! @todo fix
 		options: Partial<OptionsGeneric<TModifier>>,
 		ref: ElementRef | undefined
-	) {
+	): PopperService {
 		this.createdElement(content);
-		// @ts-ignore : this is not undefined, i have an element with this id in the view
+		// @ts-ignore : it is not undefined @todo fix
 		originalCreatePopper(ref.nativeElement, this.popper, options);
-		// @ts-ignore : this is not undefined, i have an element with this id in the view
+		// @ts-ignore : it is not undefined @todo fix
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-member-access
 		ref.nativeElement.parentNode.insertBefore(
 			this.popper,
-			// @ts-ignore : this is not undefined, i have an element with this id in the view
+			// @ts-ignore : it is not undefined @todo fix
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-member-access
 			ref.nativeElement.nextSibling
 		);
+		return this;
 	}
 }

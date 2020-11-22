@@ -49,7 +49,7 @@
     <unit id="3777802817951822482">
       <notes>
         
-      <note category="location">src/app/dumbest/home/home.component.ts:78</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.ts:85</note></notes>
       <segment state="final">
         <source>can t set minutes less than 0</source>
         <target>can t set minutes less than 0 ar</target>
@@ -67,7 +67,7 @@
     <unit id="636666793223463925">
       <notes>
         
-      <note category="location">src/app/dumbest/home/home.component.html:18</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:7</note></notes>
       <segment state="final">
         <source>app.welcome</source>
         <target>app.welcome_pt</target>
@@ -78,7 +78,7 @@
         <note category="description">Description test</note>
         <note category="meaning">Meaning test</note>
         
-      <note category="location">src/app/dumbest/home/home.component.html:19</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:8</note></notes>
       <segment state="final">
         <source>app.welcome_with_meaning_and_description_and_id</source>
         <target>app.welcome_with_meaning_and_description_and_id_pt</target>
@@ -89,7 +89,7 @@
         <note category="description">Description test second</note>
         <note category="meaning">Meaning test welcome second</note>
         
-      <note category="location">src/app/dumbest/home/home.component.html:20</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:9</note></notes>
       <segment state="final">
         <source>app.welcome_with_meaning_and_description_and_id</source>
         <target>app.welcome_with_meaning_and_description_and_id_pt</target>
@@ -98,7 +98,7 @@
     <unit id="5954340323365579654">
       <notes>
         
-      <note category="location">src/app/dumbest/home/home.component.html:21</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:10</note></notes>
       <segment state="final">
         <source>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}</source>
         <target>{VAR_PLURAL, plural, =0 {now} =1 {one_minutes} other {<ph id="0" equiv="INTERPOLATION"/>many}}_pt</target>
@@ -107,7 +107,7 @@
     <unit id="9060885231713053076">
       <notes>
         
-      <note category="location">src/app/dumbest/home/home.component.html:21</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:10</note></notes>
       <segment state="final">
         <source>app.minutes.<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}"/>
         </source>
@@ -118,7 +118,7 @@
     <unit id="7670372064920373295">
       <notes>
         
-      <note category="location">src/app/dumbest/home/home.component.html:27</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:16</note></notes>
       <segment state="final">
         <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
         <target>{VAR_SELECT, select, male {male} female {female} other {other}}_pt</target>
@@ -127,7 +127,7 @@
     <unit id="8041008881369542359">
       <notes>
         
-      <note category="location">src/app/dumbest/home/home.component.html:27</note></notes>
+      <note category="location">src/app/dumbest/home/home.component.html:16</note></notes>
       <segment state="final">
         <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></source>
         <target>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/>_pt</target>

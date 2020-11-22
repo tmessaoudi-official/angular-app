@@ -18,8 +18,9 @@ export class AppComponent implements OnInit {
 		this.setTitle();
 	}
 
-	public setTitle() {
+	public setTitle(): AppComponent {
 		this.titleService.setTitle($localize`app.index.title`);
+		return this;
 	}
 
 	ngOnInit(): void {

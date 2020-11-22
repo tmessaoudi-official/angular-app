@@ -36,6 +36,9 @@
       "extends": [
         "plugin:@angular-eslint/recommended",
         "eslint-config-prettier",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "prettier",
         "plugin:prettier/recommended"
       ],

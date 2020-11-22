@@ -17,7 +17,7 @@ export class I18nLocaleService {
       // eslint-disable-next-line no-unused-vars
       public i18nSwitcherService: I18nSwitcherService
 	) {
-		this.locales = environment.appI18nSupportedLocales as I18nLocale[];
+		this.locales = environment.appI18nSupportedLocales;
 	}
 
 	getCurrentLocaleLabel(): I18nLocale {

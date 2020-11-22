@@ -19,7 +19,7 @@ export class NgbModalService {
 			// eslint-disable-next-line no-unused-vars
 			how: string | number
 		) => void
-	) {
+	): NgbModalService {
 		this.modalService.open(content, options).result.then(
 			(result: string | number) => {
 				if (typeof terminatedCallBack === `function`) {
@@ -32,5 +32,6 @@ export class NgbModalService {
 				}
 			}
 		);
+		return this;
 	}
 }

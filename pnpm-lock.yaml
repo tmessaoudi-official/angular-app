@@ -25,18 +25,18 @@ devDependencies:
   '@angular-devkit/architect': 0.1101.0-next.0
   '@angular-devkit/build-angular': 0.1101.0-next.0_96c59e01b3dab0951b9de8cd60c7d0bb
   '@angular-devkit/schematics': 11.1.0-next.0
-  '@angular-eslint/builder': 0.8.0-beta.1_6cfc93137be2805f450ed5a3b3052565
-  '@angular-eslint/eslint-plugin': 0.8.0-beta.1_3ef6a7ccbec58a089565f7d18d53939b
-  '@angular-eslint/eslint-plugin-template': 0.8.0-beta.1_d9cb73583c56825cb471c73f2e52f89b
-  '@angular-eslint/schematics': 0.8.0-beta.1_07f330d96fe9ef1518fd1965473fdf83
-  '@angular-eslint/template-parser': 0.8.0-beta.1_312060bde28d0e376a5037db16c28ebd
+  '@angular-eslint/builder': 0.8.0-beta.2_6cfc93137be2805f450ed5a3b3052565
+  '@angular-eslint/eslint-plugin': 0.8.0-beta.2_3ef6a7ccbec58a089565f7d18d53939b
+  '@angular-eslint/eslint-plugin-template': 0.8.0-beta.2_a06e45d8f78860f4cd43eed6152b4c27
+  '@angular-eslint/schematics': 0.8.0-beta.2_ca33b8ff18fa8f09e5850b809ad61f08
+  '@angular-eslint/template-parser': 0.8.0-beta.2_312060bde28d0e376a5037db16c28ebd
   '@angular/cli': 11.1.0-next.0
   '@angular/compiler-cli': 11.1.0-next.0_34ae6ddf6b1759d183018ae8257b0ba2
   '@ngx-i18nsupport/ngx-i18nsupport': 1.1.6
   '@ngx-i18nsupport/tooling': 8.0.3_2a7092f6b9438ea8e15406ab04dcc855
   '@pnpm/logger': 3.2.3
   '@pnpm/pnpmfile': 0.1.20_@pnpm+logger@3.2.3
-  '@tmessaoudi-official/dot-env-loader': '@github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.8'
+  '@tmessaoudi-official/dot-env-loader': '@github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.9'
   '@types/jasmine': 3.6.2
   '@types/jasminewd2': 2.0.8
   '@types/node': 14.14.9
@@ -274,7 +274,7 @@ packages:
       npm: '>= 6.2.0'
     resolution:
       integrity: sha512-IXJOs/DkDqNbfG76sNNY5ePZ37rjkMUopmtvhN6/U1hQFwTpGa9N0bCHFphcKraXeS6Jfox5XwFEStc/1xyhfw==
-  /@angular-eslint/builder/0.8.0-beta.1_6cfc93137be2805f450ed5a3b3052565:
+  /@angular-eslint/builder/0.8.0-beta.2_6cfc93137be2805f450ed5a3b3052565:
     dependencies:
       '@angular-devkit/architect': 0.1101.0-next.0
       eslint: 7.14.0
@@ -285,10 +285,10 @@ packages:
       eslint: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-7pQkjSTyt8TGTeOu7E+D/n7DIBDHNOkTLeiwUAOV4OXGG92oNkPJYfPLFjkd9cWEMDNcwzJbLVsaHyoFvXs4ug==
-  /@angular-eslint/eslint-plugin-template/0.8.0-beta.1_d9cb73583c56825cb471c73f2e52f89b:
+      integrity: sha512-z36MeIKxlN6SAtnL0gB2Oh+RQcLAWXZbEScgW3P31npQOXcLIKP0wF6/rfbQnfm4+BIFN1lGdkCoOQWhzAKdlw==
+  /@angular-eslint/eslint-plugin-template/0.8.0-beta.2_a06e45d8f78860f4cd43eed6152b4c27:
     dependencies:
-      '@angular-eslint/template-parser': 0.8.0-beta.1_312060bde28d0e376a5037db16c28ebd
+      '@angular-eslint/template-parser': 0.8.0-beta.2_312060bde28d0e376a5037db16c28ebd
       '@typescript-eslint/experimental-utils': 4.3.0_eslint@7.14.0+typescript@4.0.5
       eslint: 7.14.0
       typescript: 4.0.5
@@ -298,8 +298,8 @@ packages:
       eslint: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-nyy93m+2WBe5Fpc2IKzWPH1bGqNZYd+BU6nYhNssiYXPRcDWBqIsIhEM74dRK/0AN37tUguJ2weZ6xF6fVN8hw==
-  /@angular-eslint/eslint-plugin/0.8.0-beta.1_3ef6a7ccbec58a089565f7d18d53939b:
+      integrity: sha512-fjoHZX6hhbwNHQT1a8ZR2jfK6f1/Vk0zfVYTUUGr5NsPQclTW7FDnJJ9WfHKzyE7TKR3UTwWNERAY7q/TIvo0A==
+  /@angular-eslint/eslint-plugin/0.8.0-beta.2_3ef6a7ccbec58a089565f7d18d53939b:
     dependencies:
       '@typescript-eslint/experimental-utils': 4.3.0_eslint@7.14.0+typescript@4.0.5
       eslint: 7.14.0
@@ -315,12 +315,12 @@ packages:
       eslint-plugin-prefer-arrow: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-+vCkUpM81qjb0UwxlUUwGML0lLzmnhqf5HHsRzzfwhd0s5g3DPw8w4Z/CDNBagJmTzSUSnH1GF9uEdtyJCEprA==
-  /@angular-eslint/schematics/0.8.0-beta.1_07f330d96fe9ef1518fd1965473fdf83:
+      integrity: sha512-8j43tK15QBxnfF5gTPJJ5dt+At5vr3aoxFAPnsHzBOjwb0GCjpurdu4FFrX4t/Lw3UD5IQ/Py+PeI+4XHudJLw==
+  /@angular-eslint/schematics/0.8.0-beta.2_ca33b8ff18fa8f09e5850b809ad61f08:
     dependencies:
       '@angular-devkit/schematics': 11.1.0-next.0
-      '@angular-eslint/eslint-plugin': 0.8.0-beta.1_3ef6a7ccbec58a089565f7d18d53939b
-      '@angular-eslint/eslint-plugin-template': 0.8.0-beta.1_d9cb73583c56825cb471c73f2e52f89b
+      '@angular-eslint/eslint-plugin': 0.8.0-beta.2_3ef6a7ccbec58a089565f7d18d53939b
+      '@angular-eslint/eslint-plugin-template': 0.8.0-beta.2_a06e45d8f78860f4cd43eed6152b4c27
       strip-json-comments: 3.1.1
       tslint-to-eslint-config: 2.0.0-beta5_eslint@7.14.0
     dev: true
@@ -333,8 +333,8 @@ packages:
       eslint-plugin-prefer-arrow: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-3vlqt42RekFrCywX5DaGncCdwjm0dNSPv1aSGNdUwr3HMfLOv1iQf2ouBmBxusWBA28MMDy+U+pC2AZftLgXsg==
-  /@angular-eslint/template-parser/0.8.0-beta.1_312060bde28d0e376a5037db16c28ebd:
+      integrity: sha512-0rG2Xg6ihr+zb3yQIsG9YeuSYzixU/n8+E5hUCVIloCSy3NLI1GTmTOW7fbTdq1yiU3Blshc8h7uhJtQMJTLIQ==
+  /@angular-eslint/template-parser/0.8.0-beta.2_312060bde28d0e376a5037db16c28ebd:
     dependencies:
       '@angular/compiler': 11.1.0-next.0
       eslint: 7.14.0
@@ -346,7 +346,7 @@ packages:
       eslint: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-fiLfwlWWwYz657SxcNfPKsl4HiItqj7mNZuMPlxsiKSyT/+pwTNzMttCafy2v0144SNmHEslZS1nQfc1Nq715g==
+      integrity: sha512-whL32/0h1nSdDqlxK1dCqj5UTGkBshcB/7qIMTW0ctKj2wfsmPef1Sr6T3DFGVkzKAi9rbV+NlSKnm62/yQnsw==
   /@angular/animations/11.1.0-next.0_@angular+core@11.1.0-next.0:
     dependencies:
       '@angular/core': 11.1.0-next.0_rxjs@6.6.3+zone.js@0.11.3
@@ -10892,25 +10892,25 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Y4hTHoh4VcxU5BDGAqEoOnOiyT254w6CiHtpQxAJUSMZPyVgdbKf+5R7Mwz6xsPhMIeBXk5rTopRZDpjssTCUg==
-  '@github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.8':
+  '@github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.9':
     dev: true
     engines:
       node: '>=15.2'
       npm: '>=7.0'
     name: '@tmessaoudi-official/dot-env-loader'
     resolution:
-      tarball: 'https://github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.8'
-    version: 0.0.8
+      tarball: 'https://github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.9'
+    version: 0.0.9
 specifiers:
   '@angular-builders/dev-server': ^7.3.3
   '@angular-devkit/architect': ^0.1101.0-next.0
   '@angular-devkit/build-angular': ^0.1101.0-next.0
   '@angular-devkit/schematics': ^11.1.0-next.0
-  '@angular-eslint/builder': 0.8.0-beta.1
-  '@angular-eslint/eslint-plugin': 0.8.0-beta.1
-  '@angular-eslint/eslint-plugin-template': 0.8.0-beta.1
-  '@angular-eslint/schematics': ^0.8.0-beta.1
-  '@angular-eslint/template-parser': 0.8.0-beta.1
+  '@angular-eslint/builder': 0.8.0-beta.2
+  '@angular-eslint/eslint-plugin': 0.8.0-beta.2
+  '@angular-eslint/eslint-plugin-template': 0.8.0-beta.2
+  '@angular-eslint/schematics': ^0.8.0-beta.2
+  '@angular-eslint/template-parser': 0.8.0-beta.2
   '@angular/animations': ^11.1.0-next.0
   '@angular/cli': ^11.1.0-next.0
   '@angular/common': ^11.1.0-next.0
@@ -10929,7 +10929,7 @@ specifiers:
   '@pnpm/logger': ^3.2.3
   '@pnpm/pnpmfile': ^0.1.20
   '@popperjs/core': ^2.5.4
-  '@tmessaoudi-official/dot-env-loader': 'https://github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.8'
+  '@tmessaoudi-official/dot-env-loader': 'https://github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.9'
   '@types/jasmine': ^3.6.2
   '@types/jasminewd2': ^2.0.8
   '@types/node': ^14.14.9

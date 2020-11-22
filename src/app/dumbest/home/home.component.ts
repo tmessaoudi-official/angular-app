@@ -156,7 +156,7 @@ export class HomeComponent implements OnInit {
 	}
 
 	showSuccess() {
-		this.toastr.show(`success`, `Hello world!`, `Toastr fun!`, {
+		this.toastr.show(`success`, `Toastr fun!`, `Hello world!`, {
 			closeButton: true,
 			positionClass: `toast-top-right`
 		});

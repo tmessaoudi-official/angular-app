@@ -12,11 +12,11 @@ export class ToastrService {
 	) {}
 
 	show(
-		type: string,
-		message: string,
+		method: `success` | `error` | `info` | `warning`,
 		title: string,
+		message: string,
 		overrides: Partial<IndividualConfig>
 	) {
-		this.toastr.show(message, title, overrides, type);
+		this.toastr[method](message, title, overrides);
 	}
 }

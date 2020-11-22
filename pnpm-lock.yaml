@@ -36,6 +36,7 @@ devDependencies:
   '@ngx-i18nsupport/tooling': 8.0.3_2a7092f6b9438ea8e15406ab04dcc855
   '@pnpm/logger': 3.2.3
   '@pnpm/pnpmfile': 0.1.20_@pnpm+logger@3.2.3
+  '@tmessaoudi-official/dot-env-loader': '@github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.6'
   '@types/jasmine': 3.6.2
   '@types/jasminewd2': 2.0.8
   '@types/node': 14.14.9
@@ -10891,6 +10892,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Y4hTHoh4VcxU5BDGAqEoOnOiyT254w6CiHtpQxAJUSMZPyVgdbKf+5R7Mwz6xsPhMIeBXk5rTopRZDpjssTCUg==
+  '@github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.6':
+    dev: true
+    engines:
+      node: '>=15.2'
+      npm: '>=7.0'
+    name: '@tmessaoudi-official/dot-env-loader'
+    resolution:
+      tarball: 'https://github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.6'
+    version: 0.0.5
 specifiers:
   '@angular-builders/dev-server': ^7.3.3
   '@angular-devkit/architect': ^0.1101.0-next.0
@@ -10919,6 +10929,7 @@ specifiers:
   '@pnpm/logger': ^3.2.3
   '@pnpm/pnpmfile': ^0.1.20
   '@popperjs/core': ^2.5.4
+  '@tmessaoudi-official/dot-env-loader': 'https://github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.6'
   '@types/jasmine': ^3.6.2
   '@types/jasminewd2': ^2.0.8
   '@types/node': ^14.14.9

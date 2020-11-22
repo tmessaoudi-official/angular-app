@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-const dotEnvLoader = new (require(`./src/dot-env/dot-env-loader-run.dot-env.run`).default)(
+const dotEnvLoader = new (require(`./node_modules/@tmessaoudi-official/dot-env-loader/dot-env-loader.run.js`).default)(
 	`process`
 );
 const APP_ENV = dotEnvLoader.webpackify(dotEnvLoader.run());

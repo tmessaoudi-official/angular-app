@@ -2,7 +2,7 @@
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
 // eslint-disable-next-line no-unused-vars
-const appEnv = new (require(`../../src/dot-env/dot-env-loader-run.dot-env.run`).default)(
+const appEnv = new (require(`../../node_modules/@tmessaoudi-official/dot-env-loader/dot-env-loader.run.js`).default)(
 	`process`
 ).run();
 

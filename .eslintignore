@@ -5,3 +5,8 @@ node_modules
 .pnpm-store
 out-tsc
 coverage
+.eslintrc.js
+pnpmfile.js
+angular.cli.plugin.js
+tests/karma-unit/karma.conf.js
+tests/protractor-e2e/protractor.conf.js

@@ -3,26 +3,29 @@ import {
 	ElementRef,
 	Inject,
 	LOCALE_ID,
-	OnInit,
 	ViewChild
 } from '@angular/core';
 import { I18nSwitcherService } from '../../../i18n/service/switcher/i18n.switcher.service';
-import { createPopper } from '@popperjs/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrService } from '../../core/service/toastr.service';
+import { PopperService } from '../../core/service/popper.service';
 
 @Component({
 	selector: `app-home`,
 	templateUrl: `./home.component.html`,
 	styleUrls: [`./home.component.scss`]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 	minutes: number;
 	gender: string;
-	popoverShow = false;
 	closeResult: string | undefined;
-	@ViewChild(`btnRef`, { static: false }) btnRef: ElementRef | undefined;
-	popper = document.createElement(`div`);
+	popoverShow = false;
+	@ViewChild(`popoverRef`, { static: false }) popoverRef:
+		| ElementRef
+		| undefined;
+	@ViewChild(`popoverRef2`, { static: false }) popoverRef2:
+		| ElementRef
+		| undefined;
 
 	constructor(
 		// eslint-disable-next-line no-unused-vars
@@ -31,6 +34,8 @@ export class HomeComponent implements OnInit {
 		public i18nSwitcherService: I18nSwitcherService,
 		// eslint-disable-next-line no-unused-vars
 		private modalService: NgbModal,
+		// eslint-disable-next-line no-unused-vars
+		private popper: PopperService,
 		// eslint-disable-next-line no-unused-vars
 		private toastr: ToastrService
 	) {
@@ -87,49 +92,59 @@ export class HomeComponent implements OnInit {
 		localStorage.setItem(`minutes`, this.minutes.toString());
 	}
 
-	ngOnInit() {
-		this.popper.innerHTML = `
-    <div
+	toggleTooltip() {
+		if (this.popoverShow) {
+			this.popoverShow = false;
+			this.popper.destroyPopper();
+		} else {
+			this.popoverShow = true;
+			this.popper.createPoppper(
+				`<div
     class="bg-dark border-0 mt-3 block z-50 font-normal leading-normal text-sm max-w-xs text-left no-underline break-words rounded-lg">
         <div>
             <div
             class="bg-dark text-white opacity-75 font-semibold p-3 mb-0 border-b border-solid border-gray-200 uppercase rounded-t-lg">
-                red tooltip title
+                popover title
             </div>
             <div class="text-white p-3">
-                And here's some amazing content. It's very engaging. Right?
+                popover message
             </div>
         </div>
-    </div>`;
+    </div>`,
+				{
+					placement: `bottom-start`
+				},
+				this.popoverRef
+			);
+		}
 	}
-
-	toggleTooltip() {
+	toggleTooltip2() {
 		if (this.popoverShow) {
 			this.popoverShow = false;
-			this.destroyPopper();
+			this.popper.destroyPopper();
 		} else {
 			this.popoverShow = true;
-			this.createPoppper();
+			this.popper.createPoppper(
+				`<div
+    class="bg-dark border-0 mt-3 block z-50 font-normal leading-normal text-sm max-w-xs text-left no-underline break-words rounded-lg">
+        <div>
+            <div
+            class="bg-dark text-white opacity-75 font-semibold p-3 mb-0 border-b border-solid border-gray-200 uppercase rounded-t-lg">
+                popover title 2
+            </div>
+            <div class="text-white p-3">
+                popover message 2
+            </div>
+        </div>
+    </div>`,
+				{
+					placement: `bottom-end`
+				},
+				this.popoverRef2
+			);
 		}
 	}
 
-	destroyPopper() {
-		// @ts-ignore : this is not null, i created a div here
-		this.popper.parentNode.removeChild(this.popper);
-	}
-
-	createPoppper() {
-		// @ts-ignore : this is not undefined, i have an element with this id in the view
-		createPopper(this.btnRef.nativeElement, this.popper, {
-			placement: `bottom-start`
-		});
-		// @ts-ignore : this is not undefined, i have an element with this id in the view
-		this.btnRef.nativeElement.parentNode.insertBefore(
-			this.popper,
-			// @ts-ignore : this is not undefined, i have an element with this id in the view
-			this.btnRef.nativeElement.nextSibling
-		);
-	}
 	toggleModal(content: any) {
 		this.modalService
 			.open(content, { ariaLabelledBy: `modal-basic-title` })

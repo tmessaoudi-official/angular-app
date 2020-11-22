@@ -1,6 +1,8 @@
 <p i18n>app.home.title</p>
 
-<h1 #btnRef (mouseenter)="toggleTooltip()" (mouseleave)="toggleTooltip()" (click)="toggleModal(mymodal)">app.welcome</h1>
+<h1 #popoverRef (mouseenter)="toggleTooltip()" (mouseleave)="toggleTooltip()">app.welcome</h1>
+<h1 #popoverRef2 (mouseenter)="toggleTooltip2()" (mouseleave)="toggleTooltip2()">app.welcome</h1>
+<h1 (click)="toggleModal(mymodal)">app.welcome</h1>
 <ng-template #mymodal let-modal>
   <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">Bootstrap Modal</h4>
@@ -15,7 +17,8 @@
     <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
   </div>
 </ng-template>
-<h1 (click)="showSuccess()" i18n>app.welcome</h1>
+<h1 (click)="showSuccess()">app.welcome</h1>
+<h1 i18n>app.welcome</h1>
 <h5 i18n="Meaning test|Description test@@app_welcome">app.welcome_with_meaning_and_description_and_id</h5>
 <h5 i18n="Meaning test welcome second|Description test second@@app_welcome_second">app.welcome_with_meaning_and_description_and_id</h5>
 <h5 i18n>app.minutes.{minutes, plural, =0 {now} =1 {one_minutes} other {{{minutes}}many}}</h5>

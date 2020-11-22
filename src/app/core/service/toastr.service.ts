@@ -15,7 +15,7 @@ export class ToastrService {
 		method: `success` | `error` | `info` | `warning`,
 		title: string,
 		message: string,
-		overrides: Partial<IndividualConfig>
+		overrides?: Partial<IndividualConfig>
 	) {
 		this.toastr[method](message, title, overrides);
 	}

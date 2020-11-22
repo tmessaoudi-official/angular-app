@@ -4,10 +4,6 @@ const dotEnvLoader = new (require(`./node_modules/@tmessaoudi-official/dot-env-l
 );
 const APP_ENV = dotEnvLoader.webpackify(dotEnvLoader.run());
 
-if (APP_ENV.APP_DEBUG) {
-	console.log(APP_ENV);
-}
-
 const webpack = require(`webpack`);
 
 exports.default = {

@@ -51,7 +51,7 @@ module.exports = function (config) {
 		port: 9876,
 		colors: true,
 		logLevel: config.LOG_INFO,
-		autoWatch: false,
+		autoWatch: appEnv.APP_TEST_UNIT_KARMA_AUTOWATCH,
 		customLaunchers: {
 			swd_chrome: {
 				base: `SeleniumWebdriver`,
@@ -66,7 +66,7 @@ module.exports = function (config) {
 			}
 		},
 		browsers: appEnv.APP_TEST_UNIT_KARMA_BROWSERS,
-		singleRun: true,
-		restartOnFileChange: false
+		singleRun: appEnv.APP_TEST_UNIT_KARMA_SINGLERUN,
+		restartOnFileChange: appEnv.APP_TEST_UNIT_KARMA_RESTARTONFILECHANGE
 	});
 };

@@ -1,7 +1,7 @@
 #!make
 
 export $(shell NODE_DEBUG_FORCE=false APP_ENV_RUN_BUILD=true APP_NODE_ENV_INCLUDE=${APP_NODE_ENV_INCLUDE} pnpm run load-env-js )
-include .app.env/.env.local.build
+include ./.app.env/.env.local.build
 export $(shell sed 's/=.*//' ./.app.env/.env.local.build)
 
 default: help

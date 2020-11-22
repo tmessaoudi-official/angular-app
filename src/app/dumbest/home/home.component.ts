@@ -3,12 +3,13 @@ import {
 	ElementRef,
 	Inject,
 	LOCALE_ID,
-	ViewChild
+	ViewChild,
+	TemplateRef
 } from '@angular/core';
 import { I18nSwitcherService } from '../../../i18n/service/switcher/i18n.switcher.service';
-import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrService } from '../../core/service/toastr.service';
 import { PopperService } from '../../core/service/popper.service';
+import { NgbModalService } from '../../core/service/ngb-modal.service';
 
 @Component({
 	selector: `app-home`,
@@ -18,8 +19,8 @@ import { PopperService } from '../../core/service/popper.service';
 export class HomeComponent {
 	minutes: number;
 	gender: string;
-	closeResult: string | undefined;
 	popoverShow = false;
+	modalTitle = `hello modal`;
 	@ViewChild(`popoverRef`, { static: false }) popoverRef:
 		| ElementRef
 		| undefined;
@@ -33,7 +34,7 @@ export class HomeComponent {
 		// eslint-disable-next-line no-unused-vars
 		public i18nSwitcherService: I18nSwitcherService,
 		// eslint-disable-next-line no-unused-vars
-		private modalService: NgbModal,
+		private ngbModal: NgbModalService,
 		// eslint-disable-next-line no-unused-vars
 		private popper: PopperService,
 		// eslint-disable-next-line no-unused-vars
@@ -145,29 +146,20 @@ export class HomeComponent {
 		}
 	}
 
-	toggleModal(content: any) {
-		this.modalService
-			.open(content, { ariaLabelledBy: `modal-basic-title` })
-			.result.then(
-				(result) => {
-					this.closeResult = `Closed with: ${result}`;
-				},
-				(reason) => {
-					this.closeResult = `Dismissed ${this.getDismissReason(
-						reason
-					)}`;
-				}
-			);
-	}
-
-	private getDismissReason(reason: any): string {
-		if (reason === ModalDismissReasons.ESC) {
-			return `by pressing ESC`;
-		} else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-			return `by clicking on a backdrop`;
-		} else {
-			return `with: ${reason}`;
-		}
+	toggleModal(content: TemplateRef<ElementRef>) {
+		this.ngbModal.toggleModal(
+			content,
+			{
+				ariaLabelledBy: `modal-basic-title`
+				// eslint-disable-next-line no-unused-vars
+			},
+			(type, how) => {
+				console.log(`type`);
+				console.log(type);
+				console.log(`how`);
+				console.log(how);
+			}
+		);
 	}
 
 	showSuccess() {

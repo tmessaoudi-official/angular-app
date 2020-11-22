@@ -38,24 +38,6 @@ export class I18nSwitcherService {
 				pathLocale = splittedPathname[splittedPathname.length - 2];
 			}
 		}
-		if (environment.appDebug) {
-			console.log(`pathLocale === environment.appI18nLocaleDummy`);
-			console.log(pathLocale);
-			console.log(environment.appI18nLocaleDummy);
-			console.log(pathLocale === environment.appI18nLocaleDummy);
-			console.log(`this.locale === environment.appI18nLocaleDummy`);
-			console.log(this.locale === environment.appI18nLocaleDummy);
-			console.log(this.locale);
-			console.log(environment.appI18nLocaleDummy);
-			console.log(`environment.appI18nIsLocaleDummy`);
-			console.log(environment.appI18nIsLocaleDummy);
-			console.log(
-				`!this.locales.find(locale => locale.id === this.locale)`
-			);
-			console.log(
-				!this.locales.find((locale) => locale.id === this.locale)
-			);
-		}
 		return (
 			pathLocale === environment.appI18nLocaleDummy ||
 			this.locale === environment.appI18nLocaleDummy ||
@@ -64,11 +46,6 @@ export class I18nSwitcherService {
 		);
 	}
 	init(): void {
-		if (environment.appDebug) {
-			console.log(`this.locale`);
-			console.log(this.locale);
-			console.log(window.location.href);
-		}
 		if (environment.appI18nSwitcherBehaviour === `disabled`) {
 			return;
 		}
@@ -77,10 +54,6 @@ export class I18nSwitcherService {
 				this.switch();
 			}
 		} else if (environment.appI18nSwitcherBehaviour === `default`) {
-			if (environment.appDebug) {
-				console.log(`this.isLocaleDummy()`);
-				console.log(this.isLocaleDummy());
-			}
 			if (this.isLocaleDummy()) {
 				let targetLocale = ``;
 				if (!localStorage.getItem(`locale`)) {

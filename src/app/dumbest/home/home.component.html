@@ -3,20 +3,6 @@
 <h1 #popoverRef (mouseenter)="toggleTooltip()" (mouseleave)="toggleTooltip()">app.welcome</h1>
 <h1 #popoverRef2 (mouseenter)="toggleTooltip2()" (mouseleave)="toggleTooltip2()">app.welcome</h1>
 <h1 (click)="toggleModal(mymodal)">app.welcome</h1>
-<ng-template #mymodal let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Bootstrap Modal</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">×</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    This is example from ItSolutionStuff.com
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
-  </div>
-</ng-template>
 <h1 (click)="showSuccess()">app.welcome</h1>
 <h1 i18n>app.welcome</h1>
 <h5 i18n="Meaning test|Description test@@app_welcome">app.welcome_with_meaning_and_description_and_id</h5>
@@ -29,3 +15,18 @@
 
 <h5 i18n>app.gender.{gender, select, male {male} female {female} other {other}}</h5>
 {{ gender }} <button class="btn-info" (click)="setGender()">switch</button>
+
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{ modalTitle }}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Modal body
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>

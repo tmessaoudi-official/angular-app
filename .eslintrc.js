@@ -57,7 +57,8 @@ module.exports = {
 				'no-unused-vars': 'warn',
 				'@typescript-eslint/typedef': 'warn',
 				'no-irregular-whitespace': 'error',
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+        "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
 				/**
 				 * Any TypeScript related rules you wish to use/reconfigure over and above the
 				 * recommended set provided by the @angular-eslint project would go here.

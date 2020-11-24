@@ -100,8 +100,24 @@ module.exports = {
 						'ts-check': 'allow-with-description',
 						'minimumDescriptionLength': 15
 					}
-				]
-			}
+				],
+        "max-lines": [
+          'warn',
+          {
+            'max': 100,
+            'skipBlankLines': true,
+            'skipComments': true,
+          }
+        ],
+        "no-multiple-empty-lines": [
+          "error",
+          {
+            'max': 2,
+            'maxEOF': 1,
+            'maxBOF': 1,
+          }
+        ]
+      }
 		},
 
 		/**

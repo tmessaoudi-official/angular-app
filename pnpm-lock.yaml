@@ -39,7 +39,7 @@ devDependencies:
   '@tmessaoudi-official/dot-env-loader': '@github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.9'
   '@types/jasmine': 3.6.2
   '@types/jasminewd2': 2.0.8
-  '@types/node': 14.14.9
+  '@types/node': 14.14.10
   '@types/webpack': 4.41.25
   '@typescript-eslint/eslint-plugin': 4.8.2_2f483f23ea50811d77396cad21e1c0c9
   '@typescript-eslint/eslint-plugin-tslint': 4.8.2_eslint@7.14.0+typescript@4.0.5
@@ -1739,7 +1739,7 @@ packages:
   /@types/glob/7.1.3:
     dependencies:
       '@types/minimatch': 3.0.3
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
     dev: true
     resolution:
       integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==
@@ -1765,10 +1765,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
-  /@types/node/14.14.9:
+  /@types/node/14.14.10:
     dev: true
     resolution:
-      integrity: sha512-JsoLXFppG62tWTklIoO4knA+oDTYsmqWxHRvd4lpmfQRNhX6osheUOWETP2jMoV/2bEHuMra8Pp3Dmo/stBFcw==
+      integrity: sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
   /@types/parse-json/4.0.0:
     dev: true
     resolution:
@@ -1801,7 +1801,7 @@ packages:
       integrity: sha512-7npvPKV+jINLu1SpSYVWG8KvyJBhBa8tmzMMdDoVc2pWUYHN8KIXlPJhjJ4LT97c4dXJA2SHL/q6ADbDriZN+Q==
   /@types/webpack-sources/0.1.8:
     dependencies:
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
       '@types/source-list-map': 0.1.2
       source-map: 0.6.1
     dev: true
@@ -1809,7 +1809,7 @@ packages:
       integrity: sha512-JHB2/xZlXOjzjBB6fMOpH1eQAfsrpqVVIbneE0Rok16WXwFaznaI5vfg75U5WgGJm7V9W1c4xeRQDjX/zwvghA==
   /@types/webpack-sources/2.0.0:
     dependencies:
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
       '@types/source-list-map': 0.1.2
       source-map: 0.7.3
     dev: true
@@ -1818,7 +1818,7 @@ packages:
   /@types/webpack/4.41.25:
     dependencies:
       '@types/anymatch': 1.3.1
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
       '@types/tapable': 1.0.6
       '@types/uglify-js': 3.11.1
       '@types/webpack-sources': 2.0.0
@@ -2485,16 +2485,18 @@ packages:
     dev: true
     resolution:
       integrity: sha512-hNfzcOV8W4NdualtqBFPyVO+54DSJuZGY9qT4pRroB6S9e3iiido2ISIC5h9R2sPJ8H3FHCIiEnsv1lPXO3KtQ==
-  /array-includes/3.1.1:
+  /array-includes/3.1.2:
     dependencies:
+      call-bind: 1.0.0
       define-properties: 1.1.3
-      es-abstract: 1.17.7
+      es-abstract: 1.18.0-next.1
+      get-intrinsic: 1.0.1
       is-string: 1.0.5
     dev: true
     engines:
       node: '>= 0.4'
     resolution:
-      integrity: sha512-c2VXaCHl7zPsvpkFsw4nxvFie4fh1ur9bpcgsVkIjqn0H/Xwdg+7fv3n2r/isyS8EBj5b06M9kHyZuIr4El6WQ==
+      integrity: sha512-w2GspexNQpx+PutG3QpT437/BenZBj0M/MZGn5mzv/MofYqo0xmRHzn4lFsoDlWJ+THYsGJmFlW68WlDFx7VRw==
   /array-union/1.0.2:
     dependencies:
       array-uniq: 1.0.3
@@ -3480,7 +3482,7 @@ packages:
       globby: 11.0.1
       loader-utils: 2.0.0
       normalize-path: 3.0.0
-      p-limit: 3.0.2
+      p-limit: 3.1.0
       schema-utils: 3.0.0
       serialize-javascript: 5.0.1
       webpack: 4.44.2
@@ -4424,7 +4426,7 @@ packages:
       integrity: sha512-tqxJTiEM5a0JmRCUYQmxw23vtTxrb2+a3Q2mMOPhFxvt7ZQQJmdiuMby9B/vUAuVMghyP7oET+nIf6EO6CBd/w==
   /eslint-plugin-import/2.22.1_eslint@7.14.0:
     dependencies:
-      array-includes: 3.1.1
+      array-includes: 3.1.2
       array.prototype.flat: 1.2.4
       contains-path: 0.1.0
       debug: 2.6.9
@@ -6126,7 +6128,7 @@ packages:
       integrity: sha1-43zwsX8ZnM4jvqcbIDk5Uka07E4=
   /jest-worker/26.6.2:
     dependencies:
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -7427,14 +7429,14 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==
-  /p-limit/3.0.2:
+  /p-limit/3.1.0:
     dependencies:
-      p-try: 2.2.0
+      yocto-queue: 0.1.0
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-iwqZSOoWIW+Ew4kAGUlN16J4M7OB3ysMLSZtnhmqx7njIHFPlxWBX8xo3lVTyFVq6mI/lL9qt2IsN1sHwaxJkg==
+      integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==
   /p-locate/2.0.0:
     dependencies:
       p-limit: 1.3.0
@@ -9775,7 +9777,7 @@ packages:
       cacache: 15.0.5
       find-cache-dir: 3.3.1
       jest-worker: 26.6.2
-      p-limit: 3.0.2
+      p-limit: 3.1.0
       schema-utils: 3.0.0
       serialize-javascript: 5.0.1
       source-map: 0.6.1
@@ -10886,6 +10888,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
+  /yocto-queue/0.1.0:
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
   /zone.js/0.11.3:
     dependencies:
       tslib: 2.0.3

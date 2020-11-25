@@ -3,7 +3,7 @@
   <file id="ngi18n" original="ng.template">
     <unit id="8202903159216468577">
       <notes>
-        <note category="location">src/app/i18n/home/app.home.component.ts:21</note>
+        <note category="location">src/app/i18n/home/app.home.component.ts:21,22</note>
       </notes>
       <segment>
         <source>app.index.title</source>
@@ -11,7 +11,7 @@
     </unit>
     <unit id="5714296720616960090">
       <notes>
-        <note category="location">src/app/i18n/home/app.home.component.html:1</note>
+        <note category="location">src/app/i18n/home/app.home.component.ts:29</note>
       </notes>
       <segment>
         <source>app.i18n.home.title</source>
@@ -19,7 +19,7 @@
     </unit>
     <unit id="1531659539130803897">
       <notes>
-        <note category="location">src/app/i18n/home/app.home.component.html:2</note>
+        <note category="location">src/app/i18n/home/app.home.component.ts:29</note>
       </notes>
       <segment>
         <source>app.i18n.home.title.xliffmerge</source>
@@ -27,7 +27,7 @@
     </unit>
     <unit id="7332266769578037876">
       <notes>
-        <note category="location">src/app/i18n/home/app.home.component.html:3</note>
+        <note category="location">src/app/i18n/home/app.home.component.ts:29</note>
       </notes>
       <segment>
         <source>app.i18n.home.title.xliffmerge2</source>
@@ -35,7 +35,7 @@
     </unit>
     <unit id="970721312369328702">
       <notes>
-        <note category="location">src/app/i18n/home/app.home.component.html:5</note>
+        <note category="location">src/app/i18n/home/app.home.component.ts:29</note>
       </notes>
       <segment>
         <source>testing after change to xlf2</source>

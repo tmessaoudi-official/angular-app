@@ -1,5 +1,5 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "cli": {
@@ -16,11 +16,7 @@
         "locales": {
           "en": "i18n/messages.en.xlf",
           "fr": "i18n/messages.fr.xlf",
-          "de": "i18n/messages.de.xlf",
-          "es": "i18n/messages.es.xlf",
-          "ar": "i18n/messages.ar.xlf",
-          "pt": "i18n/messages.pt.xlf",
-          "it": "i18n/messages.it.xlf"
+          "ar": "i18n/messages.ar.xlf"
         }
       },
       "projectType": "application",
@@ -140,11 +136,7 @@
               "localize": [
                 "en",
                 "fr",
-                "ar",
-                "de",
-                "es",
-                "pt",
-                "it"
+                "ar"
               ]
             },
             "verbose": {
@@ -221,34 +213,6 @@
               "i18nFile": "i18n/home/messages.de.xlf",
               "i18nLocale": "de"
             },
-            "home-de": {
-              "i18nFile": "i18n/messages.de.xlf",
-              "i18nLocale": "de"
-            },
-            "home-locale-es": {
-              "i18nFile": "i18n/home/messages.es.xlf",
-              "i18nLocale": "es"
-            },
-            "home-es": {
-              "i18nFile": "i18n/messages.es.xlf",
-              "i18nLocale": "es"
-            },
-            "home-locale-pt": {
-              "i18nFile": "i18n/home/messages.pt.xlf",
-              "i18nLocale": "pt"
-            },
-            "home-pt": {
-              "i18nFile": "i18n/messages.pt.xlf",
-              "i18nLocale": "pt"
-            },
-            "home-locale-it": {
-              "i18nFile": "i18n/home/messages.it.xlf",
-              "i18nLocale": "it"
-            },
-            "home-it": {
-              "i18nFile": "i18n/messages.it.xlf",
-              "i18nLocale": "it"
-            },
             "home-config": {
               "tsConfig": "tsconfig/tsconfig.home.json",
               "main": "src/i18n/main/main.home.ts"
@@ -277,30 +241,6 @@
               "i18nFile": "i18n/messages.fr.xlf",
               "i18nLocale": "fr"
             },
-            "de": {
-              "outputPath": "dist",
-              "baseHref": ""
-            },
-            "de-base-href": {
-              "outputPath": "dist/de",
-              "baseHref": "/de/"
-            },
-            "de-locale": {
-              "i18nFile": "i18n/messages.de.xlf",
-              "i18nLocale": "de"
-            },
-            "es": {
-              "outputPath": "dist",
-              "baseHref": ""
-            },
-            "es-base-href": {
-              "outputPath": "dist/es",
-              "baseHref": "/es/"
-            },
-            "es-locale": {
-              "i18nFile": "i18n/messages.es.xlf",
-              "i18nLocale": "es"
-            },
             "ar": {
               "outputPath": "dist",
               "baseHref": ""
@@ -312,30 +252,6 @@
             "ar-locale": {
               "i18nFile": "i18n/messages.ar.xlf",
               "i18nLocale": "ar"
-            },
-            "pt": {
-              "outputPath": "dist",
-              "baseHref": ""
-            },
-            "pt-base-href": {
-              "outputPath": "dist/pt",
-              "baseHref": "/pt/"
-            },
-            "pt-locale": {
-              "i18nFile": "i18n/messages.pt.xlf",
-              "i18nLocale": "pt"
-            },
-            "it": {
-              "outputPath": "dist",
-              "baseHref": ""
-            },
-            "it-base-href": {
-              "outputPath": "dist/it",
-              "baseHref": "/it/"
-            },
-            "it-locale": {
-              "i18nFile": "i18n/messages.it.xlf",
-              "i18nLocale": "it"
             }
           }
         },
@@ -372,18 +288,6 @@
             "home-fr": {
               "browserTarget": "localization:build:development,ignore-i18n,home-locale-fr,home,no-base-href,home-config,aot"
             },
-            "home-de": {
-              "browserTarget": "localization:build:development,ignore-i18n,home-locale-de,home,no-base-href,home-config,aot"
-            },
-            "home-es": {
-              "browserTarget": "localization:build:development,ignore-i18n,home-locale-es,home,no-base-href,home-config,aot"
-            },
-            "home-pt": {
-              "browserTarget": "localization:build:development,ignore-i18n,home-locale-pt,home,no-base-href,home-config,aot"
-            },
-            "home-it": {
-              "browserTarget": "localization:build:development,ignore-i18n,home-locale-it,home,no-base-href,home-config,aot"
-            },
             "home-ar": {
               "browserTarget": "localization:build:development,ignore-i18n,home-locale-ar,home,no-base-href,home-config,aot"
             },
@@ -393,20 +297,8 @@
             "fr": {
               "browserTarget": "localization:build:development,ignore-i18n,fr-locale,fr,no-base-href,aot"
             },
-            "de": {
-              "browserTarget": "localization:build::development,ignore-i18n,fr-locale,fr,no-base-href,aot"
-            },
-            "es": {
-              "browserTarget": "localization:build:development,ignore-i18n,es-locale,es,no-base-href,aot"
-            },
             "ar": {
               "browserTarget": "localization:build:development,ignore-i18n,ar-locale,ar,no-base-href,aot"
-            },
-            "pt": {
-              "browserTarget": "localization:build:development,ignore-i18n,pt-locale,pt,no-base-href,aot"
-            },
-            "it": {
-              "browserTarget": "localization:build:development,ignore-i18n,it-locale,it,no-base-href,aot"
             }
           }
         },
@@ -452,18 +344,6 @@
             "home-fr": {
               "devServerTarget": "localization:serve:home-fr"
             },
-            "home-es": {
-              "devServerTarget": "localization:serve:home-es"
-            },
-            "home-de": {
-              "devServerTarget": "localization:serve:home-de"
-            },
-            "home-pt": {
-              "devServerTarget": "localization:serve:home-pt"
-            },
-            "home-it": {
-              "devServerTarget": "localization:serve:home-it"
-            },
             "home-ar": {
               "devServerTarget": "localization:serve:home-ar"
             },
@@ -473,20 +353,8 @@
             "fr": {
               "devServerTarget": "localization:serve:fr"
             },
-            "de": {
-              "devServerTarget": "localization:serve:de"
-            },
-            "es": {
-              "devServerTarget": "localization:serve:es"
-            },
             "ar": {
               "devServerTarget": "localization:serve:ar"
-            },
-            "pt": {
-              "devServerTarget": "localization:serve:pt"
-            },
-            "it": {
-              "devServerTarget": "localization:serve:it"
             }
           }
         },
@@ -533,26 +401,6 @@
               "outputPath": "i18n/home",
               "outFile": "messages.ar.xlf"
             },
-            "home-de": {
-              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-de",
-              "outputPath": "i18n/home",
-              "outFile": "messages.de.xlf"
-            },
-            "home-es": {
-              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-es",
-              "outputPath": "i18n/home",
-              "outFile": "messages.es.xlf"
-            },
-            "home-pt": {
-              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-pt",
-              "outputPath": "i18n/home",
-              "outFile": "messages.pt.xlf"
-            },
-            "home-it": {
-              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-it",
-              "outputPath": "i18n/home",
-              "outFile": "messages.it.xlf"
-            },
             "en": {
               "browserTarget": "localization:build:en",
               "outFile": "messages.en.xlf"
@@ -561,25 +409,9 @@
               "browserTarget": "localization:build:fr",
               "outFile": "messages.fr.xlf"
             },
-            "de": {
-              "browserTarget": "localization:build:de",
-              "outFile": "messages.de.xlf"
-            },
-            "es": {
-              "browserTarget": "localization:build:es",
-              "outFile": "messages.es.xlf"
-            },
             "ar": {
               "browserTarget": "localization:build:ar",
               "outFile": "messages.ar.xlf"
-            },
-            "pt": {
-              "browserTarget": "localization:build:pt",
-              "outFile": "messages.pt.xlf"
-            },
-            "it": {
-              "browserTarget": "localization:build:it",
-              "outFile": "messages.it.xlf"
             }
           }
         },
@@ -599,11 +431,7 @@
                 "languages": [
                   "en",
                   "fr",
-                  "ar",
-                  "de",
-                  "es",
-                  "pt",
-                  "it"
+                  "ar"
                 ]
               }
             },
@@ -619,11 +447,7 @@
                 "languages": [
                   "en",
                   "fr",
-                  "ar",
-                  "de",
-                  "es",
-                  "pt",
-                  "it"
+                  "ar"
                 ]
               }
             }

@@ -14,7 +14,7 @@
       <notes>
 
         
-      <note category="location">src/app/i18n/home/app.home.component.html:1</note></notes>
+      <note category="location">src/app/i18n/home/app.home.component.ts:29</note></notes>
       <segment state="translated">
         <source>app.i18n.home.title</source>
         <target>app.i18n.home.title_home_ar</target>
@@ -24,7 +24,7 @@
       <notes>
 
         
-      <note category="location">src/app/i18n/home/app.home.component.html:2</note></notes>
+      <note category="location">src/app/i18n/home/app.home.component.ts:29</note></notes>
       <segment state="translated">
         <source>app.i18n.home.title.xliffmerge</source>
         <target>app.i18n.home.title.xliffmerge_home_ar</target>
@@ -34,7 +34,7 @@
       <notes>
 
         
-      <note category="location">src/app/i18n/home/app.home.component.html:3</note></notes>
+      <note category="location">src/app/i18n/home/app.home.component.ts:29</note></notes>
       <segment state="translated">
         <source>app.i18n.home.title.xliffmerge2</source>
         <target>app.i18n.home.title.xliffmerge2_home_ar</target>
@@ -44,7 +44,7 @@
       <notes>
 
         
-      <note category="location">src/app/i18n/home/app.home.component.html:5</note></notes>
+      <note category="location">src/app/i18n/home/app.home.component.ts:29</note></notes>
       <segment state="translated">
         <source>testing after change to xlf2</source>
         <target>testing after change to xlf2 home ar</target>

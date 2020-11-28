@@ -52,7 +52,7 @@ devDependencies:
   eslint-plugin-import: 2.22.1_eslint@7.14.0
   eslint-plugin-jsdoc: 30.7.8_eslint@7.14.0
   eslint-plugin-prefer-arrow: 1.2.2_eslint@7.14.0
-  eslint-plugin-prettier: 3.1.4_eslint@7.14.0+prettier@2.2.0
+  eslint-plugin-prettier: 3.1.4_eslint@7.14.0+prettier@2.2.1
   jasmine-core: 3.6.0
   jasmine-spec-reporter: 6.0.0
   karma: 5.2.3
@@ -62,7 +62,7 @@ devDependencies:
   karma-jasmine-html-reporter: 1.5.4_18b14e7400d2a108f8d2c75cce7d238a
   karma-selenium-webdriver-launcher: 0.0.4_karma@5.2.3
   ngx-build-plus: 10.1.1_5f4d1329c7b55304a6466845dec48be9
-  prettier: 2.2.0
+  prettier: 2.2.1
   prettier-eslint: 12.0.0
   protractor: 7.0.0
   ts-node: 9.0.0_typescript@4.0.5
@@ -2849,7 +2849,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30001161
       colorette: 1.2.1
-      electron-to-chromium: 1.3.609
+      electron-to-chromium: 1.3.610
       escalade: 3.1.1
       node-releases: 1.1.67
     dev: true
@@ -4129,10 +4129,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-  /electron-to-chromium/1.3.609:
+  /electron-to-chromium/1.3.610:
     dev: true
     resolution:
-      integrity: sha512-kcmRWmlHsUKKLfsSKSf7VqeTX4takM5ndjVTM3et3qpDCceITYI1DixvIfSDIngALoaTnpoMXD3SXSMpzHkYKA==
+      integrity: sha512-eFDC+yVQpEhtlapk4CYDPfV9ajF9cEof5TBcO49L1ETO+aYogrKWDmYpZyxBScMNe8Bo/gJamH4amQ4yyvXg4g==
   /elliptic/6.5.3:
     dependencies:
       bn.js: 4.11.9
@@ -4453,10 +4453,10 @@ packages:
       eslint: '>=2.0.0'
     resolution:
       integrity: sha512-C8YMhL+r8RMeMdYAw/rQtE6xNdMulj+zGWud/qIGnlmomiPRaLDGLMeskZ3alN6uMBojmooRimtdrXebLN4svQ==
-  /eslint-plugin-prettier/3.1.4_eslint@7.14.0+prettier@2.2.0:
+  /eslint-plugin-prettier/3.1.4_eslint@7.14.0+prettier@2.2.1:
     dependencies:
       eslint: 7.14.0
-      prettier: 2.2.0
+      prettier: 2.2.1
       prettier-linter-helpers: 1.0.0
     dev: true
     engines:
@@ -8153,7 +8153,7 @@ packages:
       indent-string: 4.0.0
       lodash.merge: 4.6.2
       loglevel-colored-level-prefix: 1.0.0
-      prettier: 2.2.0
+      prettier: 2.2.1
       pretty-format: 23.6.0
       require-relative: 0.8.7
       typescript: 4.0.5
@@ -8171,13 +8171,13 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==
-  /prettier/2.2.0:
+  /prettier/2.2.1:
     dev: true
     engines:
       node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-yYerpkvseM4iKD/BXLYUkQV5aKt4tQPqaGW6EsZjzyu0r7sVZZNPJW4Y8MyKmicp6t42XUPcBVA+H6sB3gqndw==
+      integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
   /pretty-format/23.6.0:
     dependencies:
       ansi-regex: 3.0.0
@@ -10912,7 +10912,7 @@ specifiers:
   karma-selenium-webdriver-launcher: ^0.0.4
   ngx-build-plus: ^10.1.1
   ngx-toastr: ^13.1.0
-  prettier: ^2.2.0
+  prettier: ^2.2.1
   prettier-eslint: ^12.0.0
   protractor: ^7.0.0
   rxjs: ^6.6.3

@@ -3,8 +3,8 @@
   <file id="ngi18n" original="ng.template">
     <unit id="8202903159216468577">
       <notes>
-        <note category="location">src/app/core/app.component.ts:22</note>
-      </notes>
+        
+      <note category="location">src/app/core/app.component.ts:31</note></notes>
       <segment state="final">
         <source>app.index.title</source>
         <target>app.index.title_en</target>

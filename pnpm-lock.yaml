@@ -27,11 +27,11 @@ devDependencies:
   '@angular-devkit/architect': 0.1100.2
   '@angular-devkit/build-angular': 0.1100.2_93eb3503276ac1ae9ebb037c3f44c5ea
   '@angular-devkit/schematics': 11.0.2
-  '@angular-eslint/builder': 0.8.0-beta.2_d4c6233a7bfb7fec0ad1bd08beecc659
-  '@angular-eslint/eslint-plugin': 0.8.0-beta.2_3ef6a7ccbec58a089565f7d18d53939b
-  '@angular-eslint/eslint-plugin-template': 0.8.0-beta.2_a06e45d8f78860f4cd43eed6152b4c27
-  '@angular-eslint/schematics': 0.8.0-beta.2_f3b9da3f1a5e46434cdfdef62de800c7
-  '@angular-eslint/template-parser': 0.8.0-beta.2_367074c6cb300348cacad747de85e154
+  '@angular-eslint/builder': 0.8.0-beta.3_d4c6233a7bfb7fec0ad1bd08beecc659
+  '@angular-eslint/eslint-plugin': 0.8.0-beta.3_3ef6a7ccbec58a089565f7d18d53939b
+  '@angular-eslint/eslint-plugin-template': 0.8.0-beta.3_658b7733d861a4857a4e9eb0e90f4844
+  '@angular-eslint/schematics': 0.8.0-beta.3_bda97add6b3e4eb2aabc330e9a9a9f61
+  '@angular-eslint/template-parser': 0.8.0-beta.3_367074c6cb300348cacad747de85e154
   '@angular/cli': 11.0.2
   '@angular/compiler-cli': 11.0.2_ce40717730c5d865596a24774ffe4d10
   '@ngx-i18nsupport/ngx-i18nsupport': 1.1.6
@@ -262,7 +262,7 @@ packages:
       yarn: '>= 1.13.0'
     resolution:
       integrity: sha512-unNewc+Y9ofrdKxXNoSHKUL6wvV8Vgh2nJMTLI1VAw8nfqgWphI+s5XwbVzog65nhZ10xJeaUm9u5R8pxLDpQg==
-  /@angular-eslint/builder/0.8.0-beta.2_d4c6233a7bfb7fec0ad1bd08beecc659:
+  /@angular-eslint/builder/0.8.0-beta.3_d4c6233a7bfb7fec0ad1bd08beecc659:
     dependencies:
       '@angular-devkit/architect': 0.1100.2
       eslint: 7.14.0
@@ -273,10 +273,10 @@ packages:
       eslint: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-z36MeIKxlN6SAtnL0gB2Oh+RQcLAWXZbEScgW3P31npQOXcLIKP0wF6/rfbQnfm4+BIFN1lGdkCoOQWhzAKdlw==
-  /@angular-eslint/eslint-plugin-template/0.8.0-beta.2_a06e45d8f78860f4cd43eed6152b4c27:
+      integrity: sha512-z10wXrIiPbH5SNNzxqsHnNDNcYHLLYb+jyH+Y06MO7Y5ydPhN15dsEEF+TzLXcJx2Zj2aCpUa87PYJL3kbCgew==
+  /@angular-eslint/eslint-plugin-template/0.8.0-beta.3_658b7733d861a4857a4e9eb0e90f4844:
     dependencies:
-      '@angular-eslint/template-parser': 0.8.0-beta.2_367074c6cb300348cacad747de85e154
+      '@angular-eslint/template-parser': 0.8.0-beta.3_367074c6cb300348cacad747de85e154
       '@typescript-eslint/experimental-utils': 4.3.0_eslint@7.14.0+typescript@4.0.5
       eslint: 7.14.0
       typescript: 4.0.5
@@ -286,8 +286,8 @@ packages:
       eslint: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-fjoHZX6hhbwNHQT1a8ZR2jfK6f1/Vk0zfVYTUUGr5NsPQclTW7FDnJJ9WfHKzyE7TKR3UTwWNERAY7q/TIvo0A==
-  /@angular-eslint/eslint-plugin/0.8.0-beta.2_3ef6a7ccbec58a089565f7d18d53939b:
+      integrity: sha512-SCmR1MM0aBbEfB0/R00dCDBQ6C52lH5iEI7KK0LfSmzuwID5OSE3DOL+av2fCorhV3c/WLVAqqlJWTlF7J7vXQ==
+  /@angular-eslint/eslint-plugin/0.8.0-beta.3_3ef6a7ccbec58a089565f7d18d53939b:
     dependencies:
       '@typescript-eslint/experimental-utils': 4.3.0_eslint@7.14.0+typescript@4.0.5
       eslint: 7.14.0
@@ -303,14 +303,14 @@ packages:
       eslint-plugin-prefer-arrow: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-8j43tK15QBxnfF5gTPJJ5dt+At5vr3aoxFAPnsHzBOjwb0GCjpurdu4FFrX4t/Lw3UD5IQ/Py+PeI+4XHudJLw==
-  /@angular-eslint/schematics/0.8.0-beta.2_f3b9da3f1a5e46434cdfdef62de800c7:
+      integrity: sha512-ZnvxdX5GvElNLT7kQ530mqyMbwdU87JPTnAj6sT6V9PyqOzyLkSs7pssNXf4HjTrkvYHda6w3cGBI8uG2ANbKQ==
+  /@angular-eslint/schematics/0.8.0-beta.3_bda97add6b3e4eb2aabc330e9a9a9f61:
     dependencies:
       '@angular-devkit/schematics': 11.0.2
-      '@angular-eslint/eslint-plugin': 0.8.0-beta.2_3ef6a7ccbec58a089565f7d18d53939b
-      '@angular-eslint/eslint-plugin-template': 0.8.0-beta.2_a06e45d8f78860f4cd43eed6152b4c27
+      '@angular-eslint/eslint-plugin': 0.8.0-beta.3_3ef6a7ccbec58a089565f7d18d53939b
+      '@angular-eslint/eslint-plugin-template': 0.8.0-beta.3_658b7733d861a4857a4e9eb0e90f4844
       strip-json-comments: 3.1.1
-      tslint-to-eslint-config: 2.0.0-beta5_eslint@7.14.0
+      tslint-to-eslint-config: 2.0.1_eslint@7.14.0
     dev: true
     peerDependencies:
       '@angular-devkit/schematics': '*'
@@ -321,8 +321,8 @@ packages:
       eslint-plugin-prefer-arrow: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-0rG2Xg6ihr+zb3yQIsG9YeuSYzixU/n8+E5hUCVIloCSy3NLI1GTmTOW7fbTdq1yiU3Blshc8h7uhJtQMJTLIQ==
-  /@angular-eslint/template-parser/0.8.0-beta.2_367074c6cb300348cacad747de85e154:
+      integrity: sha512-TcJVucJGd8dvzMUZYOfnnZnP57NHuImF6Iml3sPWXdsSll7TSrjBrfC0uD8EPLR27EOYEM/o+scL3U8svp/Pgw==
+  /@angular-eslint/template-parser/0.8.0-beta.3_367074c6cb300348cacad747de85e154:
     dependencies:
       '@angular/compiler': 11.0.2
       eslint: 7.14.0
@@ -334,7 +334,7 @@ packages:
       eslint: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-whL32/0h1nSdDqlxK1dCqj5UTGkBshcB/7qIMTW0ctKj2wfsmPef1Sr6T3DFGVkzKAi9rbV+NlSKnm62/yQnsw==
+      integrity: sha512-nDLL4QrjymYMv7gvmIwhCnvOmjDBkGWkstmZ2MPbHybcT/iB6Hq1SvUoTtdwDsZrnhYvoJYxicWU/jjGjtjwgA==
   /@angular/animations/11.0.2_@angular+core@11.0.2:
     dependencies:
       '@angular/core': 11.0.2_rxjs@6.6.3+zone.js@0.11.3
@@ -3580,15 +3580,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bzHZN8Pn+gS7DQA6n+iUmBfl0hO5DJq++QP3U6uTucDtk/0iGpXd/Gg7CGR0p8tJhofJyaKoWBuJI4eAO00BBg==
-  /cson-parser/4.0.5:
+  /cson-parser/4.0.7:
     dependencies:
       coffeescript: 1.12.7
     dev: true
     engines:
-      node: '>=8'
-      npm: ^6.0.0
+      node: '>=10.13'
     resolution:
-      integrity: sha512-XgloWiJcHy3TeuonPJseMfZOuwDpfczIQ12xw+DS2D8TCFxbj61gVlu8Cfs6lOwucQlrJFCvBTiovBqYMwPfQw==
+      integrity: sha512-BSnAl0gllETWjU9/lb8MmeqhsGaRINPwhoPiBjI/TJBRvKf/24I9EVqnwvmk6R3Gt66cMRSGVktl6QicxIb72g==
   /css-color-names/0.0.4:
     dev: true
     resolution:
@@ -9929,11 +9928,11 @@ packages:
   /tslib/2.0.3:
     resolution:
       integrity: sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==
-  /tslint-to-eslint-config/2.0.0-beta5_eslint@7.14.0:
+  /tslint-to-eslint-config/2.0.1_eslint@7.14.0:
     dependencies:
       chalk: 4.1.0
       commander: 6.2.0
-      cson-parser: 4.0.5
+      cson-parser: 4.0.7
       eslint-config-prettier: 6.15.0_eslint@7.14.0
       glob: 7.1.6
       json5: 2.1.3
@@ -9948,7 +9947,7 @@ packages:
     peerDependencies:
       eslint: '*'
     resolution:
-      integrity: sha512-6v+jlBFT7fRLAR+MB1ptMtgcNVp+xRomtjPk2DIimZwydhBJBCp/j5gEKKIB1nankWPASDx9f5YUWOh/jwnuXg==
+      integrity: sha512-RURU/zcBQpW9jKS7H2J6of4+64npTb0nrH7ND8tNhagMwryVjVnUDcucsl8DQuD7tO9RgjFO9bmJfDhyP0yV1w==
   /tslint/6.1.3_typescript@4.0.5:
     dependencies:
       '@babel/code-frame': 7.10.4
@@ -10859,11 +10858,11 @@ specifiers:
   '@angular-devkit/architect': ^0.1100.2
   '@angular-devkit/build-angular': ^0.1100.2
   '@angular-devkit/schematics': ^11.0.2
-  '@angular-eslint/builder': ^0.8.0-beta.2
-  '@angular-eslint/eslint-plugin': ^0.8.0-beta.2
-  '@angular-eslint/eslint-plugin-template': ^0.8.0-beta.2
-  '@angular-eslint/schematics': ^0.8.0-beta.2
-  '@angular-eslint/template-parser': ^0.8.0-beta.2
+  '@angular-eslint/builder': ^0.8.0-beta.3
+  '@angular-eslint/eslint-plugin': ^0.8.0-beta.3
+  '@angular-eslint/eslint-plugin-template': ^0.8.0-beta.3
+  '@angular-eslint/schematics': ^0.8.0-beta.3
+  '@angular-eslint/template-parser': ^0.8.0-beta.3
   '@angular/animations': ^11.0.2
   '@angular/cli': ^11.0.2
   '@angular/common': ^11.0.2

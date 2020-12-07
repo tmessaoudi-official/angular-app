@@ -11,7 +11,7 @@
 /*.local
 /.app.env/*.local
 *.local.build
-.env.local
+.app.env/.env.local
 .env.*.local
 
 # dependencies

@@ -666,7 +666,7 @@ packages:
   /@babel/helper-function-name/7.10.4:
     dependencies:
       '@babel/helper-get-function-arity': 7.10.4
-      '@babel/template': 7.12.7
+      '@babel/template': 7.10.4
       '@babel/types': 7.12.7
     resolution:
       integrity: sha512-YdaSyz1n8gY44EmN7x44zBn9zQ1Ry2Y+3GTA+3vH6Mizke1Vw0aWDM66FOYEPw8//qKkmqOckrGgTYa+6sceqQ==
@@ -700,7 +700,7 @@ packages:
       '@babel/helper-simple-access': 7.12.1
       '@babel/helper-split-export-declaration': 7.11.0
       '@babel/helper-validator-identifier': 7.10.4
-      '@babel/template': 7.12.7
+      '@babel/template': 7.10.4
       '@babel/traverse': 7.12.9
       '@babel/types': 7.12.7
       lodash: 4.17.20
@@ -769,7 +769,7 @@ packages:
       integrity: sha512-Cvb8IuJDln3rs6tzjW3Y8UeelAOdnpB8xtQ4sme2MSZ9wOxrbThporC0y/EtE16VAtoyEfLM404Xr1e0OOp+ow==
   /@babel/helpers/7.12.5:
     dependencies:
-      '@babel/template': 7.12.7
+      '@babel/template': 7.10.4
       '@babel/traverse': 7.12.9
       '@babel/types': 7.12.7
     resolution:
@@ -1453,7 +1453,6 @@ packages:
       '@babel/code-frame': 7.10.4
       '@babel/parser': 7.12.7
       '@babel/types': 7.12.7
-    dev: true
     resolution:
       integrity: sha512-ZCjD27cGJFUB6nmCB1Enki3r+L5kJveX9pq1SvAUKoICy6CZ9yD8xO086YXdYhvNjBdnekm4ZnaP5yC8Cs/1tA==
   /@babel/template/7.12.7:

@@ -38,7 +38,7 @@ devDependencies:
   '@babel/types': 7.12.10
   '@ngx-i18nsupport/ngx-i18nsupport': 1.1.6
   '@ngx-i18nsupport/tooling': 8.0.3_4305fc23d7b17d7f3da951fe9e6ca63d
-  '@tmessaoudi-official/dot-env-loader': '@github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.9'
+  '@tmessaoudi-official/dot-env-loader': '@github.com/tmessaoudi-official/dot-env-loader/archive/0.0.9.tar.gz'
   '@types/jasmine': 3.6.2
   '@types/jasminewd2': 2.0.8
   '@types/node': 14.14.11
@@ -10744,14 +10744,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Y4hTHoh4VcxU5BDGAqEoOnOiyT254w6CiHtpQxAJUSMZPyVgdbKf+5R7Mwz6xsPhMIeBXk5rTopRZDpjssTCUg==
-  '@github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.9':
+  '@github.com/tmessaoudi-official/dot-env-loader/archive/0.0.9.tar.gz':
     dev: true
     engines:
       node: '>=15.2'
       npm: '>=7.0'
     name: '@tmessaoudi-official/dot-env-loader'
     resolution:
-      tarball: 'https://github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.9'
+      tarball: 'https://github.com/tmessaoudi-official/dot-env-loader/archive/0.0.9.tar.gz'
     version: 0.0.9
 specifiers:
   '@angular-builders/dev-server': ^7.3.3
@@ -10780,7 +10780,7 @@ specifiers:
   '@ngx-i18nsupport/ngx-i18nsupport': ^1.1.6
   '@ngx-i18nsupport/tooling': ^8.0.3
   '@popperjs/core': ^2.5.4
-  '@tmessaoudi-official/dot-env-loader': 'https://github.com/tmessaoudi-official/dot-env-loader/tarball/0.0.9'
+  '@tmessaoudi-official/dot-env-loader': 'https://github.com/tmessaoudi-official/dot-env-loader/archive/0.0.9.tar.gz'
   '@types/crypto-js': ^4.0.1
   '@types/jasmine': ^3.6.2
   '@types/jasminewd2': ^2.0.8

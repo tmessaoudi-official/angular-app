@@ -80,7 +80,9 @@ overrides:
   '@types/webpack': ^4.41.25
   '@types/webpack-dev-server': ^3.11.1
   chokidar: ^3.0.0
+  debug: ^4.3.1
   fsevents: ^2.0.0
+  ini: ^1.3.6
   typescript: ^4.0.5
 packages:
   /@angular-builders/dev-server/7.3.3_232df6c15276587f18956404da858dc4:
@@ -355,8 +357,8 @@ packages:
       '@schematics/update': 0.1100.4
       '@yarnpkg/lockfile': 1.1.0
       ansi-colors: 4.1.1
-      debug: 4.2.0
-      ini: 1.3.5
+      debug: 4.3.1
+      ini: 1.3.7
       inquirer: 7.3.3
       npm-package-arg: 8.1.0
       npm-pick-manifest: 6.1.0
@@ -1646,7 +1648,7 @@ packages:
       '@angular-devkit/core': 11.0.4
       '@angular-devkit/schematics': 11.0.4
       '@yarnpkg/lockfile': 1.1.0
-      ini: 1.3.5
+      ini: 1.3.7
       npm-package-arg: 8.1.0
       pacote: 9.5.12
       semver: 7.3.2
@@ -2664,7 +2666,7 @@ packages:
     dependencies:
       bytes: 3.1.0
       content-type: 1.0.4
-      debug: 2.6.9
+      debug: 4.3.1
       depd: 1.1.2
       http-errors: 1.7.2
       iconv-lite: 0.4.24
@@ -2675,6 +2677,25 @@ packages:
     dev: true
     engines:
       node: '>= 0.8'
+    resolution:
+      integrity: sha512-dhEPs72UPbDnAQJ9ZKMNTP6ptJaionhP5cBb541nXPlW60Jepo9RV/a4fX4XWW9CuFNK22krhrj1+rgzifNCsw==
+  /body-parser/1.19.0_supports-color@6.1.0:
+    dependencies:
+      bytes: 3.1.0
+      content-type: 1.0.4
+      debug: 4.3.1_supports-color@6.1.0
+      depd: 1.1.2
+      http-errors: 1.7.2
+      iconv-lite: 0.4.24
+      on-finished: 2.3.0
+      qs: 6.7.0
+      raw-body: 2.4.0
+      type-is: 1.6.18
+    dev: true
+    engines:
+      node: '>= 0.8'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-dhEPs72UPbDnAQJ9ZKMNTP6ptJaionhP5cBb541nXPlW60Jepo9RV/a4fX4XWW9CuFNK22krhrj1+rgzifNCsw==
   /bonjour/3.5.0:
@@ -2722,6 +2743,25 @@ packages:
     dev: true
     engines:
       node: '>=0.10.0'
+    resolution:
+      integrity: sha512-aNdbnj9P8PjdXU4ybaWLK2IF3jc/EoDYbC7AazW6to3TRsfXxscC9UXOB5iDiEQrkyIbWp2SLQda4+QAa7nc3w==
+  /braces/2.3.2_supports-color@6.1.0:
+    dependencies:
+      arr-flatten: 1.1.0
+      array-unique: 0.3.2
+      extend-shallow: 2.0.1
+      fill-range: 4.0.0
+      isobject: 3.0.1
+      repeat-element: 1.1.3
+      snapdragon: 0.8.2_supports-color@6.1.0
+      snapdragon-node: 2.1.1
+      split-string: 3.1.0
+      to-regex: 3.0.2
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-aNdbnj9P8PjdXU4ybaWLK2IF3jc/EoDYbC7AazW6to3TRsfXxscC9UXOB5iDiEQrkyIbWp2SLQda4+QAa7nc3w==
   /braces/3.0.2:
@@ -3281,18 +3321,20 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-AF3r7P5dWxL8MxyITRMlORQNaOA2IkAFaTr4k7BUumjPtRpGDTZpl0Pb1XCO6JeDCBdp126Cgs9sMxqSjgYyRg==
-  /compression/1.7.4:
+  /compression/1.7.4_supports-color@6.1.0:
     dependencies:
       accepts: 1.3.7
       bytes: 3.0.0
       compressible: 2.0.18
-      debug: 2.6.9
+      debug: 4.3.1_supports-color@6.1.0
       on-headers: 1.0.2
       safe-buffer: 5.1.2
       vary: 1.1.2
     dev: true
     engines:
       node: '>= 0.8.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-jaSIDzP9pZVS4ZfQ+TzvtiWhdpFhE2RDHz8QJkpX9SIpLq88VueF5jJw6t+6CUQcAoA6t+x89MLrWAqpfDE8iQ==
   /concat-map/0.0.1:
@@ -3317,7 +3359,7 @@ packages:
       integrity: sha512-e54B99q/OUoH64zYYRf3HBP5z24G38h5D3qXu23JGRoigpX5Ss4r9ZnDk3g0Z8uQC2x2lPaJ+UlWBc1ZWBWdLg==
   /connect/3.7.0:
     dependencies:
-      debug: 2.6.9
+      debug: 4.3.1
       finalhandler: 1.1.2
       parseurl: 1.3.3
       utils-merge: 1.0.1
@@ -3749,45 +3791,6 @@ packages:
       node: '>=4.0'
     resolution:
       integrity: sha512-eyTcpKOcamdhWJXj56DpQMo1ylSQpcGtGKXcU0Tb97+K56/CF5amAqqqNj0+KvA0iw2ynxtHWFsPDSClCxe48w==
-  /debug/2.6.9:
-    dependencies:
-      ms: 2.0.0
-    dev: true
-    resolution:
-      integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
-  /debug/3.1.0:
-    dependencies:
-      ms: 2.0.0
-    dev: true
-    resolution:
-      integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
-  /debug/3.2.7:
-    dependencies:
-      ms: 2.1.3
-    dev: true
-    resolution:
-      integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==
-  /debug/4.1.1:
-    dependencies:
-      ms: 2.1.3
-    deprecated: 'Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)'
-    dev: true
-    resolution:
-      integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
-  /debug/4.2.0:
-    dependencies:
-      ms: 2.1.2
-    deprecated: 'Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)'
-    dev: true
-    engines:
-      node: '>=6.0'
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-    resolution:
-      integrity: sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==
   /debug/4.3.1:
     dependencies:
       ms: 2.1.2
@@ -4137,7 +4140,7 @@ packages:
     dependencies:
       component-emitter: 1.3.0
       component-inherit: 0.0.3
-      debug: 3.1.0
+      debug: 4.3.1
       engine.io-parser: 2.2.1
       has-cors: 1.1.0
       indexof: 0.0.1
@@ -4164,7 +4167,7 @@ packages:
       accepts: 1.3.7
       base64id: 2.0.0
       cookie: 0.3.1
-      debug: 4.1.1
+      debug: 4.3.1
       engine.io-parser: 2.2.1
       ws: 7.4.1
     dev: true
@@ -4339,14 +4342,14 @@ packages:
       integrity: sha512-8Y8lGLVPPZdaNA7JXqnvETVC7IiVRgAP6afQu9gOQRn90YY3otMNh+x7Vr2vMePQntF+5erdSUBqSzCmU/AxaQ==
   /eslint-import-resolver-node/0.3.4:
     dependencies:
-      debug: 2.6.9
+      debug: 4.3.1
       resolve: 1.19.0
     dev: true
     resolution:
       integrity: sha512-ogtf+5AB/O+nM6DIeBUNr2fuT7ot9Qg/1harBfBtaP13ekEWFQEEMP94BCB7zaNW3gyY+8SHYF00rnqYwXKWOA==
   /eslint-module-utils/2.6.0:
     dependencies:
-      debug: 2.6.9
+      debug: 4.3.1
       pkg-dir: 2.0.0
     dev: true
     engines:
@@ -4370,7 +4373,7 @@ packages:
       array-includes: 3.1.2
       array.prototype.flat: 1.2.4
       contains-path: 0.1.0
-      debug: 2.6.9
+      debug: 4.3.1
       doctrine: 1.5.0
       eslint: 7.15.0
       eslint-import-resolver-node: 0.3.4
@@ -4623,7 +4626,7 @@ packages:
       integrity: sha1-BjJjj42HfMghB9MKD/8aF8uhzQw=
   /expand-brackets/2.1.4:
     dependencies:
-      debug: 2.6.9
+      debug: 4.3.1
       define-property: 0.2.5
       extend-shallow: 2.0.1
       posix-character-classes: 0.1.1
@@ -4635,21 +4638,37 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-t3c14xXOMPa27/D4OwQVGiJEliI=
-  /express/4.17.1:
+  /expand-brackets/2.1.4_supports-color@6.1.0:
+    dependencies:
+      debug: 4.3.1_supports-color@6.1.0
+      define-property: 0.2.5
+      extend-shallow: 2.0.1
+      posix-character-classes: 0.1.1
+      regex-not: 1.0.2
+      snapdragon: 0.8.2_supports-color@6.1.0
+      to-regex: 3.0.2
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    peerDependencies:
+      supports-color: '*'
+    resolution:
+      integrity: sha1-t3c14xXOMPa27/D4OwQVGiJEliI=
+  /express/4.17.1_supports-color@6.1.0:
     dependencies:
       accepts: 1.3.7
       array-flatten: 1.1.1
-      body-parser: 1.19.0
+      body-parser: 1.19.0_supports-color@6.1.0
       content-disposition: 0.5.3
       content-type: 1.0.4
       cookie: 0.4.0
       cookie-signature: 1.0.6
-      debug: 2.6.9
+      debug: 4.3.1_supports-color@6.1.0
       depd: 1.1.2
       encodeurl: 1.0.2
       escape-html: 1.0.3
       etag: 1.8.1
-      finalhandler: 1.1.2
+      finalhandler: 1.1.2_supports-color@6.1.0
       fresh: 0.5.2
       merge-descriptors: 1.0.1
       methods: 1.1.2
@@ -4660,8 +4679,8 @@ packages:
       qs: 6.7.0
       range-parser: 1.2.1
       safe-buffer: 5.1.2
-      send: 0.17.1
-      serve-static: 1.14.1
+      send: 0.17.1_supports-color@6.1.0
+      serve-static: 1.14.1_supports-color@6.1.0
       setprototypeof: 1.1.1
       statuses: 1.5.0
       type-is: 1.6.18
@@ -4670,6 +4689,8 @@ packages:
     dev: true
     engines:
       node: '>= 0.10.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-mHJ9O79RqluphRrcw2X/GTh3k9tVv8YcoyY4Kkh4WDMUYKRZUq0h1o0w2rrrxBqM7VoeUVqgb27xlEMXTnYt4g==
   /ext/1.4.0:
@@ -4722,6 +4743,23 @@ packages:
     dev: true
     engines:
       node: '>=0.10.0'
+    resolution:
+      integrity: sha512-Nmb6QXkELsuBr24CJSkilo6UHHgbekK5UiZgfE6UHD3Eb27YC6oD+bhcT+tJ6cl8dmsgdQxnWlcry8ksBIBLpw==
+  /extglob/2.0.4_supports-color@6.1.0:
+    dependencies:
+      array-unique: 0.3.2
+      define-property: 1.0.0
+      expand-brackets: 2.1.4_supports-color@6.1.0
+      extend-shallow: 2.0.1
+      fragment-cache: 0.2.1
+      regex-not: 1.0.2
+      snapdragon: 0.8.2_supports-color@6.1.0
+      to-regex: 3.0.2
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-Nmb6QXkELsuBr24CJSkilo6UHHgbekK5UiZgfE6UHD3Eb27YC6oD+bhcT+tJ6cl8dmsgdQxnWlcry8ksBIBLpw==
   /extsprintf/1.3.0:
@@ -4834,7 +4872,7 @@ packages:
       integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
   /finalhandler/1.1.2:
     dependencies:
-      debug: 2.6.9
+      debug: 4.3.1
       encodeurl: 1.0.2
       escape-html: 1.0.3
       on-finished: 2.3.0
@@ -4844,6 +4882,22 @@ packages:
     dev: true
     engines:
       node: '>= 0.8'
+    resolution:
+      integrity: sha512-aAWcW57uxVNrQZqFXjITpW3sIUQmHGG3qSb9mUah9MgMC4NeWhNOlNjXEYq3HjRAvL6arUviZGGJsBg6z0zsWA==
+  /finalhandler/1.1.2_supports-color@6.1.0:
+    dependencies:
+      debug: 4.3.1_supports-color@6.1.0
+      encodeurl: 1.0.2
+      escape-html: 1.0.3
+      on-finished: 2.3.0
+      parseurl: 1.3.3
+      statuses: 1.5.0
+      unpipe: 1.0.0
+    dev: true
+    engines:
+      node: '>= 0.8'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-aAWcW57uxVNrQZqFXjITpW3sIUQmHGG3qSb9mUah9MgMC4NeWhNOlNjXEYq3HjRAvL6arUviZGGJsBg6z0zsWA==
   /find-cache-dir/2.1.0:
@@ -5383,21 +5437,23 @@ packages:
   /http-proxy-agent/2.1.0:
     dependencies:
       agent-base: 4.3.0
-      debug: 3.1.0
+      debug: 4.3.1
     dev: true
     engines:
       node: '>= 4.5.0'
     resolution:
       integrity: sha512-qwHbBLV7WviBl0rQsOzH6o5lwyOIvwp/BdFnvVxXORldu5TmjFfjzBcWUWS5kWAZhmv+JtiDhSuQCp4sBfbIgg==
-  /http-proxy-middleware/0.19.1:
+  /http-proxy-middleware/0.19.1_supports-color@6.1.0:
     dependencies:
       http-proxy: 1.18.1
       is-glob: 4.0.1
       lodash: 4.17.20
-      micromatch: 3.1.10
+      micromatch: 3.1.10_supports-color@6.1.0
     dev: true
     engines:
       node: '>=4.0.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-yHYTgWMQO8VvwNS22eLLloAkvungsKdKTLO8AJlftYIKNfJr3GK3zK0ZCfzDDGUBttdGc8xFy1mCitvNKQtC3Q==
   /http-proxy/1.18.1:
@@ -5428,7 +5484,7 @@ packages:
   /https-proxy-agent/2.2.4:
     dependencies:
       agent-base: 4.3.0
-      debug: 3.2.7
+      debug: 4.3.1
     dev: true
     engines:
       node: '>= 4.5.0'
@@ -5571,11 +5627,6 @@ packages:
   /inherits/2.0.4:
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
-  /ini/1.3.5:
-    deprecated: Please update to ini >=1.3.6 to avoid a prototype pollution issue
-    dev: true
-    resolution:
-      integrity: sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
   /ini/1.3.7:
     dev: true
     resolution:
@@ -6664,6 +6715,28 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg==
+  /micromatch/3.1.10_supports-color@6.1.0:
+    dependencies:
+      arr-diff: 4.0.0
+      array-unique: 0.3.2
+      braces: 2.3.2_supports-color@6.1.0
+      define-property: 2.0.2
+      extend-shallow: 3.0.2
+      extglob: 2.0.4_supports-color@6.1.0
+      fragment-cache: 0.2.1
+      kind-of: 6.0.3
+      nanomatch: 1.2.13_supports-color@6.1.0
+      object.pick: 1.3.0
+      regex-not: 1.0.2
+      snapdragon: 0.8.2_supports-color@6.1.0
+      to-regex: 3.0.2
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    peerDependencies:
+      supports-color: '*'
+    resolution:
+      integrity: sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg==
   /micromatch/4.0.2:
     dependencies:
       braces: 3.0.2
@@ -6855,10 +6928,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-viwAX9oy4LKa8fBdfEszIUxwH5I=
-  /ms/2.0.0:
-    dev: true
-    resolution:
-      integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
   /ms/2.1.1:
     dev: true
     resolution:
@@ -6902,6 +6971,26 @@ packages:
     dev: true
     engines:
       node: '>=0.10.0'
+    resolution:
+      integrity: sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA==
+  /nanomatch/1.2.13_supports-color@6.1.0:
+    dependencies:
+      arr-diff: 4.0.0
+      array-unique: 0.3.2
+      define-property: 2.0.2
+      extend-shallow: 3.0.2
+      fragment-cache: 0.2.1
+      is-windows: 1.0.2
+      kind-of: 6.0.3
+      object.pick: 1.3.0
+      regex-not: 1.0.2
+      snapdragon: 0.8.2_supports-color@6.1.0
+      to-regex: 3.0.2
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA==
   /native-request/1.0.8:
@@ -7690,14 +7779,16 @@ packages:
       typescript: '*'
     resolution:
       integrity: sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
-  /portfinder/1.0.28:
+  /portfinder/1.0.28_supports-color@6.1.0:
     dependencies:
       async: 2.6.3
-      debug: 3.2.7
+      debug: 4.3.1_supports-color@6.1.0
       mkdirp: 0.5.5
     dev: true
     engines:
       node: '>= 0.12.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-Se+2isanIcEqf2XMHjyUKskczxbPH7dQnlMjXX6+dybayyHvAf/TCgyMRlzf/B6QDhAEFOGes0pzRo3by4AbMA==
   /posix-character-classes/0.1.1:
@@ -8891,9 +8982,9 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-tCfb2WLjqFAtXn4KEdxIhalnRtoKFN7nAwj0B3ZXCbQloV2tq5eDbcTmT68JJD3nRJq24/XgxtQKFIpQdtvmVw==
-  /send/0.17.1:
+  /send/0.17.1_supports-color@6.1.0:
     dependencies:
-      debug: 2.6.9
+      debug: 4.3.1_supports-color@6.1.0
       depd: 1.1.2
       destroy: 1.0.4
       encodeurl: 1.0.2
@@ -8909,6 +9000,8 @@ packages:
     dev: true
     engines:
       node: '>= 0.8.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-BsVKsiGcQMFwT8UxypobUKyv7irCNRHk1T0G680vk88yf6LBByGcZJOTJCrTP2xVN6yI+XjPJcNuE3V4fT9sAg==
   /serialize-javascript/4.0.0:
@@ -8923,11 +9016,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-SaaNal9imEO737H2c05Og0/8LUXG7EnsZyMa8MzkmuHoELfT6txuj0cMqRj6zfPKnmQ1yasR4PCJc8x+M4JSPA==
-  /serve-index/1.9.1:
+  /serve-index/1.9.1_supports-color@6.1.0:
     dependencies:
       accepts: 1.3.7
       batch: 0.6.1
-      debug: 2.6.9
+      debug: 4.3.1_supports-color@6.1.0
       escape-html: 1.0.3
       http-errors: 1.6.3
       mime-types: 2.1.27
@@ -8935,17 +9028,21 @@ packages:
     dev: true
     engines:
       node: '>= 0.8.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha1-03aNabHn2C5c4FD/9bRTvqEqkjk=
-  /serve-static/1.14.1:
+  /serve-static/1.14.1_supports-color@6.1.0:
     dependencies:
       encodeurl: 1.0.2
       escape-html: 1.0.3
       parseurl: 1.3.3
-      send: 0.17.1
+      send: 0.17.1_supports-color@6.1.0
     dev: true
     engines:
       node: '>= 0.8.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-JMrvUwE54emCYWlTI+hGrGv5I8dEwmco/00EvkzIIsR7MqrHonbD9pO2MOfFnpFntl7ecpZs+3mW+XbQZu9QCg==
   /set-blocking/2.0.0:
@@ -9079,7 +9176,7 @@ packages:
   /snapdragon/0.8.2:
     dependencies:
       base: 0.11.2
-      debug: 2.6.9
+      debug: 4.3.1
       define-property: 0.2.5
       extend-shallow: 2.0.1
       map-cache: 0.2.2
@@ -9089,6 +9186,23 @@ packages:
     dev: true
     engines:
       node: '>=0.10.0'
+    resolution:
+      integrity: sha512-FtyOnWN/wCHTVXOMwvSv26d+ko5vWlIDD6zoUJ7LW8vh+ZBC8QdljveRP+crNrtBwioEUWy/4dMtbBjA4ioNlg==
+  /snapdragon/0.8.2_supports-color@6.1.0:
+    dependencies:
+      base: 0.11.2
+      debug: 4.3.1_supports-color@6.1.0
+      define-property: 0.2.5
+      extend-shallow: 2.0.1
+      map-cache: 0.2.2
+      source-map: 0.5.7
+      source-map-resolve: 0.5.3
+      use: 3.1.1
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-FtyOnWN/wCHTVXOMwvSv26d+ko5vWlIDD6zoUJ7LW8vh+ZBC8QdljveRP+crNrtBwioEUWy/4dMtbBjA4ioNlg==
   /socket.io-adapter/1.1.2:
@@ -9101,7 +9215,7 @@ packages:
       base64-arraybuffer: 0.1.5
       component-bind: 1.0.0
       component-emitter: 1.2.1
-      debug: 4.1.1
+      debug: 4.3.1
       engine.io-client: 3.4.4
       has-binary2: 1.0.3
       has-cors: 1.1.0
@@ -9117,7 +9231,7 @@ packages:
   /socket.io-parser/3.3.1:
     dependencies:
       component-emitter: 1.3.0
-      debug: 3.1.0
+      debug: 4.3.1
       isarray: 2.0.1
     dev: true
     resolution:
@@ -9125,14 +9239,14 @@ packages:
   /socket.io-parser/3.4.1:
     dependencies:
       component-emitter: 1.2.1
-      debug: 4.1.1
+      debug: 4.3.1
       isarray: 2.0.1
     dev: true
     resolution:
       integrity: sha512-11hMgzL+WCLWf1uFtHSNvliI++tcRUWdoeYuwIl+Axvwy9z2gQM+7nJyN3STj1tLj5JyIUH8/gpDGxzAlDdi0A==
   /socket.io/2.3.0:
     dependencies:
-      debug: 4.1.1
+      debug: 4.3.1
       engine.io: 3.4.2
       has-binary2: 1.0.3
       socket.io-adapter: 1.1.2
@@ -9141,15 +9255,17 @@ packages:
     dev: true
     resolution:
       integrity: sha512-2A892lrj0GcgR/9Qk81EaY2gYhCBxurV0PfmmESO6p27QPrUK1J3zdns+5QPqvUYK2q657nSj0guoIil9+7eFg==
-  /sockjs-client/1.4.0:
+  /sockjs-client/1.4.0_supports-color@6.1.0:
     dependencies:
-      debug: 3.2.7
+      debug: 4.3.1_supports-color@6.1.0
       eventsource: 1.0.7
       faye-websocket: 0.11.3
       inherits: 2.0.4
       json3: 3.3.3
       url-parse: 1.4.7
     dev: true
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha512-5zaLyO8/nri5cua0VtOrFXBPK1jbL4+1cebT/mmKA1E1ZXOvJrII75bPu0l0k843G/+iAbhEqzyKr0w/eCCj7g==
   /sockjs/0.3.20:
@@ -9535,7 +9651,7 @@ packages:
   /stylus/0.54.8:
     dependencies:
       css-parse: 2.0.0
-      debug: 3.1.0
+      debug: 4.3.1
       glob: 7.1.6
       mkdirp: 1.0.4
       safer-buffer: 2.1.2
@@ -10088,7 +10204,7 @@ packages:
       integrity: sha512-zoWr9ObaxALD3DOPfjPSqxt4fnZiWblxHIgeWqW8x7UqDzEtHEQLzji2cuJYQFCU6KmoJikOYAZlrTHHebjx2w==
   /universal-analytics/0.4.23:
     dependencies:
-      debug: 4.2.0
+      debug: 4.3.1
       request: 2.88.2
       uuid: 3.4.0
     dev: true
@@ -10331,13 +10447,13 @@ packages:
       ansi-html: 0.0.7
       bonjour: 3.5.0
       chokidar: 3.4.3
-      compression: 1.7.4
+      compression: 1.7.4_supports-color@6.1.0
       connect-history-api-fallback: 1.6.0
       debug: 4.3.1_supports-color@6.1.0
       del: 4.1.1
-      express: 4.17.1
+      express: 4.17.1_supports-color@6.1.0
       html-entities: 1.3.1
-      http-proxy-middleware: 0.19.1
+      http-proxy-middleware: 0.19.1_supports-color@6.1.0
       import-local: 2.0.0
       internal-ip: 4.3.0
       ip: 1.1.5
@@ -10346,13 +10462,13 @@ packages:
       loglevel: 1.7.1
       opn: 5.5.0
       p-retry: 3.0.1
-      portfinder: 1.0.28
+      portfinder: 1.0.28_supports-color@6.1.0
       schema-utils: 1.0.0
       selfsigned: 1.10.8
       semver: 6.3.0
-      serve-index: 1.9.1
+      serve-index: 1.9.1_supports-color@6.1.0
       sockjs: 0.3.20
-      sockjs-client: 1.4.0
+      sockjs-client: 1.4.0_supports-color@6.1.0
       spdy: 4.0.2_supports-color@6.1.0
       strip-ansi: 3.0.1
       supports-color: 6.1.0

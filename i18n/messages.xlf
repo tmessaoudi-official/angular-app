@@ -183,8 +183,8 @@
     </unit>
     <unit id="ngb.alert.close">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:3095</note>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:3104</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:3095</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:3104</note>
       </notes>
       <segment>
         <source>Close</source>
@@ -192,7 +192,7 @@
     </unit>
     <unit id="ngb.carousel.slide-number">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:4493</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:4493</note>
         <note category="description">Currently selected slide number read by screen reader</note>
       </notes>
       <segment>
@@ -201,7 +201,7 @@
     </unit>
     <unit id="ngb.carousel.previous">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:4502</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:4502</note>
       </notes>
       <segment>
         <source>Previous</source>
@@ -209,7 +209,7 @@
     </unit>
     <unit id="ngb.carousel.next">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:4511</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:4511</note>
       </notes>
       <segment>
         <source>Next</source>
@@ -217,8 +217,8 @@
     </unit>
     <unit id="ngb.datepicker.previous-month">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7190</note>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7199</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7190</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7199</note>
       </notes>
       <segment>
         <source>Previous month</source>
@@ -226,8 +226,8 @@
     </unit>
     <unit id="ngb.datepicker.next-month">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7208</note>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7217</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7208</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:7217</note>
       </notes>
       <segment>
         <source>Next month</source>
@@ -235,8 +235,8 @@
     </unit>
     <unit id="ngb.datepicker.select-month">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8874</note>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8883</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8874</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8883</note>
       </notes>
       <segment>
         <source>Select month</source>
@@ -244,8 +244,8 @@
     </unit>
     <unit id="ngb.datepicker.select-year">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8892</note>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8901</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8892</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:8901</note>
       </notes>
       <segment>
         <source>Select year</source>
@@ -253,7 +253,7 @@
     </unit>
     <unit id="ngb.pagination.first">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14925</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14925</note>
       </notes>
       <segment>
         <source>««</source>
@@ -261,7 +261,7 @@
     </unit>
     <unit id="ngb.pagination.previous">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14934</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14934</note>
       </notes>
       <segment>
         <source>«</source>
@@ -269,7 +269,7 @@
     </unit>
     <unit id="ngb.pagination.next">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14943</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14943</note>
       </notes>
       <segment>
         <source>»</source>
@@ -277,7 +277,7 @@
     </unit>
     <unit id="ngb.pagination.last">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14952</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14952</note>
       </notes>
       <segment>
         <source>»»</source>
@@ -285,7 +285,7 @@
     </unit>
     <unit id="ngb.pagination.first-aria">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14961</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14961</note>
       </notes>
       <segment>
         <source>First</source>
@@ -293,7 +293,7 @@
     </unit>
     <unit id="ngb.pagination.previous-aria">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14970</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14970</note>
       </notes>
       <segment>
         <source>Previous</source>
@@ -301,7 +301,7 @@
     </unit>
     <unit id="ngb.pagination.next-aria">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14979</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14979</note>
       </notes>
       <segment>
         <source>Next</source>
@@ -309,7 +309,7 @@
     </unit>
     <unit id="ngb.pagination.last-aria">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14988</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:14988</note>
       </notes>
       <segment>
         <source>Last</source>
@@ -317,7 +317,7 @@
     </unit>
     <unit id="ngb.progressbar.value">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:16103</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:16103</note>
       </notes>
       <segment>
         <source><ph id="0" equiv="INTERPOLATION" disp="&quot;\uFFFD0\uFFFD&quot;"/></source>
@@ -325,7 +325,7 @@
     </unit>
     <unit id="ngb.timepicker.HH">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17264</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17264</note>
       </notes>
       <segment>
         <source>HH</source>
@@ -333,7 +333,7 @@
     </unit>
     <unit id="ngb.timepicker.hours">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17273</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17273</note>
       </notes>
       <segment>
         <source>Hours</source>
@@ -341,7 +341,7 @@
     </unit>
     <unit id="ngb.timepicker.MM">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17282</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17282</note>
       </notes>
       <segment>
         <source>MM</source>
@@ -349,7 +349,7 @@
     </unit>
     <unit id="ngb.timepicker.minutes">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17291</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17291</note>
       </notes>
       <segment>
         <source>Minutes</source>
@@ -357,7 +357,7 @@
     </unit>
     <unit id="ngb.timepicker.increment-hours">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17300</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17300</note>
       </notes>
       <segment>
         <source>Increment hours</source>
@@ -365,7 +365,7 @@
     </unit>
     <unit id="ngb.timepicker.decrement-hours">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17309</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17309</note>
       </notes>
       <segment>
         <source>Decrement hours</source>
@@ -373,7 +373,7 @@
     </unit>
     <unit id="ngb.timepicker.increment-minutes">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17318</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17318</note>
       </notes>
       <segment>
         <source>Increment minutes</source>
@@ -381,7 +381,7 @@
     </unit>
     <unit id="ngb.timepicker.decrement-minutes">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17327</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17327</note>
       </notes>
       <segment>
         <source>Decrement minutes</source>
@@ -389,7 +389,7 @@
     </unit>
     <unit id="ngb.timepicker.SS">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17336</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17336</note>
       </notes>
       <segment>
         <source>SS</source>
@@ -397,7 +397,7 @@
     </unit>
     <unit id="ngb.timepicker.seconds">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17345</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17345</note>
       </notes>
       <segment>
         <source>Seconds</source>
@@ -405,7 +405,7 @@
     </unit>
     <unit id="ngb.timepicker.increment-seconds">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17354</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17354</note>
       </notes>
       <segment>
         <source>Increment seconds</source>
@@ -413,7 +413,7 @@
     </unit>
     <unit id="ngb.timepicker.decrement-seconds">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17363</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17363</note>
       </notes>
       <segment>
         <source>Decrement seconds</source>
@@ -421,7 +421,7 @@
     </unit>
     <unit id="ngb.timepicker.PM">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17374</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17374</note>
       </notes>
       <segment>
         <source><ph id="0" equiv="INTERPOLATION" disp="&quot;\uFFFD0\uFFFD&quot;"/></source>
@@ -429,7 +429,7 @@
     </unit>
     <unit id="ngb.timepicker.AM">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17385</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17385</note>
       </notes>
       <segment>
         <source><ph id="0" equiv="INTERPOLATION" disp="&quot;\uFFFD0\uFFFD&quot;"/></source>
@@ -437,7 +437,7 @@
     </unit>
     <unit id="ngb.toast.close-aria">
       <notes>
-        <note category="location">node_modules/.pnpm/@ng-bootstrap/ng-bootstrap@8.0.0_d8b417347f39cad300111122f8d60e0f/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17893</note>
+        <note category="location">.pnpm-store/@ng-bootstrap/ng-bootstrap@8.0.0_b8934c28c941bbf795c99168aba4a3f3/node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js:17893</note>
       </notes>
       <segment>
         <source>Close</source>

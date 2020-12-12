@@ -16,8 +16,7 @@
 
 # dependencies
 /node_modules
-/.pnpm-store
-/.pnpm
+/.pnpm-virtual-store
 
 # profiling files
 chrome-profiler-events*.json

@@ -41,7 +41,7 @@ devDependencies:
   '@tmessaoudi-official/dot-env-loader': '@github.com/tmessaoudi-official/dot-env-loader/archive/0.0.9.tar.gz'
   '@types/jasmine': 3.6.2
   '@types/jasminewd2': 2.0.8
-  '@types/node': 14.14.11
+  '@types/node': 14.14.12
   '@types/webpack': 4.41.25
   '@typescript-eslint/eslint-plugin': 4.9.1_2a8dc3dcd6de6150568b404b87c1608a
   '@typescript-eslint/eslint-plugin-tslint': 4.9.1_eslint@7.15.0+typescript@4.0.5
@@ -73,9 +73,9 @@ lockfileVersion: 5.2
 overrides:
   '@angular-devkit/architect': ^0.1100.2
   '@angular-devkit/build-angular': ^0.1100.2
-  '@angular-devkit/core': ^11.0.3
-  '@angular-devkit/schematics': ^11.0.3
-  '@schematics/angular': ^11.0.3
+  '@angular-devkit/core': ^11.0.4
+  '@angular-devkit/schematics': ^11.0.4
+  '@schematics/angular': ^11.0.4
   '@types/node': ^14.4.10
   '@types/webpack': ^4.41.25
   '@types/webpack-dev-server': ^3.11.1
@@ -125,7 +125,7 @@ packages:
       ansi-colors: 4.1.1
       autoprefixer: 9.8.6
       babel-loader: 8.1.0_427212bc1158d185e577033f19ca0757
-      browserslist: 4.15.0
+      browserslist: 4.16.0
       cacache: 15.0.5
       caniuse-lite: 1.0.30001165
       circular-dependency-plugin: 5.2.0_webpack@4.44.2
@@ -358,7 +358,7 @@ packages:
       '@yarnpkg/lockfile': 1.1.0
       ansi-colors: 4.1.1
       debug: 4.3.1
-      ini: 1.3.7
+      ini: 1.3.8
       inquirer: 7.3.3
       npm-package-arg: 8.1.0
       npm-pick-manifest: 6.1.0
@@ -621,7 +621,7 @@ packages:
       '@babel/compat-data': 7.12.7
       '@babel/core': 7.12.3
       '@babel/helper-validator-option': 7.12.1
-      browserslist: 4.15.0
+      browserslist: 4.16.0
       semver: 5.7.1
     dev: true
     peerDependencies:
@@ -1648,7 +1648,7 @@ packages:
       '@angular-devkit/core': 11.0.4
       '@angular-devkit/schematics': 11.0.4
       '@yarnpkg/lockfile': 1.1.0
-      ini: 1.3.7
+      ini: 1.3.8
       npm-package-arg: 8.1.0
       pacote: 9.5.12
       semver: 7.3.2
@@ -1675,7 +1675,7 @@ packages:
   /@types/glob/7.1.3:
     dependencies:
       '@types/minimatch': 3.0.3
-      '@types/node': 14.14.11
+      '@types/node': 14.14.12
     dev: true
     resolution:
       integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==
@@ -1701,10 +1701,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
-  /@types/node/14.14.11:
+  /@types/node/14.14.12:
     dev: true
     resolution:
-      integrity: sha512-BJ97wAUuU3NUiUCp44xzUFquQEvnk1wu7q4CMEUYKJWjdkr0YWYDsm4RFtAvxYsNjLsKcrFt6RvK8r+mnzMbEQ==
+      integrity: sha512-ASH8OPHMNlkdjrEdmoILmzFfsJICvhBsFfAum4aKZ/9U4B6M6tTmTPh+f3ttWdD74CEGV5XvXWkbyfSdXaTd7g==
   /@types/parse-json/4.0.0:
     dev: true
     resolution:
@@ -1737,7 +1737,7 @@ packages:
       integrity: sha512-7npvPKV+jINLu1SpSYVWG8KvyJBhBa8tmzMMdDoVc2pWUYHN8KIXlPJhjJ4LT97c4dXJA2SHL/q6ADbDriZN+Q==
   /@types/webpack-sources/0.1.8:
     dependencies:
-      '@types/node': 14.14.11
+      '@types/node': 14.14.12
       '@types/source-list-map': 0.1.2
       source-map: 0.6.1
     dev: true
@@ -1745,7 +1745,7 @@ packages:
       integrity: sha512-JHB2/xZlXOjzjBB6fMOpH1eQAfsrpqVVIbneE0Rok16WXwFaznaI5vfg75U5WgGJm7V9W1c4xeRQDjX/zwvghA==
   /@types/webpack-sources/2.1.0:
     dependencies:
-      '@types/node': 14.14.11
+      '@types/node': 14.14.12
       '@types/source-list-map': 0.1.2
       source-map: 0.7.3
     dev: true
@@ -1754,7 +1754,7 @@ packages:
   /@types/webpack/4.41.25:
     dependencies:
       '@types/anymatch': 1.3.1
-      '@types/node': 14.14.11
+      '@types/node': 14.14.12
       '@types/tapable': 1.0.6
       '@types/uglify-js': 3.11.1
       '@types/webpack-sources': 2.1.0
@@ -2526,7 +2526,7 @@ packages:
       integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
   /autoprefixer/9.8.6:
     dependencies:
-      browserslist: 4.15.0
+      browserslist: 4.16.0
       caniuse-lite: 1.0.30001165
       colorette: 1.2.1
       normalize-range: 0.1.2
@@ -2831,11 +2831,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Z942RysHXmJrhqk88FmKBVq/v5tqmSkDz7p54G/MGyjMnCFFnC79XWNbg+Vta8W6Wb2qtSZTSxIGkJrRpCFEiA==
-  /browserslist/4.15.0:
+  /browserslist/4.16.0:
     dependencies:
       caniuse-lite: 1.0.30001165
       colorette: 1.2.1
-      electron-to-chromium: 1.3.621
+      electron-to-chromium: 1.3.623
       escalade: 3.1.1
       node-releases: 1.1.67
     dev: true
@@ -2843,7 +2843,7 @@ packages:
       node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7
     hasBin: true
     resolution:
-      integrity: sha512-IJ1iysdMkGmjjYeRlDU8PQejVwxvVO5QOfXH7ylW31GO6LwNRSmm/SgRXtNsEXqMLl2e+2H5eEJ7sfynF8TCaQ==
+      integrity: sha512-/j6k8R0p3nxOC6kx5JGAxsnhc9ixaWJfYc+TNTzxg6+ARaESAvQGV7h0uNOB4t+pLQJZWzcrMxXOxjgsCj3dqQ==
   /browserstack/1.6.0:
     dependencies:
       https-proxy-agent: 2.2.4
@@ -3009,7 +3009,7 @@ packages:
       integrity: sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
   /caniuse-api/3.0.0:
     dependencies:
-      browserslist: 4.15.0
+      browserslist: 4.16.0
       caniuse-lite: 1.0.30001165
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
@@ -3461,7 +3461,7 @@ packages:
       integrity: sha512-VH2ZTMIBsx4p++Lmpg77adZ0KUyM5gFR/9cuTrbneNnJlcQXUFvsNariPqq2dq2kV3F2skHiDGPQCyKWy1+U0Q==
   /core-js-compat/3.8.1:
     dependencies:
-      browserslist: 4.15.0
+      browserslist: 4.16.0
       semver: 7.0.0
     dev: true
     resolution:
@@ -4083,10 +4083,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-  /electron-to-chromium/1.3.621:
+  /electron-to-chromium/1.3.623:
     dev: true
     resolution:
-      integrity: sha512-FeIuBzArONbAmKmZIsZIFGu/Gc9AVGlVeVbhCq+G2YIl6QkT0TDn2HKN/FMf1btXEB9kEmIuQf3/lBTVAbmFOg==
+      integrity: sha512-CgbWTyPmJ4f9pqtqR+HPL3O0ay6BRhnpFD52TqBB2K8kTAcmAar2e93Vo1q651E4vnCHuTDuZDdbj0sTMP2QQw==
   /elliptic/6.5.3:
     dependencies:
       bn.js: 4.11.9
@@ -5627,10 +5627,10 @@ packages:
   /inherits/2.0.4:
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
-  /ini/1.3.7:
+  /ini/1.3.8:
     dev: true
     resolution:
-      integrity: sha512-iKpRpXP+CrP2jyrxvg1kMUpXDyRUFDWurxbnVT1vQPx+Wz9uCYsMIqYuSBLV+PAaZG/d7kRLKRFc9oDMsH+mFQ==
+      integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
   /inquirer/7.3.3:
     dependencies:
       ansi-escapes: 4.3.1
@@ -6113,7 +6113,7 @@ packages:
       integrity: sha1-43zwsX8ZnM4jvqcbIDk5Uka07E4=
   /jest-worker/26.5.0:
     dependencies:
-      '@types/node': 14.14.11
+      '@types/node': 14.14.12
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -7807,7 +7807,7 @@ packages:
       integrity: sha512-1tKHutbGtLtEZF6PT4JSihCHfIVldU72mZ8SdZHIYriIZ9fh9k9aWSppaT8rHsyI3dX+KSR+W+Ix9BMY3AODrg==
   /postcss-colormin/4.0.3:
     dependencies:
-      browserslist: 4.15.0
+      browserslist: 4.16.0
       color: 3.1.3
       has: 1.0.3
       postcss: 7.0.32
@@ -7899,7 +7899,7 @@ packages:
       integrity: sha512-alx/zmoeXvJjp7L4mxEMjh8lxVlDFX1gqWHzaaQewwMZiVhLo42TEClKaeHbRf6J7j82ZOdTJ808RtN0ZOZwvw==
   /postcss-merge-rules/4.0.3:
     dependencies:
-      browserslist: 4.15.0
+      browserslist: 4.16.0
       caniuse-api: 3.0.0
       cssnano-util-same-parent: 4.0.1
       postcss: 7.0.32
@@ -7933,7 +7933,7 @@ packages:
   /postcss-minify-params/4.0.2:
     dependencies:
       alphanum-sort: 1.0.2
-      browserslist: 4.15.0
+      browserslist: 4.16.0
       cssnano-util-get-arguments: 4.0.0
       postcss: 7.0.32
       postcss-value-parser: 3.3.1
@@ -8051,7 +8051,7 @@ packages:
       integrity: sha512-acwJY95edP762e++00Ehq9L4sZCEcOPyaHwoaFOhIwWCDfik6YvqsYNxckee65JHLKzuNSSmAdxwD2Cud1Z54A==
   /postcss-normalize-unicode/4.0.1:
     dependencies:
-      browserslist: 4.15.0
+      browserslist: 4.16.0
       postcss: 7.0.32
       postcss-value-parser: 3.3.1
     dev: true
@@ -8091,7 +8091,7 @@ packages:
       integrity: sha512-2fCObh5UanxvSxeXrtLtlwVThBvHn6MQcu4ksNT2tsaV2Fg76R2CV98W7wNSlX+5/pFwEyaDwKLLoEV7uRybAw==
   /postcss-reduce-initial/4.0.3:
     dependencies:
-      browserslist: 4.15.0
+      browserslist: 4.16.0
       caniuse-api: 3.0.0
       has: 1.0.3
       postcss: 7.0.32
@@ -9623,7 +9623,7 @@ packages:
       integrity: sha512-Z0gYUJmzZ6ZdRUqpg1r8GsaFKypE+3xAzuFeMuoHgjc9KZv3wMyCRjQIWEbhoFSq7+7yoHXySDJyyWQaPajeiQ==
   /stylehacks/4.0.3:
     dependencies:
-      browserslist: 4.15.0
+      browserslist: 4.16.0
       postcss: 7.0.32
       postcss-selector-parser: 3.1.2
     dev: true
@@ -10414,7 +10414,7 @@ packages:
       chalk: 1.1.3
       del: 2.2.2
       glob: 7.1.6
-      ini: 1.3.7
+      ini: 1.3.8
       minimist: 1.2.5
       q: 1.4.1
       request: 2.88.2
@@ -10871,25 +10871,25 @@ packages:
     version: 0.0.9
 specifiers:
   '@angular-builders/dev-server': ^7.3.3
-  '@angular-devkit/architect': ^0.1100.3
-  '@angular-devkit/build-angular': ^0.1100.3
-  '@angular-devkit/schematics': ^11.0.3
+  '@angular-devkit/architect': ^0.1100.4
+  '@angular-devkit/build-angular': ^0.1100.4
+  '@angular-devkit/schematics': ^11.0.4
   '@angular-eslint/builder': ^0.8.0-beta.5
   '@angular-eslint/eslint-plugin': ^0.8.0-beta.5
   '@angular-eslint/eslint-plugin-template': ^0.8.0-beta.5
   '@angular-eslint/schematics': ^0.8.0-beta.5
   '@angular-eslint/template-parser': ^0.8.0-beta.5
-  '@angular/animations': ^11.0.3
-  '@angular/cli': ^11.0.3
-  '@angular/common': ^11.0.3
-  '@angular/compiler': ^11.0.3
-  '@angular/compiler-cli': ^11.0.3
-  '@angular/core': ^11.0.3
-  '@angular/forms': ^11.0.3
-  '@angular/localize': ^11.0.3
-  '@angular/platform-browser': ^11.0.3
-  '@angular/platform-browser-dynamic': ^11.0.3
-  '@angular/router': ^11.0.3
+  '@angular/animations': ^11.0.4
+  '@angular/cli': ^11.0.4
+  '@angular/common': ^11.0.4
+  '@angular/compiler': ^11.0.4
+  '@angular/compiler-cli': ^11.0.4
+  '@angular/core': ^11.0.4
+  '@angular/forms': ^11.0.4
+  '@angular/localize': ^11.0.4
+  '@angular/platform-browser': ^11.0.4
+  '@angular/platform-browser-dynamic': ^11.0.4
+  '@angular/router': ^11.0.4
   '@babel/types': ^7.12.7
   '@fortawesome/fontawesome-free': ^5.15.1
   '@ng-bootstrap/ng-bootstrap': ^8.0.0

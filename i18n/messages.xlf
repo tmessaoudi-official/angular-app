@@ -9,6 +9,14 @@
         <source>app.index.title</source>
       </segment>
     </unit>
+    <unit id="4654714685343745812">
+      <notes>
+        <note category="location">src/app/core/not-found/not-found.component.ts:9</note>
+      </notes>
+      <segment>
+        <source>app.not_found</source>
+      </segment>
+    </unit>
     <unit id="3104991395163537922">
       <notes>
         <note category="location">src/app/core/footer/footer.component.ts:10</note>
@@ -63,14 +71,6 @@
       </notes>
       <segment>
         <source>app.nav.dumber_with_id</source>
-      </segment>
-    </unit>
-    <unit id="4654714685343745812">
-      <notes>
-        <note category="location">src/app/core/not-found/not-found.component.ts:9</note>
-      </notes>
-      <segment>
-        <source>app.not_found</source>
       </segment>
     </unit>
     <unit id="3777802817951822482">
@@ -147,38 +147,6 @@
       </notes>
       <segment>
         <source>app.gender.<ph id="0" equiv="ICU" disp="{gender, select, male {male} female {female} other {other}}"/></source>
-      </segment>
-    </unit>
-    <unit id="7249072834034853576">
-      <notes>
-        <note category="location">src/app/dumbest/dumber/dumber.component.ts:22</note>
-      </notes>
-      <segment>
-        <source>app.dumber.title</source>
-      </segment>
-    </unit>
-    <unit id="303063580277194129">
-      <notes>
-        <note category="location">src/app/dumbest/dumb/dumb.component.ts:19</note>
-      </notes>
-      <segment>
-        <source>app.dumb.title</source>
-      </segment>
-    </unit>
-    <unit id="8280334145137016148">
-      <notes>
-        <note category="location">src/app/dumbest/dumb/dumb.component.ts:19</note>
-      </notes>
-      <segment>
-        <source>app.dumb.title2</source>
-      </segment>
-    </unit>
-    <unit id="4162997551392921684">
-      <notes>
-        <note category="location">src/app/dumbest/dummy/dummy.component.ts:19</note>
-      </notes>
-      <segment>
-        <source>app.dummy.title</source>
       </segment>
     </unit>
     <unit id="ngb.alert.close">
@@ -441,6 +409,38 @@
       </notes>
       <segment>
         <source>Close</source>
+      </segment>
+    </unit>
+    <unit id="7249072834034853576">
+      <notes>
+        <note category="location">src/app/dumbest/dumber/dumber.component.ts:22</note>
+      </notes>
+      <segment>
+        <source>app.dumber.title</source>
+      </segment>
+    </unit>
+    <unit id="303063580277194129">
+      <notes>
+        <note category="location">src/app/dumbest/dumb/dumb.component.ts:19</note>
+      </notes>
+      <segment>
+        <source>app.dumb.title</source>
+      </segment>
+    </unit>
+    <unit id="8280334145137016148">
+      <notes>
+        <note category="location">src/app/dumbest/dumb/dumb.component.ts:19</note>
+      </notes>
+      <segment>
+        <source>app.dumb.title2</source>
+      </segment>
+    </unit>
+    <unit id="4162997551392921684">
+      <notes>
+        <note category="location">src/app/dumbest/dummy/dummy.component.ts:19</note>
+      </notes>
+      <segment>
+        <source>app.dummy.title</source>
       </segment>
     </unit>
   </file>

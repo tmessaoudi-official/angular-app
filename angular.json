@@ -41,7 +41,6 @@
             "keepPolyfills": true,
             "keepStyles": true,
             "progress": true,
-            "profile": true,
             "plugin": "~angular.cli.plugin.js",
             "allowedCommonJsDependencies": [
               "rxjs-compat",
@@ -50,7 +49,6 @@
             "i18nMissingTranslation": "error",
             "aot": true,
             "deleteOutputPath": false,
-            "extractCss": true,
             "extractLicenses": true,
             "sourceMap": false,
             "vendorChunk": false,
@@ -125,9 +123,6 @@
                 "node_modules/@popperjs/core/dist/umd/popper.min.js",
                 "node_modules/bootstrap/dist/js/bootstrap.min.js"
               ]
-            },
-            "force": {
-              "force": true
             },
             "delete-output-path": {
               "deleteOutputPath": true
@@ -370,7 +365,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "localization:build:development,home,force",
+            "browserTarget": "localization:build:development,home",
             "outputPath": "i18n",
             "outFile": "messages.xlf",
             "format": "xlf2",
@@ -378,7 +373,7 @@
           },
           "configurations": {
             "source": {
-              "browserTarget": "localization:build:development,home,force",
+              "browserTarget": "localization:build:development,home",
               "outFile": "messages.xlf"
             },
             "home-source": {

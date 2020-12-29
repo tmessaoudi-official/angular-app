@@ -15,8 +15,7 @@
         "sourceLocale": "home",
         "locales": {
           "en": "i18n/messages.en.xlf",
-          "fr": "i18n/messages.fr.xlf",
-          "ar": "i18n/messages.ar.xlf"
+          "fr": "i18n/messages.fr.xlf"
         }
       },
       "projectType": "application",
@@ -130,8 +129,7 @@
             "localize": {
               "localize": [
                 "en",
-                "fr",
-                "ar"
+                "fr"
               ]
             },
             "verbose": {
@@ -196,14 +194,6 @@
               "i18nFile": "i18n/messages.fr.xlf",
               "i18nLocale": "fr"
             },
-            "home-locale-ar": {
-              "i18nFile": "i18n/home/messages.ar.xlf",
-              "i18nLocale": "ar"
-            },
-            "home-ar": {
-              "i18nFile": "i18n/messages.ar.xlf",
-              "i18nLocale": "ar"
-            },
             "home-locale-de": {
               "i18nFile": "i18n/home/messages.de.xlf",
               "i18nLocale": "de"
@@ -235,18 +225,6 @@
             "fr-locale": {
               "i18nFile": "i18n/messages.fr.xlf",
               "i18nLocale": "fr"
-            },
-            "ar": {
-              "outputPath": "dist",
-              "baseHref": ""
-            },
-            "ar-base-href": {
-              "outputPath": "dist/ar",
-              "baseHref": "/ar/"
-            },
-            "ar-locale": {
-              "i18nFile": "i18n/messages.ar.xlf",
-              "i18nLocale": "ar"
             }
           }
         },
@@ -283,17 +261,11 @@
             "home-fr": {
               "browserTarget": "localization:build:development,ignore-i18n,home-locale-fr,home,no-base-href,home-config,aot"
             },
-            "home-ar": {
-              "browserTarget": "localization:build:development,ignore-i18n,home-locale-ar,home,no-base-href,home-config,aot"
-            },
             "en": {
               "browserTarget": "localization:build:development,ignore-i18n,en-locale,en,no-base-href,aot"
             },
             "fr": {
               "browserTarget": "localization:build:development,ignore-i18n,fr-locale,fr,no-base-href,aot"
-            },
-            "ar": {
-              "browserTarget": "localization:build:development,ignore-i18n,ar-locale,ar,no-base-href,aot"
             }
           }
         },
@@ -339,17 +311,11 @@
             "home-fr": {
               "devServerTarget": "localization:serve:home-fr"
             },
-            "home-ar": {
-              "devServerTarget": "localization:serve:home-ar"
-            },
             "en": {
               "devServerTarget": "localization:serve:en"
             },
             "fr": {
               "devServerTarget": "localization:serve:fr"
-            },
-            "ar": {
-              "devServerTarget": "localization:serve:ar"
             }
           }
         },
@@ -391,11 +357,6 @@
               "outputPath": "i18n/home",
               "outFile": "messages.fr.xlf"
             },
-            "home-ar": {
-              "browserTarget": "localization:build:home,home-config,dummy-env,home-locale-ar",
-              "outputPath": "i18n/home",
-              "outFile": "messages.ar.xlf"
-            },
             "en": {
               "browserTarget": "localization:build:en",
               "outFile": "messages.en.xlf"
@@ -403,10 +364,6 @@
             "fr": {
               "browserTarget": "localization:build:fr",
               "outFile": "messages.fr.xlf"
-            },
-            "ar": {
-              "browserTarget": "localization:build:ar",
-              "outFile": "messages.ar.xlf"
             }
           }
         },
@@ -425,8 +382,7 @@
                 "verbose": true,
                 "languages": [
                   "en",
-                  "fr",
-                  "ar"
+                  "fr"
                 ]
               }
             },
@@ -441,8 +397,7 @@
                 "verbose": true,
                 "languages": [
                   "en",
-                  "fr",
-                  "ar"
+                  "fr"
                 ]
               }
             }

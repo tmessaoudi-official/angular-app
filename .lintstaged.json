@@ -1,8 +1,4 @@
 {
-    "eslint": true,
-    "css": false,
-    "scss": false,
-    "format": [true, ["ts", "js", "json", "scss"]],
     "files": {
         "threshold": 7
     }

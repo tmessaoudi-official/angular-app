@@ -40,35 +40,9 @@ module.exports = {
             }
         }
         let cmd = [];
-        if (lintStagedConfig.format[0]) {
-            const format = files.filter((file) => {
-                let concerned = false;
-                lintStagedConfig.format[1].forEach((extension) => {
-                    const regex = new RegExp(`^.*\\.${extension}$`);
-                    if (!concerned) {
-                        concerned = regex.test(file);
-                    }
-                });
-                return concerned;
-            });
-            if (format.length > 0) {
-                cmd.push(
-                    `prettier --write ${format.join(` `)} --ignore-unknown`,
-                );
-            }
-        }
+        cmd.push(
+            `ng lint --fix`,
+        );
         return cmd;
-    },
-    '**/*.js': (files) => {
-        return `ng fix --files ${files.join(` `)}`;
-    },
-    '**/*.ts': (files) => {
-        return `ng fix --files ${files.join(` `)}`;
-    },
-    '**/*.css': (files) => {
-        return `ng fix --files ${files.join(` `)}`;
-    },
-    '**/*.scss': (files) => {
-        return `ng fix --files ${files.join(` `)}`;
     },
 };

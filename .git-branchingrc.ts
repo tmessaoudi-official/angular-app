@@ -168,13 +168,14 @@ class GitBranching {
     if (this.config.scripts) {
       this.config.scripts.forEach((value, index) => {
         let output = null;
+        console.log(`-- Running : ${value[0]} ...`.white.bgYellow);
         try {
           output = this.exec(<Array<String | Array<String>>>value[1]);
         } catch (exception) {
-          console.log(`-- ${value[0]} -- error`.white.bgRed);
+          console.log(`-- ${value[0]} ✗`.white.bgRed);
           process.exit(1);
         }
-        console.log(`-- ${value[0]}`.white.bgGreen);
+        console.log(`-- ${value[0]} ✓`.white.bgGreen);
       })
     }
     if (this.shouldSkip()) {

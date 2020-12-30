@@ -23,6 +23,8 @@ serve:
 test-unit:
 	APP_PROCESS_ENV_INCLUDES="./.app.env/.env.i18n.serve,./.app.env/.env.test.unit" APP_NODE_ENV_INCLUDE=test pnpm run test
 test-unit-selenium:
+	APP_PROCESS_ENV_INCLUDES="./.app.env/.env.i18n.serve,./.app.env/.env.test.unit.selenium" APP_NODE_ENV_INCLUDE=test pnpm run test-single-run
+test-unit-selenium-watch:
 	APP_PROCESS_ENV_INCLUDES="./.app.env/.env.i18n.serve,./.app.env/.env.test.unit.selenium" APP_NODE_ENV_INCLUDE=test pnpm run test
 test-e2e:
 	APP_PROCESS_ENV_INCLUDES="./.app.env/.env.i18n.serve,./.app.env/.env.test.e2e" APP_NODE_ENV_INCLUDE=test APP_NODE_ENV_INCLUDE=test pnpm run e2e

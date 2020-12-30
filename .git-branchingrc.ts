@@ -167,7 +167,6 @@ class GitBranching {
   public run(): void {
     if (this.config.scripts) {
       this.config.scripts.forEach((value, index) => {
-        console.log(`-- ${value[0]}`.white.bgGreen);
         let output = null;
         try {
           output = this.exec(<Array<String | Array<String>>>value[1]);
@@ -175,6 +174,7 @@ class GitBranching {
           console.log(`-- ${value[0]} -- error`.white.bgRed);
           process.exit(1);
         }
+        console.log(`-- ${value[0]}`.white.bgGreen);
       })
     }
     if (this.shouldSkip()) {

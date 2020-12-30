@@ -39,26 +39,26 @@ class GitBranching {
     );
   }
 
-  protected exec(args: Array<String | Array<String>>): String {
+  protected exec(command: String, args: Array<String>): String {
     return (
       childProcess
         // @ts-ignore
-        .execFileSync(...args)
+        .execFileSync(command, args)
         .toString()
         .trim()
     );
   }
 
   protected getGitBranchName(): String {
-    return this.exec([`git`, [`rev-parse`, `--abbrev-ref`, `HEAD`]]);
+    return this.exec(`git`, [`rev-parse`, `--abbrev-ref`, `HEAD`]);
   }
 
   protected getGitLastCommitMessage(): String {
-    return this.exec([`git`, [`log`, `-1`]]);
+    return this.exec(`git`, [`log`, `-1`]);
   }
 
   protected getGitLastMergeCommitMessage(): String {
-    return this.exec([`git`, [`log`, `--merges`, `-n`, `1`]]);
+    return this.exec(`git`, [`log`, `--merges`, `-n`, `1`]);
   }
 
   protected shouldSkip(): boolean {
@@ -170,7 +170,7 @@ class GitBranching {
         let output = null;
         console.log(`-- Running : ${value[0]} ...`.white.bgYellow);
         try {
-          output = this.exec(<Array<String | Array<String>>>value[1]);
+          output = this.exec(<String>value[1][0], <Array<String>>value[1][1]);
         } catch (exception) {
           console.log(`-- ${value[0]} ✗`.white.bgRed);
           process.exit(1);

@@ -21,7 +21,7 @@ const lastCommitMessage = gitExec([`git`, [`log`, `-1`]]);
 const lastMergeCommitMessage = gitExec([`git`, [`log`, `--merges`, `-n`, `1`]]);
 
 module.exports = {
-    '**/*.*': (files) => {
+    '*': (files) => {
         if (files.length > 0 && lintStagedConfig.files.threshold !== `*`) {
             if (
                 files.length > lintStagedConfig.files.threshold &&

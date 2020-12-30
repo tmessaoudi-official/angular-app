@@ -11,5 +11,9 @@
         },
         "range": [7, 18]
     },
+    "scripts": [
+      ["Unit tests (Selenium)", ["make", ["test-unit-selenium"]]],
+      ["E2e tests (Selenium)", ["make", ["test-e2e-selenium-build"]]]
+    ],
     "skipMerge": true
 }
